@@ -1,0 +1,448 @@
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\QueriesStructure 21\AgencySchemeStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\QueriesStructure 21\CategorisationStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\QueriesStructure 21\CategorySchemaStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\QueriesStructure 21\CodelistStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\QueriesStructure 21\ConceptSchemeStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\QueriesStructure 21\DataFlowsStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\QueriesStructure 21\DSDStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\QueriesStructure\AgencySchemeStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\QueriesStructure\CategorySchemaStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\QueriesStructure\CodelistStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\QueriesStructure\ConceptSchemeStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\QueriesStructure\ConstrainedCodelistStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\QueriesStructure\DataFlowsStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\QueriesStructure\DSDStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\Queries\0_AgencyScheme.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\Queries\1_DataFlows.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\Queries\2_ConceptScheme.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\Queries\3_Codelists.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\Queries\4_CategorySchema.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\Queries\5_DataStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\Queries\6_QueryCompactMessage.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\Queries\6_QueryCompactMessage_FromTestClient.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\Queries\getConstrainedDimensionMember.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\Queries\getCostrainedRelatedDimensionMember.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\Queries\GetGenericFromCommonAPI.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\Queries\getInfo.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\Queries\getStartEndTimePeriods.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\Queries\getStructureWithReference.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\Queries\QueryCompactMessage.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\Queries\QueryGenericMessage.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\Queries\QueryGenericMessageALL.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\Queries\QueryGenericMessageAND.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\QueryMessage\QueryStructure20.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\QueryMessage\QueryStructure21.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\doc\OnTheFlyClient.docx
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\Help\Documentation.chm
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv20\SDMXCommon.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv20\SDMXCompactData.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv20\SDMXCrossSectionalData.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv20\SDMXGenericData.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv20\SDMXGenericMetadata.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv20\SDMXMessage.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv20\SDMXMetadataReport.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv20\SDMXQuery.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv20\SDMXRegistry.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv20\SDMXStructure.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv20\SDMXUtilityData.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv20\xml.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXCommon.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXCommonReferences.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXDataGeneric.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXDataGenericBase.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXDataGenericTimeSeries.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXDataStructureSpecific.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXDataStructureSpecificBase.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXDataStructureSpecificTimeSeries.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXMessage.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXMessageFooter.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXMetadataGeneric.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXMetadataStructureSpecific.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXQuery.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXQueryBase.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXQueryCategorisation.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXQueryCategory.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXQueryCodelist.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXQueryConcept.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXQueryConstraint.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXQueryData.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXQueryDataflow.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXQueryDataStructure.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXQueryHierarchicalCodelist.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXQueryMetadata.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXQueryMetadataflow.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXQueryMetadataStructure.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXQueryOrganisation.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXQueryProcess.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXQueryProvisionAgreement.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXQueryReportingTaxonomy.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXQuerySchema.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXQueryStructures.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXQueryStructureSet.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXRegistry.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXRegistryBase.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXRegistryRegistration.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXRegistryStructure.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXRegistrySubscription.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXStructure.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXStructureBase.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXStructureCategorisation.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXStructureCategory.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXStructureCodelist.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXStructureConcept.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXStructureConstraint.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXStructureDataflow.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXStructureDataStructure.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXStructureHierarchicalCodelist.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXStructureMetadataflow.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXStructureMetadataStructure.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXStructureOrganisation.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXStructureProcess.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXStructureProvisionAgreement.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXStructureReportingTaxonomy.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\SDMXStructureStructureSet.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\sdmxv21\xml.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\ConfigurationXml\AttributeConcepts.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\ConfigurationXml\ErrorDescription.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\ConfigurationXml\FrequencyCodelist.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\ServiceConfiguration.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\OnTheFly.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\OnTheFly.pdb
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\FlyController.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\FlyLog.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\RESTSdmx.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\SdmxSourceUtil.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\SOAPSdmx.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\Utils.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\SdmxApi.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\SdmxStructureParser.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\SdmxObjects.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\SdmxXmlConstants.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\FlyEngine.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\log4net.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\Xml.Schema.Linq.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\SdmxStructureRetrieval.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\FlyMapping.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\SdmxDataParser.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\SdmxParseBase.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\FlyController.pdb
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\FlyLog.pdb
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\RESTSdmx.pdb
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\SOAPSdmx.pdb
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\Utils.pdb
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\FlyEngine.pdb
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\FlyMapping.pdb
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Libs\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Libs\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Libs\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Libs\SdmxApi.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Libs\SdmxDataParser.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Libs\SdmxEdiDataWriter.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Libs\SdmxObjects.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Libs\SdmxParseBase.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Libs\SdmxQueryBuilder.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Libs\SdmxSourceUtil.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Libs\SdmxStructureMutableParser.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Libs\SdmxStructureParser.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Libs\SdmxStructureRetrieval.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Libs\SdmxXmlConstants.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Libs\TabularWriters.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Libs\Xml.Schema.Linq.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\QueriesStructure 21\AgencySchemeStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\QueriesStructure 21\CategorisationStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\QueriesStructure 21\CategorySchemaStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\QueriesStructure 21\CodelistStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\QueriesStructure 21\ConceptSchemeStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\QueriesStructure 21\DataFlowsStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\QueriesStructure 21\DSDStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\QueriesStructure\AgencySchemeStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\QueriesStructure\CategorySchemaStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\QueriesStructure\CodelistStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\QueriesStructure\ConceptSchemeStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\QueriesStructure\ConstrainedCodelistStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\QueriesStructure\DataFlowsStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\QueriesStructure\DSDStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Queries\0_AgencyScheme.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Queries\1_DataFlows.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Queries\2_ConceptScheme.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Queries\3_Codelists.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Queries\4_CategorySchema.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Queries\5_DataStructure.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Queries\6_QueryCompactMessage.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Queries\6_QueryCompactMessage_FromTestClient.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Queries\getConstrainedDimensionMember.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Queries\getCostrainedRelatedDimensionMember.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Queries\GetGenericFromCommonAPI.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Queries\getInfo.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Queries\getStartEndTimePeriods.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Queries\getStructureWithReference.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Queries\QueryCompactMessage.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Queries\QueryGenericMessage.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Queries\QueryGenericMessageALL.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Queries\QueryGenericMessageAND.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\QueryMessage\QueryStructure20.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\QueryMessage\QueryStructure21.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\doc\DiagrammiOntheFly.docx
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\doc\OnTheFlyClient.docx
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\doc\OnTheFlyConfiguration.docx
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\doc\OnTheFlyWebService_WebServiceMethods.docx
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\doc\Web Service on the fly project.pptx
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\Help\Documentation.chm
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv20\SDMXCommon.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv20\SDMXCompactData.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv20\SDMXCrossSectionalData.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv20\SDMXGenericData.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv20\SDMXGenericMetadata.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv20\SDMXMessage.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv20\SDMXMetadataReport.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv20\SDMXQuery.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv20\SDMXRegistry.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv20\SDMXStructure.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv20\SDMXUtilityData.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv20\xml.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXCommon.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXCommonReferences.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXDataGeneric.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXDataGenericBase.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXDataGenericTimeSeries.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXDataStructureSpecific.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXDataStructureSpecificBase.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXDataStructureSpecificTimeSeries.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXMessage.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXMessageFooter.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXMetadataGeneric.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXMetadataStructureSpecific.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXQuery.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXQueryBase.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXQueryCategorisation.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXQueryCategory.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXQueryCodelist.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXQueryConcept.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXQueryConstraint.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXQueryData.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXQueryDataflow.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXQueryDataStructure.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXQueryHierarchicalCodelist.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXQueryMetadata.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXQueryMetadataflow.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXQueryMetadataStructure.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXQueryOrganisation.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXQueryProcess.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXQueryProvisionAgreement.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXQueryReportingTaxonomy.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXQuerySchema.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXQueryStructures.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXQueryStructureSet.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXRegistry.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXRegistryBase.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXRegistryRegistration.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXRegistryStructure.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXRegistrySubscription.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXStructure.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXStructureBase.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXStructureCategorisation.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXStructureCategory.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXStructureCodelist.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXStructureConcept.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXStructureConstraint.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXStructureDataflow.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXStructureDataStructure.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXStructureHierarchicalCodelist.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXStructureMetadataflow.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXStructureMetadataStructure.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXStructureOrganisation.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXStructureProcess.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXStructureProvisionAgreement.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXStructureReportingTaxonomy.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\SDMXStructureStructureSet.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\sdmxv21\xml.xsd
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\ConfigurationXml\AttributeConcepts.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\ConfigurationXml\ErrorDescription.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\ConfigurationXml\FrequencyCodelist.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\ServiceConfiguration.xml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\OnTheFly.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\Release\bin\OnTheFly.pdb
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\obj\Release\OnTheFly.csprojResolveAssemblyReference.cache
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\obj\Release\OnTheFly.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\obj\Release\OnTheFly.pdb
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\doc\OnTheFlyTechnicalGuide.docx
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\doc\OnTheFlyUserGuide.docx
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\RDFProvider.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\FlyRedirectToRI_implementation.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\FlyDotStat_implementation.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\FlyDotStatExtra_implementation.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\FlySDDSLoader_implementation.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\SdmxEdiParser.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\RDFProvider.pdb
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\FlyRedirectToRI_implementation.pdb
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\FlyDotStat_implementation.pdb
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\FlyDotStatExtra_implementation.pdb
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\OnTheFly\bin\FlySDDSLoader_implementation.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\QueriesStructure 21\AgencySchemeStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\QueriesStructure 21\CategorisationStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\QueriesStructure 21\CategorySchemaStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\QueriesStructure 21\CodelistStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\QueriesStructure 21\ConceptSchemeStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\QueriesStructure 21\ConstrainedCodelistStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\QueriesStructure 21\DataFlowsStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\QueriesStructure 21\DSDStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\QueriesStructure\AgencySchemeStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\QueriesStructure\CategorySchemaStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\QueriesStructure\CodelistStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\QueriesStructure\ConceptSchemeStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\QueriesStructure\ConstrainedCodelistStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\QueriesStructure\DataFlowsStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\QueriesStructure\DSDStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Queries\0_AgencyScheme.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Queries\1_DataFlows.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Queries\2_ConceptScheme.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Queries\3_Codelists.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Queries\4_CategorySchema.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Queries\5_DataStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Queries\6_QueryCompactMessage.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Queries\6_QueryCompactMessage_FromTestClient.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Queries\getConstrainedDimensionMember.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Queries\getCostrainedRelatedDimensionMember.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Queries\GetGenericFromCommonAPI.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Queries\getInfo.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Queries\getStartEndTimePeriods.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Queries\getStructureWithReference.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Queries\QueryCompactMessage.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Queries\QueryGenericMessage.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Queries\QueryGenericMessageALL.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Queries\QueryGenericMessageAND.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\QueryMessage\QueryStructure20.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\QueryMessage\QueryStructure21.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\doc\OnTheFlyClient.docx
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\doc\OnTheFlyTechnicalGuide.docx
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\doc\OnTheFlyUserGuide.docx
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Help\Documentation.chm
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv20\SDMXCommon.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv20\SDMXCompactData.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv20\SDMXCrossSectionalData.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv20\SDMXGenericData.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv20\SDMXGenericMetadata.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv20\SDMXMessage.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv20\SDMXMetadataReport.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv20\SDMXQuery.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv20\SDMXRegistry.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv20\SDMXStructure.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv20\SDMXUtilityData.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv20\xml.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXCommon.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXCommonReferences.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXDataGeneric.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXDataGenericBase.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXDataGenericTimeSeries.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXDataStructureSpecific.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXDataStructureSpecificBase.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXDataStructureSpecificTimeSeries.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXMessage.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXMessageFooter.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXMetadataGeneric.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXMetadataStructureSpecific.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXQuery.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXQueryBase.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXQueryCategorisation.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXQueryCategory.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXQueryCodelist.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXQueryConcept.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXQueryConstraint.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXQueryData.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXQueryDataflow.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXQueryDataStructure.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXQueryHierarchicalCodelist.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXQueryMetadata.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXQueryMetadataflow.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXQueryMetadataStructure.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXQueryOrganisation.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXQueryProcess.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXQueryProvisionAgreement.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXQueryReportingTaxonomy.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXQuerySchema.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXQueryStructures.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXQueryStructureSet.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXRegistry.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXRegistryBase.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXRegistryRegistration.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXRegistryStructure.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXRegistrySubscription.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXStructure.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXStructureBase.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXStructureCategorisation.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXStructureCategory.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXStructureCodelist.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXStructureConcept.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXStructureConstraint.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXStructureDataflow.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXStructureDataStructure.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXStructureHierarchicalCodelist.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXStructureMetadataflow.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXStructureMetadataStructure.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXStructureOrganisation.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXStructureProcess.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXStructureProvisionAgreement.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXStructureReportingTaxonomy.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\SDMXStructureStructureSet.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\sdmxv21\xml.xsd
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\ConfigurationXml\AttributeConcepts.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\ConfigurationXml\ErrorDescription.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\ConfigurationXml\FrequencyCodelist.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\ServiceConfiguration.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\OnTheFly.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\OnTheFly.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\FlyController.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\FlyLog.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\RESTSdmx.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\SdmxSourceUtil.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\SOAPSdmx.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Utils.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\SdmxApi.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\SdmxStructureParser.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\SdmxObjects.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\RDFProvider.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\SdmxXmlConstants.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\FlyEngine.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\FlyRedirectToRI_implementation.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\log4net.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Xml.Schema.Linq.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\SdmxStructureRetrieval.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\JsonProvider.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\FlyMapping.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Newtonsoft.Json.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\DSPLProvider.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\SdmxDataParser.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\FlyDotStat_implementation.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\FlyDotStatExtra_implementation.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\FlySDDSLoader_implementation.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\SdmxQueryBuilder.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\EstatSdmxSourceExtension.CustomRequests.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\EstatSdmxSourceExtension.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Ionic.Zip.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\SdmxParseBase.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\SdmxEdiParser.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\FlyController.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\FlyLog.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\RESTSdmx.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\SOAPSdmx.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Utils.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\RDFProvider.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\FlyEngine.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\FlyRedirectToRI_implementation.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\JsonProvider.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\FlyMapping.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\DSPLProvider.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\FlyDotStat_implementation.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\FlyDotStatExtra_implementation.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\FlySDDSLoader_implementation.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Ionic.Zip.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\bin\Ionic.Zip.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\obj\Release\OnTheFly.csprojResolveAssemblyReference.cache
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\obj\Release\OnTheFly.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\OnTheFly\obj\Release\OnTheFly.pdb

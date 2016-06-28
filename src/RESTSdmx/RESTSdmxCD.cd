@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RESTSdmx.Builder.RESTError">
+    <Position X="5.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Builder\RESTError.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RESTSdmx.Builder.RestParser">
+    <Position X="3.5" Y="4" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAgAAIAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Builder\RestParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RESTSdmx.DataResource" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="5" Width="2" />
+    <Members>
+      <Method Name="BuildQueryBean" Hidden="true" />
+      <Method Name="DataResource" Hidden="true" />
+      <Method Name="GetVersionFromAccept" Hidden="true" />
+      <Method Name="GetVersionFromMediaType" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AICAAAAAEAAAAAAAABAAAAAAAAACAAAAAAABACAAAAA=</HashCode>
+      <FileName>DataResource.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RESTSdmx.StructureResource" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="2.25" Width="2" />
+    <Members>
+      <Method Name="BuildRestQueryBean" Hidden="true" />
+      <Method Name="IsStructureValid" Hidden="true" />
+      <Method Name="StructureResource" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQABAAAABAAIAACIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StructureResource.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

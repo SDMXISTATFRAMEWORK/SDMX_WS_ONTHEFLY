@@ -1,0 +1,6 @@
+﻿
+<Dimension id="SEX">R</Dimension>
+<Dimension id="LOCATION">fra</Dimension>
+
+
+<Attribute id="TIME_FORMAT">P1Y</Attribute>

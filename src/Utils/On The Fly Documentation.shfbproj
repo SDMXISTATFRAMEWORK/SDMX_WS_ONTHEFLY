@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <!-- The configuration and platform will be used to determine which assemblies to include from solution and
+				 project documentation sources -->
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{e6e4f5ac-899d-4521-bc58-f9930e7c3a52}</ProjectGuid>
+    <SHFBSchemaVersion>1.9.9.0</SHFBSchemaVersion>
+    <!-- AssemblyName, Name, and RootNamespace are not used by SHFB but Visual Studio adds them anyway -->
+    <AssemblyName>Documentation</AssemblyName>
+    <RootNamespace>Documentation</RootNamespace>
+    <Name>Documentation</Name>
+    <!-- SHFB properties -->
+    <FrameworkVersion>.NET Framework 4.0</FrameworkVersion>
+    <OutputPath>.\Help\</OutputPath>
+    <HtmlHelpName>Documentation</HtmlHelpName>
+    <Language>en-US</Language>
+    <MaximumGroupParts>2</MaximumGroupParts>
+    <NamespaceGrouping>False</NamespaceGrouping>
+    <SyntaxFilters>Standard</SyntaxFilters>
+    <SdkLinkTarget>Blank</SdkLinkTarget>
+    <RootNamespaceContainer>True</RootNamespaceContainer>
+    <PresentationStyle>VS2013</PresentationStyle>
+    <Preliminary>False</Preliminary>
+    <NamingMethod>Guid</NamingMethod>
+    <HelpTitle>On The Fly Documented Class Library</HelpTitle>
+    <ContentPlacement>AboveNamespaces</ContentPlacement>
+    <DocumentationSources>
+      <DocumentationSource sourceFile="..\FlyController\FlyController.csproj" />
+<DocumentationSource sourceFile="..\FlyDotStat_implementation\FlyDotStat_implementation.csproj" />
+<DocumentationSource sourceFile="..\FlyDotStatExtra_implementation\FlyDotStatExtra_implementation.csproj" />
+<DocumentationSource sourceFile="..\FlyEngine\FlyEngine.csproj" />
+<DocumentationSource sourceFile="..\FlyLog\FlyLog.csproj" />
+<DocumentationSource sourceFile="..\FlyMapping\FlyMapping.csproj" />
+<DocumentationSource sourceFile="..\FlyRedirectToRI_implementation\FlyRedirectToRI_implementation.csproj" />
+<DocumentationSource sourceFile="..\FlySDDSLoader_implementation\FlySDDSLoader_implementation.csproj" />
+<DocumentationSource sourceFile="..\OnTheFly\OnTheFly.csproj" />
+<DocumentationSource sourceFile="..\RESTSdmx\RESTSdmx.csproj" />
+<DocumentationSource sourceFile="..\SOAPSdmx\SOAPSdmx.csproj" /></DocumentationSources>
+    <VisibleItems>Attributes, ExplicitInterfaceImplementations, InheritedMembers, Internals, Privates, Protected, ProtectedInternalAsProtected</VisibleItems>
+    <MissingTags>AutoDocumentCtors, AutoDocumentDispose</MissingTags>
+    <PlugInConfigurations>
+      <PlugInConfig id="Hierarchical Table of Contents" enabled="True" xmlns="">
+        <configuration>
+          <toc minParts="2" insertBelow="False" />
+        </configuration>
+      </PlugInConfig>
+    </PlugInConfigurations>
+    <NamespaceSummaries>
+      <NamespaceSummaryItem name="(global)" isDocumented="False" />
+      <NamespaceSummaryItem name="FlyController" isDocumented="True" />
+      <NamespaceSummaryItem name="FlyController.Builder" isDocumented="True" />
+      <NamespaceSummaryItem name="FlyController.Model" isDocumented="True" />
+      <NamespaceSummaryItem name="FlyController.Model.Error" isDocumented="True" />
+      <NamespaceSummaryItem name="FlyEngine.Engine.Data" isDocumented="True" />
+      <NamespaceSummaryItem name="FlyEngine.Engine.Metadata" isDocumented="True" />
+      <NamespaceSummaryItem name="FlyEngine.Manager" isDocumented="True" />
+      <NamespaceSummaryItem name="FlyEngine.Model" isDocumented="True" />
+      <NamespaceSummaryItem name="FlyEngine.Utils" isDocumented="True" />
+      <NamespaceSummaryItem name="FlyMapping.Build" isDocumented="True" />
+      <NamespaceSummaryItem name="FlyMapping.Manager" isDocumented="True" />
+      <NamespaceSummaryItem name="FlyMapping.Manager.Data" isDocumented="True" />
+      <NamespaceSummaryItem name="FlyMapping.Manager.Metadata" isDocumented="True" />
+      <NamespaceSummaryItem name="FlyMapping.Model" isDocumented="True" />
+      <NamespaceSummaryItem name="WS_SOAP_SDMX" isDocumented="True" />
+      <NamespaceSummaryItem name="WS_SOAP_SDMX.Builder" isDocumented="True" />
+      <NamespaceSummaryItem name="WS_SOAP_SDMX.Model" isDocumented="True" />
+    </NamespaceSummaries>
+    <RootNamespaceTitle>On The Fly</RootNamespaceTitle>
+  </PropertyGroup>
+  <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
+			 the build.  The others are optional common platform types that may appear. -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Win32' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Win32' ">
+  </PropertyGroup>
+  <!-- Import the SHFB build targets -->
+  <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
+</Project>

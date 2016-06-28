@@ -1,0 +1,3123 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FlyController</name>
+    </assembly>
+    <members>
+        <member name="T:FlyController.Builder.AgencySchemeBuilder">
+            <summary>
+            AgencySchemaBuilder Create a ImmutableInstance of OrganisationScheme with AgencyScheme
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.ObjectBuilder">
+            <summary>
+            Base Class for all FlyController builder
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.IObjectBuilder">
+            <summary>
+            Interface for all FlyController builder
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.IObjectBuilder.Code">
+            <summary>
+             Identificable Code
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.IObjectBuilder.Names">
+            <summary>
+             Descriptions Names
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.IObjectBuilder.VersionTypeResp">
+            <summary>
+             Sdmx Version
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.IObjectBuilder.ParsingObject">
+            <summary>
+             Parsing Object <see cref="T:FlyController.Model.ISdmxParsingObject"/>
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.ObjectBuilder.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize new instance of ObjectBuilder
+            </summary>
+            <param name="parsingObject">Parsing Object <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="P:FlyController.Model.ObjectBuilder.Code">
+            <summary>
+             Identificable Code
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ObjectBuilder.Names">
+            <summary>
+             Descriptions Names
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ObjectBuilder.VersionTypeResp">
+            <summary>
+             Sdmx Version
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ObjectBuilder.ParsingObject">
+            <summary>
+             Parsing Object <see cref="T:FlyController.Model.ISdmxParsingObject"/>
+            </summary>
+        </member>
+        <member name="M:FlyController.Builder.AgencySchemeBuilder.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize new instance of AgencySchemeBuilder
+            </summary>
+            <param name="parsingObject">Parsing Object <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyController.Builder.AgencySchemeBuilder.BuildAgencyScheme(Org.Sdmxsource.Sdmx.Api.Model.Mutable.Base.IAgencyMutableObject,System.Collections.Generic.List{FlyController.Model.SdmxObjectNameDescription})">
+            <summary>
+            Create a ImmutableInstance of AgencySchema
+            </summary>
+            <param name="_AgencyObject">Agency Object</param>
+            <param name="AgencyOrganisationNames">Agency Organisation Names (Get it from File Config)</param>
+            <returns>IAgencyScheme</returns>
+        </member>
+        <member name="P:FlyController.Builder.AgencySchemeBuilder.Code">
+            <summary>
+             Identificable Code
+            </summary>
+        </member>
+        <member name="P:FlyController.Builder.AgencySchemeBuilder.Names">
+            <summary>
+             Descriptions Names
+            </summary>
+        </member>
+        <member name="T:FlyController.Builder.CategorySchemeBuilder">
+            <summary>
+            CategorySchemeBuilder Create a ImmutableInstance of CategoryScheme
+            </summary>
+        </member>
+        <member name="M:FlyController.Builder.CategorySchemeBuilder.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize new instance of CategorySchemeBuilder
+            </summary>
+            <param name="parsingObject">Parsing Object <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyController.Builder.CategorySchemeBuilder.BuildCategorySchemeObject(System.Collections.Generic.List{Org.Sdmxsource.Sdmx.Api.Model.Mutable.CategoryScheme.ICategoryMutableObject})">
+            <summary>
+            Create a ImmutableInstance of CategoryScheme
+            </summary>
+            <param name="CategoryObjects">List of CategoryObject</param>
+            <returns>ICategorySchemeObject</returns>
+        </member>
+        <member name="M:FlyController.Builder.CategorySchemeBuilder.BuildCategorisation(System.String,System.String,System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+             Create a ImmutableInstance of Categorisation
+            </summary>
+            <param name="DataflowCode">Dataflow Code</param>
+            <param name="DataflowAgency">Dataflow Agency Id</param>
+            <param name="DataflowVersion">Dataflow Version</param>
+            <param name="CategoryParent">list of category parent, from hightLevel parent to low level child category</param>
+            <returns>ICategorisationObject</returns>
+        </member>
+        <member name="P:FlyController.Builder.CategorySchemeBuilder.Code">
+            <summary>
+             Identificable Code
+            </summary>
+        </member>
+        <member name="P:FlyController.Builder.CategorySchemeBuilder.Names">
+            <summary>
+             Descriptions Names
+            </summary>
+        </member>
+        <member name="P:FlyController.Builder.CategorySchemeBuilder.CategorySchemeAgencyId">
+            <summary>
+             CategoryScheme AgencyId
+            </summary>
+        </member>
+        <member name="P:FlyController.Builder.CategorySchemeBuilder.CategorySchemeVersion">
+            <summary>
+             CategoryScheme Version
+            </summary>
+        </member>
+        <member name="T:FlyController.Builder.CodelistBuilder">
+            <summary>
+            CodelistBuilder Create a ImmutableInstance of Codelist from Dataflow and Concept 
+            </summary>
+        </member>
+        <member name="M:FlyController.Builder.CodelistBuilder.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Create CodelistBuilder Istance 
+            </summary>
+            <param name="parsingObject">Parsing Object <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyController.Builder.CodelistBuilder.BuildCodelist(System.String,System.String)">
+            <summary>
+            Create a ImmutableInstance of Codelist
+            </summary>
+            <param name="AgencyId">Agency Id</param>
+            <param name="Version">Artefact Version</param>
+            <returns>ICodelistObject</returns>
+        </member>
+        <member name="M:FlyController.Builder.CodelistBuilder.AddItemto(Org.Sdmxsource.Sdmx.Api.Model.Mutable.Codelist.ICodelistMutableObject)">
+            <summary>
+            Add item to codelist whitout generate a duplicate items
+            </summary>
+            <param name="codelist">codelist from which to copy the items</param>
+        </member>
+        <member name="P:FlyController.Builder.CodelistBuilder.Code">
+            <summary>
+             Identificable Code
+            </summary>
+        </member>
+        <member name="P:FlyController.Builder.CodelistBuilder.Names">
+            <summary>
+             Descriptions Names
+            </summary>
+        </member>
+        <member name="P:FlyController.Builder.CodelistBuilder.CodesObjects">
+            <summary>
+            List of Code
+            </summary>
+        </member>
+        <member name="T:FlyController.Builder.CodelistItemBuilder">
+            <summary>
+            Static Function used in some Codelist Builder
+            </summary>
+        </member>
+        <member name="M:FlyController.Builder.CodelistItemBuilder.BuildCodeObjects(System.String,System.Collections.Generic.List{FlyController.Model.SdmxObjectNameDescription},System.String)">
+            <summary>
+            Create a Single Mutable Code Object
+            </summary>
+            <param name="codeId">Code Object Code</param>
+            <param name="names">Code Object Names Description</param>
+            <param name="ParentCode">Code Object Parent code (or Null if not have a parent)</param>
+            <returns>Mutable Code Object ICodeMutableObject</returns>
+        </member>
+        <member name="T:FlyController.Builder.ConceptBuilder">
+            <summary>
+            ConceptBuilder Create a ImmutableInstance of ConceptScheme
+            </summary>
+        </member>
+        <member name="M:FlyController.Builder.ConceptBuilder.#ctor(System.Collections.Generic.List{FlyController.Model.SdmxObjectNameDescription},FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Create ConceptBuilder Istance 
+            </summary>
+            <param name="_names">ConceptScheme Descriptions Names</param>
+            <param name="parsingObject">Parsing Object <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyController.Builder.ConceptBuilder.BuildConceptScheme">
+            <summary>
+             Create a ImmutableInstance of ConceptScheme
+            </summary>
+            <returns>IConceptSchemeObject</returns>
+        </member>
+        <member name="M:FlyController.Builder.ConceptBuilder.BuildConceptScheme(System.String,System.String)">
+            <summary>
+             Create a ImmutableInstance of ConceptScheme
+            </summary>
+            <param name="AgencyId">Agency Id</param>
+            <param name="Version">Artefact Version</param>
+            <returns>IConceptSchemeObject</returns>
+        </member>
+        <member name="P:FlyController.Builder.ConceptBuilder.Code">
+            <summary>
+             Identificable Code
+            </summary>
+        </member>
+        <member name="P:FlyController.Builder.ConceptBuilder.Names">
+            <summary>
+             Descriptions Names
+            </summary>
+        </member>
+        <member name="P:FlyController.Builder.ConceptBuilder.Concepts">
+            <summary>
+            List of all Concept of Dataflow
+            </summary>
+        </member>
+        <member name="T:FlyController.Builder.ConstrainParse.ConstrainableStructureReference">
+            <summary>
+                A IStructureReference is used to reference an identifiable artifact using a combination of reference parameters.
+                whit a Contrains
+                <p />
+                If all reference parameters are present then the reference is for a single identifiable item, if any are missing, then this represents
+                a wildcard parameter / or ALL.
+                <p />
+                SWSDMX_STRUCTURE_TYPE is a mandatory reference parameter, all others are optional
+            </summary>
+        </member>
+        <member name="M:FlyController.Builder.ConstrainParse.ConstrainableStructureReference.#ctor(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference)">
+            <summary>
+            inizialize a ConstrainableStructureReference
+            </summary>
+            <param name="_structureReference"></param>
+        </member>
+        <member name="M:FlyController.Builder.ConstrainParse.ConstrainableStructureReference.CreateCopy">
+            <summary>
+                Creates a copy of this @object
+            </summary>
+            <returns>
+                The <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference"/> .
+            </returns>
+        </member>
+        <member name="M:FlyController.Builder.ConstrainParse.ConstrainableStructureReference.GetMatch(Org.Sdmxsource.Sdmx.Api.Model.Objects.Base.IMaintainableObject)">
+            <summary>
+            Gets the matched Identifiable Object from this reference, returns the original Maintainable if this is a Maintainable reference that matches the maintainable.  Gets null if no match
+                is found
+            </summary>
+            <param name="maintainableObject"> The maintainable object. </param>
+            <returns>
+            The <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.Base.IIdentifiableObject"/> .
+            </returns>
+        </member>
+        <member name="M:FlyController.Builder.ConstrainParse.ConstrainableStructureReference.HasChildReference">
+            <summary>
+                Gets a value indicating whether the getChildReference returns a value
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean"/> .
+            </returns>
+        </member>
+        <member name="M:FlyController.Builder.ConstrainParse.ConstrainableStructureReference.HasMaintainableUrn">
+            <summary>
+                Gets a value indicating whether the getMaintainableUrn returns a value
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean"/> .
+            </returns>
+        </member>
+        <member name="M:FlyController.Builder.ConstrainParse.ConstrainableStructureReference.HasTargetUrn">
+            <summary>
+                Gets a value indicating whether the getTargetUrn returns a value
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean"/> .
+            </returns>
+        </member>
+        <member name="M:FlyController.Builder.ConstrainParse.ConstrainableStructureReference.IsMatch(Org.Sdmxsource.Sdmx.Api.Model.Objects.Base.IMaintainableObject)">
+            <summary>
+            Gets a value indicating whether the reference matches the IMaintainableObject, or one of its indentifiable composites.
+                <p/>
+                This @object does not require all reference parameters to be set, this method will return true if all the parameters that are set match
+                the @object passed in.  If this reference is referencing an Identifiable composite, then the maintainable's identifiable composites will also be
+                checked to determine if this is a match.
+            </summary>
+            <param name="reference"> The reference object. </param>
+            <returns>
+            The <see cref="T:System.Boolean"/> .
+            </returns>
+        </member>
+        <member name="M:FlyController.Builder.ConstrainParse.ConstrainableStructureReference.HasAgencyId">
+            <summary>
+                Gets a value indicating whether the there is an agency Id set
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean"/> .
+            </returns>
+        </member>
+        <member name="M:FlyController.Builder.ConstrainParse.ConstrainableStructureReference.HasMaintainableId">
+            <summary>
+                Gets a value indicating whether the there is a maintainable id set
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean"/> .
+            </returns>
+        </member>
+        <member name="M:FlyController.Builder.ConstrainParse.ConstrainableStructureReference.HasVersion">
+            <summary>
+                Gets a value indicating whether the there is a value for version set
+            </summary>
+            <returns>
+                The <see cref="T:System.Boolean"/> .
+            </returns>
+        </member>
+        <member name="M:FlyController.Builder.ConstrainParse.ConstrainableStructureReference.ToString">
+            <summary>
+            String representation
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:FlyController.Builder.ConstrainParse.ConstrainableStructureReference.ChildReference">
+            <summary>
+                Gets the child artifact that is being referenced, returns null if there is no child artifact
+            </summary>
+            <value> </value>
+        </member>
+        <member name="P:FlyController.Builder.ConstrainParse.ConstrainableStructureReference.FullId">
+            <summary>
+            Gets the full id of the identifiable reference.  This is a dot '.' separated id which consists of the parent identifiable ids and the target.
+            If the referenced structure is a Sub-Agency then this will include the parent Agency ids, and the id of the target agency.  If this reference
+            is referencing a maintainable then null will be returned.  If there is only one child identifiable, then the id of that identifable will be returned, with no '.' seperators.
+            </summary>
+            <value> </value>
+        </member>
+        <member name="P:FlyController.Builder.ConstrainParse.ConstrainableStructureReference.IdentifiableIds">
+            <summary>
+                Gets a string array of any child ids (obtained from getChildReference()), returns null if getChildReference() is null
+            </summary>
+            <value> </value>
+        </member>
+        <member name="P:FlyController.Builder.ConstrainParse.ConstrainableStructureReference.MaintainableReference">
+            <summary>
+                Gets the reference parameters as a maintainable reference
+            </summary>
+            <value> </value>
+        </member>
+        <member name="P:FlyController.Builder.ConstrainParse.ConstrainableStructureReference.MaintainableStructureEnumType">
+            <summary>
+                Gets the SDMX Structure that is being referenced at the top level (maintainable level) by this reference @object.
+                <p />
+                Any child references will further refine the structure type that is being referenced.
+            </summary>
+            <value> </value>
+        </member>
+        <member name="P:FlyController.Builder.ConstrainParse.ConstrainableStructureReference.MaintainableUrn">
+            <summary>
+                Gets the URN of the maintainable structure that is being referenced, returns null if there is no URN available
+            </summary>
+        </member>
+        <member name="P:FlyController.Builder.ConstrainParse.ConstrainableStructureReference.TargetReference">
+            <summary>
+                Gets the SDMX Structure that is being referenced by this reference @object.
+            </summary>
+            <value> </value>
+        </member>
+        <member name="P:FlyController.Builder.ConstrainParse.ConstrainableStructureReference.TargetUrn">
+            <summary>
+                Gets the URN of the target structure that is being referenced, returns null if there is no URN available
+            </summary>
+        </member>
+        <member name="P:FlyController.Builder.ConstrainParse.ConstrainableStructureReference.AgencyId">
+            <summary>
+                Gets the maintainable id attribute
+            </summary>
+            <value> </value>
+        </member>
+        <member name="P:FlyController.Builder.ConstrainParse.ConstrainableStructureReference.MaintainableId">
+            <summary>
+                Gets the maintainable id attribute
+            </summary>
+            <value> </value>
+        </member>
+        <member name="P:FlyController.Builder.ConstrainParse.ConstrainableStructureReference.Version">
+            <summary>
+                Gets the version attribute
+            </summary>
+            <value> </value>
+        </member>
+        <member name="P:FlyController.Builder.ConstrainParse.ConstrainableStructureReference.ConstraintObject">
+            <summary>
+                Gets Constrain Associated
+            </summary>
+            <value> </value>
+        </member>
+        <member name="T:FlyController.Builder.ConstrainParse.ConstrainQueryBuilderV2">
+            <summary>
+            Implementation of <see cref="T:Org.Sdmxsource.Sdmx.Structureparser.Builder.Query.QueryBuilderV2"/> intercept in query non-standard a contrain object 
+            </summary>
+        </member>
+        <member name="M:FlyController.Builder.ConstrainParse.ConstrainQueryBuilderV2.#ctor">
+            <summary>
+            Create an instance of <see cref="T:FlyController.Builder.ConstrainParse.ConstrainQueryBuilderV2"/>
+            </summary>
+        </member>
+        <member name="M:FlyController.Builder.ConstrainParse.ConstrainQueryBuilderV2.BuildDataflowQuery(Org.Sdmx.Resources.SdmxMl.Schemas.V20.registry.DataflowRefType)">
+            <summary>
+            override of BuildDataflowQuery, populate a ConstraintObject if is present
+            </summary>
+            <param name="dataflowRefType">the <see cref="T:Org.Sdmx.Resources.SdmxMl.Schemas.V20.registry.DataflowRefType"/></param>
+            <returns></returns>
+        </member>
+        <member name="T:FlyController.Builder.DataflowBuilder">
+            <summary>
+            DataflowBuilder Create a ImmutableInstance of Dataflow with DataStructure reference
+            </summary>
+        </member>
+        <member name="M:FlyController.Builder.DataflowBuilder.#ctor(System.String,System.Collections.Generic.List{FlyController.Model.SdmxObjectNameDescription},FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Create DataflowBuilder Istance 
+            </summary>
+            <param name="id"> Identificable Dataflow Code</param>
+            <param name="names">Dataflow Descriptions Names</param>
+            <param name="parsingObject">Parsing Object <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyController.Builder.DataflowBuilder.BuildDataflow(System.String,System.String)">
+            <summary>
+            Create a ImmutableInstance of Dataflow
+            </summary>
+            <param name="AgencyId">Agency Id</param>
+            <param name="Version">Artefact Version</param>
+            <returns>IDataflowObject</returns>
+        </member>
+        <member name="P:FlyController.Builder.DataflowBuilder.Code">
+            <summary>
+             Identificable Code
+            </summary>
+        </member>
+        <member name="P:FlyController.Builder.DataflowBuilder.Names">
+            <summary>
+             Descriptions Names
+            </summary>
+        </member>
+        <member name="P:FlyController.Builder.DataflowBuilder.DataStrunctureRef">
+            <summary>
+            DataStructure reference
+            </summary>
+        </member>
+        <member name="T:FlyController.Builder.DataStructureBuilder">
+            <summary>
+            DataStructureBuilder Create a ImmutableInstance of DataStructure with all concepts and codelist Association
+            </summary>
+        </member>
+        <member name="M:FlyController.Builder.DataStructureBuilder.#ctor(System.Collections.Generic.List{FlyController.Model.IConceptObjectImpl},FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Create DataStructureBuilder Istance 
+            </summary>
+            <param name="concepts"> list of all concepts</param>
+            <param name="parsingObject">Parsing Object <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyController.Builder.DataStructureBuilder.BuildDataStructure(System.Collections.Generic.List{Org.Sdmxsource.Sdmx.Api.Model.Mutable.Base.IComponentMutableObject},System.Collections.Generic.List{Org.Sdmxsource.Sdmx.Api.Model.Mutable.DataStructure.IGroupMutableObject},System.String,System.String)">
+            <summary>
+            Create a ImmutableInstance of DataStructure (Keyfamily in sdmx 2.0)
+            </summary>
+            <param name="components">list of IComponentMutableObject that compose dsd</param>
+            <param name="Groups">list of Groups (ever Null for OnTheFly version 1.0)</param>
+            <param name="AgencyId">Agency Id</param>
+            <param name="Version">Artefact Version</param>
+            <returns>DataStructureObjectImpl</returns>
+        </member>
+        <member name="P:FlyController.Builder.DataStructureBuilder.Code">
+            <summary>
+             Identificable Code
+            </summary>
+        </member>
+        <member name="P:FlyController.Builder.DataStructureBuilder.Names">
+            <summary>
+             Descriptions Names
+            </summary>
+        </member>
+        <member name="P:FlyController.Builder.DataStructureBuilder._Concepts">
+            <summary>
+            list of all concepts
+            </summary>
+        </member>
+        <member name="T:FlyController.CommonFunction">
+            <summary>
+            CommonFunction contains all static Function used by all object in all project
+            </summary>
+        </member>
+        <member name="M:FlyController.CommonFunction.FindSubNodo(System.Xml.XmlNode,System.String)">
+            <summary>
+            Find Xml Sub Nodo
+            </summary>
+            <param name="nodo">XmlNode where to search subNode</param>
+            <param name="Name">Name of SubNode</param>
+            <returns>XmlNode fouded or Null</returns>
+        </member>
+        <member name="M:FlyController.CommonFunction.FindRefIDNodo21(System.Xml.Linq.XElement)">
+            <summary>
+            For Sdmx 2.1 find a "id" (Attribute) of SubNode named "Ref"
+            </summary>
+            <param name="element">XmlNode where to search id</param>
+            <returns>id ref element</returns>
+        </member>
+        <member name="M:FlyController.CommonFunction.GetHeaderElement(System.Xml.XmlElement,System.String)">
+            <summary>
+            Find in Header Xml Structure an Element
+            </summary>
+            <param name="query">Xml Structure of Header</param>
+            <param name="ElementToFind">Element name to find</param>
+            <returns>the element value request or Null if it not exist</returns>
+        </member>
+        <member name="T:FlyController.Builder.ReferenceBuilder">
+            <summary>
+            ReferenceBuilder contains all Static function for StructureReference creation 
+            </summary>
+        </member>
+        <member name="M:FlyController.Builder.ReferenceBuilder.CreateDataflowReference(System.String,System.String,System.String)">
+            <summary>
+            Create StructureReference of SdmxStructureEnumType.Dataflow
+            </summary>
+            <param name="id">Dataflow Code</param>
+            <param name="Agency">Dataflow Agency Id</param>
+            <param name="Version">Dataflow Version</param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyController.Builder.ReferenceBuilder.CreateConceptReference(System.String,System.String)">
+            <summary>
+            Create StructureReference of SdmxStructureEnumType.Concept
+            </summary>
+            <param name="ConceptSchemaId">ConceptSchema Code</param>
+            <param name="id">Concept Code</param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyController.Builder.ReferenceBuilder.CreateCodelistReference(System.String)">
+            <summary>
+            Create StructureReference of SdmxStructureEnumType.Codelist
+            </summary>
+            <param name="id">Codelist Code</param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyController.Builder.ReferenceBuilder.CreateCategoryReference(System.String,System.String,System.String,System.String[])">
+            <summary>
+            Create StructureReference of SdmxStructureEnumType.Category
+            </summary>
+            <param name="CategorySchemeCode">CategoryScheme Code</param>
+            <param name="CategorySchemeAgency">CategoryScheme Agency</param>
+            <param name="CategorySchemeVersion">CategoryScheme Version</param>
+            <param name="CategoryCode">Category Code</param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyController.Builder.ReferenceBuilder.CreateDSDStructureReference(System.String)">
+            <summary>
+            Create StructureReference of SdmxStructureEnumType.Dsd
+            </summary>
+            <param name="DataflowId">Dataflow Code</param>
+            <returns></returns>
+        </member>
+        <member name="T:FlyController.FlyConfiguration">
+            <summary>
+            FlyConfiguration is a Application Configuration File
+            Contains all static property and costants property  of Application
+            Read a XML File Config and populate Configuration Property
+            </summary>
+        </member>
+        <member name="M:FlyController.FlyConfiguration.InitConfig(System.String)">
+            <summary>
+            Read a XML File Config and populate FlyConfiguration property
+            </summary>
+            <param name="_ExecutionPath">Path where is the XML File Config </param>
+        </member>
+        <member name="F:FlyController.FlyConfiguration.Time_Format_Id">
+            <summary>
+            Attribute TIME_FORMAT Code (Used to filter the query with this attribute)
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.OnTheFlyVersion">
+            <summary>
+            OnTheFly Version onlyget return 1.0 if CoonectionStringMr is empty also return version 2.0
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.ConnectionString">
+            <summary>
+            ConnectionString Datawarehouse
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.ConnectionStringCategory">
+            <summary>
+            ConnectionString from where to get the data relative of Category
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.ConnectionStringMR">
+            <summary>
+            ConnectionString to MetadataRepository from where to get the Metadata 
+            If this is Null the OnTheFly Version is setted on 1.0 also will be set OnTheFly Version on 2.0
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.UserName">
+            <summary>
+            "UserName" StoreProcedure Parameter
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.Domain">
+            <summary>
+            "Domain" StoreProcedure Parameter
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.ExecutionPath">
+            <summary>
+            Path where is the XML File Config
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.ConfigurationFile">
+            <summary>
+            [const] Configuration File Name (only Get)
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.AttributeFile">
+            <summary>
+            [const] Attribute File Name (only Get) (File where is a list of Application Attribute and relative codelist)
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.FrequencyCodelistFile">
+            <summary>
+            [const] FrequencyCodelist File Name (only Get) (File where is a codelist of Frequency dimension)
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.ErrorDescriptionFile">
+            <summary>
+            [const] Error Description File Name (only Get) (File where is a list of Errors Descriptions)
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.AgencyOrganisationId">
+            <summary>
+            OrganisationScheme Code
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.AgencyOrganisationDescription">
+            <summary>
+            OrganisationScheme Description Names
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.MainAgencyId">
+            <summary>
+            Main Agency Id (AgencyScheme Code) Names
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.MainAgencyDescription">
+            <summary>
+            AgencyScheme Description Names
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.Version">
+            <summary>
+            Sdmx Version
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.DsdFormat">
+            <summary>
+            Format Code DSD Actualy {0}_DSD, {0} will be replaced with Dataset Code
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.ConceptSchemeFormat">
+            <summary>
+            Format Code ConceptScheme Actualy {0}_CS, {0} will be replaced with Dataset Code
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.CategorySchemeFormat">
+            <summary>
+            Format Code CategoryScheme Actualy {0}_CategoryScheme, {0} will be replaced with MainAgencyId
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.CodelistFormat">
+            <summary>
+            Format Code ConceptScheme Actualy CL_{0}, {0} will be replaced with Concept Code
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.CategorisationFormat">
+            <summary>
+            Format Code Categorisation Actualy {0}_Categorisation, {0} will be replaced with dataflow
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.CodelistWhitoutConstrain">
+            <summary>
+            If arrive Query Codelist Whitout Constrain (Dataflow reference) 
+            true: Merge codelist in All Dataflow (low performance)
+            false: Generate Exception
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.ConceptObservationAttribute">
+            <summary>
+            FLAGDimension (OBS_STATUS)
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.StoreProcedureSettings">
+            <summary>
+            The Store Procedure Settings <see cref="T:FlyController.Model.DbSetting.DatabaseStoreProcedureSettings"/>
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.HeaderSettings">
+            <summary>
+            HeaderBuilder Object with Header already created 
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.DatasetTitle">
+            <summary>
+            Dataset Title used in data message response
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.CategoryName">
+            <summary>
+            Name of Category in DB, if empty get the first Category founded
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.ServiceUri">
+            <summary>
+            Service Uri, used for build StructureUrl <see cref="T:FlyController.Model.RetreivalStructureUrl"/>
+            </summary>
+        </member>
+        <member name="P:FlyController.FlyConfiguration.RIWebServices">
+            <summary>
+            Uri to Connect to WebServices RI
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.AttributeConcept">
+            <summary>
+            AttributeConcept is Implementation of ConceptObjectImpl that representing an  Attribute
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.ConceptObjectImpl">
+            <summary>
+            Abstract Extension of ConceptMutableCore for separate Dimension and Attribute
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.IConceptObjectImpl">
+            <summary>
+            Abstract Extension of ConceptMutableCore for separate Dimension and Attribute
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.IConceptObjectImpl.ConceptObjectCode">
+            <summary>
+             Identificable Code
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.IConceptObjectImpl.ConceptObjectNames">
+            <summary>
+             Descriptions Names
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.IConceptObjectImpl.ConceptType">
+            <summary>
+            Concept Type (Dimension or Attribute)
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.IConceptObjectImpl.CodelistCode">
+            <summary>
+            Used only for DotStatExtra implementation specify a code of codelist whitout using configuration settings
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.IConceptObjectImpl.ConceptDSDInfo">
+            <summary>
+            Support Information on Concept in DSD rappresentation
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.ConceptObjectImpl.#ctor(System.String,System.Collections.Generic.List{FlyController.Model.SdmxObjectNameDescription},FlyController.Model.ConceptTypeEnum)">
+            <summary>
+            Create a instance 
+            </summary>
+            <param name="code">Concept Code</param>
+            <param name="names">Concept Descriptions Names</param>
+            <param name="conceptType">Concept Type</param>
+        </member>
+        <member name="P:FlyController.Model.ConceptObjectImpl.ConceptObjectCode">
+            <summary>
+             Identificable Code
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ConceptObjectImpl.ConceptObjectNames">
+            <summary>
+             Descriptions Names
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ConceptObjectImpl.ConceptType">
+            <summary>
+            Concept Type (Dimension or Attribute)
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ConceptObjectImpl.CodelistCode">
+            <summary>
+            Used only for DotStatExtra implementation specify a code of codelist whitout using configuration settings
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ConceptObjectImpl.ConceptDSDInfo">
+            <summary>
+            Support Information on Concept in DSD rappresentation
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.IAttributeConcept">
+            <summary>
+            AttributeConcept is Implementation of ConceptObjectImpl that representing an  Attribute
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.IAttributeConcept.GetDimensionsReference(System.Collections.Generic.List{FlyController.Model.IConceptObjectImpl})">
+            <summary>
+            Get Reference in case of DimensionGroup AttachmentLevel
+            </summary>
+            <param name="_Concepts">All Concept to reference</param>
+            <returns>List of Code Dimension to attach in DimensionReferences</returns>
+        </member>
+        <member name="P:FlyController.Model.IAttributeConcept.AssignmentStatusType">
+            <summary>
+            Attribute Assignment Status
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.IAttributeConcept.AttributeAttachmentLevelType">
+            <summary>
+            Attribute AttachmentLevel
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.IAttributeConcept.GroupName">
+            <summary>
+            When AttributeAttachmentLevelType is Group, determinate a GroupName
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.IAttributeConcept.IsFlagAttribute">
+            <summary>
+            Flag that representing if this is a FLAGAttribute (OBS_STATUS)
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.IAttributeConcept.IsValueAttribute">
+            <summary>
+            Flag that representing if this is a ValueAttribute (OBS_VALUE)
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.AttributeConcept.#ctor(System.String,System.Collections.Generic.List{FlyController.Model.SdmxObjectNameDescription})">
+            <summary>
+            create a instace of AttributeConcept
+            </summary>
+            <param name="code">Attribute Code</param>
+            <param name="names">Attribute Descriptions Names</param>
+        </member>
+        <member name="M:FlyController.Model.AttributeConcept.GetDimensionsReference(System.Collections.Generic.List{FlyController.Model.IConceptObjectImpl})">
+            <summary>
+            Get Reference in case of DimensionGroup AttachmentLevel
+            </summary>
+            <param name="_Concepts">All Concept to reference</param>
+            <returns>List of Code Dimension to attach in DimensionReferences</returns>
+        </member>
+        <member name="P:FlyController.Model.AttributeConcept.AttributeAttachmentLevelType">
+            <summary>
+            Attribute AttachmentLevel
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.AttributeConcept.AssignmentStatusType">
+            <summary>
+            Attribute Assignment Status
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.AttributeConcept.IsFlagAttribute">
+            <summary>
+            Flag that representing if this is a FLAGAttribute (OBS_STATUS)
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.AttributeConcept.IsValueAttribute">
+            <summary>
+            Flag that representing if this is a ValueAttribute (OBS_VALUE)
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.AttributeConcept.GroupName">
+            <summary>
+            When AttributeAttachmentLevelType is Group, determinate a GroupName
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.ConceptDSDInfoObject">
+            <summary>
+            Support Information on Concept in DSD rappresentation
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ConceptDSDInfoObject.CodelistId">
+            <summary>
+            Codelist Code
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ConceptDSDInfoObject.CodelistAgency">
+            <summary>
+            Codelist Agency
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ConceptDSDInfoObject.CodelistVersion">
+            <summary>
+            Codelist Version
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.DataGroupObject">
+            <summary>
+            Object representing Group parsed in DSD RetrievalManager
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.DataGroupObject.#ctor(System.String)">
+            <summary>
+            Initialize a new instance of DataGroupObject
+            </summary>
+            <param name="groupId">Group Id</param>
+        </member>
+        <member name="P:FlyController.Model.DataGroupObject.GroupId">
+            <summary>
+            Group Id
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.DataGroupObject.DimensionReferences">
+            <summary>
+            All Dimension Associated
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.DataGroupObject.AttributeReferences">
+            <summary>
+            All Attribute Associated
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.GroupReferenceObject">
+            <summary>
+            Object representing a list of Concept (Dimension and Attribute) associated in Group
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.GroupReferenceObject.ConceptCode">
+            <summary>
+            Concept Code
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.GroupReferenceObject.ConceptValue">
+            <summary>
+            Value of Concept in group
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.DataStructureObjectImpl">
+            <summary>
+            Class implementation DataStructureMutableCore.
+            Extended with the addition of the list of IConceptObjectImpl
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.DataStructureObjectImpl.Immutated">
+            <summary>
+            Get a ImmutableIstance of object saved in Build Method
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.DataStructureObjectImpl._Concepts">
+            <summary>
+            List of <see cref="T:FlyController.Model.IConceptObjectImpl"/>
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.DbSetting.DBOperationEnum">
+            <summary>
+            All Operations Type ... name will then be converted to run from store procedure
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.DbSetting.DBOperationEnum.GetDataflows">
+            <summary>
+            Get all GetDataflows (Version 2.0)
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.DbSetting.DBOperationEnum.GetDatasets">
+            <summary>
+            Get all GetDatasets
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.DbSetting.DBOperationEnum.GetDimensions">
+            <summary>
+            Get all Dimensions
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.DbSetting.DBOperationEnum.GetAttributes">
+            <summary>
+            Get all Attributes
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.DbSetting.DBOperationEnum.GetDimensionCodelistConstrain">
+            <summary>
+            Get all Dimension Codelist Constrain
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.DbSetting.DBOperationEnum.GetAttributeCodelistNOConstrain">
+            <summary>
+            Get all Attribute Codelist Not Constrained
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.DbSetting.DBOperationEnum.GetAttributeCodelistConstrain">
+            <summary>
+            Get all Attribute Codelist Constrain
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.DbSetting.DBOperationEnum.GetDimensionCodelistNOConstrain">
+            <summary>
+            Get all Dimension Codelist Not Constrained
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.DbSetting.DBOperationEnum.GetCategory">
+            <summary>
+            Get Category (TreeTheme)
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.DbSetting.DBOperationEnum.GetFlags">
+            <summary>
+            Get Flag codelist
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.DbSetting.DBOperationEnum.GetGroups">
+            <summary>
+            Get Group Information
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.DbSetting.DBOperationEnum.GetData">
+            <summary>
+            Get Data values for DataMessage
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.DbSetting.DBOperationEnum.GetCategorySchemes">
+            <summary>
+            Get All CategoryScheme
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.DbSetting.DBOperationEnum.GetCategorisationDataflow">
+            <summary>
+            Get All Categorisation, Dataflow INFO
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.DbSetting.DBOperationEnum.MSGetCodelist">
+            <summary>
+            Get Codelist no constrain in MS Database
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.DbSetting.DBOperationEnum.MSGetConceptScheme">
+            <summary>
+            Get ConceptSchemes in MS Database
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.DbSetting.DBOperationEnum.MSGetDSD">
+            <summary>
+            Get DSDs in MS Database
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.DbSetting.DBOperationEnum.MSGetDataflows">
+            <summary>
+            Get Dataflows Code in MS Database
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.DbSetting.DBOperationEnum.MSGetCategoryAndCategorisation">
+            <summary>
+            Get Category And Categorisation in MS Database
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.Delegate.GetDBResponseDelegate">
+            <summary>
+            Delegate for callback of Database response
+            </summary>
+            <param name="rea">SqlDataReader response</param>
+            <param name="builder"> Delegate for callback of Write response</param>
+            <param name="writer"> Contains the object of transport used for transmitting data in streaming</param>
+        </member>
+        <member name="T:FlyController.Model.Delegate.WriteResponseDelegate">
+            <summary>
+            Delegate for callback of Write response
+            </summary>
+            <param name="dt">Headers response</param>
+            <param name="writer"> Contains the object of transport used for transmitting data in streaming</param>
+        </member>
+        <member name="T:FlyController.Model.AssignmentStatusTypeEnum">
+            <summary>
+            Attribute Assignment Status Enumerator (Conditional, Mandatory)
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.AssignmentStatusTypeEnum.Conditional">
+            <summary>
+            Conditional  AssignmentStatusTypeEnum
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.AssignmentStatusTypeEnum.Mandatory">
+            <summary>
+            Mandatory  AssignmentStatusTypeEnum
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.ConceptTypeEnum">
+            <summary>
+            Concept Type Enum (Dimension or Attribute)
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.ConceptTypeEnum.Dimension">
+            <summary>
+            Dimension Concept
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.ConceptTypeEnum.Attribute">
+            <summary>
+            Attribute Concept
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.ConceptTypeEnum.Special">
+            <summary>
+            Special Concept for retreival Contrained codelist
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.DimensionTypeEnum">
+            <summary>
+            Dimension Type Enum (Dimension, Time, Frequency)
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.DimensionTypeEnum.Dimension">
+            <summary>
+            Normal Dimension
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.DimensionTypeEnum.Time">
+            <summary>
+            TimeDimension
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.DimensionTypeEnum.Frequency">
+            <summary>
+            FrequencyDimension
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.MessageTypeEnum">
+            <summary>
+            All Type of request both SDMX 2.0 and Sdmx 2.1
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.MessageTypeEnum.None">
+            <summary>
+            Unrecognized request message
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.MessageTypeEnum.Compact_20">
+            <summary>
+            Get Compact data (request query message Sdmx 2.0 version)
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.MessageTypeEnum.Generic_20">
+            <summary>
+            Get Generic data (request query message Sdmx 2.0 version)
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.MessageTypeEnum.CrossSectional_20">
+            <summary>
+            Get CrossSectional data (request query message Sdmx 2.0 version)
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.MessageTypeEnum.GenericData_21">
+            <summary>
+            Get Generic data (request query message Sdmx 2.1 version)
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.MessageTypeEnum.GenericTimeSeries_21">
+            <summary>
+            Get Generic TimeSeries data (request query message Sdmx 2.1 version)
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.MessageTypeEnum.StructureSpecific_21">
+            <summary>
+            Get StructureSpecific data (request query message Sdmx 2.1 version)
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.MessageTypeEnum.StructureSpecificTimeSeries_21">
+            <summary>
+            Get StructureSpecific TimeSeries data (request query message Sdmx 2.1 version)
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.MessageTypeEnum.Rdf">
+            <summary>
+            Get Data in RDF format
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.MessageTypeEnum.Dspl">
+            <summary>
+            Get Data in Dspl format
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.MessageTypeEnum.Json">
+            <summary>
+            Get Data in Json format
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.SpecialTypeEnum">
+            <summary>
+            Special Type list
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.SpecialTypeEnum.CL_TIME_PERIOD">
+            <summary>
+            Request CL_TIME_PERIOD return a first and last Date Observed
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.SpecialTypeEnum.CL_COUNT">
+            <summary>
+            Request CL_COUNT return a count of rows in Observation request
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.SpecialTypeEnum.CL_CONTRAINED">
+            <summary>
+            Request CL_CONTRAINED return a codelist request constrained according to another concept
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.FlyMediaEnum">
+            <summary>
+            Supported response Media type
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.FlyMediaEnum.Sdmx">
+            <summary>
+            Sdmx v2.0 and v2.1 XML
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.FlyMediaEnum.Rdf">
+            <summary>
+            Rdf NoVersion XML
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.FlyMediaEnum.Dspl">
+            <summary>
+            Dspl NoVersion XML
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.FlyMediaEnum.Json">
+            <summary>
+            Json only data
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.IDataTableMessageObject">
+            <summary>
+            IDataTableMessageObject is interface Model contains a mapping Database Data for insert in Sdmx response
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.IDataTableMessageObject.GetNext">
+            <summary>
+            Get the Next response values
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:FlyController.Model.IDataTableMessageObject.DBDataReader">
+            <summary>
+            SqlDataReader conteins database response not readed (sequencial reading) 
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.IDataTableMessageObject.FrequencyCol">
+            <summary>
+            Check is present Frequency Dimension and if is Fake or real
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.IDataTableMessageObject.isFakeTimeFormat">
+            <summary>
+            Flag that representing Time format Name manually created
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.IDataTableMessageObject.RowsCounter">
+            <summary>
+            Counter of Record return from Database
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.IDataTableMessageObject.TimeFormatCol">
+            <summary>
+             Check the name of TimeDimension with a TimeDimendion in database field
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.IDataTableMessageObject.Colums">
+            <summary>
+            Dictionary contains all Concepts
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.IFlyWriterBody">
+            <summary>
+            interface that allows you to return the result of the request in streaming mode
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.IFlyWriterBody.WriterBody(FlyController.Model.Streaming.IFlyWriter)">
+            <summary>
+            Write a data body content into FlyWriter
+            </summary>
+            <param name="writer">object of transport used for transmitting data in streaming <see cref="T:FlyController.Model.Streaming.IFlyWriter"/></param>
+        </member>
+        <member name="T:FlyController.Model.IDimensionConcept">
+            <summary>
+            DimensionConcept is Interface of ConceptObjectImpl that representing a Dimension
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.IDimensionConcept.GetColumTimeName">
+            <summary>
+            Get a ColumName of Time dimension 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:FlyController.Model.IDimensionConcept.DimensionType">
+            <summary>
+            Dimension Type 
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.IDimensionConcept.IsFakeFrequency">
+            <summary>
+            Flag that representing if this is a Frequency not real
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.IDimensionConcept.RealNameFreq">
+            <summary>
+            Database Frequency Name (in case different of FREQ)
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.IDimensionConcept.RealNameTime">
+            <summary>
+            Database Time Name (in case different of TIME_PERIOD)
+            </summary>
+        </member>
+        <member name="T:FlyEngine.Model.IReferencesObject">
+            <summary>
+            Interface of object to use for references
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.IReferencesObject.CategoryScheme">
+            <summary>
+            Saved CategoryScheme
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.IReferencesObject.Categorisation">
+            <summary>
+            Saved Categorisation
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.IReferencesObject.Codelists">
+            <summary>
+            Founded Codelist
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.IReferencesObject.ConceptSchemes">
+            <summary>
+            Founded ConceptSchemes
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.IReferencesObject.Concepts">
+            <summary>
+            Founded Concepts Key=ConceptScheme Code / Value = Concepts
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.IReferencesObject.FoundedDataflows">
+            <summary>
+            List of DataFlows founded
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.IReferencesObject.DSDs">
+            <summary>
+            Founded DSD
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.ISpecialConcept">
+            <summary>
+            Special Concept for request a Codelist Constrained of type Special 
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.ISpecialConcept.SetNames(System.Collections.Generic.List{FlyController.Model.SdmxObjectNameDescription})">
+            <summary>
+            Add Names at Codelist Constrained
+            </summary>
+            <param name="names">the names <see cref="T:FlyController.Model.SdmxObjectNameDescription"/></param>
+        </member>
+        <member name="P:FlyController.Model.ISpecialConcept.ContrainConceptREF">
+            <summary>
+            List of Member for Codelist Constrained (Other concept value in constrain, call a Special Concept CL_CONSTRAIN)
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ISpecialConcept.SpecialType">
+            <summary>
+            Special Type Codelist <see cref="T:FlyController.Model.SpecialTypeEnum"/>
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ISpecialConcept.TimeDimensionRef">
+            <summary>
+            Save a TimeDimension Ref for return a Constrained Codelist whitout recall a Concepts list
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.ISdmxParsingObject">
+            <summary>
+            SdmxParsingObject is a Object Model used for parse a query request
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.ISdmxParsingObject.CloneForReferences">
+            <summary>
+            Create a Clone of <see cref="T:FlyController.Model.ISdmxParsingObject"/> but with isReferenceOf to True for declare that the structure is a reference
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FlyController.Model.ISdmxParsingObject.PreliminarCheck">
+            <summary>
+            Check if AgencyId of request is equals to AgencyId configured in File Config
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.ISdmxParsingObject.isValidAgency">
+            <summary>
+            Check if agency have a consistent Value
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FlyController.Model.ISdmxParsingObject.isValidVersion">
+            <summary>
+            Check if version have a consistent Value
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:FlyController.Model.ISdmxParsingObject._version">
+            <summary>
+            Structure Version
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ISdmxParsingObject.AgencyId">
+            <summary>
+            Structure Agency Code
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ISdmxParsingObject.ConstrainConcept">
+            <summary>
+            Concept Code for Codelist Constrained
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ISdmxParsingObject.ConstrainDataFlow">
+            <summary>
+            Dataflow Code for Codelist Constrained
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ISdmxParsingObject.ConstrainDataFlowAgency">
+            <summary>
+            Dataflow Code for Codelist Constrained
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ISdmxParsingObject.ConstrainDataFlowVersion">
+            <summary>
+            Dataflow Code for Codelist Constrained
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ISdmxParsingObject.ContrainConceptREF">
+            <summary>
+            List of Member for Codelist Constrained (Other concept value in constrain, call a Special Concept CL_CONSTRAIN)
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ISdmxParsingObject.isReferenceOf">
+            <summary>
+            Determinate if this class is using for build a reference
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ISdmxParsingObject.MaintainableId">
+            <summary>
+            Structure Maintainable Code (properties that change the type of value according to the type required)
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ISdmxParsingObject.QueryDetail">
+            <summary>
+            Not load a full Object (For Sdmx 2.1 or REST)
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ISdmxParsingObject.References">
+            <summary>
+            Determinate what structure references return
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ISdmxParsingObject.ResolveReferenceSdmx20">
+            <summary>
+            Determinate what is a ResolveReference property of a Query in Sdmx 2.0
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ISdmxParsingObject.ReturnStub">
+            <summary>
+            Determines whether the result is in STUB format or not: if detail is AllStubs or if detail is ReferencedStubs and is writing a reference
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ISdmxParsingObject.SdmxStructureType">
+            <summary>
+            Sdmx Version
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ISdmxParsingObject.SpecificReference">
+            <summary>
+            List of Structure required for references
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ISdmxParsingObject.TimeStamp">
+            <summary>
+            LastUpdate parameter request only observation from this date onwards
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.ISdmxParsingObject.OtherRegistry">
+            <summary>
+            If the Query contains other Registry this field contains a type of other regitry requested
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.RetreivalStructureUrl">
+            <summary>
+            Class that calculates the value of StructureUrl depending on the type of artifact
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.RetreivalStructureUrl.Get(FlyController.Model.ObjectBuilder,System.String,System.String,System.String)">
+            <summary>
+            calculates the value of StructureUrl (<see cref="T:FlyController.Model.RetreivalStructureUrl"/>)
+            </summary>
+            <param name="obj">Type of artifact</param>
+            <param name="MaintenableId">Artefact Code</param>
+            <param name="Agencyid">Artefact AgencyId</param>
+            <param name="Version">Artefact Version</param>
+            <returns>Parsed StructureUrl Uri</returns>
+        </member>
+        <member name="T:FlyController.Model.RIWebServiceConfiguration">
+            <summary>
+            Part of the configuration on the redirect the query to RI web services 
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.RIWebServiceConfiguration.Configure(System.Xml.XmlNode)">
+            <summary>
+            Create the object from the node of configuration file
+            </summary>
+            <param name="RIWebServiceNode">node of configuration file</param>
+        </member>
+        <member name="P:FlyController.Model.RIWebServiceConfiguration.Soap20Uri">
+            <summary>
+            SOAP WebService Uri for Sdmx v2.0
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.RIWebServiceConfiguration.Soap21Uri">
+            <summary>
+            SOAP WebService Uri for Sdmx v2.1
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.RIWebServiceConfiguration.RestUri">
+            <summary>
+            SOAP WebService Uri for Sdmx Rest
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.SpecialConcept">
+            <summary>
+            Special Concept for request a Codelist Constrained of type Special 
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.SpecialConcept.#ctor(System.String,FlyController.Model.SpecialTypeEnum)">
+            <summary>
+            create a instace of DimensionConcept
+            </summary>
+            <param name="code">Dimension Code</param>
+            <param name="_specialType">Special Type Codelist <see cref="T:FlyController.Model.SpecialTypeEnum"/></param>
+        </member>
+        <member name="M:FlyController.Model.SpecialConcept.SetNames(System.Collections.Generic.List{FlyController.Model.SdmxObjectNameDescription})">
+            <summary>
+            Add Names at Codelist Constrained
+            </summary>
+            <param name="names">the names <see cref="T:FlyController.Model.SdmxObjectNameDescription"/></param>
+        </member>
+        <member name="P:FlyController.Model.SpecialConcept.SpecialType">
+            <summary>
+            Special Type Codelist <see cref="T:FlyController.Model.SpecialTypeEnum"/>
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.SpecialConcept.ContrainConceptREF">
+            <summary>
+            List of Member for Codelist Constrained (Other concept value in constrain, call a Special Concept CL_CONSTRAIN)
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.SpecialConcept.TimeDimensionRef">
+            <summary>
+            Save a TimeDimension Ref for return a Constrained Codelist whitout recall a Concepts list
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.DataTableMessageObject">
+            <summary>
+            DataTableMessageObject is object Model contains a mapping Database Data for insert in Sdmx response
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.DataTableMessageObject.#ctor">
+            <summary>
+            Initialize instance of DataTableMessageObject
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.DataTableMessageObject.GetNext">
+            <summary>
+            Get the Next response values
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:FlyController.Model.DataTableMessageObject.Colums">
+            <summary>
+            Dictionary contains all Concepts
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.DataTableMessageObject.DBDataReader">
+            <summary>
+            SqlDataReader conteins database response not readed (sequencial reading) 
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.DataTableMessageObject.isFakeTimeFormat">
+            <summary>
+            Flag that representing Time format Name manually created
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.DataTableMessageObject.RowsCounter">
+            <summary>
+            Counter of Record return from Database
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.DataTableMessageObject.FrequencyCol">
+            <summary>
+            Check is present Frequency Dimension and if is Fake or real
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.DataTableMessageObject.TimeFormatCol">
+            <summary>
+             Check the name of TimeDimension with a TimeDimendion in database field
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.DataMessageObject">
+            <summary>
+            Model Object that representing association of concept/value
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.DataMessageObject.ToString">
+            <summary>
+            String representation
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:FlyController.Model.DataMessageObject.ColId">
+            <summary>
+            Identificable
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.DataMessageObject.ColImpl">
+            <summary>
+            Concept
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.DataMessageObject.Val">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.DbSetting.DatabaseStoreProcedureSettings">
+            <summary>
+            Model Class included all names of Store Procedure to call
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.DbSetting.DatabaseStoreProcedureSettings.GetDbStoreSetting(System.Xml.XmlNode)">
+            <summary>
+            Get Store Procedure Names from File Config
+            </summary>
+            <param name="settingparent">Node whit Store Procedure name information</param>
+            <returns>a list of DatabaseStoreProcedureSettings <see cref="T:FlyController.Model.DbSetting.DatabaseStoreProcedureSettings"/></returns>
+        </member>
+        <member name="P:FlyController.Model.DbSetting.DatabaseStoreProcedureSettings.Operation">
+            <summary>
+            Operations Type ... name will then be converted to run from store procedure
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.DbSetting.DatabaseStoreProcedureSettings.StoreProcedureName">
+            <summary>
+            Store Procedure Name
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.MetadataReferences">
+            <summary>
+            Class that retreival a References of metadata
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.MetadataReferences.GetReferences(FlyController.Model.MetadataReferences.ReferenceTreeEnum,Org.Sdmxsource.Sdmx.Api.Constants.StructureReferenceDetailEnumType,System.Collections.Generic.List{Org.Sdmxsource.Sdmx.Api.Constants.SdmxStructureType})">
+            <summary>
+            list of Metadata type referenced
+            a tree of references
+              *         Categorisation
+              * CategoryScheme       Dataflow
+              *                        Dsd
+              *                Codelist    Concept
+            </summary>
+            <param name="startMetaType">Metadata type to found reference</param>
+            <param name="refType">StructureReferenceDetailEnumType</param>
+            <param name="specificRef">List of Structure required for references</param>
+            <returns>list of Metadata type referenced</returns>
+        </member>
+        <member name="M:FlyController.Model.MetadataReferences.ResolveReferences(FlyController.Model.MetadataReferences.ReferenceTreeEnum)">
+            <summary>
+            Get a Structure reference in ResolveReference Query request
+            </summary>
+            <param name="startMetaType">requested Metadata type</param>
+            <returns></returns>
+        </member>
+        <member name="T:FlyController.Model.MetadataReferences.ReferenceTreeEnum">
+            <summary>
+            list of Metadata type referenced
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.MetadataReferences.ReferenceTreeEnum.Categorisation">
+            <summary>
+            Categorisation Reference
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.MetadataReferences.ReferenceTreeEnum.CategoryScheme">
+            <summary>
+            CategoryScheme Reference
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.MetadataReferences.ReferenceTreeEnum.Dataflow">
+            <summary>
+            Dataflow Reference
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.MetadataReferences.ReferenceTreeEnum.Dsd">
+            <summary>
+            DataStructure or KeyFamily Reference
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.MetadataReferences.ReferenceTreeEnum.Concept">
+            <summary>
+            ConceptScheme  Reference
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.MetadataReferences.ReferenceTreeEnum.Codelist">
+            <summary>
+            Codelist Reference
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.RedirectForCodelistConstrain">
+            <summary>
+            Determinate if REST query must be redirect in non-standard function for redirect a codelist constrained
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.RedirectForCodelistConstrain.CheckExistReference(System.String@)">
+            <summary>
+            Checks whether the query is a request for codelist constrained
+            </summary>
+            <param name="ContrainOption"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyController.Model.RedirectForCodelistConstrain.ParseContrainReferences(System.String,System.String@,System.String@,System.String@,System.String@)">
+            <summary>
+            Parse a parameter "references" of query for retreival codelist constrained
+            </summary>
+            <param name="ConstrainData">a references parameter value</param>
+            <param name="ConstrainDataFlowCode">ref DataFlowID</param>
+            <param name="ConstrainDataFlowAgency">ref DataFlowAgency</param>
+            <param name="ConstrainDataFlowVersion">ref DataFlowVersion</param>
+            <param name="ConstrainConceptCode">ref conceptID</param>
+            <returns>a boolean indicating whether the parsing is unsuccessful</returns>
+        </member>
+        <member name="P:FlyController.Model.RedirectForCodelistConstrain._structure">
+            <summary>
+            Structure request type
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.RedirectForCodelistConstrain._agencyId">
+            <summary>
+            Structure Agency Code
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.RedirectForCodelistConstrain._resourceId">
+            <summary>
+            Identificable of maintenable request, if null is ALL
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.RedirectForCodelistConstrain._version">
+            <summary>
+            Structure Version
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.RedirectForCodelistConstrain._queryParameters">
+            <summary>
+            Other query parameter
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.SdmxParsingObject">
+            <summary>
+            SdmxParsingObject is a Object Model used for parse a query request
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.SdmxParsingObject.#ctor(Org.Sdmxsource.Sdmx.Api.Constants.SdmxStructureEnumType)">
+            <summary>
+            Create a SdmxParsingObject instance
+            </summary>
+            <param name="_sdmxStructureType">Sdmx Version</param>
+        </member>
+        <member name="M:FlyController.Model.SdmxParsingObject.Parse(Org.Sdmxsource.Sdmx.Structureparser.Workspace.IQueryWorkspace)">
+            <summary>
+            build SdmxParsingObject from IQueryWorkspace
+            </summary>
+            <param name="workspace">return object of CommonApi.parse request</param>
+            <returns>SdmxParsingObject</returns>
+        </member>
+        <member name="M:FlyController.Model.SdmxParsingObject.Parse(Org.Sdmxsource.Sdmx.Api.Model.Query.IRestStructureQuery,System.String)">
+            <summary>
+            build SdmxParsingObject from IRestStructureQuery
+            </summary>
+            <param name="query">return object of RESTStructureQueryCore request</param>
+            <param name="ConstrainParameter">Parameters for Codelist Contrained</param>
+            <returns>SdmxParsingObject</returns>
+        </member>
+        <member name="M:FlyController.Model.SdmxParsingObject.PreliminarCheck">
+            <summary>
+            Check if AgencyId of request is equals to AgencyId configured in File Config
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.SdmxParsingObject.CloneForReferences">
+            <summary>
+            Create a Clone of <see cref="T:FlyController.Model.ISdmxParsingObject"/> but with isReferenceOf to True for declare that the structure is a reference
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:FlyController.Model.SdmxParsingObject.Clone">
+            <summary>
+            a clone of <see cref="T:FlyController.Model.SdmxParsingObject"/>
+            </summary>
+            <returns>the <see cref="T:FlyController.Model.SdmxParsingObject"/> cloned</returns>
+        </member>
+        <member name="M:FlyController.Model.SdmxParsingObject.isValidAgency">
+            <summary>
+            Check if agency have a consistent Value
+            </summary>
+            <returns>return false if empty or "*", "MA"</returns>
+        </member>
+        <member name="M:FlyController.Model.SdmxParsingObject.isValidVersion">
+            <summary>
+            Check if version have a consistent Value
+            </summary>
+            <returns>return false if empty or "*", "ALL", "LATEST"</returns>
+        </member>
+        <member name="P:FlyController.Model.SdmxParsingObject.SdmxStructureType">
+            <summary>
+            Sdmx Version
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.SdmxParsingObject.MaintainableId">
+            <summary>
+            Structure Maintainable Code (properties that change the type of value according to the type required)
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.SdmxParsingObject.AgencyId">
+            <summary>
+            Structure Agency Code
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.SdmxParsingObject._version">
+            <summary>
+            Structure Version
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.SdmxParsingObject.QueryDetail">
+            <summary>
+            Not load a full Object (For Sdmx 2.1 or REST)
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.SdmxParsingObject.References">
+            <summary>
+            Determinate what structure references return
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.SdmxParsingObject.ResolveReferenceSdmx20">
+            <summary>
+            Determinate what is a ResolveReference property of a Query in Sdmx 2.0
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.SdmxParsingObject.isReferenceOf">
+            <summary>
+            Determinate if this class is using for build a reference
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.SdmxParsingObject.SpecificReference">
+            <summary>
+            List of Structure required for references
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.SdmxParsingObject.OtherRegistry">
+            <summary>
+            If the Query contains other Registry this field contains a type of other regitry requested
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.SdmxParsingObject.ConstrainDataFlow">
+            <summary>
+            Dataflow Code for Codelist Constrained
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.SdmxParsingObject.ConstrainDataFlowAgency">
+            <summary>
+            Dataflow Agency for Codelist Constrained
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.SdmxParsingObject.ConstrainDataFlowVersion">
+            <summary>
+            Dataflow Version for Codelist Constrained
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.SdmxParsingObject.ConstrainConcept">
+            <summary>
+            Concept Code for Codelist Constrained
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.SdmxParsingObject.ContrainConceptREF">
+            <summary>
+            List of Member for Codelist Constrained (Other concept value in constrain, call a Special Concept CL_CONSTRAIN)
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.SdmxParsingObject.TimeStamp">
+            <summary>
+            LastUpdate parameter request only observation from this date onwards
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.SdmxParsingObject.ReturnStub">
+            <summary>
+            Determines whether the result is in STUB format or not: if detail is AllStubs or if detail is ReferencedStubs and is writing a reference
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.Streaming.FlyDataWriterBody">
+            <summary>
+            class that  return the Data result of the request in streaming mode
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.FlyWriterBody">
+            <summary>
+            class that allows you to return the result of the request in streaming mode
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.FlyWriterBody.WriterBody(FlyController.Model.Streaming.IFlyWriter)">
+            <summary>
+            Write a data body content into FlyWriter
+            </summary>
+            <param name="writer">object of transport used for transmitting data in streaming <see cref="T:FlyController.Model.Streaming.IFlyWriter"/></param>
+        </member>
+        <member name="M:FlyController.Model.Streaming.FlyDataWriterBody.WriterBody(FlyController.Model.Streaming.IFlyWriter)">
+            <summary>
+            Write a data body content into FlyWriter
+            </summary>
+            <param name="writer">object of transport used for transmitting data in streaming <see cref="T:FlyController.Model.Streaming.IFlyWriter"/></param>
+        </member>
+        <member name="P:FlyController.Model.Streaming.FlyDataWriterBody.Rea">
+            <summary>
+            Database response
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.Streaming.FlyDataWriterBody.Conn">
+            <summary>
+            Sql Connection
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.Streaming.FlyDataWriterBody.Parser">
+            <summary>
+            Callback for parsing Database response
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.Streaming.FlyDataWriterBody.Builder">
+            <summary>
+            Callback for Write response
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.Streaming.FlyMetadataWriterBody">
+            <summary>
+             class that  return the Metatdata result of the request in streaming mode
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.Streaming.FlyMetadataWriterBody.WriterBody(FlyController.Model.Streaming.IFlyWriter)">
+            <summary>
+            Write a metadata body content into FlyWriter
+            </summary>
+            <param name="writer">object of transport used for transmitting data in streaming <see cref="T:FlyController.Model.Streaming.IFlyWriter"/></param>
+        </member>
+        <member name="P:FlyController.Model.Streaming.FlyMetadataWriterBody.StructureFormat">
+            <summary>
+            Sdmx Structure Format
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.Streaming.FlyMetadataWriterBody.SdmxObject">
+            <summary>
+            Sdmx Object contains all metadata info to write into response
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.FlyWriter">
+            <summary>
+            Contains the object of transport used for transmitting data in streaming
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.Streaming.IFlyWriter">
+            <summary>
+            Contains the object of transport used for transmitting data in streaming
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.Streaming.IFlyWriter.__SdmxXml">
+            <summary>
+            XmlWriter transport object
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.Streaming.IFlyWriter.__DsplJSONTextWriter">
+            <summary>
+            DsplJsonTextWriter transport object
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.Streaming.IFlyWriter.FlyMediaType">
+            <summary>
+            Specific a mediatype response (sdmx, rdf, Dspl, json)
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.FlyWriter.#ctor(FlyController.Model.FlyMediaEnum,System.Xml.XmlWriter)">
+            <summary>
+            Create a new instance of FlyWriter with XmlWriter transport object
+            </summary>
+            <param name="mediaType">Specific a mediatype response (sdmx, rdf, dspl,  json)</param>
+            <param name="writer"></param>
+        </member>
+        <member name="M:FlyController.Model.FlyWriter.#ctor(FlyController.Model.FlyMediaEnum,System.IO.StreamWriter)">
+            <summary>
+            Create a new instance of FlyWriter with XmlWriter transport object
+            </summary>
+            <param name="mediaType">Specific a mediatype response (sdmx, rdf, dspl,  json)</param>
+            <param name="writer"></param>
+        </member>
+        <member name="P:FlyController.Model.FlyWriter.FlyMediaType">
+            <summary>
+            Specific a mediatype response (sdmx, rdf, dspl, json)
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.FlyWriter.__SdmxXml">
+            <summary>
+            XmlWriter transport object
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.FlyWriter.__DsplJSONTextWriter">
+            <summary>
+            DsplJsonTextWriter transport object
+            </summary>
+        </member>
+        <member name="T:FlyController.Streaming.IStreamController`1">
+            <summary>
+            The Stream controller
+            </summary>
+            <typeparam name="T">
+            The type of the output writer
+            </typeparam>
+        </member>
+        <member name="M:FlyController.Streaming.IStreamController`1.StreamTo(`0,System.Collections.Generic.Queue{System.Action})">
+            <summary>
+            Stream XML output to <paramref name="writer"/>
+            </summary>
+            <param name="writer">
+                The writer to write the output to
+            </param>
+            <param name="actions"></param>
+        </member>
+        <member name="T:FlyController.Streaming.StreamController`1">
+            <summary>
+            The stream controller.
+            </summary>
+            <typeparam name="TWriter">
+            The type of the writer.
+            </typeparam>
+        </member>
+        <member name="F:FlyController.Streaming.StreamController`1._action">
+            <summary>
+                The _action.
+            </summary>
+        </member>
+        <member name="M:FlyController.Streaming.StreamController`1.#ctor(System.Action{`0,System.Collections.Generic.Queue{System.Action}})">
+            <summary>
+            Initializes a new instance of the <see cref="T:FlyController.Streaming.StreamController`1"/> class.
+            </summary>
+            <param name="action">
+            The action.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            <paramref name="action"/> is null.
+            </exception>
+        </member>
+        <member name="M:FlyController.Streaming.StreamController`1.StreamTo(`0,System.Collections.Generic.Queue{System.Action})">
+            <summary>
+            Stream XML output to <paramref name="writer"/>
+            </summary>
+            <param name="writer">
+                The writer to write the output to
+            </param>
+            <param name="actions"></param>
+        </member>
+        <member name="T:FlyController.Model.TimePeriodDBFormat">
+            <summary>
+            Model object contains information of Time Format in database
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.TimePeriodDBFormat.MappingTimePeriodDbFormat">
+            <summary>
+            Database mapping TimePeriod format
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.TimePeriodDBFormat.ParseTimeVal(System.Object)">
+            <summary>
+            Tranform a database time value to Sdmx Time format value
+            </summary>
+            <param name="TimeDBVal">String representing a time value getted from database</param>
+            <returns>Sdmx time value</returns>
+        </member>
+        <member name="M:FlyController.Model.TimePeriodDBFormat.GetFrequencyValueFromTime(System.String)">
+            <summary>
+            Tranform a database time value to Sdmx Frequency format value
+            </summary>
+            <param name="TimeVal">String representing a time value getted from database</param>
+            <returns>Sdmx Frequency value</returns>
+        </member>
+        <member name="M:FlyController.Model.TimePeriodDBFormat.GetTimeFormatValueFromTime(System.String)">
+            <summary>
+            Tranform a database time value to Sdmx TimeFormat attribute format value
+            </summary>
+            <param name="TimeVal">String representing a time value getted from database</param>
+            <returns>Sdmx TimeFormat attribute value</returns>
+        </member>
+        <member name="M:FlyController.Model.TimePeriodDBFormat.GetFreqValueWhereStatment(System.Collections.Generic.List{System.String},System.String)">
+            <summary>
+            Create a Where Condition filtering by Time from Time frequency value
+            </summary>
+            <param name="_values">time values</param>
+            <param name="timedim">TimeFormat Colum name</param>
+            <returns>Where Condition string</returns>
+        </member>
+        <member name="M:FlyController.Model.TimePeriodDBFormat.GetTimeFormatValueWhereStatment(System.Collections.Generic.List{System.String},System.String)">
+            <summary>
+            Create a Where Condition filtering Time from Time format value
+            </summary>
+            <param name="_values">time values</param>
+            <param name="timedim">TimeFormat Colum name</param>
+            <returns>Where Condition string</returns>
+        </member>
+        <member name="M:FlyController.Model.TimePeriodDBFormat.GetTimeWhereStatment(System.String,FlyController.Model.TimePeriodDBFormat.TypeDateOperation,Org.Sdmxsource.Sdmx.Api.Constants.TimeFormatEnumType,Org.Sdmxsource.Sdmx.Api.Model.Base.ISdmxDate)">
+            <summary>
+            Create a Where Condition filtering Time from Time period value
+            </summary>
+            <param name="timedim">Time period colum name</param>
+            <param name="to">Date to (TypeDateOperation)</param>
+            <param name="tf">Time format type</param>
+            <param name="dt">Date in Sdmx Format</param>
+            <returns></returns>
+        </member>
+        <member name="T:FlyController.Model.TimePeriodDBFormat.TypeDateOperation">
+            <summary>
+            Enumerator that representig the math logical operation
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.TimePeriodDBFormat.TypeDateOperation.Minor">
+            <summary>
+            Minor value
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.TimePeriodDBFormat.TypeDateOperation.Major">
+            <summary>
+            Major value
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.DataWhereStatment">
+            <summary>
+            DataWhereStatment Parse a SDMX Data Query
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.WhereParsing.IDataWhereStatment">
+            <summary>
+            DataWhereStatment Parse a SDMX Data Query
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.WhereParsing.IDataWhereStatment.BuildRestQuery(Org.Sdmxsource.Sdmx.Api.Manager.Retrieval.ISdmxObjectRetrievalManager)">
+            <summary>
+            Parse a Query SDMX REST and create SelectionGroups
+            </summary>
+            <param name="SdmxRetrievalManager"></param>
+        </member>
+        <member name="P:FlyController.Model.WhereParsing.IDataWhereStatment.DimensionAtObservation">
+            <summary>
+            DimensionAtObservation (Null if not exist in query)
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.WhereParsing.IDataWhereStatment.IsRest">
+            <summary>
+            Flag that determinate if is Rest call
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.WhereParsing.IDataWhereStatment.Query">
+            <summary>
+            The rest call must be parsed after populate the retreivalManger.
+            Save the IRestDataQuery in this field for PostParsing
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.WhereParsing.IDataWhereStatment.SelectionGroups">
+            <summary>
+            List of Data Where Statment SelectionGroup Parsed
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.DataWhereStatment.#ctor(System.Collections.Generic.IList{Org.Sdmxsource.Sdmx.Api.Model.Data.Query.IDataQuery})">
+            <summary>
+            Create a instance of DataWhereStatment from RetrievalManager.BuildDataQuery result for SDMX 2.0 Version
+            </summary>
+            <param name="WhereStatement20">RetrievalManager.BuildDataQuery result (IList of IDataQuery ) </param>
+        </member>
+        <member name="M:FlyController.Model.DataWhereStatment.#ctor(System.Collections.Generic.IList{Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexDataQuery})">
+            <summary>
+            Create a instance of DataWhereStatment from RetrievalManager.BuildComplexDataQuery result for SDMX 2.1 Version
+            </summary>
+            <param name="WhereStatement21">RetrievalManager.BuildComplexDataQuery result (IList of IComplexDataQuery) </param>
+        </member>
+        <member name="M:FlyController.Model.DataWhereStatment.#ctor(Org.Sdmxsource.Sdmx.Api.Model.Query.IRestDataQuery)">
+            <summary>
+            Create a instance of DataWhereStatment from RetrievalManager.BuildComplexDataQuery result for SDMX REST Version
+            </summary>
+            <param name="WhereStatementREST">IRestDataQuery <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Query.IRestDataQuery"/></param>
+        </member>
+        <member name="M:FlyController.Model.DataWhereStatment.ParseGroup20(System.Collections.Generic.IList{Org.Sdmxsource.Sdmx.Api.Model.Data.Query.IDataQuery})">
+            <summary>
+            Parsing a Query SDMX 2.0 and create SelectionGroups
+            </summary>
+            <param name="WhereStatement20">Query Parameter</param>
+        </member>
+        <member name="M:FlyController.Model.DataWhereStatment.ParseGroup21(System.Collections.Generic.IList{Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexDataQuery})">
+            <summary>
+            Parsing a Query SDMX 2.0 and create SelectionGroups
+            </summary>
+            <param name="WhereStatement21">Query Parameter</param>
+        </member>
+        <member name="M:FlyController.Model.DataWhereStatment.ParseGroupREST(Org.Sdmxsource.Sdmx.Api.Model.Query.IRestDataQuery)">
+            <summary>
+            Prepare a Parsing of Query SDMX REST 
+            </summary>
+            <param name="WhereStatementREST">Query Parameter</param>
+        </member>
+        <member name="M:FlyController.Model.DataWhereStatment.BuildRestQuery(Org.Sdmxsource.Sdmx.Api.Manager.Retrieval.ISdmxObjectRetrievalManager)">
+            <summary>
+            Parse a Query SDMX REST and create SelectionGroups
+            </summary>
+            <param name="SdmxRetrievalManager"></param>
+        </member>
+        <member name="P:FlyController.Model.DataWhereStatment.IsRest">
+            <summary>
+            Flag that determinate if is Rest call
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.DataWhereStatment.Query">
+            <summary>
+            The rest call must be parsed after populate the retreivalManger.
+            Save the IRestDataQuery in this field for PostParsing
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.DataWhereStatment.SelectionGroups">
+            <summary>
+            List of Data Where Statment SelectionGroup Parsed
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.DataWhereStatment.DimensionAtObservation">
+            <summary>
+            DimensionAtObservation (Null if not exist in query)
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.DataWhereStatmentSelection">
+            <summary>
+            Object that representing a DataWhere Statment Selection
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.WhereParsing.IDataWhereStatmentSelection">
+            <summary>
+            Object that representing a DataWhere Statment Selection
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.WhereParsing.IDataWhereStatmentSelection.ComponentId">
+            <summary>
+            Component Id (Dimension Code or Attribute Code)
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.WhereParsing.IDataWhereStatmentSelection.Values">
+            <summary>
+            List of string possible Value (in OR)
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.DataWhereStatmentSelection.ComponentId">
+            <summary>
+            Component Id (Dimension Code or Attribute Code)
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.DataWhereStatmentSelection.Values">
+            <summary>
+            List of string possible Value (in OR)
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.DataWhereStatmentSelectionGroup">
+            <summary>
+            DataWhereStatmentSelectionGroup Parse a SDMX Data Query Selection Groups
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.WhereParsing.IDataWhereStatmentSelectionGroup">
+            <summary>
+            interface for Parse a SDMX Data Query Selection Groups
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.WhereParsing.IDataWhereStatmentSelectionGroup.DateFrom">
+            <summary>
+            Date From in SdmxDate If in query contains Tipe Period Filter 
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.WhereParsing.IDataWhereStatmentSelectionGroup.DateTo">
+            <summary>
+            Date To in SdmxDate If in query contains Tipe Period Filter 
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.WhereParsing.IDataWhereStatmentSelectionGroup.Selections">
+            <summary>
+            list of  Selection Where Statment
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.DataWhereStatmentSelectionGroup.Group20">
+            <summary>
+            Selection Group SDMX 2.0
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.DataWhereStatmentSelectionGroup.Group21">
+            <summary>
+            Selection Group SDMX 2.0
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.DataWhereStatmentSelectionGroup.#ctor(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.IDataQuerySelectionGroup)">
+            <summary>
+            Create a instance of DataWhereStatmentSelectionGroup for SDMX 2.0 Version
+            </summary>
+            <param name="_group20">from DataWhereStatment ParseGroup20</param>
+        </member>
+        <member name="M:FlyController.Model.DataWhereStatmentSelectionGroup.#ctor(Org.Sdmxsource.Sdmx.Api.Model.Data.Query.Complex.IComplexDataQuerySelectionGroup)">
+            <summary>
+            Create a instance of DataWhereStatmentSelectionGroup for SDMX 2.1 Version
+            </summary>
+            <param name="_group21">from DataWhereStatment ParseGroup21</param>
+        </member>
+        <member name="M:FlyController.Model.DataWhereStatmentSelectionGroup.ParseGroup20">
+            <summary>
+            Parsing a SelectionGroup SDMX 2.0 and create Selections Where Statment
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.DataWhereStatmentSelectionGroup.ParseGroup21">
+            <summary>
+            Parsing a SelectionGroup SDMX 2.1 and create Selections Where Statment
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.DataWhereStatmentSelectionGroup.Selections">
+            <summary>
+            list of  Selection Where Statment
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.DataWhereStatmentSelectionGroup.DateFrom">
+            <summary>
+            Date From in SdmxDate If in query contains Tipe Period Filter 
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.DataWhereStatmentSelectionGroup.DateTo">
+            <summary>
+            Date To in SdmxDate If in query contains Tipe Period Filter 
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.DimensionConcept">
+            <summary>
+            DimensionConcept is Implementation of ConceptObjectImpl that representing a Dimension
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.DimensionConcept.#ctor(System.String,System.Collections.Generic.List{FlyController.Model.SdmxObjectNameDescription})">
+            <summary>
+            create a instace of DimensionConcept
+            </summary>
+            <param name="code">Dimension Code</param>
+            <param name="names">Dimension Descriptions Names</param>
+        </member>
+        <member name="M:FlyController.Model.DimensionConcept.GetColumTimeName">
+            <summary>
+            Get a ColumName of Time dimension 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:FlyController.Model.DimensionConcept.DimensionType">
+            <summary>
+            Dimension Type 
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.DimensionConcept.IsFakeFrequency">
+            <summary>
+            Flag that representing if this is a Frequency not real
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.DimensionConcept.RealNameFreq">
+            <summary>
+            Database Frequency Name (in case different of FREQ)
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.DimensionConcept.RealNameTime">
+            <summary>
+            Database Time Name (in case different of TIME_PERIOD)
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.Error.FlyExceptionObject">
+            <summary>
+            FlyExceptionObject contains all Error caused from Application
+            Association beetwen Internal Exception, Sdmx Exception, Internal Exception Description
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.Error.FlyExceptionObject.#ctor(FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum,Org.Sdmxsource.Sdmx.Api.Constants.SdmxErrorCodeEnumType,System.String)">
+            <summary>
+            Create FlyExceptionObject Instace
+            </summary>
+            <param name="_flyExceptionType">Internal Exception type</param>
+            <param name="_sdmxErrorCodeType">SDMX Standard Error Type</param>
+            <param name="_flyExceptionText">Additional exception description</param>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.ErrorsDescription">
+            <summary>
+            Parsed file ErrorDescriptions.xml contain all errors descriptions
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.Error.FlyExceptionObject.Get(FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum)">
+            <summary>
+            Find this istance in Static ErrorMapping
+            </summary>
+            <param name="_flyExceptionType">Internal Exception type</param>
+            <returns>Founded FlyExceptionObject</returns>
+        </member>
+        <member name="P:FlyController.Model.Error.FlyExceptionObject.FlyExceptionType">
+            <summary>
+            Internal Exception type
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.Error.FlyExceptionObject.SDMXException">
+            <summary>
+            SDMX Standard Error Type
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.Error.FlyExceptionObject.FlyExceptionText">
+            <summary>
+            Additional exception description
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum">
+            <summary>
+            Internal Exception type Enumerator (All Exception that this Application can return)
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.ParsingQueryError">
+            <summary>
+            Parsing Query Error
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.SoapParseError">
+            <summary>
+            Soap Message Parsing Error
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.RESTParseError">
+            <summary>
+            REST Message Parsing Error
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.DataflowNotFound">
+            <summary>
+            Dataflow or Dataset not found in received structure
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.InternalError">
+            <summary>
+            WS Internal Error
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.ErrorConnectionDB">
+            <summary>
+            DB Connection Error
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.DifferentAgency">
+            <summary>
+            AgencyId not foud
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.DifferentVersion">
+            <summary>
+            Version not found
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.ConceptSchemaFormatError">
+            <summary>
+            ConceptSchema format error
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.ConceptSchemaInvalid">
+            <summary>
+            ConceptSchema invalid query value
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.CodelistFormatError">
+            <summary>
+            Codelist format error
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.CodelistInvalid">
+            <summary>
+            Codelist invalid query value
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.KeyFamilyFormatError">
+            <summary>
+            KeyFamily format error
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.KeyFamilyInvalid">
+            <summary>
+            KeyFamily invalid query value
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.NotSupportedRegistryType">
+            <summary>
+            Registry type not supported
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.StructureNotFound">
+            <summary>
+            Structure not found
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.DBErrorResponse">
+            <summary>
+            DB Response Error
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.DimensionNotFound">
+            <summary>
+            Dimension not found
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.CreateConceptReferenceError">
+            <summary>
+            Create Concept Reference Error
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.CreateConceptSchemaReferenceError">
+            <summary>
+            Create ConceptScheme Reference Error
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.CreateCodelistReferenceError">
+            <summary>
+            Create Codelist Reference Error
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.CreateStructureReferenceError">
+            <summary>
+            Create Structure ReferenceError
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.CreateCategoryReferenceError">
+            <summary>
+            Create Category Reference Error
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.CreateDSDReferenceError">
+            <summary>
+            Create Data Structure Reference Error
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.CreateMessageResponseError">
+            <summary>
+            Create Message Response Error
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.WriteDataMessage">
+            <summary>
+            Write Data Message Response
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.CreateSdmxObjectError">
+            <summary>
+            Create Sdmx Object Error
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.DBCreateCategoryObjects">
+            <summary>
+            Retrive Category data from DB Error
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.GetAttributeError">
+            <summary>
+            Get Attribute Error
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.GetFrequencyCodelist">
+            <summary>
+            Get Frequency Codelist
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.CreateImmutable">
+            <summary>
+            Error during trasform sdmxObject to ImmutableInstance
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.InitConfigError">
+            <summary>
+            Error during retrive Configuration from fileconfig
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.CreateHeader">
+            <summary>
+            Error during create Header in Response object
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.GetMaintainableFromSdmxObject">
+            <summary>
+            Get Maintainable From SdmxObject
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.AttributeErrorAttachmentGroup">
+            <summary>
+            Not implemented Attribute with AttachmentLevel=group
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.UnrecognizedVersion">
+            <summary>
+            Not implemented required output version 
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.RetrivalParsingError">
+            <summary>
+            Not correctly parsed Sdmx Query
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.ErrorWriteDataMessage">
+            <summary>
+            Error while writing DataMessage
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.ErrorWriteTimeSeriesData">
+            <summary>
+            Error while writing a TimeSeries DataMessage
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.ErrorWriteFlatData">
+            <summary>
+            Error while writing a Flat DataMessage
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.GetSeriesKey">
+            <summary>
+            Error retrieving Series Keys in DataMessage response
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.GetSeriesAttribute">
+            <summary>
+            Error retrieving Series Attributes in DataMessage response
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.GetObservationAttribute">
+            <summary>
+            Error retrieving Observation Attributes in DataMessage response
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.GetDataSetAttribute">
+            <summary>
+            Error retrieving Dataset Attributes in DataMessage response
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.CheckSeriesChange">
+            <summary>
+            Error in ChangeSeries during creation of DataMessage response
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.GetAgencyScheme">
+            <summary>
+            Error while generating Agency Object
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.BuildAgencyScheme">
+            <summary>
+            Error while generating Agency Builder
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.BuildCategoryScheme">
+            <summary>
+            Error while generating Category Builder
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.BuildCodelist">
+            <summary>
+            Error while generating Codelists Builder
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.GetCodelist">
+            <summary>
+            Error while generating Codelists Objects
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.BuildConceptsScheme">
+            <summary>
+            Error while generating ConceptsScheme Builder
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.GetConceptsScheme">
+            <summary>
+            Error while generating ConceptsScheme objects
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.BuildDataflows">
+            <summary>
+            Error while generating Dataflows Builder
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.GetDataFlows">
+            <summary>
+            Error while generating Dataflows objects
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.BuildDSD">
+            <summary>
+            Error while generating DataStructure Builder
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.DataMessageEngineGetResults">
+            <summary>
+            Error retrieving and formatting the results
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.CreateDSDObject">
+            <summary>
+            Error during creation a SdmxObject
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.CreateBuilder">
+            <summary>
+            Error while parsing the request and the creation of the builder
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.GetDataFlowCodeFromConceptSchema">
+            <summary>
+            Error in parsing Format of ConceptsScheme Code
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.GetConceptCodeFromCodelist">
+            <summary>
+            Error in parsing Format of Codelist Code
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.GetDataFlowCodeFromKeyFamily">
+            <summary>
+            Error in parsing Format of DataFlow Code
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.GetTableMessage">
+            <summary>
+            Error during creation results table message
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.CreateIAgencyMutableObject">
+            <summary>
+            Error during creation a IAgencyMutableObject
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.GetListConcepts">
+            <summary>
+            Error during retreival Concepts
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.RecursiveCreateCategoryHierarchy">
+            <summary>
+            Error during creation Category tree
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.CreateICategoryMutableObject">
+            <summary>
+            Error during creation a ICategoryMutableObject
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.ParsingLanguagesIsoCode">
+            <summary>
+            Error in convert Iso-Code name in standard languages
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.CreateICodeMutableObject">
+            <summary>
+            Error during creation a ICodeMutableObject
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.CreateDataflowBuilder">
+            <summary>
+            Error during Dataflows building
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.GetDimensionConceptObjects">
+            <summary>
+            Error during get Dimension Concepts
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.CreateDBParameter">
+            <summary>
+            Error during creation Database store procedure parameter
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.CastingTimeFormat">
+            <summary>
+            Error during cast a time value for db data required
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.FindSoapBobyElement">
+            <summary>
+            Error during Find soap Body element in request
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.ChangeSoapActionElement">
+            <summary>
+            Error during Change soap Action element in response building
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.GetMetadata">
+            <summary>
+            Get Metadata Generic Error
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.GetData">
+            <summary>
+            Get Data Generic Error
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.DestroyObjects">
+            <summary>
+            Error during dispose object used for retreival data
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.AddReferences">
+            <summary>
+            Error during Add References into SdmxObject
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.NotImplemented">
+            <summary>
+            Method not implemented
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.ConstrainParsingError">
+            <summary>
+            Error during parse contrain parameters
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.CodelistContrainRequired">
+            <summary>
+            OnTheFly project require a Codelist Query whit a Contrain
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.RestDetail20">
+            <summary>
+            In REST sdmx v2.0 the detail parameter must be full
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum.RetreiveGroups">
+            <summary>
+            Error while retreive groups from Database
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.Error.FlyMessageError">
+            <summary>
+            FlyMessageError Create Exception Detail Object
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.Error.FlyMessageError.#ctor(System.Exception,System.Boolean)">
+            <summary>
+            Create instance of FlyMessageError
+            </summary>
+            <param name="ex">Additional Exception, this can be Sdmx.Api.Exception (Caused from CommonAPI) or System Exception (Caused from application) </param>
+            <param name="_isEmptyDetail">Flag that representing a Enty Detail</param>
+        </member>
+        <member name="M:FlyController.Model.Error.FlyMessageError.ToElement">
+            <summary>
+            Create a XElement MessageDetail for SOAP FaultException (SdmxFaultError)
+            </summary>
+            <returns>XElement with exception description </returns>
+        </member>
+        <member name="M:FlyController.Model.Error.FlyMessageError.ToDetail(FlyController.Model.Error.SdmxException)">
+            <summary>
+            Create a XElement MessageDetail for SOAP MessageFault (In case of Exception during create FaultException of SdmxFaultError)
+            </summary>
+            <param name="Fromex">SdmxException</param>
+            <returns>XElement with exception description</returns>
+        </member>
+        <member name="P:FlyController.Model.Error.FlyMessageError.IsEmptyDetail">
+            <summary>
+            Flag that representing a Enty Detail
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.Error.FlyMessageError.TipoMessaggio">
+            <summary>
+            Internal Message Type 
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.Error.FlyMessageError.ThisException">
+            <summary>
+            Additional Exception, this can be Sdmx.Api.Exception (Caused from CommonAPI) or System Exception (Caused from application)
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.Error.FlyMessageError.typeMessageEnum">
+            <summary>
+            Internal Message Type 
+            SDMXError: Sdmx.Api.Exception (Caused from CommonAPI) 
+            InternalError: System Exception (Caused from application)
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyMessageError.typeMessageEnum.SDMXError">
+            <summary>
+            SDMXError: Sdmx.Api.Exception (Caused from CommonAPI) 
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.FlyMessageError.typeMessageEnum.InternalError">
+            <summary>
+            InternalError: System Exception (Caused from application)
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.Error.SdmxException">
+            <summary>
+            Object that representing application Exception: contains All information for build a Sdmx standard Error response
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.SdmxException.FlyException">
+            <summary>
+            Internal Intance of FlyExceptionObject for creation all SdmxException
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.Error.SdmxException.#ctor(System.Object,FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum)">
+            <summary>
+            Create Instance of SdmxException
+            </summary>
+            <param name="Control">Object that fired Exception (this for all Object, typeof(ClassName) for staticFunction)</param>
+            <param name="typeErr">Internal Exception type Enumerator</param>
+        </member>
+        <member name="M:FlyController.Model.Error.SdmxException.#ctor(System.Object,FlyController.Model.Error.FlyExceptionObject.FlyExceptionTypeEnum,System.Exception)">
+            <summary>
+            Create Instance of SdmxException
+            </summary>
+            <param name="Control">Object that fired Exception (this for all Object, typeof(ClassName) for staticFunction)</param>
+            <param name="typeErr">Internal Exception type Enumerator</param>
+            <param name="Ex">Additional Exception</param>
+        </member>
+        <member name="M:FlyController.Model.Error.SdmxException.GetRESTStatusCode">
+            <summary>
+            Convert SdmxErrorCodeEnumType of SDMXException in HttpStatusCode
+            </summary>
+            <returns>Return a HttpStatusCode of Error for a REST call </returns>
+        </member>
+        <member name="P:FlyController.Model.Error.SdmxException.SDMXFaultCode">
+            <summary>
+            Fault Code (Standard SDMX)
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.Error.SdmxException.SDMXFaultMessage">
+            <summary>
+            Fault Message (Standard SDMX)
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.Error.SdmxException.ProcSource">
+            <summary>
+            Uri Object that fired Exception
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.Error.SdmxException.MessageText">
+            <summary>
+            Exception Detail Text
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.Error.SdmxException.MessageError">
+            <summary>
+            Exception Detail Object
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.Error.SDMXExceptionObject">
+            <summary>
+            SDMXExceptionObject representing a Sdmx standard Error
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.Error.SDMXExceptionObject.SDMXExceptionList">
+            <summary>
+            Static List of this object Instances.
+            Association of Type, Code, Text
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.Error.SDMXExceptionObject.Get(Org.Sdmxsource.Sdmx.Api.Constants.SdmxErrorCodeEnumType)">
+            <summary>
+            Find this istance in Static SDMXExceptionList
+            </summary>
+            <param name="_sdmxErrorCodeEnumType">Sdmx Standard Error Type</param>
+            <returns>Founded SDMXExceptionObject</returns>
+        </member>
+        <member name="P:FlyController.Model.Error.SDMXExceptionObject._sdmxErrorCodeEnum">
+            <summary>
+            Sdmx Standard Error Type
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.Error.SDMXExceptionObject._sdmxErrorCode">
+            <summary>
+            Sdmx Standard Error Code
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.Error.SDMXExceptionObject._sdmxErrorText">
+            <summary>
+            Sdmx Standard Error Text
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.HeaderBuilder">
+            <summary>
+            HeaderBuilder Create a Header in all Sdmx Structure 
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.HeaderBuilder.#ctor(System.Xml.XmlNode)">
+            <summary>
+            Create a instance of HeaderBuilder
+            and create a _header_setting reading settingNode
+            </summary>
+            <param name="settingNode">a node representing a header configuration (in file Config)</param>
+        </member>
+        <member name="F:FlyController.Model.HeaderBuilder._header">
+            <summary>
+            Header
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.HeaderBuilder._header_setting">
+            <summary>
+            Dictionary with all configuration for header creation 
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.HeaderBuilder.PopulateHeaderSetting(System.Xml.XmlNode)">
+            <summary>
+            create a _header_setting reading settingNode
+            </summary>
+            <param name="settingNode"></param>
+        </member>
+        <member name="M:FlyController.Model.HeaderBuilder.InitialiseHeader">
+             <summary>
+            Create a Header
+             </summary>
+        </member>
+        <member name="M:FlyController.Model.HeaderBuilder.FindHeaderSetting(System.String)">
+            <summary>
+            Search Header Setting in _header_setting
+            </summary>
+            <param name="settingName">Setting Name</param>
+            <returns>Configured Setting Value</returns>
+        </member>
+        <member name="M:FlyController.Model.HeaderBuilder.GetHeader">
+            <summary>
+            Get Configured Header
+            </summary>
+            <returns>IHeader already created</returns>
+        </member>
+        <member name="T:FlyController.Model.SdmxObjectNameDescription">
+            <summary>
+            SdmxObjectNameDescription representing the Description Names of all overrided SdmxObjects
+            </summary>
+        </member>
+        <member name="M:FlyController.Model.SdmxObjectNameDescription.GetNameDescriptions(System.Xml.XmlNode)">
+            <summary>
+            Static Function that return this instance from XmlNode
+            </summary>
+            <param name="_object">XmlNode to get a Names</param>
+            <returns>founded List of SdmxObjectNameDescription</returns>
+        </member>
+        <member name="P:FlyController.Model.SdmxObjectNameDescription.Lingua">
+            <summary>
+            Languages if LocaleIsoCode
+            </summary>
+        </member>
+        <member name="P:FlyController.Model.SdmxObjectNameDescription.Name">
+            <summary>
+            Name description
+            </summary>
+        </member>
+        <member name="T:FlyController.Utils.Constant">
+            <summary>
+            Class where all objects reside Common Constants
+            </summary>
+        </member>
+        <member name="F:FlyController.Utils.Constant.ServiceNamespace">
+            <summary>
+            Service Namespace: It must be because this is the namespace where the file resides Service "IWS_SDMX_SOAP2X" that has this namespace
+            </summary>
+        </member>
+        <member name="F:FlyController.Utils.Constant.ContractNamespaceSdmx20">
+            <summary>
+            Contract Namespace Sdmx 2.0 for SOAP response creation
+            </summary>
+        </member>
+        <member name="F:FlyController.Utils.Constant.ContractNamespaceSdmx21">
+            <summary>
+            Contract Namespace Sdmx 2.1 for SOAP response creation
+            </summary>
+        </member>
+        <member name="T:FlyController.Model.OnTheFlyVersionEnum">
+            <summary>
+            Version OnTheFly
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.OnTheFlyVersionEnum.OnTheFly1">
+            <summary>
+            OnTheFly v 1.0 .STAT Original
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.OnTheFlyVersionEnum.OnTheFly15">
+            <summary>
+            OnTheFly v 1.5 .STAT Extra
+            </summary>
+        </member>
+        <member name="F:FlyController.Model.OnTheFlyVersionEnum.OnTheFly2">
+            <summary>
+            OnTheFly v 2.0 SddsLoader implementation MS + .StatExtra
+            </summary>
+        </member>
+    </members>
+</doc>

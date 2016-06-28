@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{04639A9B-C7D0-4FCF-BC4B-3EDB68B786C2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RDFProvider</RootNamespace>
+    <AssemblyName>RDFProvider</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DataRetriever">
+      <HintPath>..\..\Utils\Libs\DataRetriever.dll</HintPath>
+    </Reference>
+    <Reference Include="edtFTPnet">
+      <HintPath>..\..\Utils\Libs\edtFTPnet.dll</HintPath>
+    </Reference>
+    <Reference Include="EstatSdmxSourceExtension, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utils\Libs\EstatSdmxSourceExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="EstatSdmxSourceExtension.CustomRequests, Version=1.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utils\Libs\EstatSdmxSourceExtension.CustomRequests.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utils\Libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="MappingStoreRetrieval">
+      <HintPath>..\..\Utils\Libs\MappingStoreRetrieval.dll</HintPath>
+    </Reference>
+    <Reference Include="Org.Sdmx.Resources.SdmxMl.Schemas.V10, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utils\Libs\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll</HintPath>
+    </Reference>
+    <Reference Include="Org.Sdmx.Resources.SdmxMl.Schemas.V20, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utils\Libs\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll</HintPath>
+    </Reference>
+    <Reference Include="Org.Sdmx.Resources.SdmxMl.Schemas.V21, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utils\Libs\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll</HintPath>
+    </Reference>
+    <Reference Include="PcAxis">
+      <HintPath>..\..\Utils\Libs\PcAxis.dll</HintPath>
+    </Reference>
+    <Reference Include="PcAxis.NuGet">
+      <HintPath>..\..\Utils\Libs\PcAxis.NuGet.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxApi, Version=0.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utils\Libs\SdmxApi.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxDataParser, Version=0.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utils\Libs\SdmxDataParser.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxEdiParser, Version=0.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utils\Libs\SdmxEdiParser.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxObjects, Version=0.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utils\Libs\SdmxObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxParseBase, Version=0.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utils\Libs\SdmxParseBase.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxQueryBuilder">
+      <HintPath>..\..\Utils\Libs\SdmxQueryBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxSourceUtil, Version=0.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utils\Libs\SdmxSourceUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxStructureMutableParser, Version=0.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utils\Libs\SdmxStructureMutableParser.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxStructureParser, Version=0.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utils\Libs\SdmxStructureParser.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxStructureRetrieval, Version=0.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utils\Libs\SdmxStructureRetrieval.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxXmlConstants, Version=0.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Utils\Libs\SdmxXmlConstants.dll</HintPath>
+    </Reference>
+    <Reference Include="StructureRetriever">
+      <HintPath>..\..\Utils\Libs\StructureRetriever.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TabularWriters">
+      <HintPath>..\..\Utils\Libs\TabularWriters.dll</HintPath>
+    </Reference>
+    <Reference Include="Xml.Schema.Linq">
+      <HintPath>..\..\Utils\Libs\Xml.Schema.Linq.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Constants\NamespacePrefixPair.cs" />
+    <Compile Include="Constants\RDFAttributeNameTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Constants\RDFConcurrentNameTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Constants\RDFConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Constants\RDFElementNameTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Constants\RDFNamespaces.cs" />
+    <Compile Include="Constants\RDFNameTableCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Constants\RDFPrefixConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\Writer\Engine\IRDFWriterEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\Writer\Engine\RDFDataWriterEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Data\Writer\Engine\Writer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structure\Engine\IStructureRDFWriterEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Structure\Factory\IStructureRDFWriterFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Structure\Factory\RDFStructureWriterFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Structure\Manager\Output\IStructureRDFWriterManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Structure\Manager\StructureRDFWritingManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Structure\Writing\SchemaLocationWriter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Structure\Writing\StructureWriterEngineRDF.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

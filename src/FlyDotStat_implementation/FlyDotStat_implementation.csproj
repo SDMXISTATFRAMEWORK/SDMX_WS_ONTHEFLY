@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{18B7D7FB-B5C0-48F1-A6D9-EC2432BED1DE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FlyDotStat_implementation</RootNamespace>
+    <AssemblyName>FlyDotStat_implementation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DocumentationFile>bin\Debug\FlyDotStat_implementation.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\Debug\FlyDotStat_implementation.XML</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EstatSdmxSourceExtension">
+      <HintPath>..\Utils\Libs\EstatSdmxSourceExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="EstatSdmxSourceExtension.CustomRequests">
+      <HintPath>..\Utils\Libs\EstatSdmxSourceExtension.CustomRequests.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Utils\Libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Org.Sdmx.Resources.SdmxMl.Schemas.V10">
+      <HintPath>..\Utils\Libs\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll</HintPath>
+    </Reference>
+    <Reference Include="Org.Sdmx.Resources.SdmxMl.Schemas.V20">
+      <HintPath>..\Utils\Libs\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll</HintPath>
+    </Reference>
+    <Reference Include="Org.Sdmx.Resources.SdmxMl.Schemas.V21">
+      <HintPath>..\Utils\Libs\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxApi">
+      <HintPath>..\Utils\Libs\SdmxApi.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxDataParser">
+      <HintPath>..\Utils\Libs\SdmxDataParser.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxEdiParser">
+      <HintPath>..\Utils\Libs\SdmxEdiParser.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxObjects">
+      <HintPath>..\Utils\Libs\SdmxObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxParseBase">
+      <HintPath>..\Utils\Libs\SdmxParseBase.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxSourceUtil">
+      <HintPath>..\Utils\Libs\SdmxSourceUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxStructureMutableParser">
+      <HintPath>..\Utils\Libs\SdmxStructureMutableParser.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxStructureParser">
+      <HintPath>..\Utils\Libs\SdmxStructureParser.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxStructureRetrieval">
+      <HintPath>..\Utils\Libs\SdmxStructureRetrieval.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxXmlConstants">
+      <HintPath>..\Utils\Libs\SdmxXmlConstants.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TabularWriters">
+      <HintPath>..\Utils\Libs\TabularWriters.dll</HintPath>
+    </Reference>
+    <Reference Include="Xml.Schema.Linq">
+      <HintPath>..\Utils\Libs\Xml.Schema.Linq.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Build\DWHAccess.cs" />
+    <Compile Include="FlyDotStat_implementation_namespace.cs" />
+    <Compile Include="Manager\BaseManager.cs" />
+    <Compile Include="Manager\CategoriesObjects.cs" />
+    <Compile Include="Manager\Data\DataMessageManager.cs" />
+    <Compile Include="Manager\Data\GroupsManager.cs" />
+    <Compile Include="Manager\FlyNameArtefactSettings.cs" />
+    <Compile Include="Manager\MetadataFactory.cs" />
+    <Compile Include="Manager\Metadata\Agency\AgencyManager.cs" />
+    <Compile Include="Manager\Metadata\Categories\BaseCategoriesManager.cs" />
+    <Compile Include="Manager\Metadata\Categories\CategoriesManager.cs" />
+    <Compile Include="Manager\Metadata\Categories\CategoriesManagerSP.cs" />
+    <Compile Include="Manager\Metadata\Codelist\AttributeCodelistsManager.cs" />
+    <Compile Include="Manager\Metadata\Codelist\CodelistManager.cs" />
+    <Compile Include="Manager\Metadata\Codelist\DimensionCodelistsManager.cs" />
+    <Compile Include="Manager\Metadata\Codelist\FLAGCodelistManager.cs" />
+    <Compile Include="Manager\Metadata\Codelist\SpecialCodelistsManager.cs" />
+    <Compile Include="Manager\Metadata\Concepts\AttributeManagerSP.cs" />
+    <Compile Include="Manager\Metadata\Concepts\AttributeManager_FromFile.cs" />
+    <Compile Include="Manager\Metadata\Concepts\ConceptSchemeManager.cs" />
+    <Compile Include="Manager\Metadata\Concepts\DimensionManager.cs" />
+    <Compile Include="Manager\Metadata\Concepts\FLAGManager.cs" />
+    <Compile Include="Manager\Metadata\Dataflow\DataflowsManager.cs" />
+    <Compile Include="Manager\Metadata\Dataflow\DatasetsManager.cs" />
+    <Compile Include="Manager\Metadata\DSD\DsdManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FlyController\FlyController.csproj">
+      <Project>{a893df2f-c0b9-4742-a8a3-2b97962ff8f8}</Project>
+      <Name>FlyController</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FlyLog\FlyLog.csproj">
+      <Project>{fb9e70ca-391d-4bcc-8b78-527cf89bbba8}</Project>
+      <Name>FlyLog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FlyMapping\FlyMapping.csproj">
+      <Project>{79fcf649-9986-4ee9-8779-2bfab11f0e95}</Project>
+      <Name>FlyMapping</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

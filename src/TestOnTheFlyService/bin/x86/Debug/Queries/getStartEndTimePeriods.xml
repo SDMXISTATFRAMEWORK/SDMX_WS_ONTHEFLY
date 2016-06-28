@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RegistryInterface xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common" xmlns:registry="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/registry" xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message SDMXMessage.xsd">
+  <Header>
+    <ID>NSICLIENT</ID>
+    <Test>false</Test>
+    <Prepared>2011-09-27T10:48:36</Prepared>
+    <Sender id="NSICLIENT" />
+    <Receiver id="NSIWS" />
+  </Header>
+  <QueryStructureRequest resolveReferences="false">
+    <registry:CodelistRef>
+      <registry:AgencyID>MA</registry:AgencyID>
+      <registry:CodelistID>CL_TIME_PERIOD</registry:CodelistID>
+      <registry:Version>1.0</registry:Version>
+    </registry:CodelistRef>
+    <registry:DataflowRef>
+      <registry:AgencyID>###DF_AGENCYID###</registry:AgencyID>
+      <registry:DataflowID>###DATAFLOWID###</registry:DataflowID>
+      <registry:Version>###DF_VERSION###</registry:Version>
+      <registry:Constraint ConstraintType="Content">
+        <common:ConstraintID>###DIMENSION###</common:ConstraintID>
+        <common:CubeRegion isIncluded="true">
+          <common:Member isIncluded="true">
+            <common:ComponentRef>###DIMENSION###</common:ComponentRef>
+          </common:Member>
+        </common:CubeRegion>
+      </registry:Constraint>
+    </registry:DataflowRef>
+  </QueryStructureRequest>
+</RegistryInterface>

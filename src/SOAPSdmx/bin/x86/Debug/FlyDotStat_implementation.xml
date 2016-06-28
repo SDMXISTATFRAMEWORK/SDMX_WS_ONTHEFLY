@@ -1,0 +1,1055 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FlyDotStat_implementation</name>
+    </assembly>
+    <members>
+        <member name="T:FlyDotStat_implementation.Build.DWHAccess">
+            <summary>
+            Class of Access to Database
+            </summary>
+        </member>
+        <member name="F:FlyDotStat_implementation.Build.DWHAccess._conn">
+            <summary>
+            Sql Connection
+            </summary>
+        </member>
+        <member name="F:FlyDotStat_implementation.Build.DWHAccess.TestConn">
+            <summary>
+            Flag determines whether TestConnection was made
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Build.DWHAccess.#ctor(System.String)">
+            <summary>
+            Create a instance of DWHAccess for access to Datawharehouse 
+            Initializes the local variables needed to connect and throws a TestConnection
+            </summary>
+            <param name="_ConnectionString"></param>
+        </member>
+        <member name="M:FlyDotStat_implementation.Build.DWHAccess.TestConnection">
+            <summary>
+            Connection preliminary to determine if the credentials are correct and whether the DataBase is reached
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Build.DWHAccess.Execute(FlyController.Model.DbSetting.DBOperationEnum,System.Collections.Generic.List{FlyMapping.Model.IParameterValue})">
+            <summary>
+            Performs correct store procedures and it process results
+            </summary>
+            <param name="operation">Operations Type (indicates the store procedure to execute)</param>
+            <param name="parameter">Parameters to be passed to the store procedure</param>
+            <returns>Returns a list of xmlNode with which the builder that identifies the response</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Build.DWHAccess.ExecuteGetData(System.Collections.Generic.List{FlyMapping.Model.IParameterValue},FlyController.Model.Delegate.GetDBResponseDelegate,FlyController.Model.Delegate.WriteResponseDelegate)">
+            <summary>
+            Execute a store procedure for get a Data for DataMessage
+            </summary>
+            <param name="parameter">Parameters to be passed to the store procedure</param>
+            <param name="parse">Delegate to call for parse result</param>
+            <param name="builder">Delegate to pass at GetDBResponseDelegate for write result</param>
+            <returns>Object for Write response in streaming <see cref="T:FlyController.Model.IFlyWriterBody"/></returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Build.DWHAccess.ExecutetoTable(FlyController.Model.DbSetting.DBOperationEnum,System.Collections.Generic.List{FlyMapping.Model.IParameterValue})">
+            <summary>
+            Performs correct store procedures and it process results into Table
+            </summary>
+            <param name="operation">Operations Type (indicates the store procedure to execute)</param>
+            <param name="parameter">Parameters to be passed to the store procedure</param>
+            <returns>Returns a Table of response</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Build.DWHAccess.CheckExistStoreProcedure(FlyController.Model.DbSetting.DBOperationEnum)">
+            <summary>
+            Check exist StoreProcedure in Database 
+            </summary>
+            <param name="operation">Get a relative StoreProcedureName</param>
+            <returns>Boolean result: if true exist</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Build.DWHAccess.GetStoreRef(FlyController.Model.DbSetting.DBOperationEnum)">
+            <summary>
+            Mapping enum DBOperationEnum, with names in the store procedure to execute
+            </summary>
+            <param name="operation">DBOperationEnum value to convert in StoreProcedure name</param>
+            <returns>Name of StoreProcedure</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Build.DWHAccess.GetCL_COUNT(System.Collections.Generic.List{FlyMapping.Model.IParameterValue})">
+            <summary>
+            Return a Number of record of Data result of GetData StoreProcedure
+            </summary>
+            <param name="parameter">Parameters to be passed to the store procedure</param>
+            <returns>Number of record of Observation</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Build.DWHAccess.GetCL_TIME_PERIOD(System.Collections.Generic.List{FlyMapping.Model.IParameterValue},System.String@,System.String@)">
+            <summary>
+            Return a Minor and Max DateTime into recorSet data results of GetData StoreProcedure
+            </summary>
+            <param name="parameter">Parameters to be passed to the store procedure</param>
+            <param name="FirstTime">OUT Minor DateTime into recorSet data results</param>
+            <param name="EndTime">OUT Max DateTime into recorSet data results</param>
+        </member>
+        <member name="M:FlyDotStat_implementation.Build.DWHAccess.GetCL_CONTRAINED(System.Collections.Generic.List{FlyMapping.Model.IParameterValue},System.String)">
+            <summary>
+            Return a CodelistConstrained with other Dimension in Join
+            </summary>
+            <param name="parameter">Parameters to be passed to the store procedure</param>
+            <param name="ConceptColum">List of Other Dimension separated by Comma</param>
+            <returns></returns>
+        </member>
+        <member name="P:FlyDotStat_implementation.Build.DWHAccess.ConnectionString">
+            <summary>
+            ConnectionString (Configured in File Config)
+            </summary>
+        </member>
+        <member name="T:FlyDotStat_implementation.FlyDotStat_implementation_namespace">
+            <summary>
+            Implementation of OnTheFly v1.0
+            </summary>
+        </member>
+        <member name="T:FlyDotStat_implementation.Manager.BaseManager">
+            <summary>
+            Model Class for connetion to Database
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.BaseManager.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize for BaseManager Class
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.BaseManager.DbAccess">
+            <summary>
+            for retrival data from database
+            </summary>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.BaseManager.parsingObject">
+            <summary>
+             Parsing Object <see cref="T:FlyController.Model.ISdmxParsingObject"/>
+            </summary>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.BaseManager.versionTypeResp">
+            <summary>
+            Sdmx Version
+            </summary>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.BaseManager.ReferencesObject">
+            <summary>
+            Referenced objects 
+            </summary>
+        </member>
+        <member name="T:FlyDotStat_implementation.Manager.InternalDatasetObject">
+            <summary>
+            Object Model contains information of association beetwen Dataset and Category
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.InternalDatasetObject.ToString">
+            <summary>
+            String representation of InternalDatasetObject
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.InternalDatasetObject.Id">
+            <summary>
+            Dataset identify
+            </summary>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.InternalDatasetObject.Code">
+            <summary>
+            Dataflow Code
+            </summary>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.InternalDatasetObject.Agency">
+            <summary>
+            Dataflow Agency
+            </summary>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.InternalDatasetObject.Version">
+            <summary>
+            Dataflow Version
+            </summary>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.InternalDatasetObject.ThemeId">
+            <summary>
+            Category Code
+            </summary>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.InternalDatasetObject.Nomi">
+            <summary>
+            Dataset Description Names
+            </summary>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.InternalDatasetObject.CategoryParent">
+            <summary>
+            List of Parent Category Code. From Root Parent to last child
+            </summary>
+        </member>
+        <member name="T:FlyDotStat_implementation.Manager.InternalCategoryObject">
+            <summary>
+            Object Model contains information of Category
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.InternalCategoryObject.ToString">
+            <summary>
+            String representation
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.InternalCategoryObject.Id">
+            <summary>
+            Category Code
+            </summary>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.InternalCategoryObject.Nomi">
+            <summary>
+            Category Names description
+            </summary>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.InternalCategoryObject.SubCategory">
+            <summary>
+            List of Sub Category (childs)
+            </summary>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.InternalCategoryObject.PadreId">
+            <summary>
+            Category Parent Code
+            </summary>
+        </member>
+        <member name="T:FlyDotStat_implementation.Manager.Data.DataMessageManager">
+            <summary>
+            DataMessageManager is class that retrieves data from the database to the requests of DataMessage
+            </summary>
+        </member>
+        <member name="F:FlyDotStat_implementation.Manager.Data.DataMessageManager.FormatWhereValue">
+            <summary>
+            Constat Format for required field in Where Statment parameter
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Data.DataMessageManager.#ctor(Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize for BaseManager Class
+            </summary>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Data.DataMessageManager.GetTableMessage(System.String,FlyController.Model.WhereParsing.IDataWhereStatment,FlyController.Model.Delegate.WriteResponseDelegate,System.String)">
+            <summary>
+            Get structured Data Message from Database
+            </summary>
+            <param name="idDataset">Dataset Code</param>
+            <param name="whereStatement">Where condition</param>
+            <param name="BuilderCallback">delegate to call for write data response</param>
+            <param name="TimeStamp">LastUpdate parameter request only observation from this date onwards</param>
+            <returns>Object for Write response in streaming <see cref="T:FlyController.Model.IFlyWriterBody"/></returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Data.DataMessageManager.GetDBResponse(System.Data.SqlClient.SqlDataReader,FlyController.Model.Delegate.WriteResponseDelegate,FlyController.Model.Streaming.IFlyWriter)">
+            <summary>
+            Get Database response and call delegate WriteBuilder
+            </summary>
+            <param name="rea">SqlDataReader response</param>
+            <param name="builder"> Delegate for callback of Write response</param>
+            <param name="writer"> Contains the object of transport used for transmitting data in streaming</param>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Data.DataMessageManager.CheckRenamedFrequency(FlyController.Model.IConceptObjectImpl,System.String)">
+            <summary>
+            Check if filed Frequency must be renamed (if is a fake fiels or real)
+            </summary>
+            <param name="c">Concept</param>
+            <param name="colname">Real Colum name</param>
+            <returns>true if must be rename false than else</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Data.DataMessageManager.ConvertIDataQueryToWhereStatement(FlyController.Model.WhereParsing.IDataWhereStatment,System.String@)">
+            <summary>
+            Converting in WhereStatment string to pass at database parameter the DataWhereStatment parsed from query
+            </summary>
+            <param name="DataWhereStatment">DataWhereStatment parsed from query</param>
+            <param name="TimeWhere">return a string representing a TimeWhere to pass a database parameter</param>
+            <returns>a string to pass at database WhereStatment parameter</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Data.DataMessageManager.parseWhereGroup(FlyController.Model.WhereParsing.IDataWhereStatmentSelectionGroup,System.String@)">
+            <summary>
+            Parsing a Group of Selection query
+            </summary>
+            <param name="group">Selection Group</param>
+            <param name="_freqWhere">return a string that representing a TimeWhere to pass a database parameter</param>
+            <returns>string representing the group formatted</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Data.DataMessageManager.parseWhereSelection(FlyController.Model.WhereParsing.IDataWhereStatmentSelection,System.String@)">
+            <summary>
+             Parsing a Selections query
+            </summary>
+            <param name="querys">Selection</param>
+            <param name="_freqWhere">return a string that representing a TimeWhere to pass a database parameter</param>
+            <returns>string representing the selection formatted</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Data.DataMessageManager.ParseTimeValueWhereStatment(Org.Sdmxsource.Sdmx.Api.Model.Base.ISdmxDate,Org.Sdmxsource.Sdmx.Api.Model.Base.ISdmxDate)">
+            <summary>
+            Parse a time where condition
+            </summary>
+            <param name="DateFrom">Date From in Sdmx Format</param>
+            <param name="DateTo">Date To in Sdmx Format</param>
+            <returns>string representing the date where formatted</returns>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.Data.DataMessageManager.ReferencesObject">
+            <summary>
+            Referenced objects 
+            </summary>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.Data.DataMessageManager.Concepts">
+            <summary>
+            List of Concept
+            </summary>
+        </member>
+        <member name="T:FlyDotStat_implementation.Manager.Data.GroupsManager">
+            <summary>
+            Class for retreive Groups information from Database
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Data.GroupsManager.#ctor(System.String,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize for BaseManager Class
+            </summary>
+            <param name="_TimeStamp">LastUpdate parameter request only data from this date onwards</param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Data.GroupsManager.GetGroups(System.String,System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})">
+            <summary>
+            Get Groups information from Database
+            </summary>
+            <param name="DataFlowID">Dataflow Code</param>
+            <param name="GroupId">Group Code</param>
+            <param name="DimensionRef">All Dimension in references of Group</param>
+            <param name="AttributeRef">All Attribute that referenced this Group</param>
+            <returns>List of <see cref="T:FlyController.Model.DataGroupObject"/></returns>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.Data.GroupsManager.TimeStamp">
+            <summary>
+            LastUpdate parameter request only data from this date onwards
+            </summary>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.Data.GroupsManager.ReferencesObject">
+            <summary>
+            Referenced objects (Not Used for Groups)
+            </summary>
+        </member>
+        <member name="T:FlyDotStat_implementation.Manager.FlyNameArtefactSettings">
+            <summary>
+            Concert Artefact Code as Configured
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.FlyNameArtefactSettings.#ctor(FlyController.Model.ISdmxParsingObject)">
+            <summary>
+            Inizialize a new Instance of <see cref="T:FlyDotStat_implementation.Manager.FlyNameArtefactSettings"/>
+            </summary>
+            <param name="_sdmxParsingObject"> Parsing Object <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.FlyNameArtefactSettings.GetDataFlowCodeFromConceptSchema">
+            <summary>
+            Get DataFlow Code From ConceptSchema (Using ConceptSchemeFormat specified in File Config)
+            </summary>
+            <returns>DataFlow Code</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.FlyNameArtefactSettings.GetConceptCodeFromCodelist">
+            <summary>
+            Get Concept Code From Codelist (Using CodelistFormat specified in File Config)
+            </summary>
+            <returns>Concept Code</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.FlyNameArtefactSettings.GetDataFlowCodeFromKeyFamily">
+            <summary>
+            Get DataFlow Code From KeyFamily (Using DsdFormat specified in File Config)
+            </summary>
+            <returns>DataFlow Code</returns>
+        </member>
+        <member name="T:FlyDotStat_implementation.Manager.MetadataFactory">
+            <summary>
+            Management Instance of FlyMapping
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.MetadataFactory.InstanceAgencyManager(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            initializes the correct class for the IAgencyManager interface
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+            <returns><see cref="T:FlyMapping.Model.IAgencyManager"/> Instance</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.MetadataFactory.InstanceCategoriesManager(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            initializes the correct class for the ICategoriesManager interface
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+            <returns><see cref="T:FlyMapping.Model.ICategoriesManager"/> Instance</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.MetadataFactory.InstanceDataflowsManager(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            initializes the correct class for the IDataflowsManager interface
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+            <returns><see cref="T:FlyMapping.Model.IDataflowsManager"/> Instance</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.MetadataFactory.InstanceConceptSchemeManager(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            initializes the correct class for the IConceptSchemeManager interface
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+            <returns><see cref="T:FlyMapping.Model.IConceptSchemeManager"/> Instance</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.MetadataFactory.InstanceCodelistsManager(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            initializes the correct class for the ICodelistsManager interface
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+            <returns><see cref="T:FlyMapping.Model.ICodelistManager"/> Instance</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.MetadataFactory.InstanceDsdManager(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            initializes the correct class for the IDsdManager interface
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+            <returns><see cref="T:FlyMapping.Model.IDsdManager"/> Instance</returns>
+        </member>
+        <member name="T:FlyDotStat_implementation.Manager.Metadata.AgencyManager">
+            <summary>
+            AgencyManager retrieves the data for build  AgencySchema and OrganisationScheme
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.AgencyManager.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize for BaseManager Class
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.AgencyManager.GetAgencyScheme">
+            <summary>
+            Build a AgencyScheme
+            </summary>
+            <returns>IAgencyScheme for SdmxObject</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.AgencyManager.BuildAgencyObject">
+            <summary>
+            Build a Mutalble AgencyObject 
+            </summary>
+            <returns>IAgencyMutableObject</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.AgencyManager.GetOrganisationNames">
+            <summary>
+            Get Organisation Names Description
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.Metadata.AgencyManager.ReferencesObject">
+            <summary>
+            Referenced objects 
+            </summary>
+        </member>
+        <member name="T:FlyDotStat_implementation.Manager.Metadata.BaseCategoriesManager">
+            <summary>
+            BaseCategoriesManager retrieves the data for build  CategoryScheme and CategorisationScheme
+            </summary>
+        </member>
+        <member name="F:FlyDotStat_implementation.Manager.Metadata.BaseCategoriesManager.GetDataFlowDelegate">
+            <summary>
+            Implementation of delegate for Get Dataflow
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.BaseCategoriesManager.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize for BaseManager Class
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.BaseCategoriesManager.GetCategoryScheme">
+            <summary>
+            Build a CategoryScheme
+            </summary>
+            <returns>ICategorySchemeObject for SdmxObject</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.BaseCategoriesManager.GetCategorisation">
+            <summary>
+            Build a Categorisation
+            </summary>
+            <returns>list of ICategorisationObject for SdmxObject</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.BaseCategoriesManager.GetCategorySchemeReferences(FlyEngine.Model.IReferencesObject)">
+            <summary>
+            Build a CategoryScheme
+            </summary>
+            <param name="refObj">Referenced Objects</param>
+            <returns>ICategorySchemeObject for SdmxObject</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.BaseCategoriesManager.GetCategorisationReferences(FlyEngine.Model.IReferencesObject)">
+            <summary>
+            Build a Categorisation
+            </summary>
+            <param name="refObj">Referenced Objects</param>
+            <returns>list of ICategorisationObject for SdmxObject</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.BaseCategoriesManager.RecursiveCreateCategoryHierarchy(System.Collections.Generic.List{FlyDotStat_implementation.Manager.InternalCategoryObject})">
+             <summary>
+            Build a list of category hierarchical from internal structure categories
+             </summary>
+             <param name="categoria">Internal retreived categories</param>
+             <returns>list of categories (ICategoryMutableObject)</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.BaseCategoriesManager.CreateCategoryObjects(System.Collections.Generic.List{FlyDotStat_implementation.Manager.InternalDatasetObject}@)">
+            <summary>
+            Create list of categories objects
+            </summary>
+            <param name="_datasetsLinear">return list of dataset associated with the categories</param>
+            <returns>hierarchical categories</returns>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.Metadata.BaseCategoriesManager.ReferencesObject">
+            <summary>
+            Referenced objects 
+            </summary>
+        </member>
+        <member name="T:FlyDotStat_implementation.Manager.Metadata.BaseCategoriesManager.InternalGetDataFlowDelegate">
+            <summary>
+            Delegate for Get Dataflow
+            </summary>
+            <returns>List of Dataflow</returns>
+        </member>
+        <member name="T:FlyDotStat_implementation.Manager.Metadata.CategoriesManager">
+            <summary>
+            CategoriesManager retrieves the data for build  CategoryScheme and CategorisationScheme
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.CategoriesManager.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize for BaseManager Class
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.CategoriesManager.RecursiveCreateCategoryHierarchy(System.Collections.Generic.List{FlyDotStat_implementation.Manager.InternalCategoryObject})">
+             <summary>
+            Build a list of category hierarchical from internal structure categories
+             </summary>
+             <param name="categoria">Internal retreived categories</param>
+             <returns>list of categories (ICategoryMutableObject)</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.CategoriesManager.BuildCategoryObject(System.String,System.Collections.Generic.List{FlyController.Model.SdmxObjectNameDescription},System.Collections.Generic.List{Org.Sdmxsource.Sdmx.Api.Model.Mutable.CategoryScheme.ICategoryMutableObject})">
+            <summary>
+            Build Category Object (ICategoryMutableObject)
+            </summary>
+            <param name="CategoryObjectId">Category Code</param>
+            <param name="names">Description Names</param>
+            <param name="SubCategory">list of SubCategory </param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.CategoriesManager.CreateCategoryObjects(System.Collections.Generic.List{FlyDotStat_implementation.Manager.InternalDatasetObject}@)">
+            <summary>
+            Create list of categories objects
+            </summary>
+            <param name="_datasetsLinear">return list of dataset associated with the categories</param>
+            <returns>hierarchical categories</returns>
+        </member>
+        <member name="T:FlyDotStat_implementation.Manager.Metadata.CategoriesManagerSP">
+            <summary>
+            CategoriesManager retrieves the data for build  CategoryScheme and CategorisationScheme
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.CategoriesManagerSP.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize for BaseManager Class
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.CategoriesManagerSP.RecursiveCreateCategoryHierarchy(System.Collections.Generic.List{FlyDotStat_implementation.Manager.InternalCategoryObject})">
+             <summary>
+            Build a list of category hierarchical from internal structure categories
+             </summary>
+             <param name="categoria">Internal retreived categories</param>
+             <returns>list of categories (ICategoryMutableObject)</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.CategoriesManagerSP.BuildCategoryObject(System.String,System.Collections.Generic.List{FlyController.Model.SdmxObjectNameDescription},System.Collections.Generic.List{Org.Sdmxsource.Sdmx.Api.Model.Mutable.CategoryScheme.ICategoryMutableObject})">
+            <summary>
+            Build Category Object (ICategoryMutableObject)
+            </summary>
+            <param name="CategoryObjectId">Category Code</param>
+            <param name="names">Description Names</param>
+            <param name="SubCategory">list of SubCategory </param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.CategoriesManagerSP.CreateCategoryObjects(System.Collections.Generic.List{FlyDotStat_implementation.Manager.InternalDatasetObject}@)">
+            <summary>
+            Create list of categories objects
+            </summary>
+            <param name="_datasetsLinear">return list of dataset associated with the categories</param>
+            <returns>hierarchical categories</returns>
+        </member>
+        <member name="T:FlyDotStat_implementation.Manager.Metadata.AttributeCodelistsManager">
+            <summary>
+            CodelistsManager retrieves the data for build  Codelist
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.AttributeCodelistsManager.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize for BaseManager Class
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.AttributeCodelistsManager.GetAttributeCodelistConstrain(System.String,FlyController.Model.IAttributeConcept)">
+            <summary>
+            retrieves the codelist of an attribute from SP Attribute codelist Constrain or from the file "AttributeConcept.xml"
+            </summary>
+            <param name="DataflowCode">Dataflow Code</param>
+            <param name="attribute">Instance of Attribute "AttributeConcept"</param>
+            <returns>list of Mutable Code Object</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.AttributeCodelistsManager.GetAttributeCodelistNoConstrain(FlyController.Model.IAttributeConcept)">
+            <summary>
+            retrieves the codelist of an attribute from SP Attribute codelist NoConstrain or from the file "AttributeConcept.xml"
+            </summary>
+            <param name="attribute">Instance of Attribute "AttributeConcept"</param>
+            <returns>list of Mutable Code Object</returns>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.Metadata.AttributeCodelistsManager.ReferencesObject">
+            <summary>
+            Referenced objects 
+            </summary>
+        </member>
+        <member name="T:FlyDotStat_implementation.Manager.Metadata.CodelistManager">
+            <summary>
+            BaseCategoriesManager retrieves the data for build  CategoryScheme and CategorisationScheme
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.CodelistManager.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize for BaseManager Class
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.CodelistManager.GetCodelistConstrain">
+            <summary>
+            retrieves the codelist Contrain  from database
+            </summary>
+            <returns>list of Mutable Code Object</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.CodelistManager.GetCodelistNoConstrain">
+            <summary>
+            retrieves the codelist Contrain from database
+            </summary>
+            <returns>list of Mutable Code Object</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.CodelistManager.BuildCodelist(System.String)">
+            <summary>
+            Populate a list of Codelist property of SDMXObjectBuilder for insert this in DataStructure response
+            Whitout Call all Dataflows
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.CodelistManager.BuildCodelist(System.String,FlyController.Model.IConceptObjectImpl)">
+            <summary>
+            Populate a list of Codelist property of SDMXObjectBuilder for insert this in DataStructure response
+            Whitout Call all Dataflows and Concepts
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.CodelistManager.GetCodelist(System.String,FlyController.Model.IConceptObjectImpl)">
+            <summary>
+            Create a list of Code that compose a Codelist
+            </summary>
+            <param name="_dataFlowCode">Dataflow Code</param>
+            <param name="_concept">Concept Object</param>
+            <returns>List of ICodeMutableObject</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.CodelistManager.GetCodelistReferences(FlyEngine.Model.IReferencesObject)">
+            <summary>
+            retrieves the codelist Contrain from database
+            </summary>
+            <param name="refObj">Referenced Objects</param>
+            <returns>list of Mutable Code Object</returns>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.Metadata.CodelistManager.ReferencesObject">
+            <summary>
+            Referenced objects 
+            </summary>
+        </member>
+        <member name="T:FlyDotStat_implementation.Manager.Metadata.DimensionCodelistsManager">
+            <summary>
+            CodelistsManager retrieves the data for build  Codelist
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.DimensionCodelistsManager.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize for BaseManager Class
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.DimensionCodelistsManager.GetDimensionCodelistContrain(System.String,FlyController.Model.IDimensionConcept)">
+            <summary>
+            retrieves the codelist Contrain of Dimension from database
+            </summary>
+            <param name="DataflowCode">Dataflow Code</param>
+            <param name="dimension">Instance of Dimension "DimensionConcept"</param>
+            <returns>list of Mutable Code Object</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.DimensionCodelistsManager.GetDimensionCodelistNoContrain(FlyController.Model.IDimensionConcept)">
+            <summary>
+            retrieves the codelist Contrain of Dimension from database
+            </summary>
+            <param name="dimension">Instance of Dimension "DimensionConcept"</param>
+            <returns>list of Mutable Code Object</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.DimensionCodelistsManager.GetRecurviveDimension(System.Xml.XmlNodeList,System.String)">
+            <summary>
+            Get hierachical codelist
+            </summary>
+            <param name="xmlNodeList">list of XmlNode (child nodes)</param>
+            <param name="ParentCode">dimension Parent Code</param>
+            <returns>list of Mutable Code Object</returns>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.Metadata.DimensionCodelistsManager.ReferencesObject">
+            <summary>
+            Referenced objects 
+            </summary>
+        </member>
+        <member name="T:FlyDotStat_implementation.Manager.Metadata.FLAGCodelistManager">
+            <summary>
+            FLAGManager retrieves the data for Concept FLAG
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.FLAGCodelistManager.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize for BaseManager Class
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.FLAGCodelistManager.GetFlagCodelist(System.String,FlyController.Model.IAttributeConcept)">
+            <summary>
+            retrieves the codelist of FlagDimension (OBS_STATUS) from database
+            </summary>
+            <param name="DataflowCode">Dataflow Code</param>
+            <param name="flag">Instance of Attribute "AttributeConcept"</param>
+            <returns>list of Mutable Code Object</returns>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.Metadata.FLAGCodelistManager.ReferencesObject">
+            <summary>
+            Referenced objects 
+            </summary>
+        </member>
+        <member name="T:FlyDotStat_implementation.Manager.Metadata.SpecialCodelistsManager">
+            <summary>
+            SpecialCodelistsManager retrieves the data for build  Codelist:
+            Frequency where not Dimension is present (From file), CL_COUNT, CL_TIME_PERIOD...
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.SpecialCodelistsManager.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize for BaseManager Class
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.SpecialCodelistsManager.GetFrequencyCodelist">
+            <summary>
+            retrieves the codelist of Frequency dimension from the file "FrequencyCodelist.xml"
+            </summary>
+            <returns>list of Mutable Code Object</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.SpecialCodelistsManager.GetFrequencyCodelist(System.String)">
+            <summary>
+            retrieves the codelist of Frequency dimension from AllData in DB
+            </summary>
+            <param name="_dataFlowCode">Dataflow Code</param>
+            <returns>list of Mutable Code Object</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.SpecialCodelistsManager.GetSpecialCodelist(System.String,FlyController.Model.ISpecialConcept)">
+            <summary>
+            retrieves the codelist constrained
+            </summary>
+            <param name="_dataFlowCode">Dataflow Code</param>
+            <param name="specialConcept">the <see cref="T:FlyController.Model.ISpecialConcept"/></param>
+            <returns>list of Mutable Code Object</returns>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.Metadata.SpecialCodelistsManager.ReferencesObject">
+            <summary>
+            Referenced objects 
+            </summary>
+        </member>
+        <member name="T:FlyDotStat_implementation.Manager.Metadata.AttributeManagerSP">
+            <summary>
+            Get Attribute Concept from Store Procedure
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.AttributeManagerSP.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize for BaseManager Class
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.AttributeManagerSP.GetAttribute(System.String)">
+            <summary>
+            Get Attribute Concept from file AttributeConcepts.xml
+            </summary>
+            <param name="DataflowCode">Dataflow Code</param>
+            <returns>list of Attribute</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.AttributeManagerSP.GetObsValue">
+            <summary>
+            return OBS_VALUE concept
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.Metadata.AttributeManagerSP.ReferencesObject">
+            <summary>
+            Referenced objects 
+            </summary>
+        </member>
+        <member name="T:FlyDotStat_implementation.Manager.Metadata.AttributeManager_FromFile">
+            <summary>
+            Get Attribute Concept from file AttributeConcepts.xml
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.AttributeManager_FromFile.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize for BaseManager Class
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.AttributeManager_FromFile.GetAttribute(System.String)">
+            <summary>
+            Get Attribute Concept from file AttributeConcepts.xml
+            </summary>
+            <param name="DataflowCode">Dataflow Code</param>
+            <returns>list of Attribute</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.AttributeManager_FromFile.GetObsValue">
+            <summary>
+            return OBS_VALUE concept
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.Metadata.AttributeManager_FromFile.ReferencesObject">
+            <summary>
+            Referenced objects 
+            </summary>
+        </member>
+        <member name="T:FlyDotStat_implementation.Manager.Metadata.ConceptSchemeManager">
+            <summary>
+            ConceptSchemeManager retrieves the data for build  ConceptScheme
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.ConceptSchemeManager.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize for BaseManager Class
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.ConceptSchemeManager.GetConceptSchemes">
+            <summary>
+            Build a ConceptSchemes
+            </summary>
+            <returns>list of IConceptSchemeObject for SdmxObject</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.ConceptSchemeManager.BuildConcepts(System.String)">
+            <summary>
+            Populate a Conceptscheme property of SDMXObjectBuilder for insert this in DataStructure response
+            whitout calling all dataflows
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.ConceptSchemeManager.BuildConcepts(System.String,System.Collections.Generic.List{FlyController.Model.IConceptObjectImpl})">
+            <summary>
+            Populate a Conceptscheme property of SDMXObjectBuilder for insert this in DataStructure response
+            whitout calling all dataflows and whitout calling a list of concept
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.ConceptSchemeManager.GetConceptList(System.String)">
+            <summary>
+            Create a list of Concept object in Dataflow
+            </summary>
+            <param name="_dataflowCode">Dataflow Code</param>
+            <returns>list of ConceptObjectImpl</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.ConceptSchemeManager.GetConceptSchemesReferences(FlyEngine.Model.IReferencesObject)">
+            <summary>
+            Build a ConceptSchemes
+            </summary>
+            <param name="refObj">Referenced Objects</param>
+            <returns>list of IConceptSchemeObject for SdmxObject</returns>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.Metadata.ConceptSchemeManager.ConceptSchemeNames">
+            <summary>
+            ConceptScheme Names Description
+            </summary>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.Metadata.ConceptSchemeManager.ReferencesObject">
+            <summary>
+            Referenced objects 
+            </summary>
+        </member>
+        <member name="T:FlyDotStat_implementation.Manager.Metadata.DimensionManager">
+            <summary>
+            DimensionManager retrieves the data for build conceptScheme
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.DimensionManager.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize for BaseManager Class
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.DimensionManager.GetDimensionConceptObjects(System.String,System.Collections.Generic.List{FlyController.Model.SdmxObjectNameDescription}@)">
+            <summary>
+            retrieves all Concept Dimension from database
+            </summary>
+            <param name="DataflowCode">Dataflow Code</param>
+            <param name="Names">return Dataflow NameDescription</param>
+            <returns>list of Dimension</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.DimensionManager.GetFakeFreqNames">
+            <summary>
+            If not Exist Frequency Dimension in database, the application adds it because it is mandatory and takes the Names Description from the file "FrequencyCodelist.xml"
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.Metadata.DimensionManager.ReferencesObject">
+            <summary>
+            Referenced objects 
+            </summary>
+        </member>
+        <member name="T:FlyDotStat_implementation.Manager.Metadata.FLAGManager">
+            <summary>
+            FLAGManager retrieves the data for Concept FLAG
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.FLAGManager.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize for BaseManager Class
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.FLAGManager.GetFlag">
+            <summary>
+            Get Flag Attribute (OBS_STATUS)
+            </summary>
+            <returns>Flag Attribute</returns>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.Metadata.FLAGManager.ReferencesObject">
+            <summary>
+            Referenced objects 
+            </summary>
+        </member>
+        <member name="T:FlyDotStat_implementation.Manager.Metadata.DataflowsManager">
+            <summary>
+            DataflowsManager retrieves the data for build DataFlows
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.DataflowsManager.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize for BaseManager Class
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.DataflowsManager.GetDataFlows">
+            <summary>
+            Build a DataFlows
+            </summary>
+            <returns>list of IDataflowObject for SdmxObject</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.DataflowsManager.GetDataflows(System.String)">
+            <summary>
+            retrieves the Dataflows from database
+            </summary>
+            <returns>list of Dataflow in Dictionary structure (Code, Descriptions)</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.DataflowsManager.GetDataFlowsReferences(FlyEngine.Model.IReferencesObject)">
+            <summary>
+            Build a DataFlows
+            </summary>
+            <param name="refObj">Referenced Objects</param>
+            <returns>list of IDataflowObject for SdmxObject</returns>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.Metadata.DataflowsManager.ReferencesObject">
+            <summary>
+            Referenced objects 
+            </summary>
+        </member>
+        <member name="T:FlyDotStat_implementation.Manager.Metadata.DatasetsManager">
+            <summary>
+            DatasetsManagerManager retrieves the data for build DataFlows
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.DatasetsManager.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize for BaseManager Class
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.DatasetsManager.GetDataFlows">
+            <summary>
+            Build a DataFlows
+            </summary>
+            <returns>list of IDataflowObject for SdmxObject</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.DatasetsManager.GetDataflows(System.String)">
+            <summary>
+            retrieves the Dataflows from database
+            </summary>
+            <returns>list of Dataflow in Dictionary structure (Code, Descriptions)</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.DatasetsManager.GetDataFlowsReferences(FlyEngine.Model.IReferencesObject)">
+            <summary>
+            Build a DataFlows
+            </summary>
+            <param name="refObj">Referenced Objects</param>
+            <returns>list of IDataflowObject for SdmxObject</returns>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.Metadata.DatasetsManager.ReferencesObject">
+            <summary>
+            Referenced objects 
+            </summary>
+        </member>
+        <member name="T:FlyDotStat_implementation.Manager.Metadata.DsdManager">
+            <summary>
+            DsdManager retrieves the data for build  KeyFamilies (sdmx v 2.0) or DataStructures (sdmx v 2.1)
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.DsdManager.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize for BaseManager Class
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.DsdManager.GetDSDs">
+            <summary>
+            retrieves the DSD from database
+            </summary>
+            <returns>list of DataStructure for SDMXObject</returns>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.DsdManager.BuildDSD(Org.Sdmxsource.Sdmx.Api.Model.Objects.DataStructure.IDataflowObject)">
+            <summary>
+            Populate DataStructure (KeyFamyly for SDMX 2.0, Structure for SDMX 2.1)
+            property of SDMXObjectBuilder for insert this elements in DataStructure response
+            </summary>
+        </member>
+        <member name="M:FlyDotStat_implementation.Manager.Metadata.DsdManager.GetDSDsReferences(FlyEngine.Model.IReferencesObject)">
+            <summary>
+            retrieves the DSD from database
+            </summary>
+            <param name="refObj">Referenced Objects</param>
+            <returns>list of DataStructure for SDMXObject</returns>
+        </member>
+        <member name="P:FlyDotStat_implementation.Manager.Metadata.DsdManager.ReferencesObject">
+            <summary>
+            Referenced objects 
+            </summary>
+        </member>
+    </members>
+</doc>

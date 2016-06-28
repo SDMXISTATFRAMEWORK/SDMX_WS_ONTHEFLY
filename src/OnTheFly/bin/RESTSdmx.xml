@@ -1,0 +1,905 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RESTSdmx</name>
+    </assembly>
+    <members>
+        <member name="T:RESTSdmx.Builder.RESTError">
+            <summary>
+            An Object to build the Error output of Rest Call
+            </summary>
+        </member>
+        <member name="M:RESTSdmx.Builder.RESTError.BuildException(FlyController.Model.Error.SdmxException)">
+            <summary>
+            Builds an object of type  <see cref="T:System.ServiceModel.Web.WebFaultException`1"/>
+            </summary>
+            <param name="buildFrom">
+            An Object to build the output object from
+            </param>
+            <returns>
+            Object of type <see cref="T:System.ServiceModel.Web.WebFaultException`1"/>
+            </returns>
+        </member>
+        <member name="T:RESTSdmx.Builder.RestParser">
+            <summary>
+            Parsing Query REST divided on Metadata and Data query
+            </summary>
+        </member>
+        <member name="M:RESTSdmx.Builder.RestParser.GenerateResponseFunctionMetadata(Org.Sdmxsource.Sdmx.Api.Model.Query.IRestStructureQuery,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchema,System.String)">
+            <summary>
+            Action Fired when client read a body
+            </summary>
+            <param name="query">Contains all object and methods for writing a response <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Query.IRestStructureQuery"/></param>
+            <param name="schemaVersion">Sdmx Version</param>
+            <param name="ConstrainParameter">Parameters for Codelist Contrained</param>
+            <returns>Action FlyWriter, Queue Action populated streaming trasport object FlyWriter</returns>
+        </member>
+        <member name="M:RESTSdmx.Builder.RestParser.ParseMetadataQuery(Org.Sdmxsource.Sdmx.Api.Model.Query.IRestStructureQuery,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchema,System.String)">
+            <summary>
+            Parse Query Metadata
+            </summary>
+            <param name="query">Contains all object and methods for writing a response <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Query.IRestStructureQuery"/></param>
+            <param name="schemaVersion">Sdmx Version</param>
+            <param name="ConstrainParameter">Parameters for Codelist Contrained</param>
+            <returns>Action FlyWriter, Queue Action populated streaming trasport object FlyWriter</returns>
+        </member>
+        <member name="M:RESTSdmx.Builder.RestParser.GenerateResponseFunctionData(Org.Sdmxsource.Sdmx.Api.Model.Query.IRestDataQuery,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchema,RESTSdmx.Utils.DataMediaType.FLYBaseDataFormatEnumType,System.String,System.String)">
+            <summary>
+            Action Fired when client read a body
+            </summary>
+            <param name="query">Contains all object and methods for writing a response <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Query.IRestDataQuery"/></param>
+            <param name="schemaVersion">Sdmx Version</param>
+            <param name="format">request format of response</param>
+            <param name="requestAccept">entire request string</param>
+            <param name="originalQuery">Original String Query required</param>
+            <returns>Action FlyWriter, Queue Action populated streaming trasport object FlyWriter</returns>
+        </member>
+        <member name="M:RESTSdmx.Builder.RestParser.ParseDataQuery(Org.Sdmxsource.Sdmx.Api.Model.Query.IRestDataQuery,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchema,RESTSdmx.Utils.DataMediaType.FLYBaseDataFormatEnumType,System.String,System.String)">
+            <summary>
+            Parse Query Data
+            </summary>
+            <param name="query">Contains all object and methods for writing a response <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Query.IRestStructureQuery"/></param>
+            <param name="schemaVersion">Sdmx Version</param>
+            <param name="format">Type of request</param>
+            <param name="requestAccept">entire request string</param>
+            <param name="originalQuery">Original String Query required</param>
+            <returns>Action FlyWriter, Queue Action populated streaming trasport object FlyWriter</returns>
+        </member>
+        <member name="T:RESTSdmx.DataResource">
+            <summary>
+            The data resource.
+            </summary>
+        </member>
+        <member name="T:RESTSdmx.IDataResource">
+            <summary>
+            the DataResource Interface
+            </summary>
+        </member>
+        <member name="M:RESTSdmx.IDataResource.GetGenericData(System.String,System.String,System.String)">
+            <summary>
+            The get generic data.
+            </summary>
+            <param name="flowRef">
+            The flow ref.
+            </param>
+            <param name="key">
+            The key.
+            </param>
+            <param name="providerRef">
+            The provider ref.
+            </param>
+            <returns>
+            The <see cref="T:System.ServiceModel.Channels.Message"/>.
+            </returns>
+        </member>
+        <member name="M:RESTSdmx.IDataResource.GetGenericDataAllKeys(System.String)">
+            <summary>
+            The get generic data all keys.
+            </summary>
+            <param name="flowRef">
+            The flow ref.
+            </param>
+            <returns>
+            The <see cref="T:System.ServiceModel.Channels.Message"/>.
+            </returns>
+        </member>
+        <member name="M:RESTSdmx.IDataResource.GetGenericDataAllProviders(System.String,System.String)">
+            <summary>
+            The get generic data all providers.
+            </summary>
+            <param name="flowRef">
+            The flow ref.
+            </param>
+            <param name="key">
+            The key.
+            </param>
+            <returns>
+            The <see cref="T:System.ServiceModel.Channels.Message"/>.
+            </returns>
+        </member>
+        <member name="M:RESTSdmx.DataResource.#ctor">
+            <summary>
+                Initializes a new instance of the <see cref="T:RESTSdmx.DataResource"/> class.
+            </summary>
+        </member>
+        <member name="M:RESTSdmx.DataResource.GetGenericData(System.String,System.String,System.String)">
+            <summary>
+            The get generic data.
+            </summary>
+            <param name="flowRef">
+            The flow ref.
+            </param>
+            <param name="key">
+            The key.
+            </param>
+            <param name="providerRef">
+            The provider ref.
+            </param>
+            <returns>
+            The <see cref="T:System.ServiceModel.Channels.Message"/>.
+            </returns>
+            <exception cref="T:System.ServiceModel.Web.WebFaultException">
+            </exception>
+            <exception cref="T:System.ServiceModel.Web.WebFaultException`1">
+            </exception>
+        </member>
+        <member name="M:RESTSdmx.DataResource.GetGenericDataAllKeys(System.String)">
+            <summary>
+            The get generic data all keys.
+            </summary>
+            <param name="flowRef">
+            The flow ref.
+            </param>
+            <returns>
+            The <see cref="T:System.ServiceModel.Channels.Message"/>.
+            </returns>
+        </member>
+        <member name="M:RESTSdmx.DataResource.GetGenericDataAllProviders(System.String,System.String)">
+            <summary>
+            The get generic data all providers.
+            </summary>
+            <param name="flowRef">
+            The flow ref.
+            </param>
+            <param name="key">
+            The key.
+            </param>
+            <returns>
+            The <see cref="T:System.ServiceModel.Channels.Message"/>.
+            </returns>
+        </member>
+        <member name="M:RESTSdmx.DataResource.BuildQueryBean(System.String,System.String,System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            The build query bean.
+            </summary>
+            <param name="flowRef">
+            The flow ref.
+            </param>
+            <param name="key">
+            The key.
+            </param>
+            <param name="providerRef">
+            The provider ref.
+            </param>
+            <param name="queryParameters">
+            The query parameters.
+            </param>
+            <returns>
+            The <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Query.IRestDataQuery"/>.
+            </returns>
+            <exception cref="T:System.ServiceModel.Web.WebFaultException`1">
+            </exception>
+        </member>
+        <member name="M:RESTSdmx.DataResource.GetVersionFromAccept(System.Collections.Generic.IEnumerable{System.Net.Mime.ContentType},System.String)">
+            <summary>
+            The get version from accept.
+            </summary>
+            <param name="acceptHeaderList">
+            The accept header list.
+            </param>
+            <param name="mediatype">
+            The mediatype.
+            </param>
+            <returns>
+            The <see cref="T:System.String"/>.
+            </returns>
+        </member>
+        <member name="M:RESTSdmx.DataResource.GetVersionFromMediaType(System.Net.Mime.ContentType,RESTSdmx.Utils.DataMediaType.FLYBaseDataFormatEnumType)">
+            <summary>
+            The get version from media type.
+            </summary>
+            <param name="selectedMediaTypeWithVersion">
+            The selected media type with version.
+            </param>
+            <param name="format">
+            The format.
+            </param>
+            <returns>
+            The <see cref="T:Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchema"/>.
+            </returns>
+        </member>
+        <member name="M:RESTSdmx.DataResource.ProcessRequest(System.String,System.String,System.String,System.ServiceModel.Web.WebOperationContext)">
+            <summary>
+            The process request.
+            </summary>
+            <param name="flowRef">
+            The flow ref.
+            </param>
+            <param name="key">
+            The key.
+            </param>
+            <param name="providerRef">
+            The provider ref.
+            </param>
+            <param name="ctx">
+            The ctx.
+            </param>
+            <returns>
+            The <see cref="T:System.ServiceModel.Channels.Message"/>.
+            </returns>
+            <exception cref="T:System.ServiceModel.Web.WebFaultException`1">
+            </exception>
+        </member>
+        <member name="T:RESTSdmx.IStructureResource">
+            <summary>
+            the StructureResource Interface
+            </summary>
+        </member>
+        <member name="M:RESTSdmx.IStructureResource.GetStructure(System.String,System.String,System.String,System.String)">
+            <summary>
+            The get structure.
+            </summary>
+            <param name="structure">
+            The structure.
+            </param>
+            <param name="agencyId">
+            The agency id.
+            </param>
+            <param name="resourceId">
+            The resource id.
+            </param>
+            <param name="version">
+            The version.
+            </param>
+            <returns>
+            The <see cref="T:System.ServiceModel.Channels.Message"/>.
+            </returns>
+        </member>
+        <member name="M:RESTSdmx.IStructureResource.GetStructureAll(System.String)">
+            <summary>
+            The get structure all.
+            </summary>
+            <param name="structure">
+            The structure.
+            </param>
+            <returns>
+            The <see cref="T:System.ServiceModel.Channels.Message"/>.
+            </returns>
+        </member>
+        <member name="M:RESTSdmx.IStructureResource.GetStructureAllIdsLatest(System.String,System.String)">
+            <summary>
+            The get structure all ids latest.
+            </summary>
+            <param name="structure">
+            The structure.
+            </param>
+            <param name="agencyId">
+            The agency id.
+            </param>
+            <returns>
+            The <see cref="T:System.ServiceModel.Channels.Message"/>.
+            </returns>
+        </member>
+        <member name="M:RESTSdmx.IStructureResource.GetStructureLatest(System.String,System.String,System.String)">
+            <summary>
+            The get structure latest.
+            </summary>
+            <param name="structure">
+            The structure.
+            </param>
+            <param name="agencyId">
+            The agency id.
+            </param>
+            <param name="resourceId">
+            The resource id.
+            </param>
+            <returns>
+            The <see cref="T:System.ServiceModel.Channels.Message"/>.
+            </returns>
+        </member>
+        <member name="T:RESTSdmx.StructureResource">
+            <summary>
+             The SDMX-ML Structural meta-data resource implementation 
+            </summary>
+        </member>
+        <member name="M:RESTSdmx.StructureResource.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:RESTSdmx.StructureResource"/> class.
+            </summary>
+        </member>
+        <member name="M:RESTSdmx.StructureResource.GetStructure(System.String,System.String,System.String,System.String)">
+            <summary>
+            The get structure.
+            </summary>
+            <param name="structure">
+            The structure.
+            </param>
+            <param name="agencyId">
+            The agency id.
+            </param>
+            <param name="resourceId">
+            The resource id.
+            </param>
+            <param name="version">
+            The version.
+            </param>
+            <returns>
+            The <see cref="T:System.ServiceModel.Channels.Message"/>.
+            </returns>
+            <exception cref="T:System.ServiceModel.Web.WebFaultException`1">
+            Bad Request.
+            </exception>
+        </member>
+        <member name="M:RESTSdmx.StructureResource.GetStructureAll(System.String)">
+            <summary>
+            The get structure all.
+            </summary>
+            <param name="structures">
+            The structures.
+            </param>
+            <returns>
+            The <see cref="T:System.ServiceModel.Channels.Message"/>.
+            </returns>
+        </member>
+        <member name="M:RESTSdmx.StructureResource.GetStructureAllIdsLatest(System.String,System.String)">
+            <summary>
+            The get structure all ids latest.
+            </summary>
+            <param name="structure">
+            The structure.
+            </param>
+            <param name="agencyIds">
+            The agency ids.
+            </param>
+            <returns>
+            The <see cref="T:System.ServiceModel.Channels.Message"/>.
+            </returns>
+        </member>
+        <member name="M:RESTSdmx.StructureResource.GetStructureLatest(System.String,System.String,System.String)">
+            <summary>
+            The get structure latest.
+            </summary>
+            <param name="structure">
+            The structure.
+            </param>
+            <param name="agencyId">
+            The agency id.
+            </param>
+            <param name="resourceId">
+            The resource id.
+            </param>
+            <returns>
+            The <see cref="T:System.ServiceModel.Channels.Message"/>.
+            </returns>
+        </member>
+        <member name="M:RESTSdmx.StructureResource.BuildRestQueryBean(System.String,System.String,System.String,System.String,System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            Builds the rest query bean.
+            </summary>
+            <param name="structure">The structure.</param>
+            <param name="agencyId">The agency id.</param>
+            <param name="resourceId">The resource id.</param>
+            <param name="version">The version.</param>
+            <param name="queryParameters">The query parameters.</param>
+            <returns>
+            The <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Query.IRestStructureQuery"/>.
+            </returns>
+            <exception cref="T:System.ServiceModel.Web.WebFaultException`1">An exception is thrown</exception>
+        </member>
+        <member name="M:RESTSdmx.StructureResource.IsStructureValid(System.String)">
+            <summary>
+            The is structure valid.
+            </summary>
+            <param name="structure">
+            The structure.
+            </param>
+            <returns>
+            The <see cref="T:System.Boolean"/>.
+            </returns>
+        </member>
+        <member name="M:RESTSdmx.StructureResource.ProcessRequest(System.String,System.String,System.String,System.String,System.ServiceModel.Web.WebOperationContext)">
+            <summary>
+            Processes the request.
+            </summary>
+            <param name="structure">The structure.</param>
+            <param name="agencyId">The agency id.</param>
+            <param name="resourceId">The resource id.</param>
+            <param name="version">The version.</param>
+            <param name="ctx">The current <see cref="T:System.ServiceModel.Web.WebOperationContext"/>.</param>
+            <returns>
+            The <see cref="T:System.ServiceModel.Channels.Message"/>.
+            </returns>
+            <exception cref="T:System.ServiceModel.Web.WebFaultException`1">
+            Cannot serve content type
+            </exception>
+            <exception cref="T:System.ServiceModel.Web.WebFaultException`1">Cannot serve content type</exception>
+        </member>
+        <member name="T:RESTSdmx.Utils.DataMediaEnumType">
+            <summary>
+                TODO: Update summary.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.DataMediaEnumType.GenericData">
+            <summary>
+            The generic data.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.DataMediaEnumType.StructureSpecificData">
+            <summary>
+            The structure specific data.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.DataMediaEnumType.ApplicationXml">
+            <summary>
+            The application xml.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.DataMediaEnumType.TextXml">
+            <summary>
+            The text xml mime type
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.DataMediaEnumType.CompactData">
+            <summary>
+            The compact data.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.DataMediaEnumType.CrossSectionalData">
+            <summary>
+            The cross sectional data.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.DataMediaEnumType.EdiData">
+            <summary>
+            The edi data.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.DataMediaEnumType.CsvData">
+            <summary>
+            The csv data.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.DataMediaEnumType.RdfData">
+            <summary>
+            The rdf data.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.DataMediaEnumType.DSPLData">
+            <summary>
+            The dspl data.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.DataMediaEnumType.JsonData">
+            <summary>
+            The Json data.
+            </summary>
+        </member>
+        <member name="T:RESTSdmx.Utils.DataMediaType">
+            <summary>
+            The data media type.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.DataMediaType.Instances">
+            <summary>
+            The instances.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.DataMediaType._format">
+            <summary>
+            The _format.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.DataMediaType._mediaTypeName">
+            <summary>
+            The _media type name.
+            </summary>
+        </member>
+        <member name="M:RESTSdmx.Utils.DataMediaType.#ctor(RESTSdmx.Utils.DataMediaEnumType,System.String,RESTSdmx.Utils.DataMediaType.FLYBaseDataFormatEnumType)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RESTSdmx.Utils.DataMediaType"/> class.
+            </summary>
+            <param name="enumType">
+            The enum type.
+            </param>
+            <param name="mediaTypeName">
+            The media type name.
+            </param>
+            <param name="format">
+            The format.
+            </param>
+        </member>
+        <member name="M:RESTSdmx.Utils.DataMediaType.GetFromEnum(RESTSdmx.Utils.DataMediaEnumType)">
+            <summary>
+            The get from enum.
+            </summary>
+            <param name="enumType">
+            The enum type.
+            </param>
+            <returns>
+            The <see cref="T:RESTSdmx.Utils.DataMediaType"/>.
+            </returns>
+        </member>
+        <member name="M:RESTSdmx.Utils.DataMediaType.GetTypeFromName(System.String)">
+            <summary>
+            The get type from name.
+            </summary>
+            <param name="mediaTypeName">
+            The media type name.
+            </param>
+            <returns>
+            The <see cref="T:RESTSdmx.Utils.DataMediaType"/>.
+            </returns>
+        </member>
+        <member name="M:RESTSdmx.Utils.DataMediaType.GetMediaTypeVersion(System.String)">
+            <summary>
+            The get media type version.
+            </summary>
+            <param name="version">
+            The version.
+            </param>
+            <returns>
+            The <see cref="T:System.Net.Mime.ContentType"/>.
+            </returns>
+        </member>
+        <member name="M:RESTSdmx.Utils.DataMediaType.ToString">
+            <summary>
+            The to string.
+            </summary>
+            <returns>
+            The <see cref="T:System.String"/>.
+            </returns>
+        </member>
+        <member name="P:RESTSdmx.Utils.DataMediaType.Values">
+            <summary>
+            Gets the values.
+            </summary>
+        </member>
+        <member name="P:RESTSdmx.Utils.DataMediaType.Format">
+            <summary>
+            Gets the format.
+            </summary>
+        </member>
+        <member name="P:RESTSdmx.Utils.DataMediaType.MediaType">
+            <summary>
+            Gets the media type.
+            </summary>
+        </member>
+        <member name="P:RESTSdmx.Utils.DataMediaType.MediaTypeName">
+            <summary>
+            Gets the media type name.
+            </summary>
+        </member>
+        <member name="T:RESTSdmx.Utils.DataMediaType.FLYBaseDataFormatEnumType">
+            <summary>
+            Base Data FormatEnum 
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.DataMediaType.FLYBaseDataFormatEnumType.Null">
+            <summary>
+            Nothing Format
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.DataMediaType.FLYBaseDataFormatEnumType.Generic">
+            <summary>
+            Generic Format
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.DataMediaType.FLYBaseDataFormatEnumType.Compact">
+            <summary>
+            Compact Format
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.DataMediaType.FLYBaseDataFormatEnumType.Utility">
+            <summary>
+            Utility Format
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.DataMediaType.FLYBaseDataFormatEnumType.Edi">
+            <summary>
+            Edi Format
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.DataMediaType.FLYBaseDataFormatEnumType.CrossSectional">
+            <summary>
+            CrossSectional Format
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.DataMediaType.FLYBaseDataFormatEnumType.MessageGroup">
+            <summary>
+            MessageGroup Format
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.DataMediaType.FLYBaseDataFormatEnumType.Csv">
+            <summary>
+            Csv Format
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.DataMediaType.FLYBaseDataFormatEnumType.Json">
+            <summary>
+            Json Format
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.DataMediaType.FLYBaseDataFormatEnumType.Rdf">
+            <summary>
+            Rdf Format
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.DataMediaType.FLYBaseDataFormatEnumType.Dspl">
+            <summary>
+            Rdf Format
+            </summary>
+        </member>
+        <member name="T:RESTSdmx.Utils.RestUtils">
+            <summary>
+            REST related utils
+            </summary>
+        </member>
+        <member name="M:RESTSdmx.Utils.RestUtils.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:RESTSdmx.Utils.RestUtils"/> class.
+            </summary>
+        </member>
+        <member name="M:RESTSdmx.Utils.RestUtils.GetCharSetEncoding(System.Net.Mime.ContentType)">
+            <summary>
+            Gets the char set encoding.
+            </summary>
+            <param name="acceptValue">The accept value.</param>
+            <returns>The response encoding</returns>
+        </member>
+        <member name="M:RESTSdmx.Utils.RestUtils.GetContentType(System.Net.Mime.ContentType,System.Net.Mime.ContentType)">
+            <summary>
+            Gets the type of the content.
+            </summary>
+            <param name="acceptValue">The accept value.</param>
+            <param name="resolvedContentType">Type of the resolved content.</param>
+            <returns>The response content type</returns>
+        </member>
+        <member name="M:RESTSdmx.Utils.RestUtils.GetContentType(System.ServiceModel.Web.WebOperationContext,System.Func{System.Net.Mime.ContentType,System.Boolean},System.Net.Mime.ContentType)">
+            <summary>
+            Gets the type of the content.
+            </summary>
+            <param name="ctx">
+            The current <see cref="T:System.ServiceModel.Web.WebOperationContext"/>.
+            </param>
+            <param name="predicate">
+            The predicate.
+            </param>
+            <param name="defaultMediaType">
+            Default type of the media.
+            </param>
+            <exception cref="T:System.ServiceModel.Web.WebFaultException`1">
+            Cannot serve content type
+            </exception>
+            <returns>
+            The <see cref="T:System.Net.Mime.ContentType"/>.
+            </returns>
+        </member>
+        <member name="M:RESTSdmx.Utils.RestUtils.GetVersionFromMediaType(System.Net.Mime.ContentType)">
+            <summary>
+            The get version from media type.
+            </summary>
+            <param name="mediaType">
+            The media type.
+            </param>
+            <returns>
+            The <see cref="T:Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchema"/>.
+            </returns>
+        </member>
+        <member name="M:RESTSdmx.Utils.RestUtils.GetVersionFromAccept(System.Collections.Generic.IEnumerable{System.Net.Mime.ContentType},System.String)">
+            <summary>
+            The get version from accept.
+            </summary>
+            <param name="acceptHeaderList">
+            The accept header list.
+            </param>
+            <param name="mediatype">
+            The mediatype.
+            </param>
+            <returns>
+            The <see cref="T:System.String"/>.
+            </returns>
+        </member>
+        <member name="M:RESTSdmx.Utils.RestUtils.GetQueryStringAsDict(System.Collections.Specialized.NameValueCollection)">
+            <summary>
+            The get query string as dict.
+            </summary>
+            <param name="queryParameters">
+            The query parameters.
+            </param>
+            <returns>
+            The parameter in Dictionary
+            </returns>
+            <exception cref="T:System.ServiceModel.Web.WebFaultException">
+            </exception>
+        </member>
+        <member name="M:RESTSdmx.Utils.RestUtils.StreamXml(FlyController.Model.FlyMediaEnum,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchema,System.IO.Stream,FlyController.Streaming.IStreamController{FlyController.Model.Streaming.IFlyWriter},System.Text.Encoding)">
+            <summary>
+            Streams the structural metadata.
+            </summary>
+            <param name="mediaType">Specific a mediatype response (sdmx, rdf, dspl, json)</param>
+            <param name="schemaVersion">The schema version.</param>
+            <param name="stream">The stream.</param>
+            <param name="streamController">The stream controller.</param>
+            <param name="encoding">The response encoding.</param>
+        </member>
+        <member name="T:RESTSdmx.Utils.SdmxMedia">
+            <summary>
+                MIME types
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.SdmxMedia.ApplicationXml">
+            <summary>
+            The application xml.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.SdmxMedia.TextXml">
+            <summary>
+            The Text xml.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.SdmxMedia.CompactData">
+            <summary>
+            The compact data.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.SdmxMedia.CrossSectionalData">
+            <summary>
+            The cross sectional data.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.SdmxMedia.CsvData">
+            <summary>
+            The CSV data.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.SdmxMedia.EdiData">
+            <summary>
+            The EDI data.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.SdmxMedia.EdiStructure">
+            <summary>
+            The EDI structure.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.SdmxMedia.RdfXml">
+            <summary>
+            The RDF data/Structure.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.SdmxMedia.DSPL">
+            <summary>
+            The DSPL data/Structure.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.SdmxMedia.JsonData">
+            <summary>
+            The Json data
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.SdmxMedia.GenericData">
+            <summary>
+            The generic data.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.SdmxMedia.Structure">
+            <summary>
+            The structure.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.SdmxMedia.StructureSpecificData">
+            <summary>
+            The structure specific data.
+            </summary>
+        </member>
+        <member name="T:RESTSdmx.Utils.StructureMediaEnumType">
+            <summary>
+            The structure media type.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.StructureMediaEnumType.ApplicationXml">
+            <summary>
+            The application XML.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.StructureMediaEnumType.TextXml">
+            <summary>
+            Mime type <c>text/xml</c>.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.StructureMediaEnumType.Structure">
+            <summary>
+            The structure.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.StructureMediaEnumType.EdiStructure">
+            <summary>
+            The edi structure.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.StructureMediaEnumType.RdfXml">
+            <summary>
+            The edi structure.
+            </summary>
+        </member>
+        <member name="T:RESTSdmx.Utils.StructureMediaType">
+            <summary>
+            The structure media type.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.StructureMediaType._instances">
+            <summary>
+            The instances.
+            </summary>
+        </member>
+        <member name="F:RESTSdmx.Utils.StructureMediaType._sdmxMedia">
+            <summary>
+            The _sdmx media.
+            </summary>
+        </member>
+        <member name="M:RESTSdmx.Utils.StructureMediaType.#ctor(RESTSdmx.Utils.StructureMediaEnumType,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RESTSdmx.Utils.StructureMediaType"/> class.
+            </summary>
+            <param name="mediaType">
+            The Media type.
+            </param>
+            <param name="sdmxMedia">
+            The SDMX media.
+            </param>
+        </member>
+        <member name="M:RESTSdmx.Utils.StructureMediaType.GetFromEnum(RESTSdmx.Utils.StructureMediaEnumType)">
+            <summary>
+            Gets the value from <paramref name="enumType"/>
+            </summary>
+            <param name="enumType">
+            Type of the enumeration.
+            </param>
+            <returns>
+            The <see cref="T:RESTSdmx.Utils.StructureMediaType"/>.
+            </returns>
+        </member>
+        <member name="M:RESTSdmx.Utils.StructureMediaType.GetTypeFromName(System.String)">
+            <summary>
+            The get type from name.
+            </summary>
+            <param name="mediaTypeName">
+            The media type name.
+            </param>
+            <returns>
+            The <see cref="T:RESTSdmx.Utils.StructureMediaType"/>.
+            </returns>
+        </member>
+        <member name="M:RESTSdmx.Utils.StructureMediaType.GetMediaTypeVersion(System.String)">
+            <summary>
+            The get media type version.
+            </summary>
+            <param name="version">
+            The version.
+            </param>
+            <returns>
+            The <see cref="T:System.Net.Mime.ContentType"/>.
+            </returns>
+        </member>
+        <member name="P:RESTSdmx.Utils.StructureMediaType.Values">
+            <summary>
+            Gets the values.
+            </summary>
+        </member>
+        <member name="P:RESTSdmx.Utils.StructureMediaType.MediaTypeName">
+            <summary>
+            Gets the media type name.
+            </summary>
+        </member>
+    </members>
+</doc>

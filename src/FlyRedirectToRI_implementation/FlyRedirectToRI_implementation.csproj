@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{51BA9260-B1D7-4146-B8CD-78F0C04B279A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FlyRedirectToRI_implementation</RootNamespace>
+    <AssemblyName>FlyRedirectToRI_implementation</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\FlyRedirectToRI_implementation.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>bin\Debug\FlyRedirectToRI_implementation.XML</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EstatSdmxSourceExtension">
+      <HintPath>..\Utils\Libs\EstatSdmxSourceExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="EstatSdmxSourceExtension.CustomRequests">
+      <HintPath>..\Utils\Libs\EstatSdmxSourceExtension.CustomRequests.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Utils\Libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Org.Sdmx.Resources.SdmxMl.Schemas.V10">
+      <HintPath>..\Utils\Libs\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll</HintPath>
+    </Reference>
+    <Reference Include="Org.Sdmx.Resources.SdmxMl.Schemas.V20">
+      <HintPath>..\Utils\Libs\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll</HintPath>
+    </Reference>
+    <Reference Include="Org.Sdmx.Resources.SdmxMl.Schemas.V21">
+      <HintPath>..\Utils\Libs\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxApi">
+      <HintPath>..\Utils\Libs\SdmxApi.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxDataParser">
+      <HintPath>..\Utils\Libs\SdmxDataParser.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxEdiParser">
+      <HintPath>..\Utils\Libs\SdmxEdiParser.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxObjects">
+      <HintPath>..\Utils\Libs\SdmxObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxParseBase">
+      <HintPath>..\Utils\Libs\SdmxParseBase.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxQueryBuilder">
+      <HintPath>..\Utils\Libs\SdmxQueryBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxSourceUtil">
+      <HintPath>..\Utils\Libs\SdmxSourceUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxStructureMutableParser">
+      <HintPath>..\Utils\Libs\SdmxStructureMutableParser.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxStructureParser">
+      <HintPath>..\Utils\Libs\SdmxStructureParser.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxStructureRetrieval">
+      <HintPath>..\Utils\Libs\SdmxStructureRetrieval.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxXmlConstants">
+      <HintPath>..\Utils\Libs\SdmxXmlConstants.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TabularWriters">
+      <HintPath>..\Utils\Libs\TabularWriters.dll</HintPath>
+    </Reference>
+    <Reference Include="Xml.Schema.Linq">
+      <HintPath>..\Utils\Libs\Xml.Schema.Linq.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Interfaces\IRequestManagement.cs" />
+    <Compile Include="Model\FlyRIWriterBody.cs" />
+    <Compile Include="Model\RIRequestManagement.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RedirectToRI.cs" />
+    <Compile Include="Builder\RestRequestManagement.cs" />
+    <Compile Include="Builder\SoapRequestManagement.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FlyController\FlyController.csproj">
+      <Project>{a893df2f-c0b9-4742-a8a3-2b97962ff8f8}</Project>
+      <Name>FlyController</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FlyLog\FlyLog.csproj">
+      <Project>{fb9e70ca-391d-4bcc-8b78-527cf89bbba8}</Project>
+      <Name>FlyLog</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FlyMapping\FlyMapping.csproj">
+      <Project>{79fcf649-9986-4ee9-8779-2bfab11f0e95}</Project>
+      <Name>FlyMapping</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FlySDDSLoader_implementation\FlySDDSLoader_implementation.csproj">
+      <Project>{c708cb22-c3f3-4100-9c7a-68a6c1582630}</Project>
+      <Name>FlySDDSLoader_implementation</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

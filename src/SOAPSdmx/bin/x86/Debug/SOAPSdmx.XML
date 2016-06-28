@@ -1,0 +1,1197 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SOAPSdmx</name>
+    </assembly>
+    <members>
+        <member name="T:SOAPSdmx.Builder.QueryParser">
+            <summary>
+            Object base for parse data Message and create a SOAP response
+            </summary>
+        </member>
+        <member name="M:SOAPSdmx.Builder.QueryParser.#ctor(SOAPSdmx.Model.QueryOperation.MessageTypeEnum,SOAPSdmx.Model.QueryOperation.MessageVersionEnum)">
+            <summary>
+            create a instance of QueryParser
+            </summary>
+            <param name="_QueryType">indicates from which the request was made entrypoint </param>
+            <param name="Version">Sdmx Version</param>
+        </member>
+        <member name="M:SOAPSdmx.Builder.QueryParser.Parse(System.ServiceModel.Channels.Message)">
+            <summary>
+            Read a Query Message, call a correct builder, create a SOAP message result
+            </summary>
+            <param name="query">query input</param>
+            <returns>Soap Message response</returns>
+        </member>
+        <member name="M:SOAPSdmx.Builder.QueryParser.ParseElementQuery(System.Xml.Linq.XElement)">
+            <summary>
+             Abstract method for Parsing element into query and return a SdmxMessage (XElement return message or Error)
+            </summary>
+            <param name="SdmxQuery"></param>
+            <returns>Object for Write response in streaming <see cref="T:FlyController.Model.IFlyWriterBody"/></returns>
+        </member>
+        <member name="M:SOAPSdmx.Builder.QueryParser.FindSoapBobyElement(System.Xml.Linq.XDocument)">
+            <summary>
+            Find Boby message in SOAP structure
+            </summary>
+            <param name="xdoc">SOAP structure</param>
+            <returns>Body Element</returns>
+        </member>
+        <member name="M:SOAPSdmx.Builder.QueryParser.ChangeSoapActionElement(System.Xml.Linq.XDocument)">
+            <summary>
+            Change Action Element from Soap Message for build a Message response
+            </summary>
+            <param name="xdoc">SOAP structure</param>
+        </member>
+        <member name="M:SOAPSdmx.Builder.QueryParser.CreateMessageErrorResponse(FlyController.Model.Error.SdmxException,System.ServiceModel.Channels.MessageVersion)">
+            <summary>
+            Create a Soap message response (with a SDMX Error)
+            </summary>
+            <param name="ex">SDMX Exception</param>
+            <param name="messageVersion">SOAP Version</param>
+            <returns>Soap message response</returns>
+        </member>
+        <member name="M:SOAPSdmx.Builder.QueryParser.GetConstNameSpace">
+            <summary>
+            Reads variables constant namespace for the construction of the response message
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:SOAPSdmx.Builder.QueryParser.QueryType">
+            <summary>
+            representing a QueryOperation
+            </summary>
+        </member>
+        <member name="T:SOAPSdmx.Builder.QueryParser20">
+            <summary>
+            Implementation of QueryParser, read a query Sdmx 2.0 version and call a corret method of FlyEngine
+            </summary>
+        </member>
+        <member name="M:SOAPSdmx.Builder.QueryParser20.#ctor(SOAPSdmx.Model.QueryOperation.MessageTypeEnum)">
+            <summary>
+            Create a instance of QueryParser20
+            </summary>
+            <param name="_QueryType">indicates from which the request was made entrypoint</param>
+        </member>
+        <member name="M:SOAPSdmx.Builder.QueryParser20.ParseElementQuery(System.Xml.Linq.XElement)">
+            <summary>
+            identifies what the response structure, analyzing the query input and return a SdmxMessage (XElement return message or Error)
+            </summary>
+            <param name="SdmxQuery">Element query whitout Envelop header</param>
+            <returns>Object for Write response in streaming <see cref="T:FlyController.Model.IFlyWriterBody"/></returns>
+        </member>
+        <member name="M:SOAPSdmx.Builder.QueryParser20.GetMetadata(System.Xml.Linq.XElement)">
+            <summary>
+            Parsing a query and Requires metadata to flyEngine and populate a streaming response
+            </summary>
+            <param name="SdmxQuery">Element query whitout Envelop header</param>
+            <returns>Object for Write response in streaming <see cref="T:FlyController.Model.IFlyWriterBody"/></returns>
+        </member>
+        <member name="M:SOAPSdmx.Builder.QueryParser20.GetData(System.Xml.Linq.XElement)">
+            <summary>
+            Parsing a query and Requires Data to flyEngine and populate a streaming response
+            </summary>
+            <param name="_originalQuery">Element query whitout Envelop header</param>
+            <returns>Object for Write response in streaming <see cref="T:FlyController.Model.IFlyWriterBody"/></returns>
+        </member>
+        <member name="T:SOAPSdmx.Builder.QueryParser21">
+            <summary>
+            Implementation of QueryParser, read a query Sdmx 2.1 version and call a corret method of FlyEngine
+            </summary>
+        </member>
+        <member name="M:SOAPSdmx.Builder.QueryParser21.#ctor(SOAPSdmx.Model.QueryOperation.MessageTypeEnum)">
+            <summary>
+            Create a instance of QueryParser20
+            </summary>
+            <param name="_QueryType">indicates from which the request was made entrypoint</param>
+        </member>
+        <member name="M:SOAPSdmx.Builder.QueryParser21.ParseElementQuery(System.Xml.Linq.XElement)">
+            <summary>
+            identifies what the response structure, analyzing the query input and return a SdmxMessage (XElement return message or Error)
+            </summary>
+            <param name="SdmxQuery">Element query whitout Envelop header</param>
+            <returns>Object for Write response in streaming <see cref="T:FlyController.Model.IFlyWriterBody"/></returns>
+        </member>
+        <member name="M:SOAPSdmx.Builder.QueryParser21.GetMetadata(System.Xml.XmlElement)">
+            <summary>
+            Parsing a query and Requires metadata to flyEngine
+            </summary>
+            <param name="_originalQuery">Element query whitout Envelop header</param>
+            <returns>Object for Write response in streaming <see cref="T:FlyController.Model.IFlyWriterBody"/></returns>
+        </member>
+        <member name="M:SOAPSdmx.Builder.QueryParser21.GetData(System.Xml.Linq.XElement)">
+             <summary>
+            Parsing a query and Requires Data to flyEngine and populate a streaming response
+             </summary>
+             <param name="_originalQuery">Element query whitout Envelop header</param>
+             <returns>Object for Write response in streaming <see cref="T:FlyController.Model.IFlyWriterBody"/></returns>
+        </member>
+        <member name="T:SOAPSdmx.IOnTheFly_SOAP_SDMX_v20">
+            <summary>
+            The SOAP SDMX v2.0 interface.
+            On The Fly endpoint for data and metadata SOAP Sdmx 2.0
+            </summary>
+        </member>
+        <member name="M:SOAPSdmx.IOnTheFly_SOAP_SDMX_v20.GetCompactData(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a CompactData (SDMX 2.0)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            retrun Compact Data message
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.IOnTheFly_SOAP_SDMX_v20.GetGenericData(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a GenericData (SDMX 2.0)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            retrun Generic Data message
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.IOnTheFly_SOAP_SDMX_v20.QueryStructure(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a QueryStructure accept all RegistryInterface for get metadatas (SDMX 2.0)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            return Sdmx Metadata (agencyScheme, Dataflows, CategoryScheme, ConceptScheme, Codelist, KeyFamily)
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.IOnTheFly_SOAP_SDMX_v20.DefaultHandler(System.ServiceModel.Channels.Message)">
+            <summary>
+            Web Method that is used to retrieve <c>SDMX</c> structure based on a <c>SDMX</c> query
+            </summary>
+            <param name="request">
+            The <c>SDMX</c> query
+            </param>
+            <returns>
+            The queried structure in <c>SDMX</c> SDMX-ML v2.1  format
+            </returns>
+        </member>
+        <member name="T:SOAPSdmx.IOnTheFly_SOAP_SDMX_v21">
+            <summary>
+            The SOAP SDMX v2.1 interface.
+            On The Fly endpoint for data and metadata SOAP Sdmx 2.1
+            </summary>
+        </member>
+        <member name="M:SOAPSdmx.IOnTheFly_SOAP_SDMX_v21.GetGenericTimeSeriesData(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a Structure GenericData TimeSeries Data (SDMX 2.1)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            Structure GenericData TimeSeries Data
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.IOnTheFly_SOAP_SDMX_v21.GetGenericData(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a Structure GenericData Data (SDMX 2.1)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            Structure GenericData Data
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.IOnTheFly_SOAP_SDMX_v21.GetStructureSpecificData(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a Structure StructureSpecific Data (SDMX 2.1)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            Structure StructureSpecific Data
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.IOnTheFly_SOAP_SDMX_v21.GetStructureSpecificTimeSeriesData(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a Structure StructureSpecific TimeSeries Data (SDMX 2.1)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            Structure StructureSpecific TimeSeries Data
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.IOnTheFly_SOAP_SDMX_v21.GetStructures(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a Data Structure (SDMX 2.1)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            DataStructure Metadata
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.IOnTheFly_SOAP_SDMX_v21.GetDataStructure(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a Data Structure (SDMX 2.1)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            DataStructure Metadata
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.IOnTheFly_SOAP_SDMX_v21.GetCategorisation(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a Categorisation (SDMX 2.1)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            Categorisation Metadata
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.IOnTheFly_SOAP_SDMX_v21.GetDataflow(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a Dataflows (SDMX 2.1)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            Dataflows Metadata
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.IOnTheFly_SOAP_SDMX_v21.GetCategoryScheme(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a CategoryScheme (SDMX 2.1)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            CategoryScheme Metadata
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.IOnTheFly_SOAP_SDMX_v21.GetConceptScheme(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a ConceptScheme (SDMX 2.1)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            ConceptScheme Metadata
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.IOnTheFly_SOAP_SDMX_v21.GetCodelist(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a Codelist (SDMX 2.1)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            Codelist Metadata
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.IOnTheFly_SOAP_SDMX_v21.GetOrganisationScheme(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a OrganisationScheme (SDMX 2.1)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            OrganisationScheme Metadata
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.IOnTheFly_SOAP_SDMX_v21.DefaultHandler(System.ServiceModel.Channels.Message)">
+            <summary>
+            Web Method that is used to retrieve <c>SDMX</c> structure based on a <c>SDMX</c> query
+            </summary>
+            <param name="request">
+            The <c>SDMX</c> query
+            </param>
+            <returns>
+            The queried structure in <c>SDMX</c> SDMX-ML v2.1  format
+            </returns>
+        </member>
+        <member name="T:SOAPSdmx.Model.DispatchBodyElementAttribute">
+            <summary>
+                The dispatch body element attribute.
+            </summary>
+            <remarks>Based on <see href="http://msdn.microsoft.com/en-us/library/ms750531(v=vs.100).aspx" /> </remarks>
+        </member>
+        <member name="F:SOAPSdmx.Model.DispatchBodyElementAttribute._qname">
+            <summary>
+                The Body wrapper name.
+            </summary>
+        </member>
+        <member name="M:SOAPSdmx.Model.DispatchBodyElementAttribute.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SOAPSdmx.Model.DispatchBodyElementAttribute"/> class.
+            </summary>
+            <param name="name">
+            The name.
+            </param>
+        </member>
+        <member name="M:SOAPSdmx.Model.DispatchBodyElementAttribute.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SOAPSdmx.Model.DispatchBodyElementAttribute"/> class.
+            </summary>
+            <param name="name">
+            The name.
+            </param>
+            <param name="ns">
+            The namespace.
+            </param>
+        </member>
+        <member name="M:SOAPSdmx.Model.DispatchBodyElementAttribute.AddBindingParameters(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Channels.BindingParameterCollection)">
+            <summary>
+            Implement to pass data at runtime to bindings to support custom behavior.
+            </summary>
+            <param name="operationDescription">
+            The operation being examined. Use for examination only. If the operation description
+                is modified, the results are undefined.
+            </param>
+            <param name="bindingParameters">
+            The collection of objects that binding elements require to support the behavior.
+            </param>
+        </member>
+        <member name="M:SOAPSdmx.Model.DispatchBodyElementAttribute.ApplyClientBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.ClientOperation)">
+            <summary>
+            Implements a modification or extension of the client across an operation.
+            </summary>
+            <param name="operationDescription">
+            The operation being examined. Use for examination only. If the operation description
+                is modified, the results are undefined.
+            </param>
+            <param name="clientOperation">
+            The run-time object that exposes customization properties for the operation described by
+                <paramref name="operationDescription"/>.
+            </param>
+        </member>
+        <member name="M:SOAPSdmx.Model.DispatchBodyElementAttribute.ApplyDispatchBehavior(System.ServiceModel.Description.OperationDescription,System.ServiceModel.Dispatcher.DispatchOperation)">
+            <summary>
+            Implements a modification or extension of the service across an operation.
+            </summary>
+            <param name="operationDescription">
+            The operation being examined. Use for examination only. If the operation description
+                is modified, the results are undefined.
+            </param>
+            <param name="dispatchOperation">
+            The run-time object that exposes customization properties for the operation described
+                by <paramref name="operationDescription"/>.
+            </param>
+        </member>
+        <member name="M:SOAPSdmx.Model.DispatchBodyElementAttribute.Validate(System.ServiceModel.Description.OperationDescription)">
+            <summary>
+            Implement to confirm that the operation meets some intended criteria.
+            </summary>
+            <param name="operationDescription">
+            The operation being examined. Use for examination only. If the operation description
+                is modified, the results are undefined.
+            </param>
+        </member>
+        <member name="P:SOAPSdmx.Model.DispatchBodyElementAttribute.QName">
+            <summary>
+                Gets the q name.
+            </summary>
+        </member>
+        <member name="T:SOAPSdmx.Model.DispatchByBodyElementBehaviorAttribute">
+            <summary>
+                The dispatch by body element behavior attribute.
+            </summary>
+            <remarks>Based on <see href="http://msdn.microsoft.com/en-us/library/ms750531(v=vs.100).aspx" /> </remarks>
+        </member>
+        <member name="M:SOAPSdmx.Model.DispatchByBodyElementBehaviorAttribute.AddBindingParameters(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Channels.BindingParameterCollection)">
+            <summary>
+            Configures any binding elements to support the contract behavior.
+            </summary>
+            <param name="contractDescription">
+            The contract description to modify.
+            </param>
+            <param name="endpoint">
+            The endpoint to modify.
+            </param>
+            <param name="bindingParameters">
+            The objects that binding elements require to support the behavior.
+            </param>
+        </member>
+        <member name="M:SOAPSdmx.Model.DispatchByBodyElementBehaviorAttribute.ApplyClientBehavior(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)">
+            <summary>
+            Implements a modification or extension of the client across a contract.
+            </summary>
+            <param name="contractDescription">
+            The contract description for which the extension is intended.
+            </param>
+            <param name="endpoint">
+            The endpoint.
+            </param>
+            <param name="clientRuntime">
+            The client runtime.
+            </param>
+        </member>
+        <member name="M:SOAPSdmx.Model.DispatchByBodyElementBehaviorAttribute.ApplyDispatchBehavior(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.DispatchRuntime)">
+            <summary>
+            Implements a modification or extension of the client across a contract.
+            </summary>
+            <param name="contractDescription">
+            The contract description to be modified.
+            </param>
+            <param name="endpoint">
+            The endpoint that exposes the contract.
+            </param>
+            <param name="dispatchRuntime">
+            The dispatch runtime that controls service execution.
+            </param>
+        </member>
+        <member name="M:SOAPSdmx.Model.DispatchByBodyElementBehaviorAttribute.Validate(System.ServiceModel.Description.ContractDescription,System.ServiceModel.Description.ServiceEndpoint)">
+            <summary>
+            Implement to confirm that the contract and endpoint can support the contract behavior.
+            </summary>
+            <param name="contractDescription">
+            The contract to validate.
+            </param>
+            <param name="endpoint">
+            The endpoint to validate.
+            </param>
+        </member>
+        <member name="T:SOAPSdmx.Model.DispatchByBodyElementOperationSelector">
+            <summary>
+                The dispatch by body element operation selector.
+            </summary>
+            <remarks>Based on <see href="http://msdn.microsoft.com/en-us/library/ms750531(v=vs.100).aspx" /> </remarks>
+        </member>
+        <member name="F:SOAPSdmx.Model.DispatchByBodyElementOperationSelector._defaultOperationName">
+            <summary>
+                The _default operation name.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.DispatchByBodyElementOperationSelector._dispatchDictionary">
+            <summary>
+                The _dispatch dictionary.
+            </summary>
+        </member>
+        <member name="M:SOAPSdmx.Model.DispatchByBodyElementOperationSelector.#ctor(System.String,System.Collections.Generic.IDictionary{System.Xml.XmlQualifiedName,System.String})">
+            <summary>
+            Initializes a new instance of the <see cref="T:SOAPSdmx.Model.DispatchByBodyElementOperationSelector"/> class.
+            </summary>
+            <param name="defaultOperationName">
+            The default operation name.
+            </param>
+            <param name="dispatchDictionary">
+            The dispatch dictionary.
+            </param>
+        </member>
+        <member name="M:SOAPSdmx.Model.DispatchByBodyElementOperationSelector.SelectOperation(System.ServiceModel.Channels.Message@)">
+            <summary>
+            Associates a local operation with the incoming method.
+            </summary>
+            <returns>
+            The name of the operation to be associated with the <paramref name="message"/>.
+            </returns>
+            <param name="message">
+            The incoming <see cref="T:System.ServiceModel.Channels.Message"/> to be associated with an
+                operation.
+            </param>
+        </member>
+        <member name="M:SOAPSdmx.Model.DispatchByBodyElementOperationSelector.CreateMessageCopy(System.ServiceModel.Channels.Message,System.Xml.XmlDictionaryReader)">
+            <summary>
+            The create message copy.
+            </summary>
+            <param name="message">
+            The message.
+            </param>
+            <param name="body">
+            The body.
+            </param>
+            <returns>
+            The <see cref="T:System.ServiceModel.Channels.Message"/>.
+            </returns>
+        </member>
+        <member name="T:SOAPSdmx.Model.QueryOperation">
+            <summary>
+            Indicates what is the request that was made
+            </summary>
+        </member>
+        <member name="M:SOAPSdmx.Model.QueryOperation.#ctor(SOAPSdmx.Model.QueryOperation.MessageTypeEnum,SOAPSdmx.Model.QueryOperation.MessageVersionEnum)">
+            <summary>
+            Create a Instance of QueryOperation
+            </summary>
+            <param name="QueryType">indicates from which the request was made entrypoint</param>
+            <param name="QueryVersion">Sdmx Version</param>
+        </member>
+        <member name="M:SOAPSdmx.Model.QueryOperation.GetResponse">
+            <summary>
+            Get the Response (according to the request which was made)
+            </summary>
+            <returns>
+            The <see cref="T:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum"/>.
+            </returns>
+        </member>
+        <member name="P:SOAPSdmx.Model.QueryOperation.MessageType">
+            <summary>
+            Indicates from which the request was made entrypoint
+            </summary>
+        </member>
+        <member name="P:SOAPSdmx.Model.QueryOperation.MessageVersion">
+            <summary>
+            Sdmx Version
+            </summary>
+        </member>
+        <member name="P:SOAPSdmx.Model.QueryOperation.ResponseType">
+            <summary>
+            Type of response (according to the request which was made)
+            </summary>
+        </member>
+        <member name="T:SOAPSdmx.Model.QueryOperation.MessageVersionEnum">
+            <summary>
+            Sdmx possible versions
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.MessageVersionEnum.Version2_0">
+            <summary>
+            Sdmx 2.0 Version
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.MessageVersionEnum.Version2_1">
+            <summary>
+            Sdmx 2.0 Version
+            </summary>
+        </member>
+        <member name="T:SOAPSdmx.Model.QueryOperation.MessageTypeEnum">
+            <summary>
+            All Message Entrypont for all SDMX version
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.MessageTypeEnum.Null">
+            <summary>
+            Unrecognized Type
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.MessageTypeEnum.GetCompactData">
+            <summary>
+            GetCompactData entrypont for SDMX 2.0 version
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.MessageTypeEnum.GetCrossSectionalData">
+            <summary>
+            GetCrossSectionalData entrypont for SDMX 2.0 version
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.MessageTypeEnum.QueryStructure">
+            <summary>
+            QueryStructure entrypont for SDMX 2.0 version
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.MessageTypeEnum.GetGenericTimeSeriesData">
+            <summary>
+            GetGenericTimeSeriesData entrypont for SDMX 2.1 version
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.MessageTypeEnum.GetStructureSpecificData">
+            <summary>
+            GetStructureSpecificData entrypont for SDMX 2.1 version
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.MessageTypeEnum.GetStructureSpecificTimeSeriesData">
+            <summary>
+            GetStructureSpecificTimeSeriesData entrypont for SDMX 2.1 version
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.MessageTypeEnum.GetStructures">
+            <summary>
+            GetStructures entrypont for SDMX 2.1 version
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.MessageTypeEnum.GetDataflow">
+            <summary>
+            GetDataflow entrypont for SDMX 2.1 version
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.MessageTypeEnum.GetCategorisation">
+            <summary>
+            GetCategorisation entrypont for SDMX 2.1 version
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.MessageTypeEnum.GetCategoryScheme">
+            <summary>
+            GetCategoryScheme entrypont for SDMX 2.1 version
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.MessageTypeEnum.GetConceptScheme">
+            <summary>
+            GetConceptScheme entrypont for SDMX 2.1 version
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.MessageTypeEnum.GetCodelist">
+            <summary>
+            GetCodelist entrypont for SDMX 2.1 version
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.MessageTypeEnum.GetHierarchicalCodelist">
+            <summary>
+            GetHierarchicalCodelist entrypont for SDMX 2.1 version
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.MessageTypeEnum.GetOrganisationScheme">
+            <summary>
+            GetOrganisationScheme entrypont for SDMX 2.1 version
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.MessageTypeEnum.GetGenericData">
+            <summary>
+            GetGenericData entrypont for SDMX 2.0 and SDMX 2.1 version
+            </summary>
+        </member>
+        <member name="T:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum">
+            <summary>
+            All types of response to the soap version
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.Null">
+            <summary>
+                The default value.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetCompactDataResponse">
+            <summary>
+                The get compact data response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetUtilityDataResponse">
+            <summary>
+                The get utility data response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetCrossSectionalDataResponse">
+            <summary>
+                The get cross sectional data response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.QueryStructureResponse">
+            <summary>
+                The query structure response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetGenericDataResponse">
+            <summary>
+                The get generic data response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetGenericTimeSeriesDataResponse">
+            <summary>
+                The get generic time series data response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetStructureSpecificDataResponse">
+            <summary>
+                The get structure specific data response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetStructureSpecificTimeSeriesDataResponse">
+            <summary>
+                The get structure specific time series data response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetGenericMetadataResponse">
+            <summary>
+                The get generic metadata response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetStructureSpecificMetadataResponse">
+            <summary>
+                The get structure specific metadata response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetStructuresResponse">
+            <summary>
+                The get structures response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetDataflowResponse">
+            <summary>
+                The get dataflow response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetMetadataflowResponse">
+            <summary>
+                The get metadataflow response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetDataStructureResponse">
+            <summary>
+                The get data structure response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetMetadataStructureResponse">
+            <summary>
+                The get metadata structure response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetCategorySchemeResponse">
+            <summary>
+                The get category scheme response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetConceptSchemeResponse">
+            <summary>
+                The get concept scheme response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetCodelistResponse">
+            <summary>
+                The get codelist response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetHierarchicalCodelistResponse">
+            <summary>
+                The get hierarchical codelist response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetOrganisationSchemeResponse">
+            <summary>
+                The get organisation scheme response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetReportingTaxonomyResponse">
+            <summary>
+                The get reporting taxonomy response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetStructureSetResponse">
+            <summary>
+                The get structure set response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetProcessResponse">
+            <summary>
+                The get process response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetCategorisationResponse">
+            <summary>
+                The get categorisation response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetProvisionAgreementResponse">
+            <summary>
+                The get provision agreement response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetConstraintResponse">
+            <summary>
+                The get constraint response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetDataSchemaResponse">
+            <summary>
+                The get data schema response.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum.GetMetadataSchemaResponse">
+            <summary>
+                The get metadata schema response.
+            </summary>
+        </member>
+        <member name="T:SOAPSdmx.Model.SdmxFaultError">
+            <summary>
+            Create a SOAP error Response
+            </summary>
+        </member>
+        <member name="M:SOAPSdmx.Model.SdmxFaultError.BuildException(FlyController.Model.Error.SdmxException)">
+            <summary>
+            this Error Response don't have actor information it is used only for Exception in MessageFault creation exception 
+            </summary>
+            <param name="ex">The <see cref="T:FlyController.Model.Error.SdmxException"/></param> 
+            <returns>Soap FaultException whit SdmxFaultError details</returns>
+        </member>
+        <member name="M:SOAPSdmx.Model.SdmxFaultError.CreateMessageFault(FlyController.Model.Error.SdmxException,System.String)">
+            <summary>
+            Build a MessageFault response whit a Sdmx Standard Error 
+            </summary>
+            <param name="ex">The <see cref="T:FlyController.Model.Error.SdmxException"/></param>
+            <param name="Actor">EntryPonit name</param>
+            <returns>Sdmx Standard Error in MessageFault</returns>
+        </member>
+        <member name="P:SOAPSdmx.Model.SdmxFaultError.Source">
+            <summary>
+            Source of Error
+            </summary>
+        </member>
+        <member name="P:SOAPSdmx.Model.SdmxFaultError.Message">
+            <summary>
+            Error Message
+            </summary>
+        </member>
+        <member name="P:SOAPSdmx.Model.SdmxFaultError.MessageDetails">
+            <summary>
+            Element with Error Detail
+            </summary>
+        </member>
+        <member name="T:SOAPSdmx.Streaming.SdmxMessageBase">
+            <summary>
+                The base SDMX message.
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Streaming.SdmxMessageBase._actions">
+            <summary>
+                The _actions
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Streaming.SdmxMessageBase._controller">
+            <summary>
+                The controller
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Streaming.SdmxMessageBase._exceptionHandler">
+            <summary>
+                The _exception handler
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Streaming.SdmxMessageBase._messageVersion">
+            <summary>
+                The _message version
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Streaming.SdmxMessageBase._messageAction">
+            <summary>
+                The _message Action
+            </summary>
+        </member>
+        <member name="M:SOAPSdmx.Streaming.SdmxMessageBase.#ctor(FlyController.Streaming.IStreamController{FlyController.Model.Streaming.IFlyWriter},System.Func{System.Exception,System.ServiceModel.FaultException},System.ServiceModel.Channels.MessageVersion,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SOAPSdmx.Streaming.SdmxMessageBase"/> class.
+            </summary>
+            <param name="controller">
+            The controller.
+            </param>
+            <param name="exceptionHandler">
+            The exception handler.
+            </param>
+            <param name="messageVersion">
+            The message version.
+            </param>
+            <param name="messageAction">
+            The message Action.
+            </param>
+            <exception cref="T:System.ArgumentNullException">
+            controller
+                or
+                exceptionHandler
+                or
+                messageVersion
+            </exception>
+        </member>
+        <member name="M:SOAPSdmx.Streaming.SdmxMessageBase.OnWriteBodyContents(System.Xml.XmlDictionaryWriter)">
+            <summary>
+            Called when the message body is written to an XML file.
+            </summary>
+            <param name="writer">
+            A <see cref="T:System.Xml.XmlDictionaryWriter"/> that is used to write this message body to an
+                XML file.
+            </param>
+        </member>
+        <member name="P:SOAPSdmx.Streaming.SdmxMessageBase.Headers">
+            <summary>
+                When overridden in a derived class, gets the headers of the message.
+            </summary>
+            <returns>
+                A <see cref="T:System.ServiceModel.Channels.MessageHeaders" /> object that represents the headers of the message.
+            </returns>
+            <exception cref="T:System.ObjectDisposedException">The message has been disposed of.</exception>
+        </member>
+        <member name="P:SOAPSdmx.Streaming.SdmxMessageBase.Properties">
+            <summary>
+                When overridden in a derived class, gets a set of processing-level annotations to the message.
+            </summary>
+            <returns>
+                A <see cref="T:System.ServiceModel.Channels.MessageProperties" /> that contains a set of processing-level
+                annotations to the message.
+            </returns>
+            <exception cref="T:System.ObjectDisposedException">The message has been disposed of.</exception>
+        </member>
+        <member name="P:SOAPSdmx.Streaming.SdmxMessageBase.Version">
+            <summary>
+                When overridden in a derived class, gets the SOAP version of the message.
+            </summary>
+            <returns>
+                A <see cref="T:System.ServiceModel.Channels.MessageVersion" /> object that represents the SOAP version.
+            </returns>
+            <exception cref="T:System.ObjectDisposedException">The message has been disposed of.</exception>
+        </member>
+        <member name="P:SOAPSdmx.Streaming.SdmxMessageBase.ActionQueue">
+            <summary>
+              Gets the action queue
+            </summary>
+        </member>
+        <member name="T:SOAPSdmx.Streaming.SdmxMessageSoap">
+            <summary>
+            The SDMX message
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Streaming.SdmxMessageSoap._xmlQualifiedName">
+            <summary>
+            The _XML qualified name
+            </summary>
+        </member>
+        <member name="F:SOAPSdmx.Streaming.SdmxMessageSoap._isFaulted">
+            <summary>
+            A value indicating whether the message is a fault.
+            </summary>
+        </member>
+        <member name="M:SOAPSdmx.Streaming.SdmxMessageSoap.#ctor(FlyController.Streaming.IStreamController{FlyController.Model.Streaming.IFlyWriter},System.Func{System.Exception,System.ServiceModel.FaultException},System.Xml.XmlQualifiedName,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SOAPSdmx.Streaming.SdmxMessageSoap"/> class.
+            </summary>
+            <param name="controller">The controller.</param>
+            <param name="exceptionHandler">The exception handler.</param>
+            <param name="xmlQualifiedName">Name of the XML qualified.</param>
+            <param name="Action">Action</param>
+        </member>
+        <member name="M:SOAPSdmx.Streaming.SdmxMessageSoap.OnWriteBodyContents(System.Xml.XmlDictionaryWriter)">
+            <summary>
+            Called when the message body is written to an XML file.
+            </summary>
+            <param name="writer">A <see cref="T:System.Xml.XmlDictionaryWriter"/> that is used to write this message body to an XML file.</param>
+        </member>
+        <member name="P:SOAPSdmx.Streaming.SdmxMessageSoap.IsFault">
+            <summary>
+            Gets a value that indicates whether this message generates any SOAP faults.
+            </summary>
+            <returns>
+            true if this message generates any SOAP faults; otherwise, false.
+            </returns>
+            <exception cref="T:System.ObjectDisposedException">The message has been disposed of.</exception>
+        </member>
+        <member name="T:SOAPSdmx.Streaming.SOAPStreaming">
+            <summary>
+            Management response SOAP streaming
+            </summary>
+        </member>
+        <member name="M:SOAPSdmx.Streaming.SOAPStreaming.CreateStream(FlyController.Model.IFlyWriterBody,System.String)">
+             <summary>
+             Create a message with empty body contains header and type of response.
+            This fired a callback for retrieving data stream
+             </summary>
+             <param name="WriterBody">Contains all object and methods for writing a response</param>
+             <param name="ActionResp">Action response message</param>
+             <returns>message with empty body contains header and type of response.</returns>
+        </member>
+        <member name="M:SOAPSdmx.Streaming.SOAPStreaming.GenerateResponseFunction(FlyController.Model.IFlyWriterBody)">
+            <summary>
+            Action Fired when client read a body
+            </summary>
+            <param name="WriterBody">Contains all object and methods for writing a response</param>
+            <returns>Action FlyWriter, Queue Action populated streaming trasport object FlyWriter</returns>
+        </member>
+        <member name="M:SOAPSdmx.Streaming.SOAPStreaming.GetDataCallBack(FlyController.Model.IFlyWriterBody,FlyController.Model.Streaming.IFlyWriter)">
+            <summary>
+            Call a Delegate for populate a streaming trasport object
+            </summary>
+            <param name="WriterBody">Contains all object and methods for writing a response</param>
+            <param name="responseStream">OUT streaming trasport object</param>
+        </member>
+        <member name="M:SOAPSdmx.Streaming.SOAPStreaming.BuildException(System.Exception,System.String)">
+            <summary>
+            Builds an object of type  <see cref="T:System.ServiceModel.FaultException`1"/>
+            </summary>
+            <param name="buildFrom">
+            An Object to build the output object from
+            </param>
+            <param name="messageAction">
+            A Message Action
+            </param>
+            <returns>
+            Object of type <see cref="T:System.ServiceModel.FaultException`1"/>
+            </returns>
+        </member>
+        <member name="T:SOAPSdmx.OnTheFly_SOAP_SDMX_v20">
+            <summary>
+            Impementation of EntryPoint On The Fly Application for SOAP SDMX 2.0
+            </summary>
+        </member>
+        <member name="M:SOAPSdmx.OnTheFly_SOAP_SDMX_v20.#ctor">
+            <summary>
+            Create a instance of WS_SDMX_SOAP20 and read a Configuration file
+            </summary>
+        </member>
+        <member name="M:SOAPSdmx.OnTheFly_SOAP_SDMX_v20.DefaultHandler(System.ServiceModel.Channels.Message)">
+            <summary>
+            Web Method that is used to retrieve <c>SDMX</c> structure based on a <c>SDMX</c> query
+            </summary>
+            <param name="request">
+            The <c>SDMX</c> query
+            </param>
+            <returns>
+            The queried structure in <c>SDMX</c> SDMX-ML v2.1  format
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.OnTheFly_SOAP_SDMX_v20.GetCompactData(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a CompactData (SDMX 2.0)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            retrun Compact Data message
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.OnTheFly_SOAP_SDMX_v20.GetGenericData(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a GenericData (SDMX 2.0)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            retrun Generic Data message
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.OnTheFly_SOAP_SDMX_v20.QueryStructure(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a QueryStructure accept all RegistryInterface for get metadatas (SDMX 2.0)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            return Sdmx Metadata (agencyScheme, Dataflows, CategoryScheme, ConceptScheme, Codelist, KeyFamily)
+            </returns>
+        </member>
+        <member name="T:SOAPSdmx.OnTheFly_SOAP_SDMX_v21">
+            <summary>
+            Impementation of EntryPoint On The Fly Application for SOAP SDMX 2.1
+            </summary>
+        </member>
+        <member name="M:SOAPSdmx.OnTheFly_SOAP_SDMX_v21.#ctor">
+            <summary>
+            Create a instance of WS_SDMX_SOAP20 and read a Configuration file
+            </summary>
+        </member>
+        <member name="M:SOAPSdmx.OnTheFly_SOAP_SDMX_v21.DefaultHandler(System.ServiceModel.Channels.Message)">
+            <summary>
+            Web Method that is used to retrieve <c>SDMX</c> structure based on a <c>SDMX</c> query
+            </summary>
+            <param name="request">
+            The <c>SDMX</c> query
+            </param>
+            <returns>
+            The queried structure in <c>SDMX</c> SDMX-ML v2.1  format
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.OnTheFly_SOAP_SDMX_v21.GetGenericTimeSeriesData(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a Structure GenericData TimeSeries Data (SDMX 2.1)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            Structure GenericData TimeSeries Data
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.OnTheFly_SOAP_SDMX_v21.GetGenericData(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a Structure GenericData Data (SDMX 2.1)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            Structure GenericData Data
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.OnTheFly_SOAP_SDMX_v21.GetStructureSpecificData(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a Structure StructureSpecific Data (SDMX 2.1)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            Structure StructureSpecific Data
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.OnTheFly_SOAP_SDMX_v21.GetStructureSpecificTimeSeriesData(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a Structure StructureSpecific TimeSeries Data (SDMX 2.1)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            Structure StructureSpecific TimeSeries Data
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.OnTheFly_SOAP_SDMX_v21.GetStructures(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a Data Structure (SDMX 2.1)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            DataStructure Metadata
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.OnTheFly_SOAP_SDMX_v21.GetDataStructure(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a Data Structure (SDMX 2.1)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            DataStructure Metadata
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.OnTheFly_SOAP_SDMX_v21.GetDataflow(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a Dataflows (SDMX 2.1)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            Dataflows Metadata
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.OnTheFly_SOAP_SDMX_v21.GetCategoryScheme(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a CategoryScheme (SDMX 2.1)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            CategoryScheme Metadata
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.OnTheFly_SOAP_SDMX_v21.GetCategorisation(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a Categorisation (SDMX 2.1)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            Categorisation Metadata
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.OnTheFly_SOAP_SDMX_v21.GetConceptScheme(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a ConceptScheme (SDMX 2.1)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            ConceptScheme Metadata
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.OnTheFly_SOAP_SDMX_v21.GetCodelist(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a Codelist (SDMX 2.1)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            Codelist Metadata
+            </returns>
+        </member>
+        <member name="M:SOAPSdmx.OnTheFly_SOAP_SDMX_v21.GetOrganisationScheme(System.ServiceModel.Channels.Message)">
+            <summary>
+            Request a OrganisationScheme (SDMX 2.1)
+            </summary>
+            <param name="query">Query Message</param>
+            <returns>
+            Soap SDMX result
+            OrganisationScheme Metadata
+            </returns>
+        </member>
+    </members>
+</doc>

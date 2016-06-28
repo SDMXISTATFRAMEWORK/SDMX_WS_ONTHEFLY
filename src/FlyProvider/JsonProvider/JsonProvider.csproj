@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D6696A0-7933-4835-8C55-8A177EF53ED3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JsonProvider</RootNamespace>
+    <AssemblyName>JsonProvider</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EstatSdmxSourceExtension">
+      <HintPath>..\..\Utils\Libs\EstatSdmxSourceExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="EstatSdmxSourceExtension.CustomRequests">
+      <HintPath>..\..\Utils\Libs\EstatSdmxSourceExtension.CustomRequests.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\Utils\Libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Org.Sdmx.Resources.SdmxMl.Schemas.V10">
+      <HintPath>..\..\Utils\Libs\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll</HintPath>
+    </Reference>
+    <Reference Include="Org.Sdmx.Resources.SdmxMl.Schemas.V20">
+      <HintPath>..\..\Utils\Libs\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll</HintPath>
+    </Reference>
+    <Reference Include="Org.Sdmx.Resources.SdmxMl.Schemas.V21">
+      <HintPath>..\..\Utils\Libs\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxApi">
+      <HintPath>..\..\Utils\Libs\SdmxApi.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxDataParser">
+      <HintPath>..\..\Utils\Libs\SdmxDataParser.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxEdiParser">
+      <HintPath>..\..\Utils\Libs\SdmxEdiParser.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxObjects">
+      <HintPath>..\..\Utils\Libs\SdmxObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxParseBase">
+      <HintPath>..\..\Utils\Libs\SdmxParseBase.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxQueryBuilder">
+      <HintPath>..\..\Utils\Libs\SdmxQueryBuilder.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxSourceUtil">
+      <HintPath>..\..\Utils\Libs\SdmxSourceUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxStructureMutableParser">
+      <HintPath>..\..\Utils\Libs\SdmxStructureMutableParser.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxStructureParser">
+      <HintPath>..\..\Utils\Libs\SdmxStructureParser.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxStructureRetrieval">
+      <HintPath>..\..\Utils\Libs\SdmxStructureRetrieval.dll</HintPath>
+    </Reference>
+    <Reference Include="SdmxXmlConstants">
+      <HintPath>..\..\Utils\Libs\SdmxXmlConstants.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TabularWriters">
+      <HintPath>..\..\Utils\Libs\TabularWriters.dll</HintPath>
+    </Reference>
+    <Reference Include="Xml.Schema.Linq">
+      <HintPath>..\..\Utils\Libs\Xml.Schema.Linq.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataWriter\Engine\SdmxJsonBaseDataWriter.cs" />
+    <Compile Include="DataWriter\Model\SDMXJsonAttributes.cs" />
+    <Compile Include="DataWriter\Model\SDMXJsonDimension.cs" />
+    <Compile Include="DataWriter\Model\SDMXJsonObservation.cs" />
+    <Compile Include="DataWriter\Model\SDMXJsonStructure.cs" />
+    <Compile Include="DataWriter\Model\SDMXJsonValue.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lib\Newtonsoft.Json.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\FlyController\FlyController.csproj">
+      <Project>{a893df2f-c0b9-4742-a8a3-2b97962ff8f8}</Project>
+      <Name>FlyController</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

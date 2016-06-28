@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SOAPSdmx.Builder.QueryParser">
+    <Position X="6.25" Y="1.5" Width="1.5" />
+    <Members>
+      <Method Name="ChangeSoapActionElement" Hidden="true" />
+      <Field Name="lockobject" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAQAEQAAACCAAAAAAAAAgAQAAAAAAAAAAA=</HashCode>
+      <FileName>Builder\QueryParser.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="QueryType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="SOAPSdmx.Builder.QueryParser20">
+    <Position X="4.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Builder\QueryParser20.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOAPSdmx.Builder.QueryParser21">
+    <Position X="4.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAEAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Builder\QueryParser21.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOAPSdmx.OnTheFly_SOAP_SDMX_v20" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="1.25" Width="2.25" />
+    <Members>
+      <Method Name="DefaultHandler" Hidden="true" />
+      <Method Name="OnTheFly_SOAP_SDMX_v20" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>OnTheFly_SOAP_SDMX_v20.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SOAPSdmx.OnTheFly_SOAP_SDMX_v21" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="3.75" Width="2.25" />
+    <Members>
+      <Method Name="DefaultHandler" Hidden="true" />
+      <Method Name="OnTheFly_SOAP_SDMX_v21" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIEAAAAAQIAAAAAAAAAAACgAAAABQAQAhBQAAAAAAAA=</HashCode>
+      <FileName>OnTheFly_SOAP_SDMX_v21.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SOAPSdmx.Model.QueryOperation">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="SOAPSdmx.Model.QueryOperation.MessageVersionEnum" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\QueryOperation.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="SOAPSdmx.Model.QueryOperation.MessageTypeEnum" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\QueryOperation.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="SOAPSdmx.Model.QueryOperation.ResponseMessageTypeEnum" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Model\QueryOperation.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAEAAAAAAAAAACAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\QueryOperation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOAPSdmx.Model.SdmxFaultError">
+    <Position X="10.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAABAAAAAAAAAAAAAAAAAgAgAAAIAAAAAA=</HashCode>
+      <FileName>Model\SdmxFaultError.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOAPSdmx.Streaming.SdmxMessageBase">
+    <Position X="8" Y="6.5" Width="2" />
+    <Members>
+      <Field Name="_actions" Hidden="true" />
+      <Field Name="_controller" Hidden="true" />
+      <Field Name="_exceptionHandler" Hidden="true" />
+      <Field Name="_messageAction" Hidden="true" />
+      <Field Name="_messageVersion" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IABAAAAAACAAgAAAAAAAAAQACAQABAAAAAAAAEACAAA=</HashCode>
+      <FileName>Streaming\SdmxMessageBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOAPSdmx.Streaming.SdmxMessageSoap">
+    <Position X="5.75" Y="7" Width="2" />
+    <Members>
+      <Field Name="_isFaulted" Hidden="true" />
+      <Field Name="_xmlQualifiedName" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAACAAAAAAAAEAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Streaming\SdmxMessageSoap.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SOAPSdmx.Streaming.SOAPStreaming">
+    <Position X="10.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAgAAAAAAAAIAIA=</HashCode>
+      <FileName>Streaming\SOAPStreaming.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="SOAPSdmx.IOnTheFly_SOAP_SDMX_v20" Collapsed="true">
+    <Position X="0.5" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAQAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAE=</HashCode>
+      <FileName>IOnTheFly_SOAP_SDMX_v20.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="SOAPSdmx.IOnTheFly_SOAP_SDMX_v21" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIEAAAAAQIAAAAAAAAAAACgAAAABQAQAhBQAAAAAAAA=</HashCode>
+      <FileName>IOnTheFly_SOAP_SDMX_v21.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,413 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FlySDDSLoader_implementation</name>
+    </assembly>
+    <members>
+        <member name="T:FlySDDSLoader_implementation.Build.DWHAccess">
+            <summary>
+            Class of Access to Database
+            </summary>
+        </member>
+        <member name="F:FlySDDSLoader_implementation.Build.DWHAccess._conn">
+            <summary>
+            Sql Connection
+            </summary>
+        </member>
+        <member name="F:FlySDDSLoader_implementation.Build.DWHAccess.TestConn">
+            <summary>
+            Flag determines whether TestConnection was made
+            </summary>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Build.DWHAccess.#ctor(System.String)">
+            <summary>
+            Create a instance of DWHAccess for access to Datawharehouse 
+            Initializes the local variables needed to connect and throws a TestConnection
+            </summary>
+            <param name="_ConnectionString"></param>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Build.DWHAccess.TestConnection">
+            <summary>
+            Connection preliminary to determine if the credentials are correct and whether the DataBase is reached
+            </summary>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Build.DWHAccess.Execute(FlyController.Model.DbSetting.DBOperationEnum,System.Collections.Generic.List{FlyMapping.Model.IParameterValue})">
+            <summary>
+            Performs correct store procedures and it process results
+            </summary>
+            <param name="operation">Operations Type (indicates the store procedure to execute)</param>
+            <param name="parameter">Parameters to be passed to the store procedure</param>
+            <returns>Returns a list of xmlNode with which the builder that identifies the response</returns>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Build.DWHAccess.ExecutetoTable(FlyController.Model.DbSetting.DBOperationEnum,System.Collections.Generic.List{FlyMapping.Model.IParameterValue})">
+            <summary>
+            Performs correct store procedures and it process results into Table
+            </summary>
+            <param name="operation">Operations Type (indicates the store procedure to execute)</param>
+            <param name="parameter">Parameters to be passed to the store procedure</param>
+            <returns>Returns a Table of response</returns>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Build.DWHAccess.ExecuteGetData(System.Collections.Generic.List{FlyMapping.Model.IParameterValue},FlyController.Model.Delegate.GetDBResponseDelegate,FlyController.Model.Delegate.WriteResponseDelegate)">
+            <summary>
+            Not Implemented in this Project
+            </summary>
+            <param name="parameter"></param>
+            <param name="parse"></param>
+            <param name="builder"></param>
+            <returns> throw new NotImplementedException()</returns>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Build.DWHAccess.CheckExistStoreProcedure(FlyController.Model.DbSetting.DBOperationEnum)">
+            <summary>
+            Not Implemented in this Project
+            </summary>
+            <param name="operation"></param>
+            <returns> throw new NotImplementedException()</returns>
+        </member>
+        <member name="P:FlySDDSLoader_implementation.Build.DWHAccess.ConnectionString">
+            <summary>
+            ConnectionString (Configured in File Config)
+            </summary>
+        </member>
+        <member name="T:FlySDDSLoader_implementation.Build.QuerySql">
+            <summary>
+            All Query Sql for retreive data in OTF v2.0
+            </summary>
+        </member>
+        <member name="T:FlySDDSLoader_implementation.FlySDDSLoader_implementation_namespace">
+            <summary>
+            Implementation of OnTheFly v2.0
+            </summary>
+        </member>
+        <member name="T:FlySDDSLoader_implementation.Manager.BaseManager">
+            <summary>
+            Model Class for connetion to Database
+            </summary>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.BaseManager.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize for BaseManager Class
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="P:FlySDDSLoader_implementation.Manager.BaseManager.DbAccess">
+            <summary>
+            for retrival data from database
+            </summary>
+        </member>
+        <member name="P:FlySDDSLoader_implementation.Manager.BaseManager.parsingObject">
+            <summary>
+             Parsing Object <see cref="T:FlyController.Model.ISdmxParsingObject"/>
+            </summary>
+        </member>
+        <member name="P:FlySDDSLoader_implementation.Manager.BaseManager.versionTypeResp">
+            <summary>
+            Sdmx Version
+            </summary>
+        </member>
+        <member name="P:FlySDDSLoader_implementation.Manager.BaseManager.ReferencesObject">
+            <summary>
+            Referenced objects 
+            </summary>
+        </member>
+        <member name="T:FlySDDSLoader_implementation.Manager.BuilderParameter">
+            <summary>
+            Parameter for StoreProcedure in MS Database 
+            </summary>
+        </member>
+        <member name="T:FlySDDSLoader_implementation.Manager.MetadataFactory">
+            <summary>
+            Management Instance of FlyMapping
+            </summary>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.MetadataFactory.InstanceAgencyManager(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            initializes the correct class for the IAgencyManager interface
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+            <returns><see cref="T:FlyMapping.Model.IAgencyManager"/> Instance</returns>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.MetadataFactory.InstanceCategoriesManager(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            initializes the correct class for the ICategoriesManager interface
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+            <returns><see cref="T:FlyMapping.Model.ICategoriesManager"/> Instance</returns>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.MetadataFactory.InstanceDataflowsManager(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            initializes the correct class for the IDataflowsManager interface
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+            <returns><see cref="T:FlyMapping.Model.IDataflowsManager"/> Instance</returns>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.MetadataFactory.InstanceConceptSchemeManager(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            initializes the correct class for the IConceptSchemeManager interface
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+            <returns><see cref="T:FlyMapping.Model.IConceptSchemeManager"/> Instance</returns>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.MetadataFactory.InstanceCodelistsManager(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            initializes the correct class for the ICodelistsManager interface
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+            <returns><see cref="T:FlyMapping.Model.ICodelistManager"/> Instance</returns>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.MetadataFactory.InstanceDsdManager(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            initializes the correct class for the IDsdManager interface
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+            <returns><see cref="T:FlyMapping.Model.IDsdManager"/> Instance</returns>
+        </member>
+        <member name="T:FlySDDSLoader_implementation.Manager.Metadata.CategoriesManager">
+            <summary>
+             retrieves the data for build  CategoryScheme and CategorisationScheme
+            </summary>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.Metadata.CategoriesManager.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize for BaseManager Class
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.Metadata.CategoriesManager.GetCategoryScheme">
+            <summary>
+            Build a CategoryScheme
+            </summary>
+            <returns>ICategorySchemeObject for SdmxObject</returns>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.Metadata.CategoriesManager.GetCategorisation">
+            <summary>
+            Build a Categorisation
+            </summary>
+            <returns>list of ICategorisationObject for SdmxObject</returns>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.Metadata.CategoriesManager.BuildCategoryObject(System.String,System.Collections.Generic.List{FlyController.Model.SdmxObjectNameDescription})">
+            <summary>
+            Build Category Object (ICategoryMutableObject)
+            </summary>
+            <param name="CategoryObjectId">Category Code</param>
+            <param name="names">Description Names</param>
+            <returns></returns>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.Metadata.CategoriesManager.GetCategorySchemeReferences(FlyEngine.Model.IReferencesObject)">
+            <summary>
+            Build a CategoryScheme
+            </summary>
+            <param name="refObj">Referenced Objects</param>
+            <returns>ICategorySchemeObject for SdmxObject</returns>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.Metadata.CategoriesManager.GetCategorisationReferences(FlyEngine.Model.IReferencesObject)">
+            <summary>
+            Build a Categorisation
+            </summary>
+            <param name="refObj">Referenced Objects</param>
+            <returns>list of ICategorisationObject for SdmxObject</returns>
+        </member>
+        <member name="P:FlySDDSLoader_implementation.Manager.Metadata.CategoriesManager.ReferencesObject">
+            <summary>
+            Referenced objects 
+            </summary>
+        </member>
+        <member name="T:FlySDDSLoader_implementation.Manager.Metadata.CodelistManager">
+            <summary>
+            BaseCategoriesManager retrieves the data for build  CategoryScheme and CategorisationScheme
+            </summary>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.Metadata.CodelistManager.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize for BaseManager Class
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.Metadata.CodelistManager.GetCodelistConstrain">
+            <summary>
+            retrieves the codelist Contrain  from database
+            </summary>
+            <returns>list of Mutable Code Object</returns>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.Metadata.CodelistManager.GetCodelistNoConstrain">
+            <summary>
+            retrieves the codelist Contrain from database
+            </summary>
+            <returns>list of Mutable Code Object</returns>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.Metadata.CodelistManager.GetCodelistReferences(FlyEngine.Model.IReferencesObject)">
+            <summary>
+            retrieves the codelist Contrain from database
+            </summary>
+            <param name="refObj">Referenced Objects</param>
+            <returns>list of Mutable Code Object</returns>
+        </member>
+        <member name="P:FlySDDSLoader_implementation.Manager.Metadata.CodelistManager.ReferencesObject">
+            <summary>
+            Referenced objects 
+            </summary>
+        </member>
+        <member name="T:FlySDDSLoader_implementation.Manager.Metadata.ConceptSchemeManager">
+            <summary>
+            ConceptSchemeManager retrieves the data for build  ConceptScheme
+            </summary>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.Metadata.ConceptSchemeManager.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize for BaseManager Class
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.Metadata.ConceptSchemeManager.GetConceptSchemes">
+            <summary>
+            Build a ConceptSchemes
+            </summary>
+            <returns>list of IConceptSchemeObject for SdmxObject</returns>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.Metadata.ConceptSchemeManager.GetConceptSchemesReferences(FlyEngine.Model.IReferencesObject)">
+            <summary>
+            Build a ConceptSchemes
+            </summary>
+            <param name="refObj">Referenced Objects</param>
+            <returns>list of IConceptSchemeObject for SdmxObject</returns>
+        </member>
+        <member name="P:FlySDDSLoader_implementation.Manager.Metadata.ConceptSchemeManager.ReferencesObject">
+            <summary>
+            Referenced objects 
+            </summary>
+        </member>
+        <member name="T:FlySDDSLoader_implementation.Manager.Metadata.DataflowsManager">
+            <summary>
+            DataflowsManager retrieves the data for build DataFlows
+            </summary>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.Metadata.DataflowsManager.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize for BaseManager Class
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.Metadata.DataflowsManager.GetDataFlows">
+            <summary>
+            Build a DataFlows
+            </summary>
+            <returns>list of IDataflowObject for SdmxObject</returns>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.Metadata.DataflowsManager.GetDataflows">
+            <summary>
+            retrieves the Dataflows from database
+            </summary>
+            <returns>list of Dataflow in Dictionary structure (Code, Descriptions)</returns>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.Metadata.DataflowsManager.GetMSDataflows(FlySDDSLoader_implementation.Manager.BuilderParameter)">
+            <summary>
+            Get Dataflow from MS Database
+            </summary>
+            <param name="bp">Parameter <see cref="T:FlySDDSLoader_implementation.Manager.BuilderParameter"/></param>
+            <returns>list of dataflow in <see cref="T:FlySDDSLoader_implementation.Manager.MSDataflow"/> structure</returns>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.Metadata.DataflowsManager.GetDataFlowsReferences(FlyEngine.Model.IReferencesObject)">
+            <summary>
+            Build a DataFlows
+            </summary>
+            <param name="refObj">Referenced Objects</param>
+            <returns>list of IDataflowObject for SdmxObject</returns>
+        </member>
+        <member name="P:FlySDDSLoader_implementation.Manager.Metadata.DataflowsManager.ReferencesObject">
+            <summary>
+            Referenced objects 
+            </summary>
+        </member>
+        <member name="T:FlySDDSLoader_implementation.Manager.MSDataflow">
+            <summary>
+            DataFlow Object that contains also Code and Id for Merge Metadata from 2 Database
+            </summary>
+        </member>
+        <member name="P:FlySDDSLoader_implementation.Manager.MSDataflow.IdDf">
+            <summary>
+            Dataflow ID
+            </summary>
+        </member>
+        <member name="P:FlySDDSLoader_implementation.Manager.MSDataflow.DFCode">
+            <summary>
+            Dataflow Code
+            </summary>
+        </member>
+        <member name="P:FlySDDSLoader_implementation.Manager.MSDataflow.DFAgency">
+            <summary>
+            Dataflow AgengyId
+            </summary>
+        </member>
+        <member name="P:FlySDDSLoader_implementation.Manager.MSDataflow.DFVersion">
+            <summary>
+            Dataflow Version
+            </summary>
+        </member>
+        <member name="P:FlySDDSLoader_implementation.Manager.MSDataflow.DFProduction">
+            <summary>
+            Dataflow Production
+            is required in FlyRedirectToRI_implementations
+            </summary>
+        </member>
+        <member name="P:FlySDDSLoader_implementation.Manager.MSDataflow.DatasetList">
+            <summary>
+            List of associated Dataset Code
+            </summary>
+        </member>
+        <member name="P:FlySDDSLoader_implementation.Manager.MSDataflow.DsdCode">
+            <summary>
+            Referenced DSD Code
+            </summary>
+        </member>
+        <member name="P:FlySDDSLoader_implementation.Manager.MSDataflow.DsdAgency">
+            <summary>
+            Referenced DSD Agency
+            </summary>
+        </member>
+        <member name="P:FlySDDSLoader_implementation.Manager.MSDataflow.DsdVersion">
+            <summary>
+            Referenced DSD Version
+            </summary>
+        </member>
+        <member name="T:FlySDDSLoader_implementation.Manager.Metadata.DsdManager">
+            <summary>
+            DsdManager retrieves the data for build  KeyFamilies (sdmx v 2.0) or DataStructures (sdmx v 2.1)
+            </summary>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.Metadata.DsdManager.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Inizialize for BaseManager Class
+            </summary>
+            <param name="_parsingObject">the <see cref="T:FlyController.Model.ISdmxParsingObject"/></param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.Metadata.DsdManager.GetDSDs">
+            <summary>
+            retrieves the DSD from database
+            </summary>
+            <returns>list of DataStructure for SDMXObject</returns>
+        </member>
+        <member name="M:FlySDDSLoader_implementation.Manager.Metadata.DsdManager.GetDSDsReferences(FlyEngine.Model.IReferencesObject)">
+            <summary>
+            retrieves the DSD from database
+            </summary>
+            <param name="refObj">Referenced Objects</param>
+            <returns>list of DataStructure for SDMXObject</returns>
+        </member>
+        <member name="P:FlySDDSLoader_implementation.Manager.Metadata.DsdManager.ReferencesObject">
+            <summary>
+            Referenced objects 
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,1501 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FlyEngine</name>
+    </assembly>
+    <members>
+        <member name="T:FlyEngine.Engine.Data.WriteJsonDataMessage">
+            <summary>
+            Write20DataMessage implementing WriteDataBase for Write a data in SDMX 2.0 Version
+            </summary>
+        </member>
+        <member name="T:FlyEngine.Engine.Data.WriterDataBase">
+            <summary>
+            WriterDataBase is abstract class, used for Write Data Message
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Engine.Data.WriterDataBase.OnlySeriesKey(FlyController.Model.DataMessageObject)">
+            <summary>
+            assists research of all Dimension (Escluded timeDimension) in DataTableMessageObject for format the SeriesKey
+            </summary>
+            <param name="dim">Dimension test</param>
+            <returns>Return true if DataMessageObject is Valid</returns>
+        </member>
+        <member name="M:FlyEngine.Engine.Data.WriterDataBase.OnlySeriesAttribute(FlyController.Model.DataMessageObject)">
+            <summary>
+            assists research of all Attribute with AttachmentLevel= DimensionGroup in DataTableMessageObject for format the SeriesKey
+            </summary>
+            <param name="att">Attribute test</param>
+            <returns>Return true if DataMessageObject is Valid</returns>
+        </member>
+        <member name="M:FlyEngine.Engine.Data.WriterDataBase.OnlyObservationAttribute(FlyController.Model.DataMessageObject)">
+            <summary>
+            assists research of all Attribute with AttachmentLevel= Observation in DataTableMessageObject for format the ObservationKey
+            </summary>
+            <param name="att">Attribute test</param>
+            <returns>Return true if DataMessageObject is Valid</returns>
+        </member>
+        <member name="M:FlyEngine.Engine.Data.WriterDataBase.OnlyDatasetAttribute(FlyController.Model.DataMessageObject)">
+            <summary>
+            assists research of all Attribute with AttachmentLevel= DataSet in DataTableMessageObject for format the DatasetDescription
+            </summary>
+            <param name="att">Attribute test</param>
+            <returns>Return true if DataMessageObject is Valid</returns>
+        </member>
+        <member name="F:FlyEngine.Engine.Data.WriterDataBase.LastSeriesKey">
+            <summary>
+            Flag used for ChangeSeries
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Engine.Data.WriterDataBase.CheckChanged(System.Collections.Generic.List{FlyController.Model.DataMessageObject})">
+            <summary>
+            Check if Serie must be Change
+            </summary>
+            <param name="dmo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyEngine.Engine.Data.WriterDataBase.WriteDataMessage(FlyController.Model.Streaming.IFlyWriter)">
+            <summary>
+            Overridable Function for Write Data
+            </summary>
+            <param name="retData">return XmlWriter</param>
+        </member>
+        <member name="P:FlyEngine.Engine.Data.WriterDataBase.MessageType">
+            <summary>
+            Message Type, describe which endpoint has been used and what is the kind of answer to give
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Engine.Data.WriterDataBase._tableResponse">
+            <summary>
+            Response Table, contains data formatted in DataTableMessageObject structure
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Engine.Data.WriterDataBase._retrievalManager">
+            <summary>
+            RetrievalManager, used for parse query
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Engine.Data.WriterDataBase.DimensionAtObservation">
+            <summary>
+            Dimension At Observation, describe if query is TimeSeries or CrossSectional and contains "AllDimensions" for FLAT result
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Engine.Data.WriteJsonDataMessage.WriteDataMessage(FlyController.Model.Streaming.IFlyWriter)">
+            <summary>
+            Write a DataMessage in XmlWriter
+            </summary>
+            <param name="writer">Stream Destination</param>
+        </member>
+        <member name="M:FlyEngine.Engine.Data.WriteJsonDataMessage.WriteTimeSeriesData(IstatExtension.SdmxJson.DataWriter.Engine.SdmxJsonBaseDataWriter)">
+            <summary>
+            Write a TimeSeries Data
+            </summary>
+            <param name="dataWriterEngine">input structure contains data</param>
+        </member>
+        <member name="T:FlyEngine.Engine.Data.WriteDSPLDataMessage">
+            <summary>
+            Write20DataMessage implementing WriteDataBase for Write a data in SDMX 2.0 Version
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Engine.Data.WriteDSPLDataMessage.WriteDataMessage(FlyController.Model.Streaming.IFlyWriter)">
+            <summary>
+            Write a DataMessage in XmlWriter
+            </summary>
+            <param name="writer">Stream Destination</param>
+        </member>
+        <member name="T:FlyEngine.Engine.Data.WriteRDFDataMessage">
+            <summary>
+            Write20DataMessage implementing WriteDataBase for Write a data in SDMX 2.0 Version
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Engine.Data.WriteRDFDataMessage.WriteDataMessage(FlyController.Model.Streaming.IFlyWriter)">
+            <summary>
+            Write a DataMessage in XmlWriter
+            </summary>
+            <param name="writer">Stream Destination</param>
+        </member>
+        <member name="T:FlyEngine.Engine.Data.Write20DataMessage">
+            <summary>
+            Write20DataMessage implementing WriteDataBase for Write a data in SDMX 2.0 Version
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Engine.Data.Write20DataMessage.WriteDataMessage(FlyController.Model.Streaming.IFlyWriter)">
+            <summary>
+            Write a DataMessage in XmlWriter
+            </summary>
+            <param name="writer">Stream Destination</param>
+        </member>
+        <member name="T:FlyEngine.Engine.Data.Write21DataMessage">
+            <summary>
+            Write21DataMessage implementing WriteDataBase for Write a data in SDMX 2.1 Version
+            </summary>
+        </member>
+        <member name="F:FlyEngine.Engine.Data.Write21DataMessage.isFlat">
+            <summary>
+            Flag representing writing data in FLAT format
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Engine.Data.Write21DataMessage.WriteDataMessage(FlyController.Model.Streaming.IFlyWriter)">
+            <summary>
+            Write a DataMessage in XmlWriter calling WriteTimeSeriesData or WriteFlatData or WriteCrossSectional
+            </summary>
+            <param name="writer">Stream Destination</param>
+        </member>
+        <member name="M:FlyEngine.Engine.Data.Write21DataMessage.WriteTimeSeriesData(Org.Sdmxsource.Sdmx.Api.Engine.IDataWriterEngine)">
+            <summary>
+            Write a TimeSeries Data
+            </summary>
+            <param name="dataWriterEngine">input structure contains data</param>
+        </member>
+        <member name="M:FlyEngine.Engine.Data.Write21DataMessage.WriteFlatData(Org.Sdmxsource.Sdmx.Api.Engine.IDataWriterEngine)">
+            <summary>
+            Write a TimeSeries Data in FLAT format
+            </summary>
+            <param name="dataWriterEngine">input structure contains data</param>
+        </member>
+        <member name="T:FlyEngine.Engine.EngineChooser">
+            <summary>
+            Choose which implementations use classes to create the metadata 
+            </summary>
+        </member>
+        <member name="F:FlyEngine.Engine.EngineChooser._parsingObject">
+            <summary>
+            Processed request
+            </summary>
+        </member>
+        <member name="F:FlyEngine.Engine.EngineChooser._versionTypeResp">
+            <summary>
+            Sdmx Version
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Engine.EngineChooser.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Instance of EngineChooser <see cref="T:FlyEngine.Engine.EngineChooser"/>
+            </summary>
+            <param name="_parsingObject">Processed request</param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="T:FlyEngine.Engine.Metadata.GetStructure">
+            <summary>
+            GetStructure implementation of SDMXObjectBuilder for creation of DataStructure
+            </summary>
+        </member>
+        <member name="T:FlyEngine.Model.SDMXObjectBuilder">
+            <summary>
+            Object Model base for develop Metadata Builder
+            </summary>
+        </member>
+        <member name="T:FlyEngine.Model.ISDMXObjectBuilder">
+            <summary>
+            Interface Model base for develop Metadata Builder
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Model.ISDMXObjectBuilder.AddReferences">
+            <summary>
+            Abstract void for build the External References
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Model.ISDMXObjectBuilder.Build">
+            <summary>
+            Abstract void for build this property with correct parameter
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Model.ISDMXObjectBuilder.CreateDSD">
+            <summary>
+            Create a SdmxObjects from all parameter configured
+            </summary>
+            <returns>SdmxObject for write message</returns>
+        </member>
+        <member name="M:FlyEngine.Model.ISDMXObjectBuilder.WriteDSD">
+            <summary>
+            Call CreateDSD and Write SdmxObject in XElement Streaming to return with processed metadata result
+            </summary>
+            <returns>Object for Write response in streaming <see cref="T:FlyController.Model.IFlyWriterBody"/></returns>
+        </member>
+        <member name="P:FlyEngine.Model.ISDMXObjectBuilder._CategorisationObject">
+            <summary>
+            List of immutable instance of Categorisation
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.ISDMXObjectBuilder._CategorySchemeObject">
+            <summary>
+            Immutable instance of CategoryScheme
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.ISDMXObjectBuilder._AgencyScheme">
+            <summary>
+            Immutable instance of AgencyScheme
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.ISDMXObjectBuilder._Dataflows">
+            <summary>
+            List of immutable instance of Dataflow
+            currently is only one
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.ISDMXObjectBuilder._Conceptscheme">
+            <summary>
+             Immutable instance of ConceptsScheme
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.ISDMXObjectBuilder._Codelists">
+            <summary>
+            List of immutable instance of Codelist
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.ISDMXObjectBuilder._KeyFamily">
+            <summary>
+            List of immutable instance of DataStructure (KeyFamily for Sdmx 2.0, Structure for Sdmx 2.1)
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.ISDMXObjectBuilder.ParsingObject">
+            <summary>
+            Processed request
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.ISDMXObjectBuilder.VersionTypeResp">
+            <summary>
+            Sdmx Version
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Model.SDMXObjectBuilder.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            create a SDMXObjectBuilder instance
+            and requires all Classbuilder to request this information
+            </summary>
+            <param name="_parsingObject">Processed request</param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyEngine.Model.SDMXObjectBuilder.Build">
+            <summary>
+            Abstract void for build this property with correct parameter
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Model.SDMXObjectBuilder.AddReferences">
+            <summary>
+            Abstract void for build the External References
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Model.SDMXObjectBuilder.WriteDSD">
+            <summary>
+            Call CreateDSD and Write SdmxObject in XElement Streaming to return with processed metadata result
+            </summary>
+            <returns>Object for Write response in streaming <see cref="T:FlyController.Model.IFlyWriterBody"/></returns>
+        </member>
+        <member name="M:FlyEngine.Model.SDMXObjectBuilder.CreateDSD">
+            <summary>
+            Create a SdmxObjects from all parameter configured
+            </summary>
+            <returns>SdmxObject for write message</returns>
+        </member>
+        <member name="P:FlyEngine.Model.SDMXObjectBuilder._CategorisationObject">
+            <summary>
+            List of immutable instance of Categorisation
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.SDMXObjectBuilder._CategorySchemeObject">
+            <summary>
+            Immutable instance of CategoryScheme
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.SDMXObjectBuilder._AgencyScheme">
+            <summary>
+            Immutable instance of AgencyScheme
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.SDMXObjectBuilder._Dataflows">
+            <summary>
+            List of immutable instance of Dataflow
+            currently is only one
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.SDMXObjectBuilder._Conceptscheme">
+            <summary>
+             Immutable instance of ConceptsScheme
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.SDMXObjectBuilder._Codelists">
+            <summary>
+            List of immutable instance of Codelist
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.SDMXObjectBuilder._KeyFamily">
+            <summary>
+            List of immutable instance of DataStructure (KeyFamily for Sdmx 2.0, Structure for Sdmx 2.1)
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.SDMXObjectBuilder._DataStructureBuilder">
+            <summary>
+            Builder of DataStructure
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.SDMXObjectBuilder.ParsingObject">
+            <summary>
+            Processed request
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.SDMXObjectBuilder.VersionTypeResp">
+            <summary>
+            Sdmx Version
+            </summary>
+        </member>
+        <member name="T:FlyEngine.Engine.Metadata.IGetStructure">
+            <summary>
+            GetStructure implementation of SDMXObjectBuilder for creation of DataStructure
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.IGetStructure.Build">
+            <summary>
+            Populate DataStructure (KeyFamyly for SDMX 2.0, Structure for SDMX 2.1)
+            property of SDMXObjectBuilder for insert this elements in DataStructure response
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.GetStructure.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            create a GetStructure instance
+            </summary>
+            <param name="_parsingObject">Sdmx Parsing Object</param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.GetStructure.Build">
+            <summary>
+            Populate DataStructure (KeyFamyly for SDMX 2.0, Structure for SDMX 2.1)
+            property of SDMXObjectBuilder for insert this elements in DataStructure response
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.GetStructure.GetDSDs">
+            <summary>
+            retrieves the DSD from database
+            </summary>
+            <returns>list of DataStructure for SDMXObject</returns>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.GetStructure.AddReferences">
+            <summary>
+            Add External reference into SdmxObject
+            </summary>
+        </member>
+        <member name="T:FlyEngine.Engine.Metadata.GetCategoryScheme">
+            <summary>
+            GetCategoryScheme implementation of SDMXObjectBuilder for creation of CategorisationScheme and CategoryScheme
+            </summary>
+        </member>
+        <member name="T:FlyEngine.Engine.Metadata.IGetCategoryScheme">
+            <summary>
+            GetCategoryScheme implementation of SDMXObjectBuilder for creation of CategorisationScheme and CategoryScheme
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.IGetCategoryScheme._GetCategorisation">
+            <summary>
+            Get and Create All Categorisation
+            </summary>
+            <returns>List of <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.CategoryScheme.ICategorisationObject"/></returns>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.IGetCategoryScheme._GetCategory">
+            <summary>
+            Get and Create CategoryScheme
+            </summary>
+            <returns><see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.CategoryScheme.ICategorySchemeObject"/></returns>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.IGetCategoryScheme.Build">
+            <summary>
+            Populate a CategoryScheme and list of Categorisation property of SDMXObjectBuilder for insert this in DataStructure response
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.GetCategoryScheme.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            create a GetCategoryScheme instance
+            </summary>
+            <param name="_parsingObject">Sdmx Parsing Object</param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.GetCategoryScheme.Build">
+            <summary>
+            Populate a CategoryScheme and list of Categorisation property of SDMXObjectBuilder for insert this in DataStructure response
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.GetCategoryScheme._GetCategory">
+            <summary>
+            Get and Create CategoryScheme
+            </summary>
+            <returns><see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.CategoryScheme.ICategorySchemeObject"/></returns>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.GetCategoryScheme._GetCategorisation">
+            <summary>
+            Get and Create All Categorisation
+            </summary>
+            <returns>List of <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.CategoryScheme.ICategorisationObject"/></returns>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.GetCategoryScheme.AddReferences">
+            <summary>
+            Add External reference into SdmxObject
+            </summary>
+        </member>
+        <member name="T:FlyEngine.Engine.Metadata.GetCodelists">
+            <summary>
+            GetCodelists implementation of SDMXObjectBuilder for creation of Codelist
+            </summary>
+        </member>
+        <member name="T:FlyEngine.Engine.Metadata.IGetCodelists">
+            <summary>
+            GetCodelists implementation of SDMXObjectBuilder for creation of Codelist
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.IGetCodelists.Build">
+            <summary>
+            Populate a list of Codelist property of SDMXObjectBuilder for insert this in DataStructure response
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.GetCodelists.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            create a GetCodelists instance
+            </summary>
+            <param name="_parsingObject">Sdmx Parsing Object</param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.GetCodelists.Build">
+            <summary>
+            Populate a list of Codelist property of SDMXObjectBuilder for insert this in DataStructure response
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.GetCodelists.GetCodelist">
+            <summary>
+            retrieves the codelist Contrain  from database
+            </summary>
+            <returns>list of Codelist for SDMXObject</returns>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.GetCodelists.AddReferences">
+            <summary>
+            Add External reference into SdmxObject
+            </summary>
+        </member>
+        <member name="T:FlyEngine.Engine.Metadata.GetConcepts">
+            <summary>
+            GetConcepts implementation of SDMXObjectBuilder for creation of ConceptScheme
+            </summary>
+        </member>
+        <member name="T:FlyEngine.Engine.Metadata.IGetConcepts">
+            <summary>
+            GetConcepts implementation of SDMXObjectBuilder for creation of ConceptScheme
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.IGetConcepts.Build">
+            <summary>
+            Populate a Conceptscheme property of SDMXObjectBuilder for insert this in DataStructure response
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.IGetConcepts.GetConceptSchemes">
+            <summary>
+            Build a ConceptSchemes
+            </summary>
+            <returns>list of IConceptSchemeObject for SdmxObject</returns>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.GetConcepts.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            create a GetConcepts instance
+            </summary>
+            <param name="_parsingObject">Sdmx Parsing Object</param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.GetConcepts.Build">
+            <summary>
+            Populate a Conceptscheme property of SDMXObjectBuilder for insert this in DataStructure response
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.GetConcepts.GetConceptSchemes">
+            <summary>
+            Build a ConceptSchemes
+            </summary>
+            <returns>list of IConceptSchemeObject for SdmxObject</returns>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.GetConcepts.AddReferences">
+            <summary>
+            Add External reference into SdmxObject
+            </summary>
+        </member>
+        <member name="T:FlyEngine.Engine.Metadata.GetDataflows">
+            <summary>
+            GetDataflows implementation of SDMXObjectBuilder for creation of DataFlows
+            </summary>
+        </member>
+        <member name="T:FlyEngine.Engine.Metadata.IGetDataflows">
+            <summary>
+            GetDataflows implementation of SDMXObjectBuilder for creation of DataFlows
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.IGetDataflows.Build">
+            <summary>
+            Populate a list of Dataflows property of SDMXObjectBuilder for insert this in DataStructure response
+            Currently the Dataflow is only one
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.IGetDataflows.Dataflows">
+            <summary>
+            Create a list of DataflowBuilder
+            Currently the Dataflow is only one
+            </summary>
+            <returns>List of <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.DataStructure.IDataflowObject"/></returns>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.GetDataflows.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            create a GetConcepts instance
+            </summary>
+            <param name="_parsingObject">Sdmx Parsing Object</param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.GetDataflows.Build">
+            <summary>
+            Populate a list of Dataflows property of SDMXObjectBuilder for insert this in DataStructure response
+            Currently the Dataflow is only one
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.GetDataflows.Dataflows">
+            <summary>
+            Create a list of DataflowBuilder
+            Currently the Dataflow is only one
+            </summary>
+            <returns>List of <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.DataStructure.IDataflowObject"/></returns>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.GetDataflows.AddReferences">
+            <summary>
+            Add External reference into SdmxObject
+            </summary>
+        </member>
+        <member name="T:FlyEngine.Engine.Metadata.GetAgencyScheme">
+            <summary>
+            GetAgencySchema implementation of SDMXObjectBuilder for creation of OrganisationScheme and AgencyScheme
+            </summary>
+        </member>
+        <member name="T:FlyEngine.Engine.Metadata.IGetAgencyScheme">
+            <summary>
+            GetAgencySchema implementation of SDMXObjectBuilder for creation of OrganisationScheme and AgencyScheme
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.IGetAgencyScheme._GetAgencyScheme">
+            <summary>
+            Create a immutable instance of IAgencyScheme
+            </summary>
+            <returns>IAgencyScheme</returns>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.IGetAgencyScheme.Build">
+            <summary>
+            Populate a AgencyScheme property of SDMXObjectBuilder for insert this in DataStructure response
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.GetAgencyScheme.#ctor(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            create a GetAgencyScheme instance
+            </summary>
+            <param name="_parsingObject">Sdmx Parsing Object</param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.GetAgencyScheme.Build">
+            <summary>
+            Populate a AgencyScheme property of SDMXObjectBuilder for insert this in DataStructure response
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.GetAgencyScheme._GetAgencyScheme">
+            <summary>
+            Create a immutable instance of IAgencyScheme
+            </summary>
+            <returns>IAgencyScheme</returns>
+        </member>
+        <member name="M:FlyEngine.Engine.Metadata.GetAgencyScheme.AddReferences">
+            <summary>
+            Add External reference into SdmxObject
+            </summary>
+        </member>
+        <member name="T:FlyEngine.FlyEngine_Namespace">
+            <summary>
+            FlyEngine namespace is divided by:
+            FlyEngine.Engine
+            FlyEngine.Manager
+            FlyEngine.Model
+            </summary>
+        </member>
+        <member name="T:FlyEngine.Manager.DataEngineObject">
+            <summary>
+            Abstract Class for get parsed result of request Data and Metadata
+            </summary>
+        </member>
+        <member name="T:FlyEngine.Manager.IDataEngineObject">
+            <summary>
+            Interface for Get parsed result of request Data and Metadata
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Manager.IDataEngineObject.GetResult">
+            <summary>
+            Get parsed result of request
+            </summary>
+            <returns>Object for Write response in streaming <see cref="T:FlyController.Model.IFlyWriterBody"/></returns>
+        </member>
+        <member name="M:FlyEngine.Manager.IDataEngineObject.DestroyObjects">
+            <summary>
+            Dispose all Object used for retreial data
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Manager.IDataEngineObject.HaveError">
+            <summary>
+            Flag representing Error in application
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Manager.IDataEngineObject.ErrorMessage">
+            <summary>
+            Error Message in case of error
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Manager.IDataEngineObject.VersionTypeResp">
+            <summary>
+            Sdmx Version
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Manager.DataEngineObject.GetResult">
+            <summary>
+            Calling at the end of GetResult Implemented function. this call a DestroyObject function
+            </summary>
+            <returns>Object for Write response in streaming <see cref="T:FlyController.Model.IFlyWriterBody"/></returns>
+        </member>
+        <member name="M:FlyEngine.Manager.DataEngineObject.DestroyObjects">
+            <summary>
+            Dispose all Object used for retreial data
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Manager.DataEngineObject.HaveError">
+            <summary>
+            Flag representing Error in application
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Manager.DataEngineObject.ErrorMessage">
+            <summary>
+            Error Message in case of error
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Manager.DataEngineObject.VersionTypeResp">
+            <summary>
+            Sdmx Version
+            </summary>
+        </member>
+        <member name="T:FlyEngine.Manager.DataMessageEngineObject">
+            <summary>
+            EntryPoint Class for request Data Message
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Manager.DataMessageEngineObject.ParseQueryMessage20(Org.Sdmxsource.Sdmx.Structureparser.Manager.Parsing.IDataQueryParseManager,Org.Sdmxsource.Sdmx.Api.Util.IReadableDataLocation)">
+            <summary>
+            First Parse Message arrived from external process for SDMX 2.0
+            </summary>
+            <param name="manager">data parsed from DataQueryParseManager (Sdmx CommonAPI)</param>
+            <param name="location">Arrived Message converted to IReadableDataLocation</param>
+        </member>
+        <member name="M:FlyEngine.Manager.DataMessageEngineObject.ParseQueryMessage21(Org.Sdmxsource.Sdmx.Structureparser.Manager.Parsing.IDataQueryParseManager,Org.Sdmxsource.Sdmx.Api.Util.IReadableDataLocation)">
+            <summary>
+            First Parse Message arrived from external process for SDMX 2.1
+            </summary>
+            <param name="manager">data parsed from DataQueryParseManager (Sdmx CommonAPI)</param>
+            <param name="location">Arrived Message converted to IReadableDataLocation</param>
+        </member>
+        <member name="M:FlyEngine.Manager.DataMessageEngineObject.ParseQueryMessageREST(Org.Sdmxsource.Sdmx.Api.Model.Query.IRestDataQuery)">
+            <summary>
+            First Parse Message arrived from external process for REST SDMX
+            </summary>
+            <param name="query">data parsed from Sdmx CommonAPI</param>
+        </member>
+        <member name="M:FlyEngine.Manager.DataMessageEngineObject.GetResult">
+            <summary>
+            Get parsed result of request
+            </summary>
+            <returns>Object for Write response in streaming <see cref="T:FlyController.Model.IFlyWriterBody"/></returns>
+        </member>
+        <member name="M:FlyEngine.Manager.DataMessageEngineObject.DestroyObjects">
+            <summary>
+            Dispose all Object used for retreial data
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Manager.DataMessageEngineObject.DataFlowElementId">
+            <summary>
+            Xml ID where to get Dataflow information
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Manager.DataMessageEngineObject.WhereStatement">
+            <summary>
+            Where Statement used for request data from database
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Manager.DataMessageEngineObject.MessageType">
+            <summary>
+            Type of request, both SDMX 2.0 and Sdmx 2.1
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Manager.DataMessageEngineObject.RetrievalManagerObject">
+            <summary>
+            Retrieval Manager contains DataStructure information
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Manager.DataMessageEngineObject.Builder">
+            <summary>
+            Data builder object Contains data to return and function for write return streaming data
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Manager.DataMessageEngineObject.TimeStamp">
+            <summary>
+            LastUpdate parameter request only observation from this date onwards
+            </summary>
+        </member>
+        <member name="T:FlyEngine.Model.DataMessageObjectBuilder">
+            <summary>
+            Object Model contains information for Data Message
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Model.DataMessageObjectBuilder.WriteDataMessage(FlyController.Model.IDataTableMessageObject,FlyController.Model.Streaming.IFlyWriter)">
+             <summary>
+            Start Write data message and Call Write20DataMessage or Write21DataMessage
+             Create a XElement to return back
+             </summary>
+             <param name="TableResponse">Headers of response</param>
+             <param name="writer"> Contains the object of transport used for transmitting data in streaming</param>
+        </member>
+        <member name="P:FlyEngine.Model.DataMessageObjectBuilder._tableResponse">
+            <summary>
+            Data builder object Contains data to return and function for write return streaming data
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.DataMessageObjectBuilder.MessageType">
+            <summary>
+            Type of request, both SDMX 2.0 and Sdmx 2.1
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.DataMessageObjectBuilder._versionTypeResp">
+            <summary>
+            Sdmx Version
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.DataMessageObjectBuilder._retrievalManager">
+            <summary>
+            Retrieval Manager contains DataStructure information
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.DataMessageObjectBuilder.DimensionAtObservation">
+            <summary>
+            Dimension At Observation, describe if query is TimeSeries or CrossSectional and contains "AllDimensions" for FLAT result
+            </summary>
+        </member>
+        <member name="T:FlyEngine.Model.IRetrievalReferences">
+            <summary>
+            Determines which and how many are the references which we must return
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Model.IRetrievalReferences.AddReferences(FlyController.Model.MetadataReferences.ReferenceTreeEnum)">
+            <summary>
+            adds a reference from a structure
+            </summary>
+            <param name="_structType">starting structure</param>
+        </member>
+        <member name="M:FlyEngine.Model.IRetrievalReferences.AddCategorisation">
+            <summary>
+            Add Categorisation References
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Model.IRetrievalReferences.AddCategoryScheme">
+            <summary>
+            Add CategoryScheme References
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Model.IRetrievalReferences.AddCodelist">
+            <summary>
+            Add Codelist References
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Model.IRetrievalReferences.AddConceptScheme">
+            <summary>
+            Add ConceptScheme References
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Model.IRetrievalReferences.AddDataflow">
+            <summary>
+            Add Dataflows References
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Model.IRetrievalReferences.AddDataStructure">
+            <summary>
+            Add DataStructure References
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.IRetrievalReferences._SDMXObjectBuilder">
+            <summary>
+            <see cref="T:FlyEngine.Model.ISDMXObjectBuilder"/> where to add a reference Metadata
+            </summary>
+        </member>
+        <member name="T:FlyEngine.Model.MappingConfiguration">
+            <summary>
+            Configure Implementation of Interfaces of FlyMapping
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Model.MappingConfiguration.DataFactory(Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Instance of <see cref="T:FlyMapping.Model.IDataMessageManager"/>
+            </summary>
+            <param name="VersionTypeResp">Sdmx Version of response</param>
+            <returns></returns>
+        </member>
+        <member name="M:FlyEngine.Model.MappingConfiguration.GroupFactory(System.String,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Instance of <see cref="T:FlyMapping.Model.IDataMessageManager"/>
+            </summary>
+            <param name="TimeStamp">LastUpdate parameter request only data from this date onwards</param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+            <returns></returns>
+        </member>
+        <member name="P:FlyEngine.Model.MappingConfiguration.MetadataFactory">
+            <summary>
+            Instance of <see cref="T:FlyMapping.Model.IMetadataFactory"/>
+            </summary>
+        </member>
+        <member name="T:FlyEngine.Model.RetrievalManager">
+            <summary>
+            Implementation of interface ISdmxObjectRetrievalManager
+            Retrieval Manager contains DataStructure information
+            </summary>
+        </member>
+        <member name="F:FlyEngine.Model.RetrievalManager._parsingManager">
+            <summary>
+                The parsing manager.
+            </summary>
+        </member>
+        <member name="F:FlyEngine.Model.RetrievalManager._sdmxObjects">
+            <summary>
+                The sdmx objects.
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.#ctor(System.String,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Initialie a new instance of the <see cref="T:FlyEngine.Model.RetrievalManager"/> class.
+            </summary>
+            <param name="_dataFlowID">
+            Dataflow ID
+            </param>     
+            <param name="_versionType">Sdmx Version</param>     
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetAgency(System.String)">
+            <summary>
+            Gets the agency with the given Id
+            </summary>
+            <param name="id">
+            The id parameter.
+            </param>
+            <returns>
+            The <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.Base.IAgency"/> .
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetAgencySchemeObjects(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IMaintainableRefObject,System.Boolean)">
+            <summary>
+            Returns AgencySchemeObjects that match the parameters in the ref object.  If the ref object is null or
+            has no attributes set, then this will be interpreted as a search for all AgencySchemeObjects
+            </summary>
+            <param name="xref">
+            The reference object defining the search parameters, can be empty or null
+            </param>
+            <param name="returnStub">
+            If true then a stub object will be returned
+            </param>
+            <returns>
+            Set of sdmxObjects that match the search criteria
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetCategorisation(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IMaintainableRefObject)">
+            <summary>
+            Returns the categorisation.
+            </summary>
+            <param name="xref">
+            The maintainable object reference.
+            </param>
+            <returns>
+            The <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.CategoryScheme.ICategorisationObject"/>.
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetCategorisationObjects(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IMaintainableRefObject,System.Boolean)">
+            <summary>
+            Returns the categorisation beans.
+            </summary>
+            <param name="xref">
+            The maintainable object reference.
+            </param>
+            <param name="returnStub">
+            If true then a stub object will be returned
+            </param>
+            <returns>
+            The set of requested objects.
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetCategoryScheme(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IMaintainableRefObject)">
+            <summary>
+            Returns the category scheme.
+            </summary>
+            <param name="xref">
+            The maintainable object reference.
+            </param>
+            <returns>
+            The <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.CategoryScheme.ICategorySchemeObject"/>.
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetCategorySchemeObjects(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IMaintainableRefObject,System.Boolean,System.Boolean)">
+            <summary>
+            Returns the category scheme beans.
+            </summary>
+            <param name="xref">
+            The maintainable object reference.
+            </param>
+            <param name="returnLatest">
+            If true then the latest version is returned, regardless of whether version information is supplied
+            </param>
+            <param name="returnStub">
+            If true then a stub object will be returned
+            </param>
+            <returns>
+            The set of requested objects.
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetCodelist(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IMaintainableRefObject)">
+            <summary>
+            Returns the codelist.
+            </summary>
+            <param name="xref">
+            The maintainable object reference.
+            </param>
+            <returns>
+            The <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.Codelist.ICodelistObject"/>.
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetCodelistObjects(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IMaintainableRefObject,System.Boolean,System.Boolean)">
+            <summary>
+            Returns the codelist beans.
+            </summary>
+            <param name="xref">
+            The maintainable object reference.
+            </param>
+            <param name="returnLatest">
+            If true then the latest version is returned, regardless of whether version information is supplied
+            </param>
+            <param name="returnStub">
+            If true then a stub object will be returned
+            </param>
+            <returns>
+            The set of requested objects.
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetAllConceptsImpl">
+            <summary>
+            Get all concepts contains in dsd
+            </summary>
+            <returns>List of ConceptCore </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetConceptScheme(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IMaintainableRefObject)">
+            <summary>
+            Returns the concept scheme.
+            </summary>
+            <param name="xref">
+            The maintainable object reference.
+            </param>
+            <returns>
+            The <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.ConceptScheme.IConceptSchemeObject"/>.
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetConceptSchemeObjects(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IMaintainableRefObject,System.Boolean,System.Boolean)">
+            <summary>
+            Returns ConceptSchemeObjects that match the parameters in the ref object.  If the ref object is null or
+            has no attributes set, then this will be interpreted as a search for all ConceptSchemeObjects
+            </summary>
+            <param name="xref">
+            The reference object defining the search parameters, can be empty or null
+            </param>
+            <param name="returnLatest">
+            If true then the latest versions of the structures that match the query will be returned.  If version information is supplied
+            then it will be ignored
+            </param>
+            <param name="returnStub">
+            If true then a stub object will be returned
+            </param>
+            <returns>
+            Set of sdmxObjects that match the search criteria
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetContentConstraint(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IMaintainableRefObject)">
+            <summary>
+            Returns the content constraint.
+            </summary>
+            <param name="xref">
+            The maintainable object reference.
+            </param>
+            <returns>
+            The <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.Registry.IContentConstraintObject"/>.
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetContentConstraints(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IMaintainableRefObject,System.Boolean,System.Boolean)">
+            <summary>
+            Returns the content constraints.
+            </summary>
+            <param name="xref">
+            The maintainable object reference.
+            </param>
+            <param name="returnLatest">
+            If true then the latest version is returned, regardless of whether version information is supplied
+            </param>
+            <param name="returnStub">
+            If true then a stub object will be returned
+            </param>
+            <returns>
+            The set of requested objects.
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetDataStructure(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IMaintainableRefObject)">
+            <summary>
+            Returns the data structure.
+            </summary>
+            <param name="xref">
+            The maintainable object reference.
+            </param>
+            <returns>
+            The <see cref="T:FlyController.Model.DataStructureObjectImpl"/>.
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetDataStructureObjects(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IMaintainableRefObject,System.Boolean,System.Boolean)">
+            <summary>
+            Returns the data structure beans.
+            </summary>
+            <param name="xref">
+            The maintainable object reference.
+            </param>
+            <param name="returnLatest">
+            If true then the latest version is returned, regardless of whether version information is supplied
+            </param>
+            <param name="returnStub">
+            If true then a stub object will be returned
+            </param>
+            <returns>
+            The set of requested objects.
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetDataflow(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IMaintainableRefObject)">
+            <summary>
+            Returns the dataflow.
+            </summary>
+            <param name="xref">
+            The maintainable object reference.
+            </param>
+            <returns>
+            The <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.DataStructure.IDataflowObject"/>.
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetDataflowFromSdmxObject">
+            <summary>
+            Returns the dataflow.
+            </summary>
+            <returns>
+            The <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.DataStructure.IDataflowObject"/>.
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetDataflowObjects(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IMaintainableRefObject,System.Boolean,System.Boolean)">
+            <summary>
+            Returns the dataflow beans.
+            </summary>
+            <param name="xref">
+            The maintainable object reference.
+            </param>
+            <param name="returnLatest">
+            If true then the latest version is returned, regardless of whether version information is supplied
+            </param>
+            <param name="returnStub">
+            If true then a stub object will be returned
+            </param>
+            <returns>
+            The set of requested objects.
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetHierarchicCodeList(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IMaintainableRefObject)">
+            <summary>
+            Returns the hierarchic code list.
+            </summary>
+            <param name="xref">
+            The maintainable object reference.
+            </param>
+            <returns>
+            The <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.Codelist.IHierarchicalCodelistObject"/>.
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetHierarchicCodeListObjects(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IMaintainableRefObject,System.Boolean,System.Boolean)">
+            <summary>
+            Returns the hierarchic code list beans.
+            </summary>
+            <param name="xref">
+            The maintainable object reference.
+            </param>
+            <param name="returnLatest">
+            If true then the latest version is returned, regardless of whether version information is supplied
+            </param>
+            <param name="returnStub">
+            If true then a stub object will be returned
+            </param>
+            <returns>
+            The set of requested objects.
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetMaintainable(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference,System.Boolean)">
+            <summary>
+            Gets a maintainable defined by the StructureQueryObject parameter.
+                <p/>
+                Expects only ONE maintainable to be returned from this query
+            </summary>
+            <param name="sRref">
+            The query.
+            </param>
+            <param name="returnStub">
+            If true then a stub object will be returned
+            </param>
+            <returns>
+            The <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.Base.IMaintainableObject"/> .
+            </returns>
+            <exception cref="T:System.NotImplementedException">
+            Not implemented.
+            </exception>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetMaintainableObject``1(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IMaintainableRefObject,System.Boolean,System.Boolean)">
+            <summary>
+            Gets a maintainable that is of the given type, determined by T, and matches the reference parameters in the IMaintainableRefObject.
+                <p/>
+                Expects only ONE maintainable to be returned from this query
+            </summary>
+            <param name="maintainableReference">
+            The reference object that must match on the returned structure. If version information is missing, then latest version is assumed
+            </param>
+            <param name="returnStub">
+            If true then a stub object will be returned
+            </param>
+            /// <param name="returnLatest">
+            If true then the latest version is returned, regardless of whether version information is supplied
+            </param>
+            <returns>
+            The <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.Base.IMaintainableObject"/> .
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.ExtractFromSet``1(System.Collections.Generic.ICollection{``0})">
+            <summary>
+            If the set is of size 1, then returns the element in the set.
+                Returns null if the set is null or of size 0
+            </summary>
+            <typeparam name="T">
+            The maintainable type
+            </typeparam>
+            <param name="set">
+            set of elements
+            </param>
+            <returns>
+            The first element of the set.
+                Throws SdmxException if the set contains more then 1 element
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetMaintainableObject``1(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IMaintainableRefObject)">
+            <summary>
+            Gets a maintainable that is of the given type, determined by T, and matches the reference parameters in the IMaintainableRefObject.
+                <p/>
+                Expects only ONE maintainable to be returned from this query
+            </summary>
+            <param name="maintainableReference">
+            The reference object that must match on the returned structure. If version information is missing, then latest version is assumed
+            </param>
+            <returns>
+            The <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.Base.IMaintainableObject"/> .
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetMaintainableObject(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference,System.Boolean,System.Boolean)">
+            <summary>
+            Gets a maintainable defined by the StructureQueryObject parameter.
+                <p/>
+                Expects only ONE maintainable to be returned from this query
+            </summary>
+            <param name="structureReference">
+            The reference object defining the search parameters, this is expected to uniquely identify one MaintainableObject
+            </param>
+            <param name="returnStub">
+            If true then a stub object will be returned
+            </param>
+            <param name="returnLatest">
+            If true then the latest version is returned, regardless of whether version information is supplied
+            </param>
+            <returns>
+            The <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.Base.IMaintainableObject"/> .
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetMaintainableObject(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference)">
+            <summary>
+            Gets a maintainable defined by the StructureQueryObject parameter.
+                <p/>
+                Expects only ONE maintainable to be returned from this query
+            </summary>
+            <param name="structureReference">
+            The reference object defining the search parameters, this is expected to uniquely identify one MaintainableObject
+            </param>
+            <returns>
+            The <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.Base.IMaintainableObject"/> .
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetMaintainableObjects``1(System.Type,Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IMaintainableRefObject)">
+            <summary>
+            Gets a set of all MaintainableObjects of type T that match the reference parameters in the IMaintainableRefObject argument.
+            An empty Set will be returned if there are no matches to the query
+            </summary>
+            <typeparam name="T">The type of the maintainable. It is constraint  </typeparam>
+            <param name="maintainableInterface">The maintainable interface.</param>
+            <param name="maintainableReference">Contains the identifiers of the structures to returns, can include wild-carded values (null indicates a wild-card).</param>
+            <returns>
+            The set of <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.Base.IMaintainableObject"/> .
+            </returns>
+            <remarks>This method exists only for compatibility reasons with Java implementation of this interface which uses raw types and unchecked generics.</remarks>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetMaintainablesOfType``1(Org.Sdmxsource.Sdmx.Api.Constants.SdmxStructureEnumType,Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IMaintainableRefObject,System.Boolean,System.Boolean)">
+            <summary>
+                An empty Set will be returned if there are no matches to the query
+            </summary>
+            <param name="xType">
+            Contains sdmx structure enum type
+            </param>
+            <param name="maintainableReference">
+            Contains the identifiers of the structures to returns, can include widcarded values (null indicates a wildcard). 
+            </param>
+            <param name="returnStub">
+            If true then a stub object will be returned
+            </param>
+            /// <param name="returnLatest">
+            If true then the latest version is returned, regardless of whether version information is supplied
+            </param>
+            <returns>
+            The set of <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.Base.IMaintainableObject"/> .
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetMaintainableObjects``1(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IMaintainableRefObject,System.Boolean,System.Boolean)">
+            <summary>
+                An empty Set will be returned if there are no matches to the query
+            </summary>
+            <param name="maintainableReference">
+            Contains the identifiers of the structures to returns, can include widcarded values (null indicates a wildcard). 
+            </param>
+            <param name="returnStub">
+            If true then a stub object will be returned
+            </param>
+            /// <param name="returnLatest">
+            If true then the latest version is returned, regardless of whether version information is supplied
+            </param>
+            <returns>
+            The set of <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.Base.IMaintainableObject"/> .
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetMaintainableObjects``1(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IMaintainableRefObject)">
+            <summary>
+            An empty Set will be returned if there are no matches to the query
+            </summary>
+            <param name="maintainableReference">
+            Contains the identifiers of the structures to returns, can include widcarded values (null indicates a wildcard). 
+            </param>
+            <returns>
+            The set of <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.Base.IMaintainableObject"/> .
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetMaintainableObjects``1">
+            <summary>
+            Gets a set of all MaintainableObjects of type T
+                <p/>
+                An empty Set will be returned if there are no matches to the query
+            </summary>
+            <returns>
+            The set of <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.Base.IMaintainableObject"/> .
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetMaintainables(Org.Sdmxsource.Sdmx.Api.Model.Query.IRestStructureQuery)">
+            <summary>
+            Get all the maintainable that match the <paramref name="restquery"/>
+            </summary>
+            <param name="restquery">The REST structure query.</param>
+            <returns>the maintainable that match the <paramref name="restquery"/></returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetSdmxObjects(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference,Org.Sdmxsource.Sdmx.Api.Model.ResolveCrossReferences)">
+            <summary>
+            Gets the SDMX objects.
+            </summary>
+            <param name="structureReference">The <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference"/> which must not be null.</param>
+            <param name="resolveCrossReferences">either 'do not resolve', 'resolve all' or 'resolve all excluding agencies'. If not set to 'do not resolve' then all the structures that are referenced by the resulting structures are also returned (and also their children).  This will be equivalent to descendants for a <c>RESTful</c> query..</param>
+            <returns>Returns a <see cref="T:Org.Sdmxsource.Sdmx.Api.Model.Objects.ISdmxObjects"/> container containing all the Maintainable Objects that match the query parameters as defined by the <paramref name="structureReference"/>.</returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetIdentifiableObject``1(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference)">
+            <summary>
+            Resolves an reference to a Object of type T, this will return the Object of the given type, throwing an exception if e
+                Object is not of type T
+            </summary>
+            <typeparam name="T">Generic type parameter.
+            </typeparam>
+            <param name="crossReference">Structure-reference object
+            </param>
+            <returns>
+            SdmxException Not Implemented
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetIdentifiableObject``1(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.ICrossReference)">
+            <summary>
+            Resolves an reference to a Object of type T, this will return the Object of the given type, throwing an exception if either the
+                Object can not be resolved or if it is not of type T
+            </summary>
+            <typeparam name="T"> Generic type parameter. </typeparam>
+            <param name="crossReference">
+                Cross-reference object
+            </param>
+            <returns>
+            SdmxException Not Implemented
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetIdentifiableObject(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.ICrossReference)">
+            <summary>
+            Resolves an identifiable reference
+            </summary>
+            <param name="crossReference"> Cross-reference object
+            </param>
+            <returns>
+            SdmxException Not Implemented
+            </returns>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalManager.GetIdentifiableObjects``1(Org.Sdmxsource.Sdmx.Api.Model.Objects.Reference.IStructureReference)">
+            <summary>
+            Gets the identifiable objects.
+            </summary>
+            <typeparam name="T">The type of the identifiable objects to return.</typeparam>
+            <param name="structureReference">The structure reference.</param>
+            <returns>SdmxException Not Implemented</returns>
+        </member>
+        <member name="P:FlyEngine.Model.RetrievalManager.DataFlowID">
+            <summary>
+            Dataflow code
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.RetrievalManager.DataFlowTitle">
+            <summary>
+            Dataset Title
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.RetrievalManager._dsd">
+            <summary>
+            DataStructure 
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.RetrievalManager.VersionType">
+            <summary>
+            Sdmx Version
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.RetrievalManager._TimeStamp">
+            <summary>
+            LastUpdate parameter request only data from this date onwards
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.RetrievalManager.Groups">
+            <summary>
+            List of <see cref="T:FlyController.Model.DataGroupObject"/>
+            </summary>
+        </member>
+        <member name="T:FlyEngine.Model.RetrievalReferences">
+            <summary>
+            Determines which and how many are the references which we must return
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalReferences.#ctor(FlyEngine.Model.ISDMXObjectBuilder)">
+            <summary>
+            Initialize a new instance of <see cref="T:FlyEngine.Model.RetrievalReferences"/>
+            </summary>
+            <param name="_sdmxObjectBuilder">the <see cref="T:FlyEngine.Model.ISDMXObjectBuilder"/></param>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalReferences.AddReferences(FlyController.Model.MetadataReferences.ReferenceTreeEnum)">
+            <summary>
+            adds a reference from a structure
+            </summary>
+            <param name="_structType">starting structure</param>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalReferences.AddCategorisation">
+            <summary>
+            Add Categorisation References
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalReferences.AddCategoryScheme">
+            <summary>
+            Add CategoryScheme References
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalReferences.AddDataflow">
+            <summary>
+            Add Dataflows References
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalReferences.AddDataStructure">
+            <summary>
+            Add DataStructure References
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalReferences.AddConceptScheme">
+            <summary>
+            Add ConceptScheme References
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalReferences.AddCodelist">
+            <summary>
+            Add Codelist References
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Model.RetrievalReferences.GetDataFlowCodeFromKeyFamily(System.String)">
+            <summary>
+            Get DataFlow Code From KeyFamily (Using DsdFormat specified in File Config)
+            </summary>
+            <returns>DataFlow Code</returns>
+        </member>
+        <member name="P:FlyEngine.Model.RetrievalReferences._SDMXObjectBuilder">
+            <summary>
+            <see cref="T:FlyEngine.Model.ISDMXObjectBuilder"/> where to add a reference Metadata
+            </summary>
+        </member>
+        <member name="P:FlyEngine.Model.RetrievalReferences.ReferencesObject">
+            <summary>
+            Referenced objects 
+            </summary>
+        </member>
+        <member name="T:FlyEngine.Manager.DataStructureEngineObject">
+            <summary>
+            EntryPoint Class for request Metadata Message
+            </summary>
+        </member>
+        <member name="F:FlyEngine.Manager.DataStructureEngineObject.Builder">
+            <summary>
+            Metadata builder is base for all Metadata request
+            </summary>
+        </member>
+        <member name="M:FlyEngine.Manager.DataStructureEngineObject.Engine(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Entrypoint of class FlyEngine that processes the request
+            and produces a response or an error
+            </summary>
+            <param name="_parsingObject">Processed request</param>
+            <param name="_versionType">Sdmx Version</param>
+        </member>
+        <member name="M:FlyEngine.Manager.DataStructureEngineObject.GetResult">
+            <summary>
+            Get Processed result of request
+            </summary>
+            <returns>Object for Write response in streaming <see cref="T:FlyController.Model.IFlyWriterBody"/></returns>
+        </member>
+        <member name="M:FlyEngine.Manager.DataStructureEngineObject.CreateBuilder(FlyController.Model.ISdmxParsingObject,Org.Sdmxsource.Sdmx.Api.Constants.SdmxSchemaEnumType)">
+            <summary>
+            Implement correct Metadata Builder to process the request
+            identifies the correct implementation with the SdmxStructureType property of SdmxParsingObject
+            </summary>
+            <param name="_parsingObject">Processed request</param>
+            <param name="_versionTypeResp">Sdmx Version</param>
+            <returns>Implementation of SDMXObjectBuilder</returns>
+        </member>
+        <member name="M:FlyEngine.Manager.DataStructureEngineObject.DestroyObjects">
+            <summary>
+            Dispose all Object used for retreial data
+            </summary>
+        </member>
+    </members>
+</doc>

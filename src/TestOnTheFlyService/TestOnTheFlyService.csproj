@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{95299AFF-B28F-46F6-BC6F-B8177C533044}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestOnTheFlyService</RootNamespace>
+    <AssemblyName>TestOnTheFlyService</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\ISTAT\Source\OnTheFlyWebService2\app\TestClient\xcopy\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8F01884673AFA69F207A438457F37767A175000E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>TestOnTheFlyService_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>istat.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CallWebServices.cs" />
+    <Compile Include="ConstrainedCodelistVal.cs" />
+    <Compile Include="Model\Categorisation.cs" />
+    <Compile Include="Model\Config.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model\Config.Designer.cs">
+      <DependentUpon>Config.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\UriUtils.cs" />
+    <Compile Include="QueryCreatorFolder\OrderDim.cs" />
+    <Compile Include="QueryCreatorFolder\QueryCreatorRest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QueryCreatorFolder\QueryCreatorRest.Designer.cs">
+      <DependentUpon>QueryCreatorRest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendQueryStreaming.cs" />
+    <Compile Include="QueryCreatorFolder\IQueryCreator.cs" />
+    <Compile Include="Model\objforQuery.cs" />
+    <Compile Include="QueryCreatorFolder\QueryCreator21.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QueryCreatorFolder\QueryCreator21.Designer.cs">
+      <DependentUpon>QueryCreator21.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model.cs" />
+    <Compile Include="QueryCreatorFolder\QueryCreator.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="QueryCreatorFolder\QueryCreator.Designer.cs">
+      <DependentUpon>QueryCreator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestFlyQueryCreation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestFlyQueryCreation.Designer.cs">
+      <DependentUpon>TestFlyQueryCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TreeNoDBClick.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\WinXmlViewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Model\WinXmlViewer.Designer.cs">
+      <DependentUpon>WinXmlViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TestQuery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestQuery.Designer.cs">
+      <DependentUpon>TestQuery.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Model\Config.resx">
+      <DependentUpon>Config.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryCreatorFolder\QueryCreatorRest.resx">
+      <DependentUpon>QueryCreatorRest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QueryCreatorFolder\QueryCreator21.resx">
+      <DependentUpon>QueryCreator21.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="QueryCreatorFolder\QueryCreator.resx">
+      <DependentUpon>QueryCreator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestFlyQueryCreation.resx">
+      <DependentUpon>TestFlyQueryCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model\WinXmlViewer.resx">
+      <DependentUpon>WinXmlViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestQuery.resx">
+      <DependentUpon>TestQuery.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\System.ServiceModel.Channels.Message.datasource" />
+    <None Include="Properties\DataSources\WS_SOAP_SDMX.CompositeType.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="TestOnTheFlyService_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\category.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\dfd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\dfd2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\GetData.png" />
+    <None Include="Img\Reload.png" />
+    <None Include="Img\settings.png" />
+    <None Include="Img\treeview.png" />
+    <None Include="Img\Cancel.png" />
+    <None Include="Img\ok.png" />
+    <None Include="Img\add.png" />
+    <Content Include="Img\DownloadIcon.png" />
+    <Content Include="Img\GoHome.png" />
+    <Content Include="Img\Print.png" />
+    <Content Include="istat.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FlyCallWS\FlyCallWS.csproj">
+      <Project>{fa8e977a-cb4f-4cf9-85ae-b3baea7fd66e}</Project>
+      <Name>FlyCallWS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{94cd8e82-e1fb-4de2-951b-1f7580d69cf7}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

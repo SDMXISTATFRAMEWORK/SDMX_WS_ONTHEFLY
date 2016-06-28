@@ -1,0 +1,21 @@
+C:\Users\Eidos\Desktop\sample\codeproj\XMLViewerDomo\XMLViewer\bin\Debug\XMLViewer.dll
+C:\Users\Eidos\Desktop\sample\codeproj\XMLViewerDomo\XMLViewer\bin\Debug\XMLViewer.pdb
+C:\Users\Eidos\Desktop\sample\codeproj\XMLViewerDomo\XMLViewer\obj\Debug\XMLViewer.csprojResolveAssemblyReference.cache
+C:\Users\Eidos\Desktop\sample\codeproj\XMLViewerDomo\XMLViewer\obj\Debug\Viewer.baml
+C:\Users\Eidos\Desktop\sample\codeproj\XMLViewerDomo\XMLViewer\obj\Debug\Viewer.g.cs
+C:\Users\Eidos\Desktop\sample\codeproj\XMLViewerDomo\XMLViewer\obj\Debug\XMLViewer_MarkupCompile.cache
+C:\Users\Eidos\Desktop\sample\codeproj\XMLViewerDomo\XMLViewer\obj\Debug\XMLViewer.g.resources
+C:\Users\Eidos\Desktop\sample\codeproj\XMLViewerDomo\XMLViewer\obj\Debug\XMLViewer.Properties.Resources.resources
+C:\Users\Eidos\Desktop\sample\codeproj\XMLViewerDomo\XMLViewer\obj\Debug\XMLViewer.csproj.GenerateResource.Cache
+C:\Users\Eidos\Desktop\sample\codeproj\XMLViewerDomo\XMLViewer\obj\Debug\XMLViewer.dll
+C:\Users\Eidos\Desktop\sample\codeproj\XMLViewerDomo\XMLViewer\obj\Debug\XMLViewer.pdb
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\TestOnTheFlyService\XMLViewer\bin\Debug\XMLViewer.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\TestOnTheFlyService\XMLViewer\bin\Debug\XMLViewer.pdb
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\TestOnTheFlyService\XMLViewer\obj\Debug\Viewer.baml
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\TestOnTheFlyService\XMLViewer\obj\Debug\Viewer.g.cs
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\TestOnTheFlyService\XMLViewer\obj\Debug\XMLViewer_MarkupCompile.cache
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\TestOnTheFlyService\XMLViewer\obj\Debug\XMLViewer.g.resources
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\TestOnTheFlyService\XMLViewer\obj\Debug\XMLViewer.Properties.Resources.resources
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\TestOnTheFlyService\XMLViewer\obj\Debug\XMLViewer.csproj.GenerateResource.Cache
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\TestOnTheFlyService\XMLViewer\obj\Debug\XMLViewer.dll
+C:\Users\Eidos\OneDrive\Gino Eidos\ISTAT\OnTheFlyWebService\TestOnTheFlyService\XMLViewer\obj\Debug\XMLViewer.pdb

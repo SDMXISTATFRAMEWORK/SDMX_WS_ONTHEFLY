@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="FlyEngine.Manager.DataStructureEngineObject">
+    <Position X="1.75" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAgAAAAAAAAABGIAAAAAAAA=</HashCode>
+      <FileName>Manager\DataStructureEngineObject.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Builder" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FlyEngine.Engine.Metadata.GetAgencyScheme" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAABAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Metadata\GetAgencySchema.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FlyEngine.Engine.Metadata.GetCategoryScheme" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="1.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAggAAAAAgAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Engine\Metadata\GetCategoryScheme.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FlyEngine.Engine.Metadata.GetCodelists" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAACAAAAAAAAAAAAAAAAAAAAgAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Engine\Metadata\GetCodelists.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FlyEngine.Engine.Metadata.GetConcepts" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAABAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Metadata\GetConcepts.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FlyEngine.Engine.Metadata.GetDataflows" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="2.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAIAAAAAAAAAAAAAAAAAAgQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Metadata\GetDataflows.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FlyEngine.Engine.Metadata.GetStructure" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAIAAAAAAAAAAAAAkAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Metadata\GetStructure.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FlyEngine.Manager.DataMessageEngineObject">
+    <Position X="1" Y="9" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="FlyEngine.Manager.DataMessageEngineObject.MessageTypeEnum">
+        <TypeIdentifier>
+          <NewMemberFileName>Manager\DataMessageEngineObject.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <AssociationLine Name="RetrievalManagerObject" Type="FlyEngine.Model.RetrievalManager">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-8.812" Y="-2.399" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAYAAACAAAAEAAAAAAIAAAgAAAAAAAICAEIAAACAAAA=</HashCode>
+      <FileName>Manager\DataMessageEngineObject.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="RetrievalManagerObject" />
+      <Property Name="Builder" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FlyEngine.Model.DataMessageObjectBuilder">
+    <Position X="4.75" Y="9" Width="3.25" />
+    <AssociationLine Name="_retrievalManager" Type="FlyEngine.Model.RetrievalManager" FixedFromPoint="true">
+      <Path>
+        <Point X="6.812" Y="11.132" />
+        <Point X="6.812" Y="12" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-6.791" Y="-4.199" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CAAAIAAAAAQEAAAAAAAIAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Model\DataMessageObjectBuilder.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="_retrievalManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FlyEngine.Model.RetrievalManager">
+    <Position X="4" Y="12" Width="3.25" />
+    <Members>
+      <Method Name="ExtractFromSet" Hidden="true" />
+      <Method Name="GetAgency" Hidden="true" />
+      <Method Name="GetAgencySchemeObjects" Hidden="true" />
+      <Method Name="GetAllConceptsImpl" Hidden="true" />
+      <Method Name="GetCategorisation" Hidden="true" />
+      <Method Name="GetCategorisationObjects" Hidden="true" />
+      <Method Name="GetCategoryScheme" Hidden="true" />
+      <Method Name="GetCategorySchemeObjects" Hidden="true" />
+      <Method Name="GetCodelist" Hidden="true" />
+      <Method Name="GetCodelistObjects" Hidden="true" />
+      <Method Name="GetConceptScheme" Hidden="true" />
+      <Method Name="GetConceptSchemeObjects" Hidden="true" />
+      <Method Name="GetContentConstraint" Hidden="true" />
+      <Method Name="GetContentConstraints" Hidden="true" />
+      <Method Name="GetDataflow" Hidden="true" />
+      <Method Name="GetDataflowObjects" Hidden="true" />
+      <Method Name="GetDataStructure" Hidden="true" />
+      <Method Name="GetDataStructureObjects" Hidden="true" />
+      <Method Name="GetGroups" Hidden="true" />
+      <Method Name="GetHierarchicCodeList" Hidden="true" />
+      <Method Name="GetHierarchicCodeListObjects" Hidden="true" />
+      <Method Name="GetIdentifiableObject" Hidden="true" />
+      <Method Name="GetIdentifiableObjects" Hidden="true" />
+      <Method Name="GetMaintainable" Hidden="true" />
+      <Method Name="GetMaintainableObject" Hidden="true" />
+      <Method Name="GetMaintainableObjects" Hidden="true" />
+      <Method Name="GetMaintainables" Hidden="true" />
+      <Method Name="GetMaintainablesOfType" Hidden="true" />
+      <Method Name="GetSdmxObjects" Hidden="true" />
+      <Method Name="RetrievalManager" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>EIEACEQhAOCAIAaBEBABAEgAEAAEwAUkhgQAAAAAIAA=</HashCode>
+      <FileName>Model\RetrievalManager.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="FlyEngine.Engine.Data.WriterDataBase">
+    <Position X="7.75" Y="11.75" Width="2.5" />
+    <AssociationLine Name="_retrievalManager" Type="FlyEngine.Model.RetrievalManager">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="5.017" Y="-2.336" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CBAAAAAAAAUEAIAAABAIAAAAAAAAAAAAACACAAAABAA=</HashCode>
+      <FileName>Engine\Data\WriterDataBase.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="_retrievalManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="FlyEngine.Engine.Data.Write20DataMessage">
+    <Position X="3.75" Y="15.75" Width="2.25" />
+    <InheritanceLine Type="FlyEngine.Engine.Data.WriterDataBase" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="7.75" Y="14.875" />
+        <Point X="7.671" Y="14.875" />
+        <Point X="7.671" Y="14.898" />
+        <Point X="7.51" Y="14.898" />
+        <Point X="7.51" Y="15.51" />
+        <Point X="4.875" Y="15.51" />
+        <Point X="4.875" Y="15.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Data\Write20DataMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlyEngine.Engine.Data.Write21DataMessage">
+    <Position X="6.25" Y="15.75" Width="2.25" />
+    <InheritanceLine Type="FlyEngine.Engine.Data.WriterDataBase" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.75" Y="14.875" />
+        <Point X="7.668" Y="14.875" />
+        <Point X="7.668" Y="14.872" />
+        <Point X="7.5" Y="14.872" />
+        <Point X="7.5" Y="15.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAQAAAAAAAAAAAAACAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>Engine\Data\Write21DataMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FlyEngine.Engine.Data.WriteRDFDataMessage">
+    <Position X="8.75" Y="15.75" Width="2.25" />
+    <InheritanceLine Type="FlyEngine.Engine.Data.WriterDataBase" FixedFromPoint="true">
+      <Path>
+        <Point X="7.75" Y="14.875" />
+        <Point X="7.51" Y="14.875" />
+        <Point X="7.51" Y="15.51" />
+        <Point X="9.875" Y="15.51" />
+        <Point X="9.875" Y="15.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Data\WriteRDFDataMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="FlyEngine.Model.ISDMXObjectBuilder">
+    <Position X="5" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAACCAAYEEQAAAIAQAAAAAAAgAAAAAAAEAAAAAI=</HashCode>
+      <FileName>Model\Interface\ISDMXObjectBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FlyEngine.Engine.Metadata.IGetAgencyScheme" Collapsed="true">
+    <Position X="8" Y="0.75" Width="2" />
+    <InheritanceLine Type="FlyEngine.Model.ISDMXObjectBuilder" FixedToPoint="true">
+      <Path>
+        <Point X="6" Y="1.75" />
+        <Point X="6" Y="1.062" />
+        <Point X="8" Y="1.062" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Interface\IGetAgencyScheme.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FlyEngine.Engine.Metadata.IGetCategoryScheme" Collapsed="true">
+    <Position X="8" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAggAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Interface\IGetCategoryScheme.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FlyEngine.Engine.Metadata.IGetDataflows" Collapsed="true">
+    <Position X="8" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Interface\IGetDataflows.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FlyEngine.Engine.Metadata.IGetConcepts" Collapsed="true">
+    <Position X="8" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Interface\IGetConcepts.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FlyEngine.Engine.Metadata.IGetCodelists" Collapsed="true">
+    <Position X="8" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Interface\IGetCodelists.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FlyEngine.Engine.Metadata.IGetStructure" Collapsed="true">
+    <Position X="8" Y="5.75" Width="2" />
+    <InheritanceLine Type="FlyEngine.Model.ISDMXObjectBuilder" FixedToPoint="true">
+      <Path>
+        <Point X="6" Y="5.42" />
+        <Point X="6" Y="6.062" />
+        <Point X="8" Y="6.062" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Interface\IGetStructure.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

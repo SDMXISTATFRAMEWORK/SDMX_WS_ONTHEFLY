@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RegistryInterface xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common" xmlns:registry="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/registry" xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message SDMXMessage.xsd">
+  <Header>
+    <ID>NSICLIENT</ID>
+    <Test>false</Test>
+    <Prepared>2011-07-15T11:50:38</Prepared>
+    <Sender id="NSICLIENT" />
+    <Receiver id="NSIWS" />
+  </Header>
+  <QueryStructureRequest resolveReferences="false">
+    <registry:KeyFamilyRef>
+      <registry:AgencyID>ISTAT</registry:AgencyID>
+      <registry:KeyFamilyID>TEST_DATASET_DSD</registry:KeyFamilyID>
+      <registry:Version>1.0</registry:Version>
+    </registry:KeyFamilyRef>
+  </QueryStructureRequest>
+</RegistryInterface>

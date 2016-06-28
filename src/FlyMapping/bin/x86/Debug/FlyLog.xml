@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FlyLog</name>
+    </assembly>
+    <members>
+        <member name="T:OnTheFlyLog.FlyLog">
+            <summary>
+            Log Writer
+            </summary>
+        </member>
+        <member name="M:OnTheFlyLog.FlyLog.WriteLog(System.Object,OnTheFlyLog.FlyLog.LogTypeEnum,System.String,System.Object[])">
+            <summary>
+            Write a Log Information into File
+            </summary>
+            <param name="Control">Object fired Log</param>
+            <param name="LogType">Log Level Type</param>
+            <param name="LogText">Log Text with a String.Format options</param>
+            <param name="LogOptionsText">Optional String format addings information</param>
+        </member>
+        <member name="T:OnTheFlyLog.FlyLog.LogTypeEnum">
+            <summary>
+            Log Level Type
+            </summary>
+        </member>
+        <member name="F:OnTheFlyLog.FlyLog.LogTypeEnum.Error">
+            <summary>
+            Only Error Log
+            </summary>
+        </member>
+        <member name="F:OnTheFlyLog.FlyLog.LogTypeEnum.Warning">
+            <summary>
+            Important Log and Error
+            </summary>
+        </member>
+        <member name="F:OnTheFlyLog.FlyLog.LogTypeEnum.All">
+            <summary>
+            Debug Mode Log Level All Possible Log 
+            </summary>
+        </member>
+    </members>
+</doc>

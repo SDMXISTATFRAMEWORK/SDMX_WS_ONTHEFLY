@@ -1,0 +1,254 @@
+<ErrorDescriptions>
+  <Error Code="ParsingQueryError" SdmxType="SemanticError" >
+    <Description LocaleIsoCode="en"><![CDATA[Parsing Query Error]]></Description>
+  </Error>
+  <Error Code="SoapParseError" SdmxType="SyntaxError">
+    <Description LocaleIsoCode="en"><![CDATA[Soap Message Parsing Error]]></Description>
+  </Error>
+  <Error Code="RESTParseError" SdmxType="SyntaxError">
+    <Description LocaleIsoCode="en"><![CDATA[Rest Message Parsing Error]]></Description>
+  </Error>
+  <Error Code="DataflowNotFound" SdmxType="SyntaxError">
+    <Description LocaleIsoCode="en"><![CDATA[Dataflow or Dataset not found in received structure]]></Description>
+  </Error>
+  <Error Code="InternalError" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA["WS Internal Error]]></Description>
+  </Error>
+  <Error Code="ErrorConnectionDB" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[DB Connection Error]]></Description>
+  </Error>
+  <Error Code="DifferentAgency" SdmxType="NoResultsFound">
+    <Description LocaleIsoCode="en"><![CDATA[AgencyId not foud]]></Description>
+  </Error>
+  <Error Code="DifferentVersion" SdmxType="NoResultsFound">
+    <Description LocaleIsoCode="en"><![CDATA[Version not foud]]></Description>
+  </Error>
+  <Error Code="ConceptSchemaFormatError" SdmxType="NoResultsFound">
+    <Description LocaleIsoCode="en"><![CDATA[ConceptSchema format error]]></Description>
+  </Error>
+  <Error Code="ConceptSchemaInvalid" SdmxType="NoResultsFound">
+    <Description LocaleIsoCode="en"><![CDATA[ConceptSchema invalid query value]]></Description>
+  </Error>
+  <Error Code="CodelistFormatError" SdmxType="NoResultsFound">
+    <Description LocaleIsoCode="en"><![CDATA[Codelist format error]]></Description>
+  </Error>
+  <Error Code="CodelistInvalid" SdmxType="NoResultsFound">
+    <Description LocaleIsoCode="en"><![CDATA[Codelist invalid query value]]></Description>
+  </Error>
+  <Error Code="KeyFamilyFormatError" SdmxType="NoResultsFound">
+    <Description LocaleIsoCode="en"><![CDATA[KeyFamily format error]]></Description>
+  </Error>
+  <Error Code="KeyFamilyInvalid" SdmxType="NoResultsFound">
+    <Description LocaleIsoCode="en"><![CDATA[KeyFamily format error]]></Description>
+  </Error>
+  <Error Code="KeyFamilyInvalid" SdmxType="NoResultsFound">
+    <Description LocaleIsoCode="en"><![CDATA[KeyFamily invalid query value]]></Description>
+  </Error>
+  <Error Code="NotSupportedRegistryType" SdmxType="NotImplemented">
+    <Description LocaleIsoCode="en"><![CDATA[Registry type not supported]]></Description>
+  </Error>
+  <Error Code="StructureNotFound" SdmxType="NoResultsFound">
+    <Description LocaleIsoCode="en"><![CDATA[Structure not found]]></Description>
+  </Error>
+  <Error Code="DBErrorResponse" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[DB Response Error]]></Description>
+  </Error>
+  <Error Code="DimensionNotFound" SdmxType="NoResultsFound">
+    <Description LocaleIsoCode="en"><![CDATA[Dimension not found]]></Description>
+  </Error>
+  <Error Code="CreateConceptReferenceError" SdmxType="SemanticError">
+    <Description LocaleIsoCode="en"><![CDATA[Create Concept Reference Error]]></Description>
+  </Error>
+  <Error Code="CreateConceptSchemaReferenceError" SdmxType="SemanticError">
+    <Description LocaleIsoCode="en"><![CDATA[Create ConceptScheme Reference Error]]></Description>
+  </Error>
+  <Error Code="CreateCodelistReferenceError" SdmxType="SemanticError">
+    <Description LocaleIsoCode="en"><![CDATA[Create Codelist Reference Error]]></Description>
+  </Error>
+  <Error Code="CreateStructureReferenceError" SdmxType="SemanticError">
+    <Description LocaleIsoCode="en"><![CDATA[Create Structure ReferenceError]]></Description>
+  </Error>
+  <Error Code="CreateCategoryReferenceError" SdmxType="SemanticError">
+    <Description LocaleIsoCode="en"><![CDATA[Create Category Reference Error]]></Description>
+  </Error>
+  <Error Code="CreateDSDReferenceError" SdmxType="SemanticError">
+    <Description LocaleIsoCode="en"><![CDATA[Create Data Structure Reference Error]]></Description>
+  </Error>
+  <Error Code="CreateMessageResponseError" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Create Message Response Error]]></Description>
+  </Error>
+  <Error Code="WriteDataMessage" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Write Data Message Response]]></Description>
+  </Error>
+  <Error Code="CreateSdmxObjectError" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Create Sdmx Object Error]]></Description>
+  </Error>
+  <Error Code="DBCreateCategoryObjects" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Retrive Category data from DB Error]]></Description>
+  </Error>
+  <Error Code="GetAttributeError" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Get Attribute Error]]></Description>
+  </Error>
+  <Error Code="AttributeErrorAttachmentGroup" SdmxType="NotImplemented">
+    <Description LocaleIsoCode="en"><![CDATA[Not implemented Attribute with AttachmentLevel=group]]></Description>
+  </Error>
+  <Error Code="GetFrequencyCodelist" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Get Frequency Codelist]]></Description>
+  </Error>
+  <Error Code="CreateImmutable" SdmxType="SemanticError">
+    <Description LocaleIsoCode="en"><![CDATA[Error during trasform sdmxObject to ImmutableInstance]]></Description>
+  </Error>
+  <Error Code="InitConfigError" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error during retrive Configuration from FileConfig]]></Description>
+  </Error>
+  <Error Code="CreateHeader" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error during create Header in Response object]]></Description>
+  </Error>
+  <Error Code="GetMaintainableFromSdmxObject" SdmxType="NotImplemented">
+    <Description LocaleIsoCode="en"><![CDATA[Get Maintainable From SdmxObject]]></Description>
+  </Error>
+  <Error Code="UnrecognizedVersion" SdmxType="NotImplemented">
+    <Description LocaleIsoCode="en"><![CDATA[Not implemented required output version]]></Description>
+  </Error>
+  <Error Code="RetrivalParsingError" SdmxType="SemanticError">
+    <Description LocaleIsoCode="en"><![CDATA[Not correctly parsed Sdmx Query]]></Description>
+  </Error>
+  <Error Code="ErrorWriteDataMessage" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error while writing DataMessage]]></Description>
+  </Error>
+  <Error Code="ErrorWriteTimeSeriesData" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error while writing a TimeSeries DataMessage]]></Description>
+  </Error>
+  <Error Code="ErrorWriteFlatData" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error while writing a Flat DataMessage]]></Description>
+  </Error>
+  <Error Code="GetSeriesKey" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error retrieving Series Keys in DataMessage response]]></Description>
+  </Error>
+  <Error Code="GetSeriesAttribute" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error retrieving Series Attributes in DataMessage response]]></Description>
+  </Error>
+  <Error Code="GetObservationAttribute" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error retrieving Observation Attributes in DataMessage response]]></Description>
+  </Error>
+  <Error Code="GetDataSetAttribute" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error retrieving Dataset Attributes in DataMessage response]]></Description>
+  </Error>
+  <Error Code="CheckSeriesChange" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error in ChangeSeries during creation of DataMessage response]]></Description>
+  </Error>
+  <Error Code="GetAgencyScheme" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error while generating Agency Object]]></Description>
+  </Error>
+  <Error Code="BuildAgencyScheme" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error while generating Agency Builder]]></Description>
+  </Error>
+  <Error Code="BuildCategoryScheme" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error while generating Category Builder]]></Description>
+  </Error>
+  <Error Code="BuildCodelist" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error while generating Codelists Builder]]></Description>
+  </Error>
+  <Error Code="GetCodelist" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error while generating Codelists Objects]]></Description>
+  </Error>
+  <Error Code="BuildConceptsScheme" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error while generating ConceptsScheme Builder]]></Description>
+  </Error>
+  <Error Code="GetConceptsScheme" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error while generating ConceptsScheme objects]]></Description>
+  </Error>
+  <Error Code="BuildDataflows" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error while generating Dataflows Builder]]></Description>
+  </Error>
+  <Error Code="GetDataFlows" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error while generating Dataflows objects]]></Description>
+  </Error>
+  <Error Code="BuildDSD" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error while generating DataStructure Builder]]></Description>
+  </Error>
+  <Error Code="DataMessageEngineGetResults" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error retrieving and formatting the results]]></Description>
+  </Error>
+  <Error Code="CreateDSDObject" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error during creation a SdmxObject]]></Description>
+  </Error>
+  <Error Code="CreateBuilder" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error while parsing the request and the creation of the builder]]></Description>
+  </Error>
+  <Error Code="GetDataFlowCodeFromConceptSchema" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error in parsing Format of ConceptsScheme Code]]></Description>
+  </Error>
+  <Error Code="GetConceptCodeFromCodelist" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error in parsing Format of Codelist Code]]></Description>
+  </Error>
+  <Error Code="GetDataFlowCodeFromKeyFamily" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error in parsing Format of DataFlow Code]]></Description>
+  </Error>
+  <Error Code="GetTableMessage" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error during creation results table message]]></Description>
+  </Error>
+  <Error Code="CreateIAgencyMutableObject" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error during creation a IAgencyMutableObject]]></Description>
+  </Error>
+  <Error Code="GetListConcepts" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error during retreival Concepts]]></Description>
+  </Error>
+  <Error Code="RecursiveCreateCategoryHierarchy" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error during creation Category tree]]></Description>
+  </Error>
+  <Error Code="CreateICategoryMutableObject" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error during creation a ICategoryMutableObject]]></Description>
+  </Error>
+  <Error Code="ParsingLanguagesIsoCode" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error in convert Iso-Code name in standard languages]]></Description>
+  </Error>
+  <Error Code="CreateICodeMutableObject" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error during creation a ICodeMutableObject]]></Description>
+  </Error>
+  <Error Code="CreateDataflowBuilder" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error during Dataflows building]]></Description>
+  </Error>
+  <Error Code="GetDimensionConceptObjects" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error during get Dimension Concepts]]></Description>
+  </Error>
+  <Error Code="CreateDBParameter" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error during creation Database store procedure parameter]]></Description>
+  </Error>
+  <Error Code="CastingTimeFormat" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error during cast a time value for db data required]]></Description>
+  </Error>
+  <Error Code="FindSoapBobyElement" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error during Find soap Body element in request]]></Description>
+  </Error>
+  <Error Code="ChangeSoapActionElement" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error during Change soap Action element in response building]]></Description>
+  </Error>
+  <Error Code="GetMetadata" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Get Metadata Generic Error]]></Description>
+  </Error>
+  <Error Code="GetData" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Get Data Generic Error]]></Description>
+  </Error>
+  <Error Code="DestroyObjects" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error during dispose object used for retreival data]]></Description>
+  </Error>
+  <Error Code="AddReferences" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error during Add References into SdmxObject]]></Description>
+  </Error>
+  <Error Code="NotImplemented" SdmxType="NotImplemented">
+    <Description LocaleIsoCode="en"><![CDATA[Method not implemented]]></Description>
+  </Error>
+  <Error Code="ConstrainParsingError" SdmxType="SyntaxError">
+    <Description LocaleIsoCode="en"><![CDATA[Error during parse contrain parameters]]></Description>
+  </Error>
+  <Error Code="CodelistContrainRequired" SdmxType="SemanticError">
+    <Description LocaleIsoCode="en"><![CDATA[OnTheFly project require a Codelist Query whit a Contrain]]></Description>
+  </Error>
+   <Error Code="RestDetail20" SdmxType="SemanticError">
+    <Description LocaleIsoCode="en"><![CDATA[In REST Sdmx v2.0 the detail parameter must be full]]></Description>
+  </Error>
+  <Error Code="RetreiveGroups" SdmxType="InternalServerError">
+    <Description LocaleIsoCode="en"><![CDATA[Error while retreive groups from Database]]></Description>
+  </Error>
+</ErrorDescriptions>

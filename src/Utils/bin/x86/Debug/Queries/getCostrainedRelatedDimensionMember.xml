@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RegistryInterface xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common" xmlns:registry="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/registry" xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message SDMXMessage.xsd">
+  <Header>
+    <ID>NSICLIENT</ID>
+    <Test>false</Test>
+    <Prepared>2011-08-01T13:27:28</Prepared>
+    <Sender id="NSICLIENT" />
+    <Receiver id="NSIWS" />
+  </Header>
+  <QueryStructureRequest resolveReferences="false">
+    <registry:CodelistRef>
+      <registry:AgencyID>ESTAT</registry:AgencyID>
+      <registry:CodelistID>CL_FST</registry:CodelistID>
+      <registry:Version>1.0</registry:Version>
+    </registry:CodelistRef>
+    <registry:DataflowRef>
+      <registry:AgencyID>ESTAT</registry:AgencyID>
+      <registry:DataflowID>HC06</registry:DataflowID>
+      <registry:Version>1.0</registry:Version>
+      <registry:Constraint ConstraintType="Content">
+        <common:ConstraintID>FST</common:ConstraintID>
+        <common:CubeRegion isIncluded="true">
+          <common:Member isIncluded="true">
+            <common:ComponentRef>FST</common:ComponentRef>
+          </common:Member>
+          <common:Member isIncluded="true">
+            <common:ComponentRef>GEO</common:ComponentRef>
+            <common:MemberValue>
+              <common:Value>IT</common:Value>
+            </common:MemberValue>
+          </common:Member>
+          <common:Member isIncluded="true">
+            <common:ComponentRef>SEX</common:ComponentRef>
+            <common:MemberValue>
+              <common:Value>M</common:Value>
+            </common:MemberValue>
+          </common:Member>
+        </common:CubeRegion>
+      </registry:Constraint>
+    </registry:DataflowRef>
+  </QueryStructureRequest>
+</RegistryInterface>

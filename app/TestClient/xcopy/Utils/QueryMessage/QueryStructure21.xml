@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<###StructType### 
+	xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message"
+	xmlns:query="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/query" 
+	xmlns:common="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/common" >
+	<Header>
+    <ID>GiTestClient</ID>
+    <Test>true</Test>
+    <Prepared>2014-05-29T11:00:00</Prepared>
+    <Sender id="GiTestClient" />
+    <Receiver id="GiTestServer" />
+ </Header>
+ ###QUERY###
+ </###StructType###>

@@ -1,0 +1,78 @@
+<GenericDataQuery xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message">
+  <Header>
+      <ID>IDREF6</ID>
+    <Test>false</Test>
+    <Prepared>2014-06-27T12:36:07.3878238+02:00</Prepared>
+    <Sender id="Unknown" />
+    <Receiver id="Unknown" />
+  </Header>
+  <Query>
+     <ReturnDetails detail="Full"  xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/query" >
+	  <Structure dimensionAtObservation="FREQ"  />
+	</ReturnDetails>
+    <DataWhere xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/query">
+      <DataSetID operator="equal">TEST_DATASET</DataSetID>
+      <Dataflow>
+        <Ref agencyID="ESTAT" id="TEST_DATASET" version="4.1" xmlns="" />
+      </Dataflow>
+      <Or>
+        <DimensionValue>
+          <ID>FREQ</ID>
+          <Value operator="equal">A</Value>
+        </DimensionValue>
+        <DimensionValue>
+          <ID>FREQ</ID>
+          <Value operator="equal">M</Value>
+        </DimensionValue>
+      </Or>
+    </DataWhere>
+  </Query>
+</GenericDataQuery>
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<###StructType### xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message">
+	<Header>
+    <ID>GiTestClient</ID>
+    <Test>true</Test>
+    <Prepared>2014-05-29T11:00:00</Prepared>
+    <Sender id="GiTestClient" />
+    <Receiver id="GiTestServer" />
+ </Header>
+ ###QUERY###
+ </###StructType###>
+ 
+ 
+ 
+ 
+ 
+<GenericDataQuery xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/message">
+  <Header>
+    <ID>IDREF6</ID>
+    <Test>false</Test>
+    <Prepared>2014-06-27T12:36:07.3878238+02:00</Prepared>
+    <Sender id="Unknown" />
+    <Receiver id="Unknown" />
+  </Header>
+  <Query>
+       <ReturnDetails detail="Full" observationAction="Active" xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/query" >
+	</ReturnDetails>
+    <DataWhere xmlns="http://www.sdmx.org/resources/sdmxml/schemas/v2_1/query">
+      <DataSetID operator="equal">TEST_DATASET</DataSetID>
+      <Dataflow>
+        <Ref agencyID="ESTAT" id="TEST_DATASET" version="4.1" xmlns="" />
+      </Dataflow>
+      <Or>
+        <DimensionValue>
+          <ID>FREQ</ID>
+          <Value operator="equal">A</Value>
+        </DimensionValue>
+        <DimensionValue>
+          <ID>FREQ</ID>
+          <Value operator="equal">M</Value>
+        </DimensionValue>
+      </Or>
+    </DataWhere>
+  </Query>
+</GenericDataQuery>

@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Interface Name="FlyMapping.Model.IAgencyManager" Collapsed="true">
+    <Position X="3.75" Y="3.75" Width="2" />
+    <InheritanceLine Type="FlyMapping.Model.IBaseManager" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.875" Y="2.238" />
+        <Point X="2.875" Y="3.596" />
+        <Point X="4.625" Y="3.596" />
+        <Point X="4.625" Y="3.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Interface\Agency\IAgencyManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FlyMapping.Model.ICategoriesManager" Collapsed="true">
+    <Position X="6.25" Y="1.75" Width="2" />
+    <InheritanceLine Type="FlyMapping.Model.IBaseManager" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.875" Y="2.238" />
+        <Point X="2.875" Y="2.595" />
+        <Point X="7.25" Y="2.595" />
+        <Point X="7.25" Y="2.441" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAABAAAAAAAAQAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Model\Interface\Categories\ICategoriesManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FlyMapping.Model.ICodelistManager" Collapsed="true">
+    <Position X="6.25" Y="3.75" Width="2" />
+    <InheritanceLine Type="FlyMapping.Model.IBaseManager" FixedFromPoint="true">
+      <Path>
+        <Point X="2.875" Y="2.238" />
+        <Point X="2.875" Y="3.596" />
+        <Point X="7.25" Y="3.596" />
+        <Point X="7.25" Y="3.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAABAAAAQAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Model\Interface\Codelists\ICodelistManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FlyMapping.Model.IAttributeManager" Collapsed="true">
+    <Position X="3.75" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Interface\Concepts\IAttributeManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FlyMapping.Model.IConceptSchemeManager" Collapsed="true">
+    <Position X="3.75" Y="2.75" Width="2" />
+    <InheritanceLine Type="FlyMapping.Model.IBaseManager" FixedFromPoint="true">
+      <Path>
+        <Point X="2.875" Y="2.238" />
+        <Point X="2.875" Y="2.595" />
+        <Point X="4.75" Y="2.595" />
+        <Point X="4.75" Y="2.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Model\Interface\Concepts\IConceptSchemeManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FlyMapping.Model.IDimensionManager" Collapsed="true">
+    <Position X="3.75" Y="4.75" Width="2" />
+    <InheritanceLine Type="FlyMapping.Model.IBaseManager" FixedFromPoint="true">
+      <Path>
+        <Point X="2.875" Y="2.238" />
+        <Point X="2.875" Y="4.596" />
+        <Point X="4.75" Y="4.596" />
+        <Point X="4.75" Y="4.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Interface\Concepts\IDimensionManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FlyMapping.Model.IFLAGManager" Collapsed="true">
+    <Position X="6.25" Y="2.75" Width="2" />
+    <InheritanceLine Type="FlyMapping.Model.IBaseManager" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.875" Y="2.238" />
+        <Point X="2.875" Y="3.596" />
+        <Point X="7.25" Y="3.596" />
+        <Point X="7.25" Y="3.441" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Interface\Concepts\IFLAGManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FlyMapping.Model.IDataflowsManager" Collapsed="true">
+    <Position X="6.25" Y="4.75" Width="2" />
+    <InheritanceLine Type="FlyMapping.Model.IBaseManager" FixedFromPoint="true">
+      <Path>
+        <Point X="2.875" Y="2.238" />
+        <Point X="2.875" Y="4.596" />
+        <Point X="7.25" Y="4.596" />
+        <Point X="7.25" Y="4.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Model\Interface\Dataflow\IDataflowsManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FlyMapping.Model.IDsdManager" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Interface\DSD\IDsdManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FlyMapping.Model.IBaseManager">
+    <Position X="1.5" Y="0.75" Width="1.5" />
+    <AssociationLine Name="DbAccess" Type="FlyMapping.Model.IDBAccess">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.148" Y="0.198" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAQAABAAAAAAAAAAAEAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Interface\IBaseManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DbAccess" />
+    </ShowAsAssociation>
+  </Interface>
+  <Interface Name="FlyMapping.Model.IDataMessageManager" Collapsed="true">
+    <Position X="6.25" Y="0.75" Width="2" />
+    <InheritanceLine Type="FlyMapping.Model.IBaseManager" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="3" Y="1.563" />
+        <Point X="7.25" Y="1.563" />
+        <Point X="7.25" Y="1.441" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Interface\IDataMessageManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FlyMapping.Model.IDBAccess">
+    <Position X="0.5" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQAAAAAAAAQAAAAAAAAAAAAAAAAAAACABAAAAAA=</HashCode>
+      <FileName>Model\Interface\IDBAccess.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FlyMapping.Model.IGroupsManager">
+    <Position X="3.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Interface\IGroupsManager.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FlyMapping.Model.IMetadataFactory">
+    <Position X="0.5" Y="9.75" Width="7.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAABAAQAAAAABAAAABAAAAAAIAAAAAA=</HashCode>
+      <FileName>Model\Interface\IMetadataFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="FlyMapping.Model.IParameterValue" Collapsed="true">
+    <Position X="2.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAgAAAAAAE=</HashCode>
+      <FileName>Model\Interface\IParameterValue.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

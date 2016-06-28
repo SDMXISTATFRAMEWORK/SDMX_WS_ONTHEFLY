@@ -1,0 +1,6 @@
+C:\ISTAT\Source\OnTheFlyWebService\src\FlyLog\bin\x86\Debug\FlyLog.XML
+C:\ISTAT\Source\OnTheFlyWebService\src\FlyLog\bin\x86\Debug\FlyLog.dll
+C:\ISTAT\Source\OnTheFlyWebService\src\FlyLog\bin\x86\Debug\FlyLog.pdb
+C:\ISTAT\Source\OnTheFlyWebService\src\FlyLog\obj\x86\Debug\FlyLog.csprojResolveAssemblyReference.cache
+C:\ISTAT\Source\OnTheFlyWebService\src\FlyLog\obj\x86\Debug\FlyLog.dll
+C:\ISTAT\Source\OnTheFlyWebService\src\FlyLog\obj\x86\Debug\FlyLog.pdb

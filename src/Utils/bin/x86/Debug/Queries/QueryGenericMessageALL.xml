@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <GetGenericData xmlns="http://ec.europa.eu/eurostat/sri/service/2.0">
+      <Query>
+        <QueryMessage xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common" xmlns:query="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/query" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message SDMXMessage.xsd">
+          <Header>
+            <ID>NSICLIENT</ID>
+            <Test>false</Test>
+            <Prepared>2011-08-01T13:27:28</Prepared>
+            <Sender id="NSICLIENT" />
+            <Receiver id="NSIWS" />
+          </Header>
+          <Query>
+            <query:DataWhere>
+              <query:And>
+                ###TIME_DIMENSION####
+                <query:Dataflow>###DATAFLOW###</query:Dataflow>
+              </query:And>
+            </query:DataWhere>
+          </Query>
+        </QueryMessage>
+      </Query>
+    </GetGenericData>
+  </soap:Body>
+</soap:Envelope>
