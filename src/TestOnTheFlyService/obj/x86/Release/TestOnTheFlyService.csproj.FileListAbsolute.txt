@@ -1,0 +1,62 @@
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\QueriesStructure 21\AgencySchemeStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\QueriesStructure 21\CategorisationStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\QueriesStructure 21\CategorySchemaStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\QueriesStructure 21\CodelistStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\QueriesStructure 21\ConceptSchemeStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\QueriesStructure 21\ConstrainedCodelistStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\QueriesStructure 21\DataFlowsStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\QueriesStructure 21\DSDStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\QueriesStructure\AgencySchemeStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\QueriesStructure\CategorySchemaStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\QueriesStructure\CodelistStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\QueriesStructure\ConceptSchemeStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\QueriesStructure\ConstrainedCodelistStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\QueriesStructure\DataFlowsStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\QueriesStructure\DSDStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\Queries\0_AgencyScheme.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\Queries\1_DataFlows.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\Queries\2_ConceptScheme.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\Queries\3_Codelists.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\Queries\4_CategorySchema.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\Queries\5_DataStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\Queries\6_QueryCompactMessage.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\Queries\6_QueryCompactMessage_FromTestClient.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\Queries\getConstrainedDimensionMember.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\Queries\getCostrainedRelatedDimensionMember.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\Queries\GetGenericFromCommonAPI.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\Queries\getInfo.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\Queries\getStartEndTimePeriods.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\Queries\getStructureWithReference.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\Queries\QueryCompactMessage.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\Queries\QueryGenericMessage.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\Queries\QueryGenericMessageALL.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\Queries\QueryGenericMessageAND.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\QueryMessage\QueryStructure20.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\QueryMessage\QueryStructure21.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\doc\OnTheFlyClient.docx
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\doc\OnTheFlyTechnicalGuide.docx
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\doc\OnTheFlyUserGuide.docx
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\Help\Documentation.chm
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\TestOnTheFlyService.exe.config
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\TestOnTheFlyService.exe.manifest
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\TestOnTheFlyService.application
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\TestOnTheFlyService.exe
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\TestOnTheFlyService.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\FlyCallWS.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\Utils.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\FlyCallWS.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Release\Utils.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Release\TestOnTheFlyService.csprojResolveAssemblyReference.cache
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Release\TestOnTheFlyService.Config.resources
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Release\TestOnTheFlyService.QueryCreatorRest.resources
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Release\TestOnTheFlyService.QueryCreator21.resources
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Release\TestOnTheFlyService.Properties.Resources.resources
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Release\TestOnTheFlyService.QueryCreator.resources
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Release\TestOnTheFlyService.TestFlyQueryCreation.resources
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Release\TestOnTheFlyService.WinXmlViewer.resources
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Release\TestOnTheFlyService.TestQuery.resources
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Release\TestOnTheFlyService.csproj.GenerateResource.Cache
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Release\TestOnTheFlyService.exe.manifest
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Release\TestOnTheFlyService.application
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Release\TestOnTheFlyService.exe
+C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Release\TestOnTheFlyService.pdb

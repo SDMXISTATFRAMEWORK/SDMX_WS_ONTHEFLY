@@ -22,3 +22,26 @@ C:\ISTAT\Source\OnTheFlyWebService\src\FlyProvider\RDFProvider\bin\x86\Debug\Xml
 C:\ISTAT\Source\OnTheFlyWebService\src\FlyProvider\RDFProvider\obj\x86\Debug\RDFProvider.csprojResolveAssemblyReference.cache
 C:\ISTAT\Source\OnTheFlyWebService\src\FlyProvider\RDFProvider\obj\x86\Debug\RDFProvider.dll
 C:\ISTAT\Source\OnTheFlyWebService\src\FlyProvider\RDFProvider\obj\x86\Debug\RDFProvider.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\RDFProvider\bin\x86\Debug\RDFProvider.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\RDFProvider\bin\x86\Debug\RDFProvider.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\RDFProvider\bin\x86\Debug\EstatSdmxSourceExtension.CustomRequests.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\RDFProvider\bin\x86\Debug\EstatSdmxSourceExtension.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\RDFProvider\bin\x86\Debug\log4net.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\RDFProvider\bin\x86\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\RDFProvider\bin\x86\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\RDFProvider\bin\x86\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\RDFProvider\bin\x86\Debug\SdmxApi.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\RDFProvider\bin\x86\Debug\SdmxDataParser.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\RDFProvider\bin\x86\Debug\SdmxEdiParser.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\RDFProvider\bin\x86\Debug\SdmxObjects.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\RDFProvider\bin\x86\Debug\SdmxParseBase.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\RDFProvider\bin\x86\Debug\SdmxQueryBuilder.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\RDFProvider\bin\x86\Debug\SdmxSourceUtil.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\RDFProvider\bin\x86\Debug\SdmxStructureMutableParser.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\RDFProvider\bin\x86\Debug\SdmxStructureParser.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\RDFProvider\bin\x86\Debug\SdmxStructureRetrieval.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\RDFProvider\bin\x86\Debug\SdmxXmlConstants.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\RDFProvider\bin\x86\Debug\TabularWriters.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\RDFProvider\bin\x86\Debug\Xml.Schema.Linq.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\RDFProvider\obj\x86\Debug\RDFProvider.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\RDFProvider\obj\x86\Debug\RDFProvider.pdb

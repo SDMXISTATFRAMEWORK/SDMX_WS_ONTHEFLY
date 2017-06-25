@@ -1,0 +1,169 @@
+<Attributes>
+  
+  <Attribute Code="TIME_FORMAT"  attachmentLevel="DimensionGroup" assignmentStatus="Conditional" isTimeFormat="true" crossSectionalAttachDataSet="false" crossSectionalAttachGroup="true" crossSectionalAttachSection="false" crossSectionalAttachObservation="false">
+    <Name LocaleIsoCode="en"><![CDATA[TIME_FORMAT]]></Name>
+    <Name LocaleIsoCode="fr"><![CDATA[TIME_FORMAT]]></Name>
+    <Codelist>
+      <Code value="P1D">
+        <Name LocaleIsoCode="en"><![CDATA[Daily]]></Name>
+        <Name LocaleIsoCode="fr"><![CDATA[Daily]]></Name>
+      </Code>
+      <Code value="P1M">
+        <Name LocaleIsoCode="en"><![CDATA[Monthly]]></Name>
+        <Name LocaleIsoCode="fr"><![CDATA[Monthly]]></Name>
+      </Code>
+      <Code value="P1Y">
+        <Name LocaleIsoCode="en"><![CDATA[Annual]]></Name>
+        <Name LocaleIsoCode="fr"><![CDATA[Annual]]></Name>
+      </Code>
+      <Code value="P3M">
+        <Name LocaleIsoCode="en"><![CDATA[Quarterly]]></Name>
+        <Name LocaleIsoCode="fr"><![CDATA[Quarterly]]></Name>
+      </Code>
+      <Code value="P6M">
+        <Name LocaleIsoCode="en"><![CDATA[Half-yearly, semester]]></Name>
+        <Name LocaleIsoCode="fr"><![CDATA[Half-yearly, semester]]></Name>
+      </Code>
+      <Code value="P7D">
+        <Name LocaleIsoCode="en"><![CDATA[Weekly]]></Name>
+        <Name LocaleIsoCode="fr"><![CDATA[Weekly]]></Name>
+      </Code>
+      <Code value="PT1M">
+        <Name LocaleIsoCode="en"><![CDATA[Minutely]]></Name>
+        <Name LocaleIsoCode="fr"><![CDATA[Minutely]]></Name>
+      </Code>
+    </Codelist>
+  </Attribute>
+  
+<Attribute Code="AVAILABILITY"  attachmentLevel="Dataset" assignmentStatus="Conditional" crossSectionalAttachDataSet="false" crossSectionalAttachGroup="true" crossSectionalAttachSection="false" crossSectionalAttachObservation="false">
+<Name LocaleIsoCode="en"><![CDATA[Attribute AVAILABILITY]]></Name>
+<Name LocaleIsoCode="fr"><![CDATA[Attribute AVAILABILITY]]></Name>
+<Codelist>
+	<Code value="0">
+		<Name LocaleIsoCode="en"><![CDATA[Available]]></Name>
+		<Name LocaleIsoCode="fr"><![CDATA[Available]]></Name>
+	</Code>
+	<Code value="1">
+		<Name LocaleIsoCode="en"><![CDATA[not Available]]></Name>
+		<Name LocaleIsoCode="fr"><![CDATA[not Available]]></Name>
+	</Code>
+</Codelist>
+</Attribute>
+
+<Attribute Code="DECIMALS" attachmentLevel="Dataset" assignmentStatus="Conditional" crossSectionalAttachDataSet="false" crossSectionalAttachGroup="true" crossSectionalAttachSection="false" crossSectionalAttachObservation="false">
+<Name LocaleIsoCode="en"><![CDATA[Attribute DECIMALS]]></Name>
+<Name LocaleIsoCode="fr"><![CDATA[Attribute DECIMALS]]></Name>
+<Codelist>
+	<Code value="0">
+		<Name LocaleIsoCode="en"><![CDATA[Zero]]></Name>
+		<Name LocaleIsoCode="fr"><![CDATA[Zero]]></Name>
+	</Code>
+	<Code value="1">
+		<Name LocaleIsoCode="en"><![CDATA[One]]></Name>
+		<Name LocaleIsoCode="fr"><![CDATA[One]]></Name>
+	</Code>
+	<Code value="2">
+		<Name LocaleIsoCode="en"><![CDATA[Two]]></Name>
+		<Name LocaleIsoCode="fr"><![CDATA[Two]]></Name>
+	</Code>
+	<Code value="3">
+		<Name LocaleIsoCode="en"><![CDATA[Three]]></Name>
+		<Name LocaleIsoCode="fr"><![CDATA[Three]]></Name>
+	</Code>
+	<Code value="4">
+		<Name LocaleIsoCode="en"><![CDATA[Four]]></Name>
+		<Name LocaleIsoCode="fr"><![CDATA[Four]]></Name>
+	</Code>
+	<Code value="5">
+		<Name LocaleIsoCode="en"><![CDATA[Five]]></Name>
+		<Name LocaleIsoCode="fr"><![CDATA[Five]]></Name>
+	</Code>
+	<Code value="6">
+		<Name LocaleIsoCode="en"><![CDATA[Six]]></Name>
+		<Name LocaleIsoCode="fr"><![CDATA[Six]]></Name>
+	</Code>
+	<Code value="7">
+		<Name LocaleIsoCode="en"><![CDATA[Seven]]></Name>
+		<Name LocaleIsoCode="fr"><![CDATA[Seven]]></Name>
+	</Code>
+	<Code value="8">
+		<Name LocaleIsoCode="en"><![CDATA[Eight]]></Name>
+		<Name LocaleIsoCode="fr"><![CDATA[Eight]]></Name>
+	</Code>
+	<Code value="9">
+		<Name LocaleIsoCode="en"><![CDATA[Nine]]></Name>
+		<Name LocaleIsoCode="fr"><![CDATA[Nine]]></Name>
+	</Code>
+</Codelist>
+</Attribute>
+
+<Attribute Code="CONF_STATUS" attachmentLevel="Observation" assignmentStatus="Conditional" crossSectionalAttachDataSet="false" crossSectionalAttachGroup="false" crossSectionalAttachSection="false" crossSectionalAttachObservation="true">
+<Name LocaleIsoCode="en"><![CDATA[Attribute Confidentiality Status]]></Name>
+<Name LocaleIsoCode="fr"><![CDATA[Attribute Confidentiality Status]]></Name>
+<Codelist>
+	<Code value="F">
+		<Name LocaleIsoCode="en"><![CDATA[Free]]></Name>
+		<Name LocaleIsoCode="fr"><![CDATA[Free]]></Name>
+	</Code>
+	<Code value="N">
+		<Name LocaleIsoCode="en"><![CDATA[Not for publication, restricted for internal use only]]></Name>
+		<Name LocaleIsoCode="fr"><![CDATA[Not for publication, restricted for internal use only]]></Name>
+	</Code>
+	<Code value="C">
+		<Name LocaleIsoCode="en"><![CDATA[Confidential statistical information]]></Name>
+		<Name LocaleIsoCode="fr"><![CDATA[Confidential statistical information]]></Name>
+	</Code>
+	<Code value="D">
+		<Name LocaleIsoCode="en"><![CDATA[Secondary confidentiality set by the sender, not for publication]]></Name>
+		<Name LocaleIsoCode="fr"><![CDATA[Secondary confidentiality set by the sender, not for publication]]></Name>
+	</Code>
+	<Code value="S">
+		<Name LocaleIsoCode="en"><![CDATA[Secondary confidentiality set and managed by the receiver, not for publication]]></Name>
+		<Name LocaleIsoCode="fr"><![CDATA[Secondary confidentiality set and managed by the receiver, not for publication]]></Name>
+	</Code>
+</Codelist>
+</Attribute>
+
+<Attribute Code="UNIT_MULT" attachmentLevel="Dataset" assignmentStatus="Conditional" crossSectionalAttachDataSet="false" crossSectionalAttachGroup="true" crossSectionalAttachSection="false" crossSectionalAttachObservation="false">
+<Name LocaleIsoCode="en"><![CDATA[Attribute UNIT_MULT]]></Name>
+<Name LocaleIsoCode="fr"><![CDATA[Attribute UNIT_MULT]]></Name>
+<Codelist>
+		<Code value="0">
+			<Name LocaleIsoCode="en"><![CDATA[Units ]]></Name>
+			<Name LocaleIsoCode="fr"><![CDATA[Units ]]></Name>
+		</Code>
+		<Code value="1">
+			<Name LocaleIsoCode="en"><![CDATA[Tens ]]></Name>
+			<Name LocaleIsoCode="fr"><![CDATA[Tens ]]></Name>
+		</Code>
+		<Code value="2">
+			<Name LocaleIsoCode="en"><![CDATA[Hundreds ]]></Name>
+			<Name LocaleIsoCode="fr"><![CDATA[Hundreds ]]></Name>
+		</Code>
+		<Code value="3">
+			<Name LocaleIsoCode="en"><![CDATA[Thousands ]]></Name>
+			<Name LocaleIsoCode="fr"><![CDATA[Thousands ]]></Name>
+		</Code>
+		<Code value="4">
+			<Name LocaleIsoCode="en"><![CDATA[Tens of thousands]]></Name>
+			<Name LocaleIsoCode="fr"><![CDATA[Tens of thousands]]></Name>
+		</Code>
+		<Code value="6">
+			<Name LocaleIsoCode="en"><![CDATA[Millions ]]></Name>
+			<Name LocaleIsoCode="fr"><![CDATA[Millions ]]></Name>
+		</Code>
+		<Code value="9">
+			<Name LocaleIsoCode="en"><![CDATA[Billions ]]></Name>
+			<Name LocaleIsoCode="fr"><![CDATA[Billions ]]></Name>
+		</Code>
+		<Code value="12">
+			<Name LocaleIsoCode="en"><![CDATA[Trillions ]]></Name>
+			<Name LocaleIsoCode="fr"><![CDATA[Trillions ]]></Name>
+		</Code>
+		<Code value="15">
+			<Name LocaleIsoCode="en"><![CDATA[Quadrillions ]]></Name>
+			<Name LocaleIsoCode="fr"><![CDATA[Quadrillions ]]></Name>
+		</Code>
+</Codelist>
+</Attribute>
+</Attributes>

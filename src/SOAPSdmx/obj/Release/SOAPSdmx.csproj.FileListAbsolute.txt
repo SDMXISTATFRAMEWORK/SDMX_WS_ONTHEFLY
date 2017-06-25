@@ -1,0 +1,108 @@
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\ConfigurationXml\AttributeConcepts.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\ConfigurationXml\ErrorDescription.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\ConfigurationXml\FrequencyCodelist.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\ServiceConfiguration.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\SOAPSdmx.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\SOAPSdmx.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\EstatSdmxSourceExtension.CustomRequests.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\EstatSdmxSourceExtension.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyController.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyEngine.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyLog.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyRedirectToRI_implementation.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\log4net.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\SdmxApi.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\SdmxDataParser.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\SdmxEdiParser.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\SdmxObjects.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\SdmxParseBase.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\SdmxSourceUtil.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\SdmxStructureMutableParser.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\SdmxStructureParser.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\SdmxStructureRetrieval.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\SdmxXmlConstants.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\TabularWriters.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\Xml.Schema.Linq.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\RDFProvider.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\JsonProvider.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyMapping.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\Newtonsoft.Json.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\DSPLProvider.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyDotStat_implementation.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyDotStatExtra_implementation.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlySDDSLoader_implementation.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\SdmxQueryBuilder.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\Ionic.Zip.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyController.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyEngine.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyLog.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyRedirectToRI_implementation.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\RDFProvider.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\JsonProvider.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyMapping.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\DSPLProvider.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyDotStat_implementation.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyDotStatExtra_implementation.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlySDDSLoader_implementation.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\Ionic.Zip.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\Ionic.Zip.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\obj\Release\SOAPSdmx.csprojResolveAssemblyReference.cache
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\obj\Release\SOAPSdmx.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\SOAPSdmx\obj\Release\SOAPSdmx.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\ConfigurationXml\AttributeConcepts.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\ConfigurationXml\ErrorDescription.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\ConfigurationXml\FrequencyCodelist.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\ServiceConfiguration.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\SOAPSdmx.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\SOAPSdmx.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\EstatSdmxSourceExtension.CustomRequests.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\EstatSdmxSourceExtension.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyController.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyEngine.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyLog.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyRedirectToRI_implementation.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\log4net.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\SdmxApi.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\SdmxDataParser.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\SdmxEdiParser.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\SdmxObjects.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\SdmxParseBase.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\SdmxSourceUtil.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\SdmxStructureMutableParser.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\SdmxStructureParser.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\SdmxStructureRetrieval.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\SdmxXmlConstants.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\TabularWriters.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\Xml.Schema.Linq.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\RDFProvider.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\JsonProvider.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyMapping.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\Newtonsoft.Json.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\DSPLProvider.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyDotStat_implementation.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyDotStatExtra_implementation.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlySDDSLoader_implementation.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\SdmxQueryBuilder.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\Ionic.Zip.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyController.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyEngine.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyLog.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyRedirectToRI_implementation.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\RDFProvider.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\JsonProvider.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyMapping.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\DSPLProvider.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyDotStat_implementation.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlyDotStatExtra_implementation.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\FlySDDSLoader_implementation.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\Ionic.Zip.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\bin\Release\Ionic.Zip.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\obj\Release\SOAPSdmx.csprojResolveAssemblyReference.cache
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\obj\Release\SOAPSdmx.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\SOAPSdmx\obj\Release\SOAPSdmx.pdb

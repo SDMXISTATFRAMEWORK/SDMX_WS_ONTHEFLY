@@ -1,0 +1,302 @@
+﻿<ServiceConfiguration>
+  <MappingSettings UsedSettings="OnTheFly 2.0">
+    <MappingSetting id="OnTheFly 1.0">
+      <add key="ConnectionSTAT" value="Data Source=I-STAT-DB;Initial Catalog=Datawarehouse;User ID=i_stat_read;Password=istatread;"/>
+
+      <CategorySettings>
+        <add key="ConnectionStringCategory" value="Data Source=(local);Initial Catalog=Dataloader_MS;User ID=mauser;Password=mauser;"/>
+        <add key="CategoryName" value="I-Stat-Dati"/>
+      </CategorySettings>
+
+      <!--For this format don't remove symbol {0}-->
+      <add key="DsdFormat" value="{0}_DSD"/>
+      <add key="ConceptSchemeFormat" value="{0}_CS"/>
+      <add key="CategorySchemeFormat" value="{0}_CategoryScheme"/>
+      <add key="CodelistFormat" value="CL_{0}"/>
+      <add key="CategorisationFormat" value="{0}_Categorisation"/>
+
+      <add key="CodelistWhitoutConstrain" value="true"/>
+
+      <add key="ConceptObservationFlag" value="OBS_STATUS" attachmentLevel="Observation" assignmentStatus="Conditional">
+        <Name LocaleIsoCode="en"><![CDATA[Observation status]]></Name>
+        <Name LocaleIsoCode="fr"><![CDATA[Observation status]]></Name>
+      </add>
+
+      <StoreProcedureSettings>
+        <store key ="GetDatasets" name="dbo.proc_WBS_GetDatasetList"/>
+        <store key ="GetDimensions" name="dbo.proc_WBS_GetDatasetDimensionsList"/>
+        <store key ="GetDimensionCodelistConstrain" name="dbo.proc_WBS_GetDimensionMembersListFiltered"/>
+        <store key ="GetFlags" name="dbo.proc_WBS_GetDataSetFlags"/>
+        <store key ="GetData" name="dbo.proc_SDMX_GetObservations"/>
+      </StoreProcedureSettings>
+
+    </MappingSetting>
+     <MappingSetting id="ProvaStat4">
+      <add key="ConnectionSTAT" value="Data Source=provastat4;Initial Catalog=Datawarehouse;User ID=internetaccess;Password=webnet3;"/>
+
+      <CategorySettings>
+        <add key="ConnectionStringCategory" value="Data Source=provastat4;Initial Catalog=QueryManager;User ID=internetaccess;Password=webnet3;"/>
+      </CategorySettings>
+
+      <!--For this format don't remove symbol {0}-->
+      <add key="DsdFormat" value="{0}_DSD"/>
+      <add key="ConceptSchemeFormat" value="{0}_CS"/>
+      <add key="CategorySchemeFormat" value="{0}_CategoryScheme"/>
+      <add key="CodelistFormat" value="CL_{0}"/>
+      <add key="CategorisationFormat" value="{0}_Categorisation"/>
+
+      <add key="CodelistWhitoutConstrain" value="true"/>
+
+    
+
+      <StoreProcedureSettings>
+        <store key ="GetDatasets" name="dbo.proc_WBS_GetDatasetList"/>
+        <store key ="GetDimensions" name="dbo.proc_WBS_GetDatasetDimensionsList"/>
+        <store key ="GetDimensionCodelistConstrain" name="dbo.proc_WBS_GetDimensionMembersListFiltered"/>
+        <store key ="GetData" name="dbo.proc_SDMX_GetObservations"/>
+      </StoreProcedureSettings>
+
+    </MappingSetting>
+
+    <MappingSetting id="OnTheFly 1.1">
+     <add key="ConnectionDDB" value="Data Source=localhost;Initial Catalog=DDB;Integrated Security=False;User ID=mauser;Password=mauser;"/>
+      <add key="MsConnectionString" value="Data Source=localhost;Initial Catalog=MSTORE;Integrated Security=False;User ID=mauser;Password=mauser"/>
+      
+      <!--<add key="MsConnectionString" value="Data Source=(local);Initial Catalog=DATALOADER_MS;User ID=mauser;Password=mauser;"/>-->
+
+      <!--<add name="DatawarehouseServer" connectionString="Data Source=avana2012;Initial Catalog=DDB_20160321;Integrated Security=False;User ID=mauser;Password=mauser" providerName="System.Data.SqlClient" />
+    <add name="MsConnectionString" connectionString="Data Source=DBSDMX.istat.it;Initial Catalog=MR_20160321;Integrated Security=False;User ID=mauser;Password=mauser" providerName="System.Data.SqlClient" />-->
+
+
+      <!--For this format don't remove symbol {0}-->
+      <add key="DsdFormat" value="{0}_DSD"/>
+      <add key="ConceptSchemeFormat" value="{0}_CS"/>
+      <add key="CodelistFormat" value="CL_{0}"/>
+      <add key="CategorySchemeFormat" value="{0}_CategoryScheme"/>
+      <add key="CategorisationFormat" value="{0}_Categorisation"/>
+
+      <add key="CodelistWhitoutConstrain" value="true"/>
+
+      <StoreProcedureSettings>
+
+        <store key ="GetDatasets" name="dbo.proc_WBS_GetDatasetList"/>
+        <store key ="GetCategory" name="dbo.proc_WBS_GetCategoryAndCategorisation"/>
+        <store key ="GetData" name="dbo.proc_SDMX_GetObservations"/>
+
+        <store key ="GetDataflows" name="dbo.proc_WBS_GetDataflowList"/>
+        <store key ="GetAttributes" name="dbo.proc_WBS_GetDatasetAttributesList"/>
+        <store key ="GetAttributeCodelistNOConstrain" name="dbo.proc_WBS_GetAttributeCodeListNoConstrain"/>
+        <store key ="GetAttributeCodelistConstrain" name="dbo.proc_WBS_GetAttributeCodeListFiltered"/>
+        <store key ="GetDimensions" name="dbo.proc_WBS_GetDatasetConceptDimensions"/>
+        <store key ="GetDimensionCodelistNOConstrain" name="dbo.proc_WBS_GetDimensionCodelistNoConstrain"/>
+        <store key ="GetDimensionCodelistConstrain" name="dbo.proc_WBS_GetDimensionCodelistConstrain"/>
+
+        <store key ="GetCategorySchemes" name="proc_OTF_GET_CATEGORY_SCHEMES"/>
+        <store key ="GetCategorisationDataflow" name="proc_OTF_GET_CATEGORISATION_DATAFLOW"/>
+
+      </StoreProcedureSettings>
+
+    </MappingSetting>
+
+    <MappingSetting id="OnTheFly 2.0">
+      <add key="ConnectionDDB" value="Data Source=avana2012;Initial Catalog=DDB_20161219; Integrated Security=False;User ID=mauser;Password=mauser;"/>
+	  <add key="MsConnectionString" value="Data Source=avana2012;Initial Catalog=MR_20161219; Integrated Security=False;User ID=mauser;Password=mauser;"/>
+      
+
+      <!--    <add name="DatawarehouseServer" connectionString="Data Source=(local);Initial Catalog=DDB;Integrated Security=False;User ID=mauser;Password=mauser" providerName="System.Data.SqlClient" />
+    <add name="MsConnectionString" connectionString="Data Source=(local);Initial Catalog=MSTORE;Integrated Security=False;User ID=mauser;Password=mauser" providerName="System.Data.SqlClient" />
+-->
+
+
+      <!--For this format don't remove symbol {0}-->
+      <add key="CategorySchemeFormat" value="{0}_CategoryScheme"/>
+      <add key="CategorisationFormat" value="{0}_Categorisation"/>
+      <StoreProcedureSettings>
+
+        <store key ="GetGroups" name="dbo.proc_SDMX_GetGroups"/>
+        <store key ="GetData" name="dbo.proc_SDMX_GetObservations"/>
+        <store key ="GetDataflows" name="dbo.proc_WBS_GetDataflowList"/>
+        <store key ="GetAttributeCodelistConstrain" name="dbo.proc_WBS_GetAttributeCodeListFiltered"/>
+        <store key ="GetDimensionCodelistConstrain" name="dbo.proc_WBS_GetDimensionCodelistConstrain"/>
+
+        <store key ="MSGetCategoryAndCategorisation" name="dbo.proc_WBS_GetCategoryAndCategorisation"/>
+        <store key ="MSGetDataflows" name="dbo.proc_WBS_GetDataflows"/>
+        <store key ="MSGetCodelist" name="dbo.proc_WBS_GetCodelists"/>
+        <store key ="MSGetConceptScheme" name="dbo.proc_WBS_GetConceptSchemes"/>
+        <store key ="MSGetDSD" name="dbo.proc_WBS_GetDSD"/>
+
+      </StoreProcedureSettings>
+      <RIWebService>
+        <WebServicesUrl EndPoint="http://avana2012.pc.istat.it/ESTAT_WSINT/NSIStdV20Service" EndPointType="V20"></WebServicesUrl>
+        <WebServicesUrl EndPoint="http://avana2012.pc.istat.it/ESTAT_WSINT/SdmxService" EndPointType="V21"></WebServicesUrl>
+        <WebServicesUrl EndPoint="http://avana2012.pc.istat.it/ESTAT_WSINT/rest" EndPointType="REST"></WebServicesUrl>
+      </RIWebService>
+    </MappingSetting>
+  
+  <MappingSetting id="OnTheFly DBSDMX 2.0">
+      <add key="ConnectionDDB" value="Data Source=DBSDMX.istat.it; Initial Catalog=DATALOADER_DDB;User ID=mauser;Password=mauser;"/>
+      <add key="MsConnectionString" value="Data Source=DBSDMX.istat.it; Initial Catalog=DATALOADER_MR;User ID=mauser;Password=mauser;"/>
+
+      <!--For this format don't remove symbol {0}-->
+      <add key="CategorySchemeFormat" value="{0}_CategoryScheme"/>
+      <add key="CategorisationFormat" value="{0}_Categorisation"/>
+      <StoreProcedureSettings>
+
+        <store key ="GetGroups" name="dbo.proc_SDMX_GetGroups"/>
+        <store key ="GetData" name="dbo.proc_SDMX_GetObservations"/>
+        <store key ="GetDataflows" name="dbo.proc_WBS_GetDataflowList"/>
+        <store key ="GetAttributeCodelistConstrain" name="dbo.proc_WBS_GetAttributeCodeListFiltered"/>
+        <store key ="GetDimensionCodelistConstrain" name="dbo.proc_WBS_GetDimensionCodelistConstrain"/>
+
+      </StoreProcedureSettings>
+
+    </MappingSetting>
+  
+  </MappingSettings>
+  <GlobalSettings>
+
+    <add key="MainAgencyId" value="ISTAT">
+      <Name LocaleIsoCode="en"><![CDATA[Italian Statistical Institute]]></Name>
+      <Name LocaleIsoCode="fr"><![CDATA[Italian Statistical Institute]]></Name>
+    </add>
+    <add key="OrganisationScheme" value="AGENCIES">
+      <Name LocaleIsoCode="en"><![CDATA[ISTAT AGENCIES]]></Name>
+      <Name LocaleIsoCode="fr"><![CDATA[ISTAT AGENCIES]]></Name>
+    </add>
+    <add key="Version" value="1.0"/>
+
+    <!-- Se si decide di inserire la prima descrizione del Dataset come attribute dei DataMessage  -->
+    <add key="DatasetTitle" value="true"/>
+
+    <add key="UserName" value="internet"/>
+    <add key="Domain" value="pcistat"/>
+
+    <add key ="LogLocation" value="%Temp%OnTheFly\\Log"/>
+    <add key="LogLevel" value="All"/>
+    <!--_________LogLevel_________
+        1) "None"     -> No log
+        2) "All"      -> All log possible (Debug Mode)
+        3) "Warning"  -> Only Warning and Error Log
+        4) "Error"    -> Only Error Log
+        ________________________________-->
+
+    <HeaderSettings>
+      <setting name="test" serializeAs="String">
+        <value>true</value>
+      </setting>
+      <setting name="truncated" serializeAs="String">
+        <value>false</value>
+      </setting>
+      <setting name="name" serializeAs="String">
+        <value>Trans46302</value>
+      </setting>
+      <setting name="sendercontactdepartment" serializeAs="String">
+        <value>Statistics</value>
+      </setting>
+      <setting name="sendercontacttelephone" serializeAs="String">
+        <value>210 2222222</value>
+      </setting>
+      <setting name="sendercontactfax" serializeAs="String">
+        <value>210 00010999</value>
+      </setting>
+      <setting name="sendercontactx400" serializeAs="String">
+        <value/>
+      </setting>
+      <setting name="sendercontacturi" serializeAs="String">
+        <value>http://www.sdmx.org</value>
+      </setting>
+      <setting name="receivercontacttelephone" serializeAs="String">
+        <value>210 1234567</value>
+      </setting>
+      <setting name="receivercontactfax" serializeAs="String">
+        <value>210 3810999</value>
+      </setting>
+      <setting name="receivercontactx400" serializeAs="String">
+        <value>lalala</value>
+      </setting>
+      <setting name="receivercontacturi" serializeAs="String">
+        <value>http://www.sdmx.org</value>
+      </setting>
+      <setting name="datasetagency" serializeAs="String">
+        <value>BIS</value>
+      </setting>
+      <setting name="datasetaction" serializeAs="String">
+        <value>Append</value>
+      </setting>
+      <setting name="reportingbegin" serializeAs="String">
+        <value>2000-12-01T00:00:00</value>
+      </setting>
+      <setting name="reportingend" serializeAs="String">
+        <value>2006-01-01T00:00:00</value>
+      </setting>
+      <setting name="lang" serializeAs="String">
+        <value>en</value>
+      </setting>
+      <setting name="id" serializeAs="String">
+        <value>IT1001</value>
+      </setting>
+      <setting name="prepared" serializeAs="String">
+        <value>2001-03-11T09:30:47-05:00</value>
+      </setting>
+      <setting name="senderid" serializeAs="String">
+        <value>ISTAT</value>
+      </setting>
+      <setting name="sendername" serializeAs="String">
+        <value>Italian Statistical Institute</value>
+      </setting>
+      <setting name="sendercontactname" serializeAs="String">
+        <value>Francesco Rizzo</value>
+      </setting>
+      <setting name="sendercontactrole" serializeAs="String">
+        <value>IT Staff</value>
+      </setting>
+      <setting name="sendercontactemail" serializeAs="String">
+        <value>rizzo@istat.it</value>
+      </setting>
+      <setting name="receiverid" serializeAs="String">
+        <value>ESTAT</value>
+      </setting>
+      <setting name="receivername" serializeAs="String">
+        <value>Eurostat</value>
+      </setting>
+      <setting name="receivercontactname" serializeAs="String">
+        <value>Bengt-Ake Lindblad</value>
+      </setting>
+      <setting name="receivercontactdepartment" serializeAs="String">
+        <value>Information Technology</value>
+      </setting>
+      <setting name="receivercontactrole" serializeAs="String">
+        <value>IT Staff</value>
+      </setting>
+      <setting name="receivercontactemail" serializeAs="String">
+        <value>bengt-ake.lindblad@ec.europa.eu</value>
+      </setting>
+      <setting name="datasetid" serializeAs="String">
+        <value>ISTAT_JD_237</value>
+      </setting>
+      <setting name="extracted" serializeAs="String">
+        <value>2001-03-11T09:30:47-05:00</value>
+      </setting>
+      <setting name="source" serializeAs="String">
+        <value>source</value>
+      </setting>
+      <setting name="keyfamilyref" serializeAs="String">
+        <value>kfRef</value>
+      </setting>
+      <setting name="keyfamilyagency" serializeAs="String">
+        <value>kfAg</value>
+      </setting>
+    </HeaderSettings>
+  </GlobalSettings>
+
+  <!--Possible Store Key
+    //Version 1
+    GetDatasets, GetDimensions, GetDimensionCodelistConstrain, GetCategory, GetFlags, GetData
+    //Version 2 SDDS
+    GetDataflows, GetAttributes, GetAttributeCodelistNOConstrain, GetAttributeCodelistConstrain, GetDimensionCodelistNOConstrain
+    //Version 2 MS 
+    MSGetDataflows, MSGetCodelist, MSGetConceptScheme, MSGetDSD
+  -->
+
+
+</ServiceConfiguration>

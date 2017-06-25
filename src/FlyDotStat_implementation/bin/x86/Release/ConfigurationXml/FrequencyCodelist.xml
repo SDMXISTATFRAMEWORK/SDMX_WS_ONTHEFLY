@@ -1,0 +1,28 @@
+<Codelist Code="FREQUENCY" >
+	<Name LocaleIsoCode="en"><![CDATA[Frequency]]></Name>
+    <Name LocaleIsoCode="fr"><![CDATA[Fréquence]]></Name>
+	<Code Code="A">
+		<Name LocaleIsoCode="en"><![CDATA[Annual]]></Name>
+		<Name LocaleIsoCode="fr"><![CDATA[Annual]]></Name>
+	</Code>
+	<Code Code="S">
+		<Name LocaleIsoCode="en"><![CDATA[Half-yearly]]></Name>
+		<Name LocaleIsoCode="fr"><![CDATA[semester]]></Name>
+	</Code>
+	<Code Code="Q">
+		<Name LocaleIsoCode="en"><![CDATA[Quarterly]]></Name>
+		<Name LocaleIsoCode="fr"><![CDATA[Quarterly]]></Name>
+	</Code>
+	<Code Code="M">
+		<Name LocaleIsoCode="en"><![CDATA[Monthly]]></Name>
+		<Name LocaleIsoCode="fr"><![CDATA[Monthly]]></Name>
+	</Code>
+	<Code Code="W">
+		<Name LocaleIsoCode="en"><![CDATA[Weekly]]></Name>
+		<Name LocaleIsoCode="fr"><![CDATA[Weekly]]></Name>
+	</Code>
+	<Code Code="D">
+		<Name LocaleIsoCode="en"><![CDATA[Daily]]></Name>
+		<Name LocaleIsoCode="fr"><![CDATA[Daily]]></Name>
+	</Code>
+</Codelist>

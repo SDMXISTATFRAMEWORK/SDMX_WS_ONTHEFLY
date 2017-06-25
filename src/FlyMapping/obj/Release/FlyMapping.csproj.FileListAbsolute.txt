@@ -1,0 +1,66 @@
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\ConfigurationXml\AttributeConcepts.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\ConfigurationXml\ErrorDescription.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\ConfigurationXml\FrequencyCodelist.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\ServiceConfiguration.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\FlyMapping.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\FlyMapping.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\EstatSdmxSourceExtension.CustomRequests.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\EstatSdmxSourceExtension.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\FlyController.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\FlyLog.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\log4net.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\SdmxApi.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\SdmxDataParser.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\SdmxEdiParser.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\SdmxObjects.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\SdmxParseBase.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\SdmxSourceUtil.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\SdmxStructureMutableParser.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\SdmxStructureParser.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\SdmxStructureRetrieval.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\SdmxXmlConstants.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\TabularWriters.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\Xml.Schema.Linq.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\RDFProvider.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\FlyController.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\FlyLog.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\bin\Release\RDFProvider.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\obj\Release\FlyMapping.csprojResolveAssemblyReference.cache
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\obj\Release\FlyMapping.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyMapping\obj\Release\FlyMapping.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\ConfigurationXml\AttributeConcepts.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\ConfigurationXml\ErrorDescription.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\ConfigurationXml\FrequencyCodelist.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\ServiceConfiguration.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\FlyMapping.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\FlyMapping.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\EstatSdmxSourceExtension.CustomRequests.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\EstatSdmxSourceExtension.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\FlyController.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\FlyLog.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\log4net.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\SdmxApi.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\SdmxDataParser.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\SdmxEdiParser.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\SdmxObjects.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\SdmxParseBase.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\SdmxSourceUtil.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\SdmxStructureMutableParser.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\SdmxStructureParser.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\SdmxStructureRetrieval.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\SdmxXmlConstants.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\TabularWriters.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\Xml.Schema.Linq.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\RDFProvider.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\FlyController.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\FlyLog.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\bin\Release\RDFProvider.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\obj\Release\FlyMapping.csprojResolveAssemblyReference.cache
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\obj\Release\FlyMapping.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyMapping\obj\Release\FlyMapping.pdb

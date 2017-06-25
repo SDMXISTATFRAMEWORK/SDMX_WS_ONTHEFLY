@@ -4,3 +4,9 @@ C:\ISTAT\Source\OnTheFlyWebService\src\FlySetup\bin\x86\Debug\FlySetup.pdb
 C:\ISTAT\Source\OnTheFlyWebService\src\FlySetup\obj\x86\Debug\FlySetup.csprojResolveAssemblyReference.cache
 C:\ISTAT\Source\OnTheFlyWebService\src\FlySetup\obj\x86\Debug\FlySetup.exe
 C:\ISTAT\Source\OnTheFlyWebService\src\FlySetup\obj\x86\Debug\FlySetup.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlySetup\bin\x86\Debug\FlySetup.exe.config
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlySetup\bin\x86\Debug\FlySetup.exe
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlySetup\bin\x86\Debug\FlySetup.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlySetup\obj\x86\Debug\FlySetup.csprojResolveAssemblyReference.cache
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlySetup\obj\x86\Debug\FlySetup.exe
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlySetup\obj\x86\Debug\FlySetup.pdb

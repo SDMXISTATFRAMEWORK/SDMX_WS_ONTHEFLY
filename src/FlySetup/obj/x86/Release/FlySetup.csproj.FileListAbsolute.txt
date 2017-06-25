@@ -1,0 +1,6 @@
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlySetup\bin\x86\Release\FlySetup.exe.config
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlySetup\bin\x86\Release\FlySetup.exe
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlySetup\bin\x86\Release\FlySetup.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlySetup\obj\x86\Release\FlySetup.csprojResolveAssemblyReference.cache
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlySetup\obj\x86\Release\FlySetup.exe
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlySetup\obj\x86\Release\FlySetup.pdb

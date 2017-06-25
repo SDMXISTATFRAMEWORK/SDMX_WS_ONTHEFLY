@@ -66,7 +66,7 @@
       <!--<add key="MsConnectionString" value="Data Source=(local);Initial Catalog=DATALOADER_MS;User ID=mauser;Password=mauser;"/>-->
 
       <!--<add name="DatawarehouseServer" connectionString="Data Source=avana2012;Initial Catalog=DDB_20160321;Integrated Security=False;User ID=mauser;Password=mauser" providerName="System.Data.SqlClient" />
-    <add name="MappingStoreServer" connectionString="Data Source=DBSDMX.istat.it;Initial Catalog=MR_20160321;Integrated Security=False;User ID=mauser;Password=mauser" providerName="System.Data.SqlClient" />-->
+    <add name="MsConnectionString" connectionString="Data Source=DBSDMX.istat.it;Initial Catalog=MR_20160321;Integrated Security=False;User ID=mauser;Password=mauser" providerName="System.Data.SqlClient" />-->
 
 
       <!--For this format don't remove symbol {0}-->
@@ -100,12 +100,11 @@
     </MappingSetting>
 
     <MappingSetting id="OnTheFly 2.0">
-      <add key="ConnectionDDB" value="Data Source=(local);Initial Catalog=DDB;Integrated Security=False;User ID=mauser;Password=mauser"/>
-      <add key="MsConnectionString" value="Data Source=(local);Initial Catalog=MSTORE;Integrated Security=False;User ID=mauser;Password=mauser"/>
-
+      <add key="ConnectionDDB" value="Data Source=avana2012;Initial Catalog=DDB_20161219; Integrated Security=False;User ID=mauser;Password=mauser;"/>
+      <add key="MsConnectionString" value="Data Source=avana2012;Initial Catalog=MR_20161219; Integrated Security=False;User ID=mauser;Password=mauser;"/>
 
       <!--    <add name="DatawarehouseServer" connectionString="Data Source=(local);Initial Catalog=DDB;Integrated Security=False;User ID=mauser;Password=mauser" providerName="System.Data.SqlClient" />
-    <add name="MappingStoreServer" connectionString="Data Source=(local);Initial Catalog=MSTORE;Integrated Security=False;User ID=mauser;Password=mauser" providerName="System.Data.SqlClient" />
+    <add name="MsConnectionString" connectionString="Data Source=(local);Initial Catalog=MSTORE;Integrated Security=False;User ID=mauser;Password=mauser" providerName="System.Data.SqlClient" />
 -->
 
 

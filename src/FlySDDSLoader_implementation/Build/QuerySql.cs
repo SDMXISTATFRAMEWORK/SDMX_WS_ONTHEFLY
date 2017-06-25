@@ -15,17 +15,17 @@ namespace FlySDDSLoader_implementation.Build
         internal static string MSGetCodelist(ref List<IParameterValue> parameter)
         {
             string dec1 = string.Format(@"
-            declare @CodelistCode varchar(150)= '{0}'
-	        declare @CodelistAgencyId varchar(50)= '{1}' 
-	        declare @CodelistVersion varchar(50)= '{2}' 
+            declare @CodelistCode varchar(max)= '{0}'
+	        declare @CodelistAgencyId varchar(max)= '{1}' 
+	        declare @CodelistVersion varchar(max)= '{2}' 
  
-	        declare @DSDCode varchar(150)= '{3}' 
-	        declare @DSDAgencyId varchar(50)= '{4}' 
-	        declare @DSDVersion varchar(50)= '{5}' 
+	        declare @DSDCode varchar(max)= '{3}' 
+	        declare @DSDAgencyId varchar(max)= '{4}' 
+	        declare @DSDVersion varchar(max)= '{5}' 
     
-	        declare @ConceptSchemeCode varchar(150)= '{6}' 
-	        declare @ConceptSchemeAgencyId varchar(150)= '{7}'
-	        declare @ConceptSchemeVersion varchar(150)= '{8}' 
+	        declare @ConceptSchemeCode varchar(max)= '{6}' 
+	        declare @ConceptSchemeAgencyId varchar(max)= '{7}'
+	        declare @ConceptSchemeVersion varchar(max)= '{8}' 
 
 	        declare @IsStub bit={9}",
             (parameter.Exists(p=>p.Item=="CodelistCode")?parameter.Find(p=>p.Item=="CodelistCode").Value.ToString():""),
@@ -42,24 +42,24 @@ namespace FlySDDSLoader_implementation.Build
 declare @CLList table
 (
 	CodelistID bigint,
-	CodelistCode varchar(50),
-	AGENCY varchar(50), 
-	CodelistVersion varchar(50),
-	lang varchar(50),
-	descr varchar(4000)
+	CodelistCode varchar(max),
+	AGENCY varchar(max), 
+	CodelistVersion varchar(max),
+	lang varchar(max),
+	descr varchar(max)
 )
 
 create table #CLITEMList 
 (
 	CodelistID bigint,
 	ItemId bigint,
-	ItemCode varchar(50),
-	lang varchar(50),
-	descr varchar(4000),
+	ItemCode varchar(max),
+	lang varchar(max),
+	descr varchar(max),
 	ParentCodeID bigint,
-	ParentCode varchar(150),
+	ParentCode varchar(max),
 	Livel int,
-	Ordinamento varchar(250)
+	Ordinamento varchar(max)
 	
 )
 
@@ -135,23 +135,23 @@ create table #T
 (
 	Tag int,
 	Parent int null,
-	[CodeLists!1!xmlns] varchar(100) null,
-	[CodeList!2!Order!hide] varchar(500) null,
-	[CodeList!2!Order2!hide] varchar(500) null,
-	[CodeList!2!Code] varchar(50) null,
-	[CodeList!2!AgencyID] varchar(50) null,
-	[CodeList!2!Version] varchar(50) null,
+	[CodeLists!1!xmlns] varchar(max) null,
+	[CodeList!2!Order!hide] varchar(max) null,
+	[CodeList!2!Order2!hide] varchar(max) null,
+	[CodeList!2!Code] varchar(max) null,
+	[CodeList!2!AgencyID] varchar(max) null,
+	[CodeList!2!Version] varchar(max) null,
 	
 	[Name!3!LocaleIsoCode] char(2) null,
-	[Name!3!!cdata] varchar(500) null,
+	[Name!3!!cdata] varchar(max) null,
 
 )
 declare @i int
-declare @si0 varchar(50)
-declare @si1 varchar(50)
-declare @si2 varchar(50)
-declare @siParent varchar(50)
-declare @execstr varchar(8000)
+declare @si0 varchar(max)
+declare @si1 varchar(max)
+declare @si2 varchar(max)
+declare @siParent varchar(max)
+declare @execstr varchar(max)
 declare @maxdepth int;
 set @maxdepth =(select MAX(Livel) from #CLITEMList) +1
 
@@ -159,15 +159,15 @@ set @execstr = ''
 set @i = 1
 while (@i <= @maxdepth)
 begin
-	set @si1 = cast(2*@i+2 as varchar(50))
-	set @si2 = cast(2*@i+3 as varchar(50))
+	set @si1 = cast(2*@i+2 as varchar(max))
+	set @si2 = cast(2*@i+3 as varchar(max))
 	if (len(@execstr) > 0)
 		set @execstr = @execstr + ','
 	set @execstr = @execstr + '
-[Code!'+@si1+'!value] varchar(50) null,
+[Code!'+@si1+'!value] varchar(max) null,
 [Code!'+@si1+'!ID!hide] int null,
 [Name!'+@si2+'!LocaleIsoCode] char(2) null,
-[Name!'+@si2+'!!cdata] varchar(500) null'
+[Name!'+@si2+'!!cdata] varchar(max) null'
 	set @i = @i+1
 end
 
@@ -191,9 +191,9 @@ select distinct 3,2,CodelistID, CodelistCode, lang,descr from @CLList
 set @i = 1
 while (@i <= @maxdepth)
 begin
-	set @si1 = cast(2*@i+2 as varchar(50))
-	set @si2 = cast(2*@i+3 as varchar(50))
-	set @siParent= cast(2*@i as varchar(50))
+	set @si1 = cast(2*@i+2 as varchar(max))
+	set @si2 = cast(2*@i+3 as varchar(max))
+	set @siParent= cast(2*@i as varchar(max))
 	
 	EXEC('INSERT INTO #T (Tag,Parent,[CodeList!2!Order!hide],[CodeList!2!Order2!hide],
 	[Code!'+@si1+'!value],[Code!'+@si1+'!ID!hide]) 
@@ -219,17 +219,17 @@ FOR XML EXPLICIT
         internal static string MSGetConceptScheme(ref List<IParameterValue> parameter)
         {
             string dec1 = string.Format(@"
-            declare @CodelistCode varchar(150)= '{0}'
-	        declare @CodelistAgencyId varchar(50)= '{1}' 
-	        declare @CodelistVersion varchar(50)= '{2}' 
+            declare @CodelistCode varchar(max)= '{0}'
+	        declare @CodelistAgencyId varchar(max)= '{1}' 
+	        declare @CodelistVersion varchar(max)= '{2}' 
  
-	        declare @DSDCode varchar(150)= '{3}' 
-	        declare @DSDAgencyId varchar(50)= '{4}' 
-	        declare @DSDVersion varchar(50)= '{5}' 
+	        declare @DSDCode varchar(max)= '{3}' 
+	        declare @DSDAgencyId varchar(max)= '{4}' 
+	        declare @DSDVersion varchar(max)= '{5}' 
     
-	        declare @ConceptSchemeCode varchar(150)= '{6}' 
-	        declare @ConceptSchemeAgencyId varchar(150)= '{7}'
-	        declare @ConceptSchemeVersion varchar(150)= '{8}' 
+	        declare @ConceptSchemeCode varchar(max)= '{6}' 
+	        declare @ConceptSchemeAgencyId varchar(max)= '{7}'
+	        declare @ConceptSchemeVersion varchar(max)= '{8}' 
 
 	        declare @IsStub bit={9}",
             (parameter.Exists(p => p.Item == "CodelistCode") ? parameter.Find(p => p.Item == "CodelistCode").Value.ToString() : ""),
@@ -245,13 +245,13 @@ FOR XML EXPLICIT
             return dec1 + @"
 declare @CSList table
 (
-	ConceptSchemeID varchar(50),
-	AGENCY varchar(50), 
-	ConceptSchemeVersion varchar(50),
-	lang varchar(50),
-	descr varchar(4000),
-	ConceptCode varchar(50),
-	ConceptID varchar(50)
+	ConceptSchemeID varchar(max),
+	AGENCY varchar(max), 
+	ConceptSchemeVersion varchar(max),
+	lang varchar(max),
+	descr varchar(max),
+	ConceptCode varchar(max),
+	ConceptID varchar(max)
 	
 )
 
@@ -294,9 +294,9 @@ AND  (LTRIM(STR(ARTCodelist.VERSION1)) + '.' + LTRIM(STR(ARTCodelist.VERSION2))=
 
 declare @ConceptNames table
 (
-	ConceptID varchar(50),
-	lang varchar(50),
-	descr varchar(4000)
+	ConceptID varchar(max),
+	lang varchar(max),
+	descr varchar(max)
 )
 
 insert into @ConceptNames
@@ -312,20 +312,20 @@ declare @CSXML table
 (
 	Tag int,
 	Parent int null,
-	[Concepts!1!xmlns] varchar(100) null,
-	[ConceptScheme!2!Order!hide] varchar(500) null,
-	[ConceptScheme!2!Order2!hide] varchar(500) null,
-	[ConceptScheme!2!Code] varchar(50) null,
-	[ConceptScheme!2!Agency] varchar(50) null,
-	[ConceptScheme!2!Version] varchar(50) null,
+	[Concepts!1!xmlns] varchar(max) null,
+	[ConceptScheme!2!Order!hide] varchar(max) null,
+	[ConceptScheme!2!Order2!hide] varchar(max) null,
+	[ConceptScheme!2!Code] varchar(max) null,
+	[ConceptScheme!2!Agency] varchar(max) null,
+	[ConceptScheme!2!Version] varchar(max) null,
 	[Name!3!LocaleIsoCode] char(2) null,
-	[Name!3!!cdata] varchar(4000) null,
-	[Concept!4!Code] varchar(50) null,
-	--[Concept!4!Type] varchar(50) null,
-	--[Concept!4!assignmentStatus] varchar(50) null,
-	--[Concept!4!attachmentLevel] varchar(50) null,
+	[Name!3!!cdata] varchar(max) null,
+	[Concept!4!Code] varchar(max) null,
+	--[Concept!4!Type] varchar(max) null,
+	--[Concept!4!assignmentStatus] varchar(max) null,
+	--[Concept!4!attachmentLevel] varchar(max) null,
 	[Name!5!LocaleIsoCode] char(2) null,
-	[Name!5!!cdata] varchar(4000) null
+	[Name!5!!cdata] varchar(max) null
 )
 
 INSERT INTO @CSXML (Tag,[Concepts!1!xmlns],[ConceptScheme!2!Order!hide],[ConceptScheme!2!Order2!hide]) Values (1,'http://istat.it/OnTheFly',0,0)
@@ -366,8 +366,8 @@ END
 
 
 select * from @CSXML 
-order by [ConceptScheme!2!Order!hide], [ConceptScheme!2!Order2!hide], [Name!3!LocaleIsoCode],--[Concept!4!Type],
- [Concept!4!Code], [Name!5!LocaleIsoCode]
+order by [ConceptScheme!2!Order!hide], [Concept!4!Code], [ConceptScheme!2!Order2!hide], [Name!3!LocaleIsoCode],
+ [Name!5!LocaleIsoCode]
 FOR XML EXPLICIT
             ";
         }
@@ -375,17 +375,17 @@ FOR XML EXPLICIT
         internal static string MSGetDSD(ref List<IParameterValue> parameter)
         {
             string dec1 = string.Format(@"
-            declare @CodelistCode varchar(150)= '{0}'
-	        declare @CodelistAgencyId varchar(50)= '{1}' 
-	        declare @CodelistVersion varchar(50)= '{2}' 
+            declare @CodelistCode varchar(max)= '{0}'
+	        declare @CodelistAgencyId varchar(max)= '{1}' 
+	        declare @CodelistVersion varchar(max)= '{2}' 
  
-	        declare @DSDCode varchar(150)= '{3}' 
-	        declare @DSDAgencyId varchar(50)= '{4}' 
-	        declare @DSDVersion varchar(50)= '{5}' 
+	        declare @DSDCode varchar(max)= '{3}' 
+	        declare @DSDAgencyId varchar(max)= '{4}' 
+	        declare @DSDVersion varchar(max)= '{5}' 
     
-	        declare @ConceptSchemeCode varchar(150)= '{6}' 
-	        declare @ConceptSchemeAgencyId varchar(150)= '{7}'
-	        declare @ConceptSchemeVersion varchar(150)= '{8}' 
+	        declare @ConceptSchemeCode varchar(max)= '{6}' 
+	        declare @ConceptSchemeAgencyId varchar(max)= '{7}'
+	        declare @ConceptSchemeVersion varchar(max)= '{8}' 
 
             declare @DFId int={9}
 	        declare @IsStub bit={10}",
@@ -400,32 +400,33 @@ FOR XML EXPLICIT
           (parameter.Exists(p => p.Item == "ConceptSchemeVersion") ? parameter.Find(p => p.Item == "ConceptSchemeVersion").Value.ToString() : ""),
           (parameter.Exists(p => p.Item == "DFId") ? parameter.Find(p => p.Item == "DFId").Value.ToString() : "null"),
           (parameter.Exists(p => p.Item == "IsStub") ? parameter.Find(p => p.Item == "IsStub").Value.ToString() : "0"));
+            
             return dec1 + @"
 
 declare @DSDList table
 (
 	DF_ID bigint,
 	DSD_ID bigint,
-	DsdCode varchar(50),
-	DSDAgency varchar(50), 
-	DsdVersion varchar(50),
-	lang varchar(50),
-	descr varchar(4000),
+	DsdCode varchar(max),
+	DSDAgency varchar(max), 
+	DsdVersion varchar(max),
+	lang varchar(max),
+	descr varchar(max),
 	
 	COMP_ID bigint,
-	conceptRef varchar(50),
-	ConceptType varchar(50),
+	conceptRef varchar(max),
+	ConceptType varchar(max),
 	IsFrequencyDimension int,
-	ATT_STATUS varchar(50),
-	ATT_ASS_LEVEL varchar(50),
+	ATT_STATUS varchar(max),
+	ATT_ASS_LEVEL varchar(max),
 
-	conceptSchemeRef varchar(50),
-	conceptSchemeAgency varchar(50),
-	conceptVersion varchar(50),
+	conceptSchemeRef varchar(max),
+	conceptSchemeAgency varchar(max),
+	conceptVersion varchar(max),
 
-	codelist varchar(50),
-	codelistAgency varchar(50),
-	codelistVersion varchar(50)
+	codelist varchar(max),
+	codelistAgency varchar(max),
+	codelistVersion varchar(max)
 )
 
 insert into @DSDList
@@ -495,56 +496,56 @@ declare @DSDXML table
 (
 	Tag int,
 	Parent int null,
-	[DataStructures!1!xmlns] varchar(100) null,
-	[DataStructure!2!Order!hide] varchar(500) null,
-	[DataStructure!2!Order2!hide] varchar(500) null,
-	[DataStructure!2!id] varchar(50) null,
-	[DataStructure!2!agencyID] varchar(50) null,
-	[DataStructure!2!version] varchar(50) null,
+	[DataStructures!1!xmlns] varchar(max) null,
+	[DataStructure!2!Order!hide] varchar(max) null,
+	[DataStructure!2!Order2!hide] varchar(max) null,
+	[DataStructure!2!id] varchar(max) null,
+	[DataStructure!2!agencyID] varchar(max) null,
+	[DataStructure!2!version] varchar(max) null,
 	[Name!3!LocaleIsoCode] char(2) null,
-	[Name!3!!cdata] varchar(4000) null,
-	[Components!4!] varchar(50) null,
+	[Name!3!!cdata] varchar(max) null,
+	[Components!4!] varchar(max) null,
 	[Components!4!Order2!hide] bigint null,
 	
-	[Dimension!5!conceptRef] varchar(50) null,
-	[Dimension!5!codelist] varchar(50) null,
-	[Dimension!5!codelistAgency] varchar(50) null,
-	[Dimension!5!codelistVersion] varchar(50) null,
-	[Dimension!5!conceptSchemeRef] varchar(50) null,
-	[Dimension!5!conceptSchemeAgency] varchar(50) null,
-	[Dimension!5!conceptVersion] varchar(50) null,
-	[Dimension!5!isFrequencyDimension] varchar(50) null,
+	[Dimension!5!conceptRef] varchar(max) null,
+	[Dimension!5!codelist] varchar(max) null,
+	[Dimension!5!codelistAgency] varchar(max) null,
+	[Dimension!5!codelistVersion] varchar(max) null,
+	[Dimension!5!conceptSchemeRef] varchar(max) null,
+	[Dimension!5!conceptSchemeAgency] varchar(max) null,
+	[Dimension!5!conceptVersion] varchar(max) null,
+	[Dimension!5!isFrequencyDimension] varchar(max) null,
 	
-	[TimeDimension!6!conceptRef] varchar(50) null,
-	[TimeDimension!6!codelist] varchar(50) null,
-	[TimeDimension!6!codelistAgency] varchar(50) null,
-	[TimeDimension!6!codelistVersion] varchar(50) null,
-	[TimeDimension!6!conceptSchemeRef] varchar(50) null,
-	[TimeDimension!6!conceptSchemeAgency] varchar(50) null,
-	[TimeDimension!6!conceptVersion] varchar(50) null,
+	[TimeDimension!6!conceptRef] varchar(max) null,
+	[TimeDimension!6!codelist] varchar(max) null,
+	[TimeDimension!6!codelistAgency] varchar(max) null,
+	[TimeDimension!6!codelistVersion] varchar(max) null,
+	[TimeDimension!6!conceptSchemeRef] varchar(max) null,
+	[TimeDimension!6!conceptSchemeAgency] varchar(max) null,
+	[TimeDimension!6!conceptVersion] varchar(max) null,
 
-	[PrimaryMeasure!7!conceptRef] varchar(50) null,
-	[PrimaryMeasure!7!codelist] varchar(50) null,
-	[PrimaryMeasure!7!codelistAgency] varchar(50) null,
-	[PrimaryMeasure!7!codelistVersion] varchar(50) null,
-	[PrimaryMeasure!7!conceptSchemeRef] varchar(50) null,
-	[PrimaryMeasure!7!conceptSchemeAgency] varchar(50) null,
-	[PrimaryMeasure!7!conceptVersion] varchar(50) null,
+	[PrimaryMeasure!7!conceptRef] varchar(max) null,
+	[PrimaryMeasure!7!codelist] varchar(max) null,
+	[PrimaryMeasure!7!codelistAgency] varchar(max) null,
+	[PrimaryMeasure!7!codelistVersion] varchar(max) null,
+	[PrimaryMeasure!7!conceptSchemeRef] varchar(max) null,
+	[PrimaryMeasure!7!conceptSchemeAgency] varchar(max) null,
+	[PrimaryMeasure!7!conceptVersion] varchar(max) null,
 	
-	[Attribute!8!conceptRef] varchar(50) null,
-	[Attribute!8!codelist] varchar(50) null,
-	[Attribute!8!codelistAgency] varchar(50) null,
-	[Attribute!8!codelistVersion] varchar(50) null,
-	[Attribute!8!conceptSchemeRef] varchar(50) null,
-	[Attribute!8!conceptSchemeAgency] varchar(50) null,
-	[Attribute!8!conceptVersion] varchar(50) null,
-	[Attribute!8!assignmentStatus] varchar(50) null,
-	[Attribute!8!attachmentLevel] varchar(50) null,
-	[Attribute!8!attachmentGroup] varchar(50) null,
+	[Attribute!8!conceptRef] varchar(max) null,
+	[Attribute!8!codelist] varchar(max) null,
+	[Attribute!8!codelistAgency] varchar(max) null,
+	[Attribute!8!codelistVersion] varchar(max) null,
+	[Attribute!8!conceptSchemeRef] varchar(max) null,
+	[Attribute!8!conceptSchemeAgency] varchar(max) null,
+	[Attribute!8!conceptVersion] varchar(max) null,
+	[Attribute!8!assignmentStatus] varchar(max) null,
+	[Attribute!8!attachmentLevel] varchar(max) null,
+	[Attribute!8!attachmentGroup] varchar(max) null,
 	
-	[Group!9!id] varchar(50) null,
-	[GroupDimension!10!id] varchar(50) null,
-	[DimensionRef!11!id] varchar(50) null
+	[Group!9!id] varchar(max) null,
+	[GroupDimension!10!id] varchar(max) null,
+	[DimensionRef!11!id] varchar(max) null
 
 
 )
@@ -655,7 +656,7 @@ IF @IsStub=0 BEGIN
 	[Attribute!8!assignmentStatus],
 	[Attribute!8!attachmentLevel],
 	[Attribute!8!attachmentGroup] )  
-	SELECT DISTINCT 8,4,DSD_ID, '4Attribute'+ LTRIM(STR(COMP_ID)),COMP_ID,
+	SELECT DISTINCT 8,4,DSD_ID, '6Attribute'+ LTRIM(STR(COMP_ID)),COMP_ID,
 	conceptRef, codelist, codelistAgency, codelistVersion,
 	conceptSchemeRef, conceptSchemeAgency, conceptVersion,
 	ATT_STATUS as assignmentStatus,
@@ -680,7 +681,7 @@ IF @IsStub=0 BEGIN
 	INSERT INTO @DSDXML (Tag,Parent, [DataStructure!2!Order!hide],			
 	[DataStructure!2!Order2!hide]	,	
 	[Group!9!id])
-	SELECT DISTINCT 9,4,DSD_GROUP.DSD_ID, '5Group' + 
+	SELECT DISTINCT 9,4,DSD_GROUP.DSD_ID, '4Group' + 
 	DSD_GROUP.ID  , DSD_GROUP.ID  
 	from ATT_GROUP 
 	inner join DSD_GROUP on DSD_GROUP.GR_ID=ATT_GROUP.GR_ID 
@@ -688,17 +689,17 @@ IF @IsStub=0 BEGIN
 	where DSDList.ATT_ASS_LEVEL='Group'
 
 	--DimensionGroups
-	--INSERT INTO @DSDXML (Tag,Parent, [DataStructure!2!Order!hide],			
-	--[DataStructure!2!Order2!hide]	,	
-	--[Group!9!id], [GroupDimension!10!id])
-	--SELECT DISTINCT 10,9,DSD_GROUP.DSD_ID, '5Group' + 
-	--DSD_GROUP.ID   + DimensionGroup.conceptRef, DSD_GROUP.ID  ,DimensionGroup.conceptRef
-	--from ATT_GROUP 
-	--inner join DSD_GROUP on DSD_GROUP.GR_ID=ATT_GROUP.GR_ID 
-	--inner join @DSDList as DSDList on DSDList.COMP_ID= ATT_GROUP.COMP_ID
-	--inner join DIM_GROUP on DIM_GROUP.GR_ID=  ATT_GROUP.GR_ID
-	--inner join @DSDList as DimensionGroup on DimensionGroup.COMP_ID = DIM_GROUP.COMP_ID
-	--where DSDList.ATT_ASS_LEVEL='Group'
+	INSERT INTO @DSDXML (Tag,Parent, [DataStructure!2!Order!hide],			
+	[DataStructure!2!Order2!hide]	,	
+	[Group!9!id], [GroupDimension!10!id])
+	SELECT DISTINCT 10,9,DSD_GROUP.DSD_ID, '5Group' + 
+	DSD_GROUP.ID   + DimensionGroup.conceptRef, DSD_GROUP.ID  ,DimensionGroup.conceptRef
+	from ATT_GROUP 
+	inner join DSD_GROUP on DSD_GROUP.GR_ID=ATT_GROUP.GR_ID 
+	inner join @DSDList as DSDList on DSDList.COMP_ID= ATT_GROUP.COMP_ID
+	inner join DIM_GROUP on DIM_GROUP.GR_ID=  ATT_GROUP.GR_ID
+	inner join @DSDList as DimensionGroup on DimensionGroup.COMP_ID = DIM_GROUP.COMP_ID
+	where DSDList.ATT_ASS_LEVEL='Group'
 
 	INSERT INTO @DSDXML (Tag,
 						Parent, 
@@ -706,7 +707,7 @@ IF @IsStub=0 BEGIN
 						[DataStructure!2!Order2!hide],
 						[DimensionRef!11!id])
 	SELECT 11,8,A.DSD_ID,	
-			'4Attribute'+ LTRIM(STR(A.COMP_ID)) + C.ID,
+			'6Attribute'+ LTRIM(STR(A.COMP_ID)) + C.ID,
 			C.ID
 	FROM @DSDList A
 		INNER JOIN ATTR_DIMS B ON
@@ -718,7 +719,7 @@ IF @IsStub=0 BEGIN
 END
 
 select * from @DSDXML 
-order by  [DataStructure!2!Order!hide], [DataStructure!2!Order2!hide]--,[Attribute!8!conceptRef],[Group!9!id],[GroupDimension!10!id]
+order by  [DataStructure!2!Order!hide],[DataStructure!2!Order2!hide]--,[Attribute!8!conceptRef],[Group!9!id],[GroupDimension!10!id]
 FOR XML EXPLICIT
             ";
         }
@@ -733,18 +734,18 @@ declare @DFList table
 (
 	DF_ID bigint,
 	PRODUCTION int,
-	DFCode varchar(150), 
-	DFAgencyId varchar(50), 
-	DFVersion varchar(50),
+	DFCode varchar(max), 
+	DFAgencyId varchar(max), 
+	DFVersion varchar(max),
 
-	DSDCode varchar(150), 
-	DSDAgencyId varchar(50), 
-	DSDVersion varchar(50),
+	DSDCode varchar(max), 
+	DSDAgencyId varchar(max), 
+	DSDVersion varchar(max),
 	
-	DSName varchar(255),
+	DSName varchar(max),
 
 	DFLang char(2),
-	DFName varchar(4000)
+	DFName varchar(max)
 )
 
 insert into @DFList
@@ -766,22 +767,22 @@ declare @DFXML table
 (
 	Tag int,
 	Parent int null,
-	[Dataflows!1!xmlns] varchar(100) null,
-	[Dataflow!2!id] varchar(50) null,
-	[Dataflow!2!Production] varchar(50) null,
-	[Dataflow!2!Code] varchar(150) null,
-	[Dataflow!2!AgencyId] varchar(50) null,
-	[Dataflow!2!Version] varchar(50) null,
+	[Dataflows!1!xmlns] varchar(max) null,
+	[Dataflow!2!id] varchar(max) null,
+	[Dataflow!2!Production] varchar(max) null,
+	[Dataflow!2!Code] varchar(max) null,
+	[Dataflow!2!AgencyId] varchar(max) null,
+	[Dataflow!2!Version] varchar(max) null,
 
-	[Dataflow!2!DSDCode] varchar(150) null,
-	[Dataflow!2!DSDAgencyId] varchar(50) null,
-	[Dataflow!2!DSDVersion] varchar(50) null,
+	[Dataflow!2!DSDCode] varchar(max) null,
+	[Dataflow!2!DSDAgencyId] varchar(max) null,
+	[Dataflow!2!DSDVersion] varchar(max) null,
 	
 	[Name!3!LocaleIsoCode] char(2) null,
-	[Name!3!!cdata] varchar(4000) null,
+	[Name!3!!cdata] varchar(max) null,
 
-	[DatasetList!4!] varchar(255) null,
-	[Dataset!5!Code] varchar(255) null
+	[DatasetList!4!] varchar(max) null,
+	[Dataset!5!Code] varchar(max) null
 )
 
 INSERT INTO @DFXML (Tag,[Dataflows!1!xmlns]) Values (1,'http://istat.it/OnTheFly')
@@ -836,11 +837,11 @@ create table  #Themes
 	IDCategoryScheme int,
 	IDCategory int,
 	IDCategoryParent int,
-	DimMemberIsoCode varchar(255),
-	DimMemberDescription varchar(255),
+	DimMemberIsoCode varchar(max),
+	DimMemberDescription varchar(max),
 	DFId int,
 	Livel int,
-	Ordinamento varchar(255)
+	Ordinamento varchar(max)
 
 )
 Declare    @ThemeChild Table
@@ -848,11 +849,11 @@ Declare    @ThemeChild Table
 	IDCategoryScheme int,
 	IDCategory int,
 	IDCategoryParent int,
-	DimMemberIsoCode varchar(255),
-	DimMemberDescription varchar(255),
+	DimMemberIsoCode varchar(max),
+	DimMemberDescription varchar(max),
 	DFId int,
 	Livel int,
-	Ordinamento varchar(255)
+	Ordinamento varchar(max)
 )
 
 
@@ -865,7 +866,7 @@ select
 	ItemName.TEXT as CategoryName,
     CATEGORISATION.ART_ID,
 	1,
-	cast(CATEGORY.CAT_ID as varchar(255))
+	cast(CATEGORY.CAT_ID as varchar(max))
  FROM CATEGORY
   inner join LOCALISED_STRING as ItemName on ItemName.ITEM_ID=CAT_ID
   left join CATEGORISATION on CATEGORISATION.CAT_ID=CATEGORY.CAT_ID 
@@ -893,7 +894,7 @@ BEGIN
 		ItemName.TEXT as CategoryName,
 		CATEGORISATION.ART_ID,
 		@Livel,
-		(Select top 1 Ordinamento  from #Themes as O where O.IDCategory=CATEGORY.PARENT_CAT_ID AND Livel=@Livel-1) + '-' + cast(CATEGORY.CAT_ID as varchar(255))
+		(Select top 1 Ordinamento  from #Themes as O where O.IDCategory=CATEGORY.PARENT_CAT_ID AND Livel=@Livel-1) + '-' + cast(CATEGORY.CAT_ID as varchar(max))
 		FROM CATEGORY
 		inner join LOCALISED_STRING as ItemName on ItemName.ITEM_ID=CAT_ID
 		left join CATEGORISATION on CATEGORISATION.CAT_ID=CATEGORY.CAT_ID 
@@ -911,54 +912,54 @@ create table #T
 (
 	Tag int,
 	Parent int null,
-	[ThemeList!1!xmlns] varchar(100) null,
-	[ThemeList!1!Order!hide] varchar(100) null,
-	[CategoryScheme!2!Code] varchar(500) null,
-	[CategoryScheme!2!Order!hide] varchar(500) null,
-	[CategoryScheme!2!AgencyId] varchar(500) null,
-	[CategoryScheme!2!Version] varchar(500) null,
+	[ThemeList!1!xmlns] varchar(max) null,
+	[ThemeList!1!Order!hide] varchar(max) null,
+	[CategoryScheme!2!Code] varchar(max) null,
+	[CategoryScheme!2!Order!hide] varchar(max) null,
+	[CategoryScheme!2!AgencyId] varchar(max) null,
+	[CategoryScheme!2!Version] varchar(max) null,
 	[Name!3!LocaleIsoCode] char(2) null,
-	[Name!3!!cdata]varchar(500) null,
-	[ContentObject!4!type] varchar(500) null,
-	[ContentObject!4!Code] varchar(500) null,
+	[Name!3!!cdata]varchar(max) null,
+	[ContentObject!4!type] varchar(max) null,
+	[ContentObject!4!Code] varchar(max) null,
 	[Name!5!LocaleIsoCode] char(2) null,
-	[Name!5!!cdata]varchar(500) null,
-	[DataflowList!6!] varchar(500) null,
-	[Dataflow!7!Code] varchar(500) null,
+	[Name!5!!cdata]varchar(max) null,
+	[DataflowList!6!] varchar(max) null,
+	[Dataflow!7!Code] varchar(max) null,
 	[Name!8!LocaleIsoCode] char(2) null,
-	[Name!8!!cdata] varchar(4000) null
+	[Name!8!!cdata] varchar(max) null
 )
 declare @i int
-declare @si0 varchar(50)
-declare @si1 varchar(50)
-declare @si2 varchar(50)
-declare @si3 varchar(50)
-declare @si4 varchar(50)
-declare @si5 varchar(50)
-declare @siParent varchar(50)
-declare @execstr varchar(8000)
+declare @si0 varchar(max)
+declare @si1 varchar(max)
+declare @si2 varchar(max)
+declare @si3 varchar(max)
+declare @si4 varchar(max)
+declare @si5 varchar(max)
+declare @siParent varchar(max)
+declare @execstr varchar(max)
 declare @maxdepth int;
 set @maxdepth =(select MAX(Livel) from #Themes)
 set @execstr = ''
 set @i = 2
 while (@i <= @maxdepth)
 begin
-	set @si1 = cast(5*@i-1 as varchar(50))
-	set @si2 = cast(5*@i as varchar(50))
-	set @si3 = cast(5*@i+1 as varchar(50))
-	set @si4 = cast(5*@i+2 as varchar(50))
-	set @si5 = cast(5*@i+3 as varchar(50))
+	set @si1 = cast(5*@i-1 as varchar(max))
+	set @si2 = cast(5*@i as varchar(max))
+	set @si3 = cast(5*@i+1 as varchar(max))
+	set @si4 = cast(5*@i+2 as varchar(max))
+	set @si5 = cast(5*@i+3 as varchar(max))
 	if (len(@execstr) > 0)
 		set @execstr = @execstr + ','
 	set @execstr = @execstr + '
-	[ContentObject!'+@si1+'!type] varchar(500) null,
-	[ContentObject!'+@si1+'!Code] varchar(500) null,
+	[ContentObject!'+@si1+'!type] varchar(max) null,
+	[ContentObject!'+@si1+'!Code] varchar(max) null,
 	[Name!'+@si2+'!LocaleIsoCode] char(2) null,
-	[Name!'+@si2+'!!cdata]varchar(500) null,
-	[DataflowList!'+@si3+'!] varchar(500) null,
-	[Dataflow!'+@si4+'!Code] varchar(500) null,
+	[Name!'+@si2+'!!cdata]varchar(max) null,
+	[DataflowList!'+@si3+'!] varchar(max) null,
+	[Dataflow!'+@si4+'!Code] varchar(max) null,
 	[Name!'+@si5+'!LocaleIsoCode] char(2) null,
-	[Name!'+@si5+'!!cdata] varchar(4000) null'
+	[Name!'+@si5+'!!cdata] varchar(max) null'
 	set @i = @i+1
 end
 
@@ -986,14 +987,14 @@ EXEC('INSERT INTO #T (Tag,Parent, [CategoryScheme!2!Order!hide],
 set @i = 1
 while (@i <= @maxdepth)
 begin
-	set @si1 = cast(5*@i-1 as varchar(50))
-	set @si2 = cast(5*@i as varchar(50))
-	set @si3 = cast(5*@i+1 as varchar(50))
-	set @si4 = cast(5*@i+2 as varchar(50))
-	set @si5 = cast(5*@i+3 as varchar(50))
+	set @si1 = cast(5*@i-1 as varchar(max))
+	set @si2 = cast(5*@i as varchar(max))
+	set @si3 = cast(5*@i+1 as varchar(max))
+	set @si4 = cast(5*@i+2 as varchar(max))
+	set @si5 = cast(5*@i+3 as varchar(max))
 	set @siParent= 
-	CASE  WHEN @i = 1 then  cast(2 as varchar(50))
-	ELSE  cast(5*(@i-1)-1 as varchar(50))
+	CASE  WHEN @i = 1 then  cast(2 as varchar(max))
+	ELSE  cast(5*(@i-1)-1 as varchar(max))
 	END
 
 	EXEC('INSERT INTO #T (Tag,Parent,[CategoryScheme!2!Order!hide],[ThemeList!1!Order!hide],

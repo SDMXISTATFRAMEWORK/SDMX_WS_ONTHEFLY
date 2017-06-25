@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+	<QueryMessage xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common" xmlns:query="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/query" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message SDMXMessage.xsd">
+	  <Header>
+		<ID>NSICLIENT</ID>
+		<Test>false</Test>
+		<Prepared>2011-08-01T13:27:28</Prepared>
+		<Sender id="NSICLIENT" />
+		<Receiver id="NSIWS" />
+	  </Header>
+	  <Query>
+		<DataWhere xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/query">
+		  <And>
+			<Dataflow>TEST_DATASET</Dataflow>
+			<Dimension id="LOCATION">AUS</Dimension>
+		  </And>
+		</DataWhere>
+	  </Query>
+	</QueryMessage>
+  

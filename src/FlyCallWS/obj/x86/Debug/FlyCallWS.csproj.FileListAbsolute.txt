@@ -3,3 +3,8 @@ C:\ISTAT\Source\OnTheFlyWebService\src\FlyCallWS\bin\x86\Debug\FlyCallWS.pdb
 C:\ISTAT\Source\OnTheFlyWebService\src\FlyCallWS\obj\x86\Debug\FlyCallWS.csprojResolveAssemblyReference.cache
 C:\ISTAT\Source\OnTheFlyWebService\src\FlyCallWS\obj\x86\Debug\FlyCallWS.dll
 C:\ISTAT\Source\OnTheFlyWebService\src\FlyCallWS\obj\x86\Debug\FlyCallWS.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyCallWS\bin\x86\Debug\FlyCallWS.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyCallWS\bin\x86\Debug\FlyCallWS.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyCallWS\obj\x86\Debug\FlyCallWS.csprojResolveAssemblyReference.cache
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyCallWS\obj\x86\Debug\FlyCallWS.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyCallWS\obj\x86\Debug\FlyCallWS.pdb

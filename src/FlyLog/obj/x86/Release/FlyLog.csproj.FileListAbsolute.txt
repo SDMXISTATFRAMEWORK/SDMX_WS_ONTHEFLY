@@ -1,0 +1,4 @@
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyLog\bin\x86\Release\FlyLog.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyLog\bin\x86\Release\FlyLog.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyLog\obj\x86\Release\FlyLog.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyLog\obj\x86\Release\FlyLog.pdb

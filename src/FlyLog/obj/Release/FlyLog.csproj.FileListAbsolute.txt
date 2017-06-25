@@ -1,0 +1,10 @@
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyLog\bin\Release\FlyLog.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyLog\bin\Release\FlyLog.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyLog\obj\Release\FlyLog.csprojResolveAssemblyReference.cache
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyLog\obj\Release\FlyLog.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyLog\obj\Release\FlyLog.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyLog\bin\Release\FlyLog.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyLog\bin\Release\FlyLog.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyLog\obj\Release\FlyLog.csprojResolveAssemblyReference.cache
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyLog\obj\Release\FlyLog.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyLog\obj\Release\FlyLog.pdb

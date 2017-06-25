@@ -122,3 +122,65 @@ C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Debug\TestOn
 C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Debug\TestOnTheFlyService.csproj.GenerateResource.Cache
 C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Debug\TestOnTheFlyService.exe.manifest
 C:\ISTAT\Source\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Debug\TestOnTheFlyService.application
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\QueriesStructure 21\AgencySchemeStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\QueriesStructure 21\CategorisationStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\QueriesStructure 21\CategorySchemaStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\QueriesStructure 21\CodelistStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\QueriesStructure 21\ConceptSchemeStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\QueriesStructure 21\ConstrainedCodelistStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\QueriesStructure 21\DataFlowsStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\QueriesStructure 21\DSDStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\QueriesStructure\AgencySchemeStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\QueriesStructure\CategorySchemaStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\QueriesStructure\CodelistStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\QueriesStructure\ConceptSchemeStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\QueriesStructure\ConstrainedCodelistStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\QueriesStructure\DataFlowsStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\QueriesStructure\DSDStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\Queries\0_AgencyScheme.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\Queries\1_DataFlows.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\Queries\2_ConceptScheme.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\Queries\3_Codelists.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\Queries\4_CategorySchema.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\Queries\5_DataStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\Queries\6_QueryCompactMessage.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\Queries\6_QueryCompactMessage_FromTestClient.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\Queries\getConstrainedDimensionMember.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\Queries\getCostrainedRelatedDimensionMember.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\Queries\GetGenericFromCommonAPI.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\Queries\getInfo.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\Queries\getStartEndTimePeriods.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\Queries\getStructureWithReference.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\Queries\QueryCompactMessage.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\Queries\QueryGenericMessage.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\Queries\QueryGenericMessageALL.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\Queries\QueryGenericMessageAND.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\QueryMessage\QueryStructure20.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\QueryMessage\QueryStructure21.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\doc\OnTheFlyClient.docx
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\doc\OnTheFlyTechnicalGuide.docx
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\doc\OnTheFlyUserGuide.docx
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\Help\Documentation.chm
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\TestOnTheFlyService.exe.config
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\TestOnTheFlyService.exe.manifest
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\TestOnTheFlyService.application
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\TestOnTheFlyService.exe
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\TestOnTheFlyService.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\FlyCallWS.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\Utils.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\FlyCallWS.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\bin\x86\Debug\Utils.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Debug\TestOnTheFlyService.csprojResolveAssemblyReference.cache
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Debug\TestOnTheFlyService.Config.resources
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Debug\TestOnTheFlyService.QueryCreatorRest.resources
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Debug\TestOnTheFlyService.QueryCreator21.resources
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Debug\TestOnTheFlyService.Properties.Resources.resources
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Debug\TestOnTheFlyService.QueryCreator.resources
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Debug\TestOnTheFlyService.TestFlyQueryCreation.resources
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Debug\TestOnTheFlyService.WinXmlViewer.resources
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Debug\TestOnTheFlyService.TestQuery.resources
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Debug\TestOnTheFlyService.csproj.GenerateResource.Cache
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Debug\TestOnTheFlyService.exe.manifest
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Debug\TestOnTheFlyService.application
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Debug\TestOnTheFlyService.exe
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\TestOnTheFlyService\obj\x86\Debug\TestOnTheFlyService.pdb

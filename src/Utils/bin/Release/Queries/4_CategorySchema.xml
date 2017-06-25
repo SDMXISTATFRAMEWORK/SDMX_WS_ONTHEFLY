@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<RegistryInterface xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common" xmlns:registry="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/registry" xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message SDMXMessage.xsd">
+  <Header>
+	<ID>NSICLIENT</ID>
+	<Test>false</Test>
+	<Prepared>2011-06-22T10:35:43</Prepared>
+	<Sender id="NSICLIENT" />
+	<Receiver id="NSIWS" />
+  </Header>
+  <QueryStructureRequest resolveReferences="false">
+	<registry:CategorySchemeRef />
+  </QueryStructureRequest>
+</RegistryInterface>

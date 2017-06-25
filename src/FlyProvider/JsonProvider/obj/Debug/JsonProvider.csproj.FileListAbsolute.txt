@@ -72,3 +72,40 @@ C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\RDFPr
 C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\JsonProvider\obj\Debug\JsonProvider.csprojResolveAssemblyReference.cache
 C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\JsonProvider\obj\Debug\JsonProvider.dll
 C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\JsonProvider\obj\Debug\JsonProvider.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\ConfigurationXml\AttributeConcepts.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\ConfigurationXml\ErrorDescription.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\ConfigurationXml\FrequencyCodelist.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\ServiceConfiguration.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\JsonProvider.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\JsonProvider.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\EstatSdmxSourceExtension.CustomRequests.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\EstatSdmxSourceExtension.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\FlyController.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\log4net.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\Newtonsoft.Json.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\SdmxApi.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\SdmxDataParser.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\SdmxEdiParser.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\SdmxObjects.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\SdmxParseBase.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\SdmxQueryBuilder.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\SdmxSourceUtil.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\SdmxStructureMutableParser.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\SdmxStructureParser.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\SdmxStructureRetrieval.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\SdmxXmlConstants.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\TabularWriters.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\Xml.Schema.Linq.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\FlyLog.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\RDFProvider.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\FlyController.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\FlyController.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\FlyLog.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\FlyLog.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\bin\Debug\RDFProvider.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\obj\Debug\JsonProvider.csprojResolveAssemblyReference.cache
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\obj\Debug\JsonProvider.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\JsonProvider\obj\Debug\JsonProvider.pdb

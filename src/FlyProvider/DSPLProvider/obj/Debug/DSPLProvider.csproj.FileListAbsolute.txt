@@ -25,3 +25,30 @@ C:\ISTAT\Source\OnTheFlyWebService\src\FlyProvider\DSPLProvider\bin\Debug\Ionic.
 C:\ISTAT\Source\OnTheFlyWebService\src\FlyProvider\DSPLProvider\obj\Debug\DSPLProvider.csprojResolveAssemblyReference.cache
 C:\ISTAT\Source\OnTheFlyWebService\src\FlyProvider\DSPLProvider\obj\Debug\DSPLProvider.dll
 C:\ISTAT\Source\OnTheFlyWebService\src\FlyProvider\DSPLProvider\obj\Debug\DSPLProvider.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Debug\DSPLProvider.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Debug\DSPLProvider.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Debug\EstatSdmxSourceExtension.CustomRequests.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Debug\EstatSdmxSourceExtension.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Debug\Ionic.Zip.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Debug\log4net.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Debug\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Debug\SdmxApi.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Debug\SdmxDataParser.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Debug\SdmxEdiParser.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Debug\SdmxObjects.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Debug\SdmxParseBase.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Debug\SdmxQueryBuilder.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Debug\SdmxSourceUtil.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Debug\SdmxStructureMutableParser.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Debug\SdmxStructureParser.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Debug\SdmxStructureRetrieval.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Debug\SdmxXmlConstants.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Debug\TabularWriters.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Debug\Xml.Schema.Linq.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Debug\Ionic.Zip.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Debug\Ionic.Zip.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\obj\Debug\DSPLProvider.csprojResolveAssemblyReference.cache
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\obj\Debug\DSPLProvider.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\obj\Debug\DSPLProvider.pdb

@@ -1,0 +1,469 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Questo file viene utilizzato dal processo di pubblicazione/creazione pacchetto del progetto Web. È possibile personalizzare il comportamento del processo
+modificando il file MSBuild. Per ulteriori informazioni su questo argomento, visitare http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\cervini\Documents\Visual Studio 2012\Projects\_DEPLOY_</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/ConfigurationXml/AttributeConcepts.xml">
+      <publishTime>01/27/2016 17:12:36</publishTime>
+    </File>
+    <File Include="bin/ConfigurationXml/ErrorDescription.xml">
+      <publishTime>01/27/2016 17:12:36</publishTime>
+    </File>
+    <File Include="bin/ConfigurationXml/FrequencyCodelist.xml">
+      <publishTime>01/27/2016 17:12:36</publishTime>
+    </File>
+    <File Include="bin/doc/OnTheFlyClient.docx">
+      <publishTime>01/27/2016 17:12:37</publishTime>
+    </File>
+    <File Include="bin/doc/OnTheFlyTechnicalGuide.docx">
+      <publishTime>01/27/2016 17:12:37</publishTime>
+    </File>
+    <File Include="bin/doc/OnTheFlyUserGuide.docx">
+      <publishTime>01/27/2016 17:12:37</publishTime>
+    </File>
+    <File Include="bin/DSPLProvider.dll">
+      <publishTime>12/20/2016 09:46:47</publishTime>
+    </File>
+    <File Include="bin/EstatSdmxSourceExtension.CustomRequests.dll">
+      <publishTime>01/27/2016 17:12:38</publishTime>
+    </File>
+    <File Include="bin/EstatSdmxSourceExtension.dll">
+      <publishTime>01/27/2016 17:12:38</publishTime>
+    </File>
+    <File Include="bin/FlyController.dll">
+      <publishTime>12/20/2016 09:46:48</publishTime>
+    </File>
+    <File Include="bin/FlyDotStatExtra_implementation.dll">
+      <publishTime>12/20/2016 09:46:51</publishTime>
+    </File>
+    <File Include="bin/FlyDotStat_implementation.dll">
+      <publishTime>12/20/2016 09:46:50</publishTime>
+    </File>
+    <File Include="bin/FlyEngine.dll">
+      <publishTime>12/23/2016 14:45:30</publishTime>
+    </File>
+    <File Include="bin/FlyLog.dll">
+      <publishTime>12/20/2016 09:46:46</publishTime>
+    </File>
+    <File Include="bin/FlyMapping.dll">
+      <publishTime>12/20/2016 09:46:50</publishTime>
+    </File>
+    <File Include="bin/FlyRedirectToRI_implementation.dll">
+      <publishTime>12/23/2016 14:45:29</publishTime>
+    </File>
+    <File Include="bin/FlySDDSLoader_implementation.dll">
+      <publishTime>12/23/2016 14:45:28</publishTime>
+    </File>
+    <File Include="bin/Help/Documentation.chm">
+      <publishTime>01/27/2016 17:12:37</publishTime>
+    </File>
+    <File Include="bin/Ionic.Zip.dll">
+      <publishTime>01/27/2016 17:12:42</publishTime>
+    </File>
+    <File Include="bin/JsonProvider.dll">
+      <publishTime>12/20/2016 09:46:49</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>01/27/2016 17:12:38</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>01/27/2016 17:12:42</publishTime>
+    </File>
+    <File Include="bin/OnTheFly.dll">
+      <publishTime>12/23/2016 14:45:32</publishTime>
+    </File>
+    <File Include="bin/Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll">
+      <publishTime>01/27/2016 17:12:37</publishTime>
+    </File>
+    <File Include="bin/Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll">
+      <publishTime>01/27/2016 17:12:37</publishTime>
+    </File>
+    <File Include="bin/Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll">
+      <publishTime>01/27/2016 17:12:38</publishTime>
+    </File>
+    <File Include="bin/Queries/0_AgencyScheme.xml">
+      <publishTime>01/27/2016 17:12:39</publishTime>
+    </File>
+    <File Include="bin/Queries/1_DataFlows.xml">
+      <publishTime>01/27/2016 17:12:39</publishTime>
+    </File>
+    <File Include="bin/Queries/2_ConceptScheme.xml">
+      <publishTime>01/27/2016 17:12:39</publishTime>
+    </File>
+    <File Include="bin/Queries/3_Codelists.xml">
+      <publishTime>01/27/2016 17:12:39</publishTime>
+    </File>
+    <File Include="bin/Queries/4_CategorySchema.xml">
+      <publishTime>01/27/2016 17:12:39</publishTime>
+    </File>
+    <File Include="bin/Queries/5_DataStructure.xml">
+      <publishTime>01/27/2016 17:12:39</publishTime>
+    </File>
+    <File Include="bin/Queries/6_QueryCompactMessage.xml">
+      <publishTime>01/27/2016 17:12:39</publishTime>
+    </File>
+    <File Include="bin/Queries/6_QueryCompactMessage_FromTestClient.xml">
+      <publishTime>01/27/2016 17:12:39</publishTime>
+    </File>
+    <File Include="bin/Queries/getConstrainedDimensionMember.xml">
+      <publishTime>01/27/2016 17:12:39</publishTime>
+    </File>
+    <File Include="bin/Queries/getCostrainedRelatedDimensionMember.xml">
+      <publishTime>01/27/2016 17:12:39</publishTime>
+    </File>
+    <File Include="bin/Queries/GetGenericFromCommonAPI.xml">
+      <publishTime>01/27/2016 17:12:39</publishTime>
+    </File>
+    <File Include="bin/Queries/getInfo.xml">
+      <publishTime>01/27/2016 17:12:39</publishTime>
+    </File>
+    <File Include="bin/Queries/getStartEndTimePeriods.xml">
+      <publishTime>01/27/2016 17:12:39</publishTime>
+    </File>
+    <File Include="bin/Queries/getStructureWithReference.xml">
+      <publishTime>01/27/2016 17:12:39</publishTime>
+    </File>
+    <File Include="bin/Queries/QueryCompactMessage.xml">
+      <publishTime>01/27/2016 17:12:39</publishTime>
+    </File>
+    <File Include="bin/Queries/QueryGenericMessage.xml">
+      <publishTime>01/27/2016 17:12:39</publishTime>
+    </File>
+    <File Include="bin/Queries/QueryGenericMessageALL.xml">
+      <publishTime>01/27/2016 17:12:39</publishTime>
+    </File>
+    <File Include="bin/Queries/QueryGenericMessageAND.xml">
+      <publishTime>01/27/2016 17:12:39</publishTime>
+    </File>
+    <File Include="bin/QueriesStructure 21/AgencySchemeStructure.xml">
+      <publishTime>01/27/2016 17:12:36</publishTime>
+    </File>
+    <File Include="bin/QueriesStructure 21/CategorisationStructure.xml">
+      <publishTime>01/27/2016 17:12:36</publishTime>
+    </File>
+    <File Include="bin/QueriesStructure 21/CategorySchemaStructure.xml">
+      <publishTime>01/27/2016 17:12:36</publishTime>
+    </File>
+    <File Include="bin/QueriesStructure 21/CodelistStructure.xml">
+      <publishTime>01/27/2016 17:12:36</publishTime>
+    </File>
+    <File Include="bin/QueriesStructure 21/ConceptSchemeStructure.xml">
+      <publishTime>01/27/2016 17:12:36</publishTime>
+    </File>
+    <File Include="bin/QueriesStructure 21/ConstrainedCodelistStructure.xml">
+      <publishTime>01/27/2016 17:12:36</publishTime>
+    </File>
+    <File Include="bin/QueriesStructure 21/DataFlowsStructure.xml">
+      <publishTime>01/27/2016 17:12:36</publishTime>
+    </File>
+    <File Include="bin/QueriesStructure 21/DSDStructure.xml">
+      <publishTime>01/27/2016 17:12:36</publishTime>
+    </File>
+    <File Include="bin/QueriesStructure/AgencySchemeStructure.xml">
+      <publishTime>01/27/2016 17:12:39</publishTime>
+    </File>
+    <File Include="bin/QueriesStructure/CategorySchemaStructure.xml">
+      <publishTime>01/27/2016 17:12:39</publishTime>
+    </File>
+    <File Include="bin/QueriesStructure/CodelistStructure.xml">
+      <publishTime>01/27/2016 17:12:39</publishTime>
+    </File>
+    <File Include="bin/QueriesStructure/ConceptSchemeStructure.xml">
+      <publishTime>01/27/2016 17:12:39</publishTime>
+    </File>
+    <File Include="bin/QueriesStructure/ConstrainedCodelistStructure.xml">
+      <publishTime>01/27/2016 17:12:39</publishTime>
+    </File>
+    <File Include="bin/QueriesStructure/DataFlowsStructure.xml">
+      <publishTime>01/27/2016 17:12:39</publishTime>
+    </File>
+    <File Include="bin/QueriesStructure/DSDStructure.xml">
+      <publishTime>01/27/2016 17:12:39</publishTime>
+    </File>
+    <File Include="bin/QueryMessage/QueryStructure20.xml">
+      <publishTime>01/27/2016 17:12:38</publishTime>
+    </File>
+    <File Include="bin/QueryMessage/QueryStructure21.xml">
+      <publishTime>01/27/2016 17:12:38</publishTime>
+    </File>
+    <File Include="bin/RDFProvider.dll">
+      <publishTime>12/20/2016 09:46:47</publishTime>
+    </File>
+    <File Include="bin/RESTSdmx.dll">
+      <publishTime>12/23/2016 14:45:31</publishTime>
+    </File>
+    <File Include="bin/SdmxApi.dll">
+      <publishTime>01/27/2016 17:12:38</publishTime>
+    </File>
+    <File Include="bin/SdmxDataParser.dll">
+      <publishTime>01/27/2016 17:12:38</publishTime>
+    </File>
+    <File Include="bin/SdmxEdiParser.dll">
+      <publishTime>01/27/2016 17:12:38</publishTime>
+    </File>
+    <File Include="bin/SdmxObjects.dll">
+      <publishTime>01/27/2016 17:12:38</publishTime>
+    </File>
+    <File Include="bin/SdmxParseBase.dll">
+      <publishTime>01/27/2016 17:12:37</publishTime>
+    </File>
+    <File Include="bin/SdmxQueryBuilder.dll">
+      <publishTime>01/27/2016 17:12:38</publishTime>
+    </File>
+    <File Include="bin/SdmxSourceUtil.dll">
+      <publishTime>01/27/2016 17:12:38</publishTime>
+    </File>
+    <File Include="bin/SdmxStructureParser.dll">
+      <publishTime>01/27/2016 17:12:38</publishTime>
+    </File>
+    <File Include="bin/SdmxStructureRetrieval.dll">
+      <publishTime>01/27/2016 17:12:38</publishTime>
+    </File>
+    <File Include="bin/sdmxv20/SDMXCommon.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv20/SDMXCompactData.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv20/SDMXCrossSectionalData.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv20/SDMXGenericData.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv20/SDMXGenericMetadata.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv20/SDMXMessage.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv20/SDMXMetadataReport.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv20/SDMXQuery.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv20/SDMXRegistry.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv20/SDMXStructure.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv20/SDMXUtilityData.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv20/xml.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXCommon.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXCommonReferences.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXDataGeneric.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXDataGenericBase.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXDataGenericTimeSeries.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXDataStructureSpecific.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXDataStructureSpecificBase.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXDataStructureSpecificTimeSeries.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXMessage.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXMessageFooter.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXMetadataGeneric.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXMetadataStructureSpecific.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXQuery.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXQueryBase.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXQueryCategorisation.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXQueryCategory.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXQueryCodelist.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXQueryConcept.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXQueryConstraint.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXQueryData.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXQueryDataflow.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXQueryDataStructure.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXQueryHierarchicalCodelist.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXQueryMetadata.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXQueryMetadataflow.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXQueryMetadataStructure.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXQueryOrganisation.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXQueryProcess.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXQueryProvisionAgreement.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXQueryReportingTaxonomy.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXQuerySchema.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXQueryStructures.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXQueryStructureSet.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXRegistry.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXRegistryBase.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXRegistryRegistration.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXRegistryStructure.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXRegistrySubscription.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXStructure.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXStructureBase.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXStructureCategorisation.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXStructureCategory.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXStructureCodelist.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXStructureConcept.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXStructureConstraint.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXStructureDataflow.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXStructureDataStructure.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXStructureHierarchicalCodelist.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXStructureMetadataflow.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXStructureMetadataStructure.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXStructureOrganisation.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXStructureProcess.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXStructureProvisionAgreement.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXStructureReportingTaxonomy.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/SDMXStructureStructureSet.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/sdmxv21/xml.xsd">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="bin/SdmxXmlConstants.dll">
+      <publishTime>01/27/2016 17:12:38</publishTime>
+    </File>
+    <File Include="bin/ServiceConfiguration.xml">
+      <publishTime>12/23/2016 10:17:12</publishTime>
+    </File>
+    <File Include="bin/SOAPSdmx.dll">
+      <publishTime>12/23/2016 14:45:31</publishTime>
+    </File>
+    <File Include="bin/Utils.dll">
+      <publishTime>12/20/2016 09:46:48</publishTime>
+    </File>
+    <File Include="bin/Xml.Schema.Linq.dll">
+      <publishTime>01/27/2016 17:12:37</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="Images/logoistat.jpg">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="OTFSdmx20.wsdl">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="OTFSdmx21.wsdl">
+      <publishTime>01/27/2016 17:12:34</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/20/2016 09:46:59</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

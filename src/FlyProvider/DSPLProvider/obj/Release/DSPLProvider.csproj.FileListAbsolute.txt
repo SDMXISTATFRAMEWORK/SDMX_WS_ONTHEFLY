@@ -1,0 +1,54 @@
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\DSPLProvider.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\DSPLProvider.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\EstatSdmxSourceExtension.CustomRequests.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\EstatSdmxSourceExtension.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\Ionic.Zip.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\log4net.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\SdmxApi.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\SdmxDataParser.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\SdmxEdiParser.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\SdmxObjects.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\SdmxParseBase.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\SdmxQueryBuilder.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\SdmxSourceUtil.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\SdmxStructureMutableParser.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\SdmxStructureParser.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\SdmxStructureRetrieval.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\SdmxXmlConstants.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\TabularWriters.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\Xml.Schema.Linq.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\Ionic.Zip.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\Ionic.Zip.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\obj\Release\DSPLProvider.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\obj\Release\DSPLProvider.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\obj\Release\DSPLProvider.csprojResolveAssemblyReference.cache
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\DSPLProvider.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\DSPLProvider.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\EstatSdmxSourceExtension.CustomRequests.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\EstatSdmxSourceExtension.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\Ionic.Zip.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\log4net.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\Org.Sdmx.Resources.SdmxMl.Schemas.V10.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\Org.Sdmx.Resources.SdmxMl.Schemas.V20.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\Org.Sdmx.Resources.SdmxMl.Schemas.V21.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\SdmxApi.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\SdmxDataParser.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\SdmxEdiParser.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\SdmxObjects.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\SdmxParseBase.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\SdmxQueryBuilder.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\SdmxSourceUtil.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\SdmxStructureMutableParser.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\SdmxStructureParser.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\SdmxStructureRetrieval.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\SdmxXmlConstants.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\TabularWriters.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\Xml.Schema.Linq.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\Ionic.Zip.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\bin\Release\Ionic.Zip.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\obj\Release\DSPLProvider.csprojResolveAssemblyReference.cache
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\obj\Release\DSPLProvider.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\FlyProvider\DSPLProvider\obj\Release\DSPLProvider.pdb

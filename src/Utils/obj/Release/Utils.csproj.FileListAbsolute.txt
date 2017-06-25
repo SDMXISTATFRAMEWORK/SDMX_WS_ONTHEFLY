@@ -1,0 +1,88 @@
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure 21\AgencySchemeStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure 21\CategorisationStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure 21\CategorySchemaStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure 21\CodelistStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure 21\ConceptSchemeStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure 21\ConstrainedCodelistStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure 21\DataFlowsStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure 21\DSDStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure\AgencySchemeStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure\CategorySchemaStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure\CodelistStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure\ConceptSchemeStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure\ConstrainedCodelistStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure\DataFlowsStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure\DSDStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\Queries\0_AgencyScheme.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\Queries\1_DataFlows.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\Queries\2_ConceptScheme.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\Queries\3_Codelists.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\Queries\4_CategorySchema.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\Queries\5_DataStructure.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\Queries\6_QueryCompactMessage.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\Queries\6_QueryCompactMessage_FromTestClient.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\Queries\getConstrainedDimensionMember.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\Queries\getCostrainedRelatedDimensionMember.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\Queries\GetGenericFromCommonAPI.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\Queries\getInfo.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\Queries\getStartEndTimePeriods.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\Queries\getStructureWithReference.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\Queries\QueryCompactMessage.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\Queries\QueryGenericMessage.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\Queries\QueryGenericMessageALL.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\Queries\QueryGenericMessageAND.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\QueryMessage\QueryStructure20.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\QueryMessage\QueryStructure21.xml
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\doc\OnTheFlyClient.docx
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\doc\OnTheFlyTechnicalGuide.docx
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\doc\OnTheFlyUserGuide.docx
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\Help\Documentation.chm
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\Utils.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\bin\Release\Utils.pdb
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\obj\Release\Utils.csprojResolveAssemblyReference.cache
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\obj\Release\Utils.dll
+C:\ISTAT\Source\OnTheFlyWebService2\src\Utils\obj\Release\Utils.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure 21\AgencySchemeStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure 21\CategorisationStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure 21\CategorySchemaStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure 21\CodelistStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure 21\ConceptSchemeStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure 21\ConstrainedCodelistStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure 21\DataFlowsStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure 21\DSDStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure\AgencySchemeStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure\CategorySchemaStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure\CodelistStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure\ConceptSchemeStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure\ConstrainedCodelistStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure\DataFlowsStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\QueriesStructure\DSDStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\Queries\0_AgencyScheme.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\Queries\1_DataFlows.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\Queries\2_ConceptScheme.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\Queries\3_Codelists.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\Queries\4_CategorySchema.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\Queries\5_DataStructure.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\Queries\6_QueryCompactMessage.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\Queries\6_QueryCompactMessage_FromTestClient.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\Queries\getConstrainedDimensionMember.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\Queries\getCostrainedRelatedDimensionMember.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\Queries\GetGenericFromCommonAPI.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\Queries\getInfo.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\Queries\getStartEndTimePeriods.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\Queries\getStructureWithReference.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\Queries\QueryCompactMessage.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\Queries\QueryGenericMessage.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\Queries\QueryGenericMessageALL.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\Queries\QueryGenericMessageAND.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\QueryMessage\QueryStructure20.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\QueryMessage\QueryStructure21.xml
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\doc\OnTheFlyClient.docx
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\doc\OnTheFlyTechnicalGuide.docx
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\doc\OnTheFlyUserGuide.docx
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\Help\Documentation.chm
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\Utils.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\bin\Release\Utils.pdb
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\obj\Release\Utils.csprojResolveAssemblyReference.cache
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\obj\Release\Utils.dll
+C:\Users\cervini\Documents\Visual Studio 2012\Projects\ISTAT OTF\OnTheFlyWebService2\src\Utils\obj\Release\Utils.pdb
